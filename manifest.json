@@ -1,0 +1,22 @@
+{
+  "name": "Sorteringshjælp",
+  "short_name": "Sortering",
+  "description": "Forsøgsapp til affaldssortering med kamera og AI-forslag.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait",
+  "background_color": "#f7f4ec",
+  "theme_color": "#0b5f4a",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    {
+      "src": "assets/sorting-mark.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

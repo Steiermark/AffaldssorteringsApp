@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Glas">
+  <rect width="96" height="96" rx="10" fill="#21b685"/>
+  <path d="M39 18h18v12l-5 7v30a9 9 0 0 1-18 0V37l-5-7V18Z" fill="none" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M32 44h32M39 18h18" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <text x="48" y="84" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#fff">GLAS</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Ukendt affald">
+  <rect width="96" height="96" rx="10" fill="#141414"/>
+  <circle cx="48" cy="42" r="25" fill="none" stroke="#fff" stroke-width="6"/>
+  <path d="M48 31a10 10 0 0 1 6 18c-4 3-6 5-6 10M48 70h.1" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <text x="48" y="88" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#fff">UKENDT</text>
+</svg>

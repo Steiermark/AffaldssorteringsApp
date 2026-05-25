@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="Sorteringshjælp logo">
+  <rect width="192" height="192" rx="36" fill="#0b5f4a"/>
+  <path d="M62 56h68l11 98H51L62 56Z" fill="#f7f4ec"/>
+  <path d="M75 42h42l7 14H68l7-14Z" fill="#d79022"/>
+  <path d="M76 85c9-16 28-21 43-12l-10 6c8 3 14 11 15 20 1 16-11 30-27 31-9 0-17-3-23-9l13-8c3 2 7 3 11 3 9-1 15-8 14-17 0-4-2-8-5-11l-10 6 2-26c-6 0-12 4-15 10l-8 7Z" fill="#2e6387"/>
+</svg>

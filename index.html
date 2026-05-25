@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b5f4a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Sortering">
+    <title>Sorteringshjælp</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="assets/sorting-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="app-title">
+        <div>
+          <p class="eyebrow">Forsøg til genbrugspladsen</p>
+          <h1 id="app-title">Sorteringshjælp</h1>
+          <p class="intro">Tag et billede af dit affald, og få et forslag til både fraktion og placering på den genbrugsplads, du står på.</p>
+        </div>
+        <img class="hero-mark" src="assets/sorting-mark.svg" alt="" width="132" height="132">
+      </section>
+
+      <section id="android-panel" class="android-panel" aria-label="Android appstatus">
+        <div>
+          <p class="eyebrow">Android</p>
+          <h2>Telefonklar version</h2>
+          <p id="android-status">Appen kan installeres fra Chrome på Android, når den køres via HTTPS.</p>
+        </div>
+        <button id="install-android" class="primary-button" type="button" hidden>Installer app</button>
+      </section>
+
+      <section class="site-panel" aria-labelledby="site-title">
+        <div>
+          <p class="eyebrow">GPS</p>
+          <h2 id="site-title">Find nærmeste genbrugsplads</h2>
+          <p id="site-status">Brug GPS til automatisk at vælge lokale containerplaceringer.</p>
+        </div>
+        <div class="site-controls">
+          <button id="find-site" class="primary-button" type="button">Find min placering</button>
+          <label for="municipality-select">Søg genbrugsplads</label>
+          <select id="municipality-select"></select>
+          <label for="site-select">Vælg</label>
+          <select id="site-select"></select>
+        </div>
+        <dl class="site-facts">
+          <div>
+            <dt>Valgt plads</dt>
+            <dd id="selected-site-name">Ikke valgt</dd>
+          </div>
+          <div>
+            <dt>Afstand</dt>
+            <dd id="selected-site-distance">-</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="capture-panel" aria-label="Kamera og analyse">
+        <div class="camera-frame">
+          <video id="camera" autoplay playsinline muted hidden></video>
+          <img id="preview" alt="Valgt affald til sortering" hidden>
+          <div id="empty-state" class="empty-state">
+            <span aria-hidden="true">+</span>
+            <strong>Kamera klar</strong>
+            <small>Start kamera eller vælg et billede</small>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="start-camera" class="primary-button" type="button">Start kamera</button>
+          <button id="capture-photo" type="button" disabled>Tag billede</button>
+          <label class="file-button" for="image-input">Vælg billede</label>
+          <input id="image-input" type="file" accept="image/*" capture="environment">
+        </div>
+      </section>
+
+      <section class="result-panel" aria-live="polite">
+        <div class="result-heading">
+          <img id="result-pictogram" class="result-pictogram" src="assets/pictograms/unknown.svg" alt="" width="72" height="72">
+          <div>
+            <p class="eyebrow">AI-forslag</p>
+            <h2 id="result-title">Ingen analyse endnu</h2>
+            <p id="result-fraction-label" class="result-fraction-label">Fraktion ikke valgt</p>
+          </div>
+        </div>
+        <p id="result-text">Upload eller tag et billede for at få et forslag. I forsøget simuleres AI'en, så arbejdsgangen kan testes tidligt.</p>
+        <div id="location-card" class="location-card" hidden>
+          <div>
+            <span>Placering på pladsen</span>
+            <strong id="fraction-location">Vælg genbrugsplads først</strong>
+            <small id="fraction-note"></small>
+          </div>
+          <img id="location-pictogram" class="location-pictogram" src="assets/pictograms/unknown.svg" alt="" width="64" height="64">
+        </div>
+        <div id="confidence" class="confidence" hidden>
+          <span>Sikkerhed</span>
+          <meter id="confidence-meter" min="0" max="100" value="0"></meter>
+          <strong id="confidence-value">0%</strong>
+        </div>
+        <div id="web-evidence" class="web-evidence" hidden>
+          <div class="web-evidence-heading">
+            <span>Sekundært web-billedgrundlag</span>
+            <button id="refresh-web-evidence" type="button">Søg igen</button>
+          </div>
+          <p id="web-evidence-status">AI'en afsøger nettet efter lignende affaldsbilleder.</p>
+          <div id="web-evidence-grid" class="web-evidence-grid"></div>
+        </div>
+      </section>
+
+      <section class="guide-panel" aria-labelledby="guide-title">
+        <h2 id="guide-title">Hurtig manuel søgning</h2>
+        <form id="search-form" class="search-row">
+          <label for="waste-search">Skriv f.eks. pap, batteri eller maling</label>
+          <div class="search-input-wrap">
+            <input id="waste-search" type="search" autocomplete="off" placeholder="Hvad vil du aflevere?">
+            <button type="submit">Find</button>
+            <ul id="search-dropdown" class="search-dropdown" hidden></ul>
+          </div>
+        </form>
+        <ul id="suggestions" class="suggestions" aria-label="Seneste søgninger"></ul>
+      </section>
+    </main>
+
+    <canvas id="snapshot" hidden></canvas>
+    <script src="data/national-sites.js?v=20"></script>
+    <script src="data/fractions.js?v=20"></script>
+    <script src="app.js?v=20"></script>
+  </body>
+</html>
