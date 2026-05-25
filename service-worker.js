@@ -1,4 +1,4 @@
-const CACHE_NAME = "sorteringshjaelp-v20";
+const CACHE_NAME = "sorteringshjaelp-v34";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -17,6 +17,9 @@ const APP_SHELL = [
   "./data/fractions.json",
   "./data/national-sites.js",
   "./data/national-sites.json",
+  "./data/site-layouts.js",
+  "./data/site-layouts.json",
+  "./data/site-layout-coverage.json",
   "./data/municipal/0530.json",
   "./data/utility/0530-affaldspartner.json"
 ];

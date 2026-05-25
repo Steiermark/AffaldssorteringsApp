@@ -9,7 +9,7 @@
     <title>Sorteringshjælp</title>
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="assets/sorting-mark.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=20">
+    <link rel="stylesheet" href="styles.css?v=34">
   </head>
   <body>
     <main class="app-shell">
@@ -60,6 +60,10 @@
         <div class="camera-frame">
           <video id="camera" autoplay playsinline muted hidden></video>
           <img id="preview" alt="Valgt affald til sortering" hidden>
+          <div id="image-loading" class="image-loading" hidden>
+            <span class="spinner" aria-hidden="true"></span>
+            <strong>Analyserer billede</strong>
+          </div>
           <div id="empty-state" class="empty-state">
             <span aria-hidden="true">+</span>
             <strong>Kamera klar</strong>
@@ -73,6 +77,12 @@
           <label class="file-button" for="image-input">Vælg billede</label>
           <input id="image-input" type="file" accept="image/*" capture="environment">
         </div>
+        <div class="api-key-panel">
+          <label for="anthropic-api-key">Anthropic API-nÃ¸gle</label>
+          <input id="anthropic-api-key" type="password" autocomplete="off" placeholder="IndsÃ¦t API-nÃ¸gle til billedgenkendelse">
+          <button id="clear-api-key" type="button">Ryd</button>
+          <small id="api-key-status">NÃ¸glen gemmes kun lokalt i denne browser.</small>
+        </div>
       </section>
 
       <section class="result-panel" aria-live="polite">
@@ -84,7 +94,7 @@
             <p id="result-fraction-label" class="result-fraction-label">Fraktion ikke valgt</p>
           </div>
         </div>
-        <p id="result-text">Upload eller tag et billede for at få et forslag. I forsøget simuleres AI'en, så arbejdsgangen kan testes tidligt.</p>
+        <p id="result-text">Upload, tag eller slip et billede for at få et forslag til container og placering.</p>
         <div id="location-card" class="location-card" hidden>
           <div>
             <span>Placering på pladsen</span>
@@ -122,9 +132,16 @@
       </section>
     </main>
 
+    <div id="drop-overlay" class="drop-overlay" hidden>
+      <div>
+        <span aria-hidden="true">+</span>
+        <strong>Slip billedet her</strong>
+      </div>
+    </div>
     <canvas id="snapshot" hidden></canvas>
-    <script src="data/national-sites.js?v=20"></script>
-    <script src="data/fractions.js?v=20"></script>
-    <script src="app.js?v=20"></script>
+    <script src="data/national-sites.js?v=34"></script>
+    <script src="data/fractions.js?v=34"></script>
+    <script src="data/site-layouts.js?v=34"></script>
+    <script src="app.js?v=34"></script>
   </body>
 </html>

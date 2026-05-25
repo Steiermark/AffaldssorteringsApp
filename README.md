@@ -25,6 +25,7 @@ Den første version er en statisk, kørbar prototype med:
 - Android-klar PWA med service worker, manifest og installationsknap
 - Piktogrammer ved affaldstype i resultat og forslag
 - Alle fraktioner fra piktogrampakken indlæses fra `data/fractions.json`
+- Pladsinterne fraktionsplaceringer indlæses fra `data/site-layouts.json`, når en officiel pladskortkilde er registreret.
 
 ## Sådan køres projektet
 
@@ -65,6 +66,7 @@ Når appen åbnes via HTTPS på Android, vises `Installer app`, når Chrome vurd
 - Appens aktive farvepiktogrammer ligger i `assets/pictograms` og er hentet fra den lokale mappe `assets/PIKTOGRAMMER-andre-fraktioner`.
 - `data/fractions.json` er genereret ud fra alle `*_rgb_ikon_600x600dpi.png`-filer i piktogrampakken.
 - `data/fractions.js` indeholder samme katalog som browservenligt fallback, så fraktionerne også kan indlæses fra cache eller `file://`.
+- `data/site-layout-coverage.json` viser hvilke genbrugsstationer der har officielle fraktionsplaceringer, og hvilke der stadig mangler pladskortdata.
 - Hvis kommunens eller forsyningsselskabets hjemmeside ikke tilbyder CORS eller JSON/API, lav en lille backend-sync der henter og normaliserer data til samme JSON-format.
 - Kør via `.\dev-server.ps1 -Port 8000` under test, fordi `file://` ofte blokerer `fetch()` af lokale JSON-filer.
 - Erstat prototype-klassifikationen med en rigtig billedmodel, der sammenligner brugerens foto med web-/kommunebilleder og returnerer fraktionstype.

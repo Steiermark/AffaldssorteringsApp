@@ -1,0 +1,1261 @@
+window.bundledSiteLayouts = [
+  {
+    "siteId": "mit-affald-faxe-kommune-roennede-genbrugsplads-industrivej-22-4683-roennede",
+    "source": {
+      "provider": "AffaldPlus",
+      "url": "https://affaldplus.dk/media/2441",
+      "pageUrl": "https://affaldplus.dk/roennede-genbrugsplads",
+      "localMap": "data/site-maps/affaldplus/roennede-oversigtskort.pdf",
+      "retrieved": "2026-05-25",
+      "updatedOnMap": "juli 2025"
+    },
+    "map": {
+      "genbrug": {
+        "sign": "1",
+        "location": "Fraktion 1 - Genbrug",
+        "note": "Genbrug ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "toej": {
+        "sign": "5",
+        "location": "Fraktion 5 - Tøj",
+        "note": "Tøj ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "sko": {
+        "sign": "5",
+        "location": "Fraktion 5 - Tøj",
+        "note": "Sko følger tøj-/genbrugsfraktionen efter lokal skiltning."
+      },
+      "tekstilaffald": {
+        "sign": "6",
+        "location": "Fraktion 6 - Tekstilaffald",
+        "note": "Tekstilaffald. På Næstved vises også tekstilaffald i røde poser ved fraktion 7."
+      },
+      "vinduer": {
+        "sign": "10",
+        "location": "Fraktion 10 - Vinduer",
+        "note": "Vinduer ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "mineraluld": {
+        "sign": "12",
+        "location": "Fraktion 12 - Mineraluld",
+        "note": "Mineraluld ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "glasuld": {
+        "sign": "12",
+        "location": "Fraktion 12 - Mineraluld",
+        "note": "Glasuld afleveres under mineraluld efter lokal skiltning."
+      },
+      "stenuld": {
+        "sign": "12",
+        "location": "Fraktion 12 - Mineraluld",
+        "note": "Stenuld afleveres under mineraluld efter lokal skiltning."
+      },
+      "gips": {
+        "sign": "14",
+        "location": "Fraktion 14 - Gips",
+        "note": "Gips ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "tagpap": {
+        "sign": "16",
+        "location": "Fraktion 16 - Tagpap",
+        "note": "Tagpap ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "eternit-uden-asbest": {
+        "sign": "17",
+        "location": "Fraktion 17 - Eternit",
+        "note": "Eternit ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "asfalt": {
+        "sign": "18",
+        "location": "Fraktion 18 - Asfalt",
+        "note": "Asfalt ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "beton": {
+        "sign": "20",
+        "location": "Fraktion 20 - Beton",
+        "note": "Beton ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "mursten-og-tegl": {
+        "sign": "21",
+        "location": "Fraktion 21 - Mursten & tegl",
+        "note": "Mursten & tegl ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "tegl": {
+        "sign": "21",
+        "location": "Fraktion 21 - Mursten & tegl",
+        "note": "Mursten & tegl ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "hele-mursten": {
+        "sign": "21",
+        "location": "Fraktion 21 - Mursten & tegl",
+        "note": "Mursten & tegl ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "gasbeton": {
+        "sign": "22",
+        "location": "Fraktion 22 - Gasbeton",
+        "note": "Gasbeton ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "indendoers-trae": {
+        "sign": "25",
+        "location": "Fraktion 25 - Indendørs træ",
+        "note": "Indendørs træ ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "indendoers-malet-trae": {
+        "sign": "25",
+        "location": "Fraktion 25 - Indendørs træ",
+        "note": "Indendørs træ ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "indendoers-umalet-trae": {
+        "sign": "25",
+        "location": "Fraktion 25 - Indendørs træ",
+        "note": "Indendørs træ ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "trae": {
+        "sign": "25",
+        "location": "Fraktion 25 - Indendørs træ",
+        "note": "Træ afleveres ved indendørs træ, medmindre lokal skiltning viser andet."
+      },
+      "udendoers-trae": {
+        "sign": "27",
+        "location": "Fraktion 27 - Imprægneret træ",
+        "note": "Imprægneret træ ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "paller": {
+        "sign": "29",
+        "location": "Fraktion 29 - Paller",
+        "note": "Paller ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "tv-og-skaerme": {
+        "sign": "30",
+        "location": "Fraktion 30 - TV & skærme",
+        "note": "TV & skærme ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "smaat-elektronik": {
+        "sign": "31",
+        "location": "Fraktion 31 - Småt elektronik",
+        "note": "Småt elektronik ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "elektronik": {
+        "sign": "31",
+        "location": "Fraktion 31 - Småt elektronik",
+        "note": "Mindre elektronik er vist som småt elektronik på kortet."
+      },
+      "koeleudstyr": {
+        "sign": "34",
+        "location": "Fraktion 34 - Køleudstyr",
+        "note": "Køleudstyr ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "stort-elektronik": {
+        "sign": "35",
+        "location": "Fraktion 35 - Stort elektronik",
+        "note": "Stort elektronik ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "ledninger-og-kabler": {
+        "sign": "36",
+        "location": "Fraktion 36 - Ledninger & kabler",
+        "note": "Ledninger & kabler ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "printerpatroner": {
+        "sign": "39",
+        "location": "Fraktion 39 - Printerpatroner",
+        "note": "Printerpatroner ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "papir": {
+        "sign": "40",
+        "location": "Fraktion 40 - Papir",
+        "note": "Papir ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "papir-til-makulering": {
+        "sign": "42",
+        "location": "Fraktion 42 - Papir til makulering",
+        "note": "Papir til makulering ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "cardboard": {
+        "sign": "44",
+        "location": "Fraktion 44 - Pap",
+        "note": "Pap ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "mad-og-drikkekartoner": {
+        "sign": "46",
+        "location": "Fraktion 46 - Mad- & drikkekartoner",
+        "note": "Mad- & drikkekartoner ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "porcelaen-2": {
+        "sign": "47",
+        "location": "Fraktion 47 - Porcelæn",
+        "note": "Porcelæn ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "sanitet": {
+        "sign": "47",
+        "location": "Fraktion 47 - Porcelæn",
+        "note": "Sanitet/porcelæn samles ved porcelænsfraktionen efter lokal skiltning."
+      },
+      "keramisk-glas": {
+        "sign": "47",
+        "location": "Fraktion 47 - Porcelæn",
+        "note": "Keramik afleveres ved porcelæn efter lokal skiltning."
+      },
+      "glass": {
+        "sign": "49",
+        "location": "Fraktion 49 - Glas",
+        "note": "Glas ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "metal": {
+        "sign": "50",
+        "location": "Fraktion 50 - Metal",
+        "note": "Metal ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "haveaffald": {
+        "sign": "55",
+        "location": "Fraktion 55 - Haveaffald",
+        "note": "Haveaffaldsområdet er vist på pladsens officielle oversigtskort."
+      },
+      "natursten": {
+        "sign": "56",
+        "location": "Fraktion 56 - Natursten",
+        "note": "Natursten ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "sten-og-grus": {
+        "sign": "56",
+        "location": "Fraktion 56 - Natursten",
+        "note": "Sten/grus henvises til natursten efter lokal skiltning."
+      },
+      "traestammer-og-roedder": {
+        "sign": "57",
+        "location": "Fraktion 57 - Træstammer & rødder",
+        "note": "Træstammer & rødder ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "jord": {
+        "sign": "60",
+        "location": "Fraktion 60 - Jord",
+        "note": "Jord ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "brandslukkere": {
+        "sign": "63",
+        "location": "Fraktion 63 - Brandslukkere",
+        "note": "Brandslukkere ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "trykflasker": {
+        "sign": "64",
+        "location": "Fraktion 64 - Trykflasker",
+        "note": "Trykflasker ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "elpaerer": {
+        "sign": "65",
+        "location": "Fraktion 65 - Elpærer",
+        "note": "Elpærer ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "lysstofroer": {
+        "sign": "66",
+        "location": "Fraktion 66 - Lysstofrør",
+        "note": "Lysstofrør ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "batteries": {
+        "sign": "67",
+        "location": "Fraktion 67 - Batterier",
+        "note": "Batterier ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "bilbatterier": {
+        "sign": "68",
+        "location": "Fraktion 68 - Bilbatterier",
+        "note": "Bilbatterier ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "asbest": {
+        "sign": "69",
+        "location": "Fraktion 69 - Asbest",
+        "note": "Asbest ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "hazardous": {
+        "sign": "70",
+        "location": "Fraktion 70 - Farligt affald",
+        "note": "Farligt affald ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "stor-haard-plast": {
+        "sign": "75",
+        "location": "Fraktion 75 - Stor hård plast",
+        "note": "Stor hård plast ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "haard-plast": {
+        "sign": "75",
+        "location": "Fraktion 75 - Stor hård plast",
+        "note": "Hård plast afleveres efter lokal skiltning ved stor hård plast eller plastdunke."
+      },
+      "haard-pvc": {
+        "sign": "79",
+        "location": "Fraktion 79 - Hård PVC",
+        "note": "Hård PVC ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "plastic": {
+        "sign": "80/81/82",
+        "location": "Fraktion 80/81/82 - Plast",
+        "note": "Plast er opdelt i plastdunke, klar blød plast og farvet blød plast på AffaldPlus-kortet."
+      },
+      "klar-bloed-plast": {
+        "sign": "80",
+        "location": "Fraktion 80 - Klar blød plast",
+        "note": "Klar blød plast ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "farvet-bloed-plast": {
+        "sign": "81",
+        "location": "Fraktion 81 - Farvet blød plast",
+        "note": "Farvet blød plast ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "bloed-plast-2": {
+        "sign": "80/81",
+        "location": "Fraktion 80/81 - Blød plast",
+        "note": "Blød plast sorteres som klar eller farvet blød plast efter lokal skiltning."
+      },
+      "stor-bloed-plast": {
+        "sign": "80/81",
+        "location": "Fraktion 80/81 - Blød plast",
+        "note": "Stor blød plast sorteres som klar eller farvet blød plast efter lokal skiltning."
+      },
+      "flamingo": {
+        "sign": "85",
+        "location": "Fraktion 85 - Flamingo",
+        "note": "Flamingo ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "daek": {
+        "sign": "89",
+        "location": "Fraktion 89 - Dæk",
+        "note": "Dæk ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "storskrald": {
+        "sign": "90",
+        "location": "Fraktion 90 - Rest efter sortering",
+        "note": "Rest efter sortering ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "polstrede-moebler": {
+        "sign": "95",
+        "location": "Fraktion 95 - Polstrede møbler",
+        "note": "Polstrede møbler ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "madrasser": {
+        "sign": "95",
+        "location": "Fraktion 95 - Polstrede møbler",
+        "note": "Madrasser/polstrede møbler afleveres ved polstrede møbler efter lokal skiltning."
+      },
+      "aske": {
+        "sign": "98",
+        "location": "Fraktion 98 - Aske",
+        "note": "Aske ifølge AffaldPlus' officielle oversigtskort."
+      }
+    }
+  },
+  {
+    "siteId": "mit-affald-nyborg-kommune-nyborg-genbrugsstation-lollandsvej-6-5800-nyborg",
+    "source": {
+      "provider": "Nyborg Forsyning og Service",
+      "url": "https://www.nfs.as/wp-content/uploads/2020/08/2019-Nyborg-oversigt-scaled.jpg",
+      "localMap": "data/site-maps/nyborg-oversigt.jpg",
+      "retrieved": "2026-05-25"
+    },
+    "map": {
+      "polstrede-moebler": {
+        "sign": "1",
+        "location": "Skilt 1 - Polstrede møbler",
+        "note": "Madrasser, gulvtæpper, linoleum og MDF-plader."
+      },
+      "udendoers-trae": {
+        "sign": "2",
+        "location": "Skilt 2 - Udendørs træ",
+        "note": "Trykimprægneret træ."
+      },
+      "indendoers-trae": {
+        "sign": "3",
+        "location": "Skilt 3 - Indendørs træ og paller",
+        "note": "Træ med eller uden maling samt paller."
+      },
+      "paller": {
+        "sign": "3",
+        "location": "Skilt 3 - Indendørs træ og paller",
+        "note": "Paller afleveres sammen med indendørs træ."
+      },
+      "metal": {
+        "sign": "4",
+        "location": "Skilt 4 - Metal",
+        "note": "Jern og metal, ingen olieholdige materialer."
+      },
+      "cardboard": {
+        "sign": "6",
+        "location": "Skilt 6 - Pap",
+        "note": "Ren pap, ikke pizzabakker."
+      },
+      "papir": {
+        "sign": "7",
+        "location": "Skilt 7 - Papir",
+        "note": "Aviser, blade og bøger."
+      },
+      "glass": {
+        "sign": "8",
+        "location": "Skilt 8 - Glas",
+        "note": "Flasker, konservesglas og drikkeglas."
+      },
+      "beton": {
+        "sign": "9",
+        "location": "Skilt 9 - Beton",
+        "note": "Belægningsfliser."
+      },
+      "mursten-og-tegl": {
+        "sign": "10",
+        "location": "Skilt 10 - Mursten og tegl",
+        "note": "Marksten, lecasten og gasbeton."
+      },
+      "gasbeton": {
+        "sign": "10",
+        "location": "Skilt 10 - Mursten og tegl",
+        "note": "Gasbeton afleveres sammen med mursten og tegl."
+      },
+      "bilbatterier": {
+        "sign": "11",
+        "location": "Skilt 11 - Bilbatterier",
+        "note": "Bilbatterier, traktorbatterier og akkumulatorer."
+      },
+      "asbest": {
+        "sign": "12",
+        "location": "Skilt 12 - Asbest",
+        "note": "Eternit/asbest."
+      },
+      "eternit-uden-asbest": {
+        "sign": "12",
+        "location": "Skilt 12 - Asbest",
+        "note": "Kontroller skiltning/personale ved eternit."
+      },
+      "gips": {
+        "sign": "13",
+        "location": "Skilt 13 - Gips",
+        "note": "Uden isolering, træ og stålskinner."
+      },
+      "stort-elektronik": {
+        "sign": "14",
+        "location": "Skilt 14 - Stort elektronik",
+        "note": "Kun hårde hvidevarer."
+      },
+      "koeleudstyr": {
+        "sign": "14",
+        "location": "Skilt 14 - Stort elektronik",
+        "note": "Køl og frys afleveres ved stort elektronik."
+      },
+      "papir-til-makulering": {
+        "sign": "15",
+        "location": "Skilt 15 - Fortroligt papir til makulering",
+        "note": "Fortroligt papir."
+      },
+      "elektronik": {
+        "sign": "17",
+        "location": "Skilt 17 - Elektronik",
+        "note": "Computer, radio og andet husholdningselektronik."
+      },
+      "smaat-elektronik": {
+        "sign": "17",
+        "location": "Skilt 17 - Elektronik",
+        "note": "Småt elektronik afleveres ved elektronik."
+      },
+      "tv-og-skaerme": {
+        "sign": "18",
+        "location": "Skilt 18 - TV og skærme",
+        "note": "TV, PC, skærme og bærbar PC."
+      },
+      "printerpatroner": {
+        "sign": "19",
+        "location": "Skilt 19 - Printerpatroner",
+        "note": "Printerpatroner."
+      },
+      "batteries": {
+        "sign": "20",
+        "location": "Skilt 20 - Små batterier",
+        "note": "Små batterier."
+      },
+      "hazardous": {
+        "sign": "21",
+        "location": "Skilt 21 - Farligt affald",
+        "note": "Farligt affald."
+      },
+      "lysstofroer": {
+        "sign": "22",
+        "location": "Skilt 22 - Lysstofrør",
+        "note": "Lange lysstofrør over 60 cm."
+      },
+      "elpaerer": {
+        "sign": "23",
+        "location": "Skilt 23 - Energisparepærer og små rør",
+        "note": "Energisparepærer og små lysstofrør."
+      },
+      "genbrug": {
+        "sign": "25",
+        "location": "Skilt 25 - Indbo til genbrug",
+        "note": "Indbo til genbrug."
+      },
+      "toej": {
+        "sign": "26",
+        "location": "Skilt 26 - Tøj og sko",
+        "note": "Rent tøj og sko."
+      },
+      "sko": {
+        "sign": "26",
+        "location": "Skilt 26 - Tøj og sko",
+        "note": "Rent tøj og sko."
+      },
+      "fladt-glas": {
+        "sign": "27",
+        "location": "Skilt 27 - Fladt glas",
+        "note": "Planglas, spejlglas, autoruder og hærdet glas."
+      },
+      "daek": {
+        "sign": "28",
+        "location": "Skilt 28 - Dæk",
+        "note": "Bildæk med og uden fælge."
+      },
+      "plastic": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Alle plasttyper, blød og hård plast."
+      },
+      "bloed-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Blød plast afleveres ved plast."
+      },
+      "vinduer": {
+        "sign": "30",
+        "location": "Skilt 30 - Vinduesrammer",
+        "note": "Vinduer og døre med glas."
+      },
+      "traestammer-og-roedder": {
+        "sign": "31",
+        "location": "Skilt 31 - Trærødder",
+        "note": "Trærødder."
+      },
+      "kompost": {
+        "sign": "32",
+        "location": "Skilt 32 - Kompostjord",
+        "note": "Kompostjord til salg."
+      },
+      "haveaffald": {
+        "sign": "33",
+        "location": "Skilt 33 - Haveaffald",
+        "note": "Haveaffald."
+      },
+      "jord": {
+        "sign": "34",
+        "location": "Skilt 34 - Rent jord",
+        "note": "Rent jord."
+      },
+      "ledninger-og-kabler": {
+        "sign": "35",
+        "location": "Skilt 35 - Ledninger og kabler",
+        "note": "Ikke opladere."
+      },
+      "tagpap": {
+        "sign": "37",
+        "location": "Skilt 37 - Tagpap",
+        "note": "Tagpap."
+      },
+      "asfalt": {
+        "sign": "38",
+        "location": "Skilt 38 - Asfalt",
+        "note": "Asfalt."
+      },
+      "sanitet": {
+        "sign": "39",
+        "location": "Skilt 39 - Sanitet og porcelæn",
+        "note": "Porcelæn, keramik, væg- og gulvfliser samt glaseret tegl."
+      },
+      "porcelaen-2": {
+        "sign": "39",
+        "location": "Skilt 39 - Sanitet og porcelæn",
+        "note": "Porcelæn og keramik."
+      },
+      "keramisk-glas": {
+        "sign": "39",
+        "location": "Skilt 39 - Sanitet og porcelæn",
+        "note": "Keramik afleveres her."
+      },
+      "bloed-plast-2": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Alle plasttyper, blød og hård plast."
+      },
+      "stor-bloed-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Alle plasttyper, blød og hård plast."
+      },
+      "stor-haard-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Alle plasttyper, blød og hård plast."
+      },
+      "haard-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Alle plasttyper, blød og hård plast."
+      },
+      "klar-bloed-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Alle plasttyper, blød og hård plast."
+      },
+      "farvet-bloed-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Alle plasttyper, blød og hård plast."
+      }
+    }
+  },
+  {
+    "siteId": "mit-affald-nyborg-kommune-ullerslev-genbrugsstation-solholm-8a-5540-ullerslev",
+    "source": {
+      "provider": "Nyborg Forsyning og Service",
+      "url": "https://www.nfs.as/wp-content/uploads/2020/08/01-09-16-Ullerslev-877x1240.jpg",
+      "localMap": "data/site-maps/ullerslev-oversigt.jpg",
+      "retrieved": "2026-05-25"
+    },
+    "map": {
+      "polstrede-moebler": {
+        "sign": "1",
+        "location": "Skilt 1 - Møbler",
+        "note": "Møbler."
+      },
+      "udendoers-trae": {
+        "sign": "2",
+        "location": "Skilt 2 - Trykimprægneret træ",
+        "note": "Trykimprægneret træ."
+      },
+      "trae": {
+        "sign": "3",
+        "location": "Skilt 3 - Træ",
+        "note": "Træ."
+      },
+      "metal": {
+        "sign": "4",
+        "location": "Skilt 4 - Jern",
+        "note": "Jern og metal."
+      },
+      "cardboard": {
+        "sign": "6",
+        "location": "Skilt 6 - Pap",
+        "note": "Pap."
+      },
+      "papir": {
+        "sign": "7",
+        "location": "Skilt 7 - Aviser/reklamer",
+        "note": "Papir, aviser og reklamer."
+      },
+      "glass": {
+        "sign": "8",
+        "location": "Skilt 8 - Flasker",
+        "note": "Flasker."
+      },
+      "beton": {
+        "sign": "9",
+        "location": "Skilt 9/10 - Beton",
+        "note": "Rent eller blandet beton."
+      },
+      "asbest": {
+        "sign": "12",
+        "location": "Skilt 12 - Asbest",
+        "note": "Asbest."
+      },
+      "gips": {
+        "sign": "13",
+        "location": "Skilt 13 - Gips",
+        "note": "Gips."
+      },
+      "koeleudstyr": {
+        "sign": "14",
+        "location": "Skilt 14 - Køl/frys",
+        "note": "Køle- og fryseudstyr."
+      },
+      "jord": {
+        "sign": "22/34",
+        "location": "Skilt 22/34 - Jord",
+        "note": "Rent jord."
+      },
+      "traestammer-og-roedder": {
+        "sign": "23",
+        "location": "Skilt 23 - Rødder",
+        "note": "Rødder."
+      },
+      "kompost": {
+        "sign": "24",
+        "location": "Skilt 24 - Kompost",
+        "note": "Kompost."
+      },
+      "daek": {
+        "sign": "28",
+        "location": "Skilt 28 - Dæk",
+        "note": "Dæk."
+      },
+      "plastic": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "vinduer": {
+        "sign": "30",
+        "location": "Skilt 30 - Vinduesrammer med glas",
+        "note": "Vinduesrammer med glas."
+      },
+      "haveaffald": {
+        "sign": "33",
+        "location": "Skilt 33 - Have-/park affald",
+        "note": "Have- og parkaffald."
+      },
+      "bloed-plast-2": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "stor-bloed-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "stor-haard-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "haard-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "klar-bloed-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "farvet-bloed-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      }
+    }
+  },
+  {
+    "siteId": "mit-affald-nyborg-kommune-oerbaek-genbrugsstation-langemosevaenget-11-5853-oerbaek",
+    "source": {
+      "provider": "Nyborg Forsyning og Service",
+      "url": "https://www.nfs.as/wp-content/uploads/2020/08/Kort-%C3%98rb%C3%A6k-Genbrugsstation.jpg",
+      "localMap": "data/site-maps/orbaek-oversigt.jpg",
+      "retrieved": "2026-05-25"
+    },
+    "map": {
+      "polstrede-moebler": {
+        "sign": "1",
+        "location": "Skilt 1 - Møbler",
+        "note": "Møbler."
+      },
+      "udendoers-trae": {
+        "sign": "2",
+        "location": "Skilt 2 - Imprægneret træ",
+        "note": "Imprægneret træ."
+      },
+      "trae": {
+        "sign": "3",
+        "location": "Skilt 3 - Rent træ",
+        "note": "Rent træ."
+      },
+      "metal": {
+        "sign": "4",
+        "location": "Skilt 4 - Jern",
+        "note": "Jern og metal."
+      },
+      "cardboard": {
+        "sign": "6",
+        "location": "Skilt 6 - Pap",
+        "note": "Pap."
+      },
+      "papir": {
+        "sign": "7",
+        "location": "Skilt 7 - Papir",
+        "note": "Papir."
+      },
+      "glass": {
+        "sign": "8",
+        "location": "Skilt 8 - Flasker",
+        "note": "Flasker."
+      },
+      "beton": {
+        "sign": "9/10/11",
+        "location": "Skilt 9-11 - Beton",
+        "note": "Rent og blandet beton."
+      },
+      "asbest": {
+        "sign": "12",
+        "location": "Skilt 12 - Asbest",
+        "note": "Asbest."
+      },
+      "gips": {
+        "sign": "13",
+        "location": "Skilt 13 - Gips",
+        "note": "Gips."
+      },
+      "stort-elektronik": {
+        "sign": "14",
+        "location": "Skilt 14 - Hårde hvidevarer",
+        "note": "Hårde hvidevarer."
+      },
+      "koeleudstyr": {
+        "sign": "14",
+        "location": "Skilt 14 - Hårde hvidevarer",
+        "note": "Køl og frys afleveres her."
+      },
+      "hazardous": {
+        "sign": "21",
+        "location": "Skilt 21 - Farligt affald",
+        "note": "Farligt affald."
+      },
+      "lysstofroer": {
+        "sign": "22",
+        "location": "Skilt 22 - Lysstofrør og lavenergipærer",
+        "note": "Lysstofrør og lavenergipærer."
+      },
+      "bilbatterier": {
+        "sign": "23",
+        "location": "Skilt 23 - Bilbatterier",
+        "note": "Bilbatterier."
+      },
+      "elektronik": {
+        "sign": "25",
+        "location": "Skilt 25 - Elektronikaffald",
+        "note": "Elektronikaffald."
+      },
+      "toej": {
+        "sign": "26",
+        "location": "Skilt 26 - Tøj",
+        "note": "Tøj."
+      },
+      "sko": {
+        "sign": "26",
+        "location": "Skilt 26 - Tøj",
+        "note": "Sko afleveres sammen med tøj efter lokal skiltning."
+      },
+      "daek": {
+        "sign": "28",
+        "location": "Skilt 28 - Dæk",
+        "note": "Dæk og dæk med fælge."
+      },
+      "plastic": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "vinduer": {
+        "sign": "30",
+        "location": "Skilt 30 - Vinduesrammer",
+        "note": "Vinduesrammer."
+      },
+      "traestammer-og-roedder": {
+        "sign": "31",
+        "location": "Skilt 31 - Trærødder",
+        "note": "Trærødder."
+      },
+      "kompost": {
+        "sign": "32",
+        "location": "Skilt 32 - Kompostjord",
+        "note": "Kompostjord."
+      },
+      "haveaffald": {
+        "sign": "33",
+        "location": "Skilt 33 - Have- og parkaffald",
+        "note": "Have- og parkaffald."
+      },
+      "jord": {
+        "sign": "34",
+        "location": "Skilt 34 - Rent jord",
+        "note": "Rent jord."
+      },
+      "asfalt": {
+        "sign": "36",
+        "location": "Skilt 36 - Asfalt",
+        "note": "Asfalt."
+      },
+      "bloed-plast-2": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "stor-bloed-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "stor-haard-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "haard-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "klar-bloed-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      },
+      "farvet-bloed-plast": {
+        "sign": "29",
+        "location": "Skilt 29 - Plast",
+        "note": "Plast."
+      }
+    }
+  },
+  {
+    "siteId": "mit-affald-naestved-kommune-naestved-genbrugsplads-fiskerhusvej-22-4700-naestved",
+    "source": {
+      "provider": "AffaldPlus",
+      "url": "https://affaldplus.dk/media/2438",
+      "pageUrl": "https://affaldplus.dk/naestved-genbrugsplads",
+      "localMap": "data/site-maps/affaldplus/naestved-oversigtskort.pdf",
+      "retrieved": "2026-05-25",
+      "updatedOnMap": "juli 2025"
+    },
+    "map": {
+      "genbrug": {
+        "sign": "1",
+        "location": "Fraktion 1 - Genbrug",
+        "note": "Genbrug ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "toej": {
+        "sign": "5",
+        "location": "Fraktion 5 - Tøj",
+        "note": "Tøj ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "sko": {
+        "sign": "5",
+        "location": "Fraktion 5 - Tøj",
+        "note": "Sko følger tøj-/genbrugsfraktionen efter lokal skiltning."
+      },
+      "tekstilaffald": {
+        "sign": "6",
+        "location": "Fraktion 6 - Tekstilaffald",
+        "note": "Tekstilaffald. På Næstved vises også tekstilaffald i røde poser ved fraktion 7."
+      },
+      "vinduer": {
+        "sign": "10",
+        "location": "Fraktion 10 - Vinduer",
+        "note": "Vinduer ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "mineraluld": {
+        "sign": "12",
+        "location": "Fraktion 12 - Mineraluld",
+        "note": "Mineraluld ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "glasuld": {
+        "sign": "12",
+        "location": "Fraktion 12 - Mineraluld",
+        "note": "Glasuld afleveres under mineraluld efter lokal skiltning."
+      },
+      "stenuld": {
+        "sign": "12",
+        "location": "Fraktion 12 - Mineraluld",
+        "note": "Stenuld afleveres under mineraluld efter lokal skiltning."
+      },
+      "gips": {
+        "sign": "14",
+        "location": "Fraktion 14 - Gips",
+        "note": "Gips ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "tagpap": {
+        "sign": "16",
+        "location": "Fraktion 16 - Tagpap",
+        "note": "Tagpap ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "eternit-uden-asbest": {
+        "sign": "17",
+        "location": "Fraktion 17 - Eternit",
+        "note": "Eternit ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "asfalt": {
+        "sign": "18",
+        "location": "Fraktion 18 - Asfalt",
+        "note": "Asfalt ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "beton": {
+        "sign": "20",
+        "location": "Fraktion 20 - Beton",
+        "note": "Beton ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "mursten-og-tegl": {
+        "sign": "21",
+        "location": "Fraktion 21 - Mursten & tegl",
+        "note": "Mursten & tegl ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "tegl": {
+        "sign": "21",
+        "location": "Fraktion 21 - Mursten & tegl",
+        "note": "Mursten & tegl ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "hele-mursten": {
+        "sign": "21",
+        "location": "Fraktion 21 - Mursten & tegl",
+        "note": "Mursten & tegl ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "gasbeton": {
+        "sign": "22",
+        "location": "Fraktion 22 - Gasbeton",
+        "note": "Gasbeton ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "indendoers-trae": {
+        "sign": "25",
+        "location": "Fraktion 25 - Indendørs træ",
+        "note": "Indendørs træ ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "indendoers-malet-trae": {
+        "sign": "25",
+        "location": "Fraktion 25 - Indendørs træ",
+        "note": "Indendørs træ ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "indendoers-umalet-trae": {
+        "sign": "25",
+        "location": "Fraktion 25 - Indendørs træ",
+        "note": "Indendørs træ ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "trae": {
+        "sign": "25",
+        "location": "Fraktion 25 - Indendørs træ",
+        "note": "Træ afleveres ved indendørs træ, medmindre lokal skiltning viser andet."
+      },
+      "udendoers-trae": {
+        "sign": "27",
+        "location": "Fraktion 27 - Imprægneret træ",
+        "note": "Imprægneret træ ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "paller": {
+        "sign": "29",
+        "location": "Fraktion 29 - Paller",
+        "note": "Paller ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "tv-og-skaerme": {
+        "sign": "30",
+        "location": "Fraktion 30 - TV & skærme",
+        "note": "TV & skærme ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "smaat-elektronik": {
+        "sign": "31",
+        "location": "Fraktion 31 - Småt elektronik",
+        "note": "Småt elektronik ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "elektronik": {
+        "sign": "31",
+        "location": "Fraktion 31 - Småt elektronik",
+        "note": "Mindre elektronik er vist som småt elektronik på kortet."
+      },
+      "koeleudstyr": {
+        "sign": "34",
+        "location": "Fraktion 34 - Køleudstyr",
+        "note": "Køleudstyr ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "stort-elektronik": {
+        "sign": "35",
+        "location": "Fraktion 35 - Stort elektronik",
+        "note": "Stort elektronik ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "ledninger-og-kabler": {
+        "sign": "36",
+        "location": "Fraktion 36 - Ledninger & kabler",
+        "note": "Ledninger & kabler ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "printerpatroner": {
+        "sign": "39",
+        "location": "Fraktion 39 - Printerpatroner",
+        "note": "Printerpatroner ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "papir": {
+        "sign": "40",
+        "location": "Fraktion 40 - Papir",
+        "note": "Papir ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "papir-til-makulering": {
+        "sign": "42",
+        "location": "Fraktion 42 - Papir til makulering",
+        "note": "Papir til makulering ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "cardboard": {
+        "sign": "44",
+        "location": "Fraktion 44 - Pap",
+        "note": "Pap ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "mad-og-drikkekartoner": {
+        "sign": "46",
+        "location": "Fraktion 46 - Mad- & drikkekartoner",
+        "note": "Mad- & drikkekartoner ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "porcelaen-2": {
+        "sign": "47",
+        "location": "Fraktion 47 - Porcelæn",
+        "note": "Porcelæn ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "sanitet": {
+        "sign": "47",
+        "location": "Fraktion 47 - Porcelæn",
+        "note": "Sanitet/porcelæn samles ved porcelænsfraktionen efter lokal skiltning."
+      },
+      "keramisk-glas": {
+        "sign": "47",
+        "location": "Fraktion 47 - Porcelæn",
+        "note": "Keramik afleveres ved porcelæn efter lokal skiltning."
+      },
+      "glass": {
+        "sign": "49",
+        "location": "Fraktion 49 - Glas",
+        "note": "Glas ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "metal": {
+        "sign": "50",
+        "location": "Fraktion 50 - Metal",
+        "note": "Metal ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "haveaffald": {
+        "sign": "55",
+        "location": "Fraktion 55 - Haveaffald",
+        "note": "Haveaffald afleveres ifølge kortet på Næstved Haveaffald, Ved Fjorden 15."
+      },
+      "natursten": {
+        "sign": "56",
+        "location": "Fraktion 56 - Natursten",
+        "note": "Natursten ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "sten-og-grus": {
+        "sign": "56",
+        "location": "Fraktion 56 - Natursten",
+        "note": "Sten/grus henvises til natursten efter lokal skiltning."
+      },
+      "traestammer-og-roedder": {
+        "sign": "57",
+        "location": "Fraktion 57 - Træstammer & rødder",
+        "note": "Træstammer & rødder ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "jord": {
+        "sign": "60",
+        "location": "Fraktion 60 - Jord",
+        "note": "Jord ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "brandslukkere": {
+        "sign": "63",
+        "location": "Fraktion 63 - Brandslukkere",
+        "note": "Brandslukkere ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "trykflasker": {
+        "sign": "64",
+        "location": "Fraktion 64 - Trykflasker",
+        "note": "Trykflasker ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "elpaerer": {
+        "sign": "65",
+        "location": "Fraktion 65 - Elpærer",
+        "note": "Elpærer ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "lysstofroer": {
+        "sign": "66",
+        "location": "Fraktion 66 - Lysstofrør",
+        "note": "Lysstofrør ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "batteries": {
+        "sign": "67",
+        "location": "Fraktion 67 - Batterier",
+        "note": "Batterier ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "bilbatterier": {
+        "sign": "68",
+        "location": "Fraktion 68 - Bilbatterier",
+        "note": "Bilbatterier ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "asbest": {
+        "sign": "69",
+        "location": "Fraktion 69 - Asbest",
+        "note": "Asbest ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "hazardous": {
+        "sign": "70",
+        "location": "Fraktion 70 - Farligt affald",
+        "note": "Farligt affald ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "stor-haard-plast": {
+        "sign": "75",
+        "location": "Fraktion 75 - Stor hård plast",
+        "note": "Stor hård plast ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "haard-plast": {
+        "sign": "75",
+        "location": "Fraktion 75 - Stor hård plast",
+        "note": "Hård plast afleveres efter lokal skiltning ved stor hård plast eller plastdunke."
+      },
+      "haard-pvc": {
+        "sign": "79",
+        "location": "Fraktion 79 - Hård PVC",
+        "note": "Hård PVC ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "plastic": {
+        "sign": "80/81/82",
+        "location": "Fraktion 80/81/82 - Plast",
+        "note": "Plast er opdelt i plastdunke, klar blød plast og farvet blød plast på AffaldPlus-kortet."
+      },
+      "klar-bloed-plast": {
+        "sign": "80",
+        "location": "Fraktion 80 - Klar blød plast",
+        "note": "Klar blød plast ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "farvet-bloed-plast": {
+        "sign": "81",
+        "location": "Fraktion 81 - Farvet blød plast",
+        "note": "Farvet blød plast ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "bloed-plast-2": {
+        "sign": "80/81",
+        "location": "Fraktion 80/81 - Blød plast",
+        "note": "Blød plast sorteres som klar eller farvet blød plast efter lokal skiltning."
+      },
+      "stor-bloed-plast": {
+        "sign": "80/81",
+        "location": "Fraktion 80/81 - Blød plast",
+        "note": "Stor blød plast sorteres som klar eller farvet blød plast efter lokal skiltning."
+      },
+      "flamingo": {
+        "sign": "85",
+        "location": "Fraktion 85 - Flamingo",
+        "note": "Flamingo ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "daek": {
+        "sign": "89",
+        "location": "Fraktion 89 - Dæk",
+        "note": "Dæk ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "storskrald": {
+        "sign": "90",
+        "location": "Fraktion 90 - Rest efter sortering",
+        "note": "Rest efter sortering ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "polstrede-moebler": {
+        "sign": "95",
+        "location": "Fraktion 95 - Polstrede møbler",
+        "note": "Polstrede møbler ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "madrasser": {
+        "sign": "95",
+        "location": "Fraktion 95 - Polstrede møbler",
+        "note": "Madrasser/polstrede møbler afleveres ved polstrede møbler efter lokal skiltning."
+      },
+      "aske": {
+        "sign": "98",
+        "location": "Fraktion 98 - Aske",
+        "note": "Aske ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "big-bags": {
+        "sign": "86",
+        "location": "Fraktion 86 - Bigbags",
+        "note": "Bigbags ifølge AffaldPlus' officielle oversigtskort."
+      },
+      "trapezplader": {
+        "sign": "87",
+        "location": "Fraktion 87 - Trapezplader",
+        "note": "Trapezplader ifølge AffaldPlus' officielle oversigtskort."
+      }
+    }
+  }
+];

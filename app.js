@@ -22,13 +22,13 @@ const nationalRecyclingDataSource = {
     area["ISO3166-1"="DK"][admin_level=2]->.searchArea;
     (
       nwr["amenity"="recycling"]["recycling_type"="centre"](area.searchArea);
-      nwr["amenity"="recycling"]["name"~"genbrugsplads|recycling centre|recycling center",i](area.searchArea);
+      nwr["amenity"="recycling"]["name"~"genbrugsplads|genbrugsstation|recycling centre|recycling center",i](area.searchArea);
     );
     out center tags;
   `
 };
 
-const nationalSitesCacheKey = "sortering:national-sites:v2";
+const nationalSitesCacheKey = "sortering:national-sites:v6";
 const nationalSitesCacheMaxAge = 1000 * 60 * 60 * 24 * 7;
 const danishMunicipalities = [
   "Albertslund Kommune",
@@ -248,9 +248,14 @@ let wasteTypes = [
 const camera = document.querySelector("#camera");
 const preview = document.querySelector("#preview");
 const emptyState = document.querySelector("#empty-state");
+const imageLoading = document.querySelector("#image-loading");
+const dropOverlay = document.querySelector("#drop-overlay");
 const startButton = document.querySelector("#start-camera");
 const captureButton = document.querySelector("#capture-photo");
 const imageInput = document.querySelector("#image-input");
+const anthropicApiKeyInput = document.querySelector("#anthropic-api-key");
+const clearApiKeyButton = document.querySelector("#clear-api-key");
+const apiKeyStatus = document.querySelector("#api-key-status");
 const canvas = document.querySelector("#snapshot");
 const resultTitle = document.querySelector("#result-title");
 const resultPictogram = document.querySelector("#result-pictogram");
@@ -281,7 +286,7 @@ const androidStatus = document.querySelector("#android-status");
 const installAndroidButton = document.querySelector("#install-android");
 
 let stream;
-let selectedSite = recyclingSites[0];
+let selectedSite = null;
 let selectedDistance = null;
 let latestMatch = null;
 let latestImageName = "";
@@ -289,6 +294,63 @@ let deferredInstallPrompt = null;
 let recentWasteSearches = [];
 let denmarkSitesLoadPromise = null;
 let sitesByMunicipality = new Map();
+let municipalitySelectionRequest = 0;
+let siteLayoutsById = new Map();
+let imageAnalysisRequest = 0;
+let dragDepth = 0;
+
+const anthropicApiKeyStorageKey = "sortering:anthropic-api-key";
+const anthropicMessagesEndpoint = "https://api.anthropic.com/v1/messages";
+const anthropicModel = "claude-haiku-4-5-20251001";
+const imageClassificationPrompt = `Klassificér det primære affaldsobjekt på billedet. Containere: trae, metal, murbrokker, stort_braendbart, farligt_affald, elektronik, pap, haveaffald, glas, haardt_plast, bloed_plast, tekstil, daek, gips, vinduer, pvc, deponi, sanitet, flamingo, smaat_braendbart
+Kun JSON:{"name":"kort navn","category":"key","confidence":0.9,"tip":"evt tip"}
+Kun ét objekt. Ingen array.`;
+
+const containerCatalog = {
+  trae: { label: "Træ", icon: "🪵", desc: "Rent træ, møbler, spånplader", fractionId: "trae" },
+  metal: { label: "Metal", icon: "🔩", desc: "Jern, stål, aluminium, dåser", fractionId: "metal" },
+  murbrokker: { label: "Murbrokker", icon: "🧱", desc: "Mursten, beton, fliser, tegl", fractionId: "mursten-og-tegl" },
+  stort_braendbart: { label: "Stort brændbart", icon: "🔥", desc: "Madrasser, gulvtæpper, plast-møbler", fractionId: "polstrede-moebler" },
+  farligt_affald: { label: "Farligt affald", icon: "☠️", desc: "Maling, kemikalier, batterier, olie", fractionId: "hazardous" },
+  elektronik: { label: "Elektronik", icon: "🔌", desc: "Hårde hvidevarer, kabler, IT-udstyr", fractionId: "elektronik" },
+  pap: { label: "Pap", icon: "📦", desc: "Papkasser, bølgepap, karton", fractionId: "cardboard" },
+  haveaffald: { label: "Haveaffald", icon: "🌿", desc: "Grene, blade, græs, jord", fractionId: "haveaffald" },
+  glas: { label: "Glas", icon: "🫙", desc: "Flasker, syltetøjsglas, vinduesglas", fractionId: "glass" },
+  haardt_plast: { label: "Hård plast", icon: "♻️", desc: "Havemøbler, legetøj, spande", fractionId: "haard-plast" },
+  bloed_plast: { label: "Blød plast / folie", icon: "🛍️", desc: "Plastposer, folie, bobleplast", fractionId: "bloed-plast-2" },
+  tekstil: { label: "Tekstil & tøj", icon: "👕", desc: "Tøj, sko, tasker, sengetøj", fractionId: "tekstilaffald" },
+  daek: { label: "Dæk", icon: "🛞", desc: "Bildæk, cykeldæk", fractionId: "daek" },
+  gips: { label: "Gips", icon: "🏗️", desc: "Gipsplader, gipsrester", fractionId: "gips" },
+  vinduer: { label: "Vinduer & glasdøre", icon: "🪟", desc: "Termoruder, glasdøre, spejle", fractionId: "vinduer" },
+  pvc: { label: "PVC", icon: "🔧", desc: "PVC-rør, tagrender, vinyl", fractionId: "haard-pvc" },
+  deponi: { label: "Deponi", icon: "🚫", desc: "Rockwool, asbest, forurenet jord", fractionId: "asbest" },
+  sanitet: { label: "Sanitet / porcelæn", icon: "🚽", desc: "Toilet, håndvask, porcelæn", fractionId: "sanitet" },
+  flamingo: { label: "Flamingo / EPS", icon: "📐", desc: "Flamingo, styropor, EPS", fractionId: "flamingo" },
+  smaat_braendbart: { label: "Småt brændbart", icon: "🗑️", desc: "Restaffald, småt brændbart", fractionId: "storskrald" }
+};
+
+const containerColors = {
+  trae: "#8b5e34",
+  metal: "#607d8b",
+  murbrokker: "#b55a3c",
+  stort_braendbart: "#c2412d",
+  farligt_affald: "#111827",
+  elektronik: "#2563eb",
+  pap: "#b7791f",
+  haveaffald: "#2f855a",
+  glas: "#0f766e",
+  haardt_plast: "#7c3aed",
+  bloed_plast: "#db2777",
+  tekstil: "#be185d",
+  daek: "#374151",
+  gips: "#64748b",
+  vinduer: "#0284c7",
+  pvc: "#475569",
+  deponi: "#991b1b",
+  sanitet: "#6b7280",
+  flamingo: "#0891b2",
+  smaat_braendbart: "#57534e"
+};
 
 function distanceInMeters(from, to) {
   const radius = 6371000;
@@ -308,18 +370,28 @@ function formatDistance(meters) {
 }
 
 function getSiteLabel(site) {
-  return site.operator ? `${site.name} (${site.operator})` : site.name;
+  const name = site.displayName || site.name;
+  return site.operator ? `${name} (${site.operator})` : name;
+}
+
+function getSortableSiteName(site) {
+  return site.displayName || site.name;
 }
 
 function getMunicipalityName(site) {
   return site.municipality || site.tags?.["addr:municipality"] || site.tags?.municipality || "Ukendt kommune";
 }
 
+function getMunicipalityCodeByName(municipalityName) {
+  return Object.entries(municipalDataSources)
+    .find(([, source]) => source.municipality === municipalityName)?.[0] || "";
+}
+
 function buildSiteIndex() {
   sitesByMunicipality = new Map();
   recyclingSites.forEach((site) => {
     const municipality = getMunicipalityName(site);
-    site.searchText = [site.name, site.operator, site.address, site.source, municipality]
+    site.searchText = [site.name, site.displayName, site.operator, site.address, site.source, municipality]
       .filter(Boolean)
       .join(" ")
       .toLowerCase();
@@ -330,7 +402,7 @@ function buildSiteIndex() {
   });
 
   sitesByMunicipality.forEach((sites) => {
-    sites.sort((a, b) => a.name.localeCompare(b.name, "da"));
+    sites.sort((a, b) => getSortableSiteName(a).localeCompare(getSortableSiteName(b), "da"));
   });
 }
 
@@ -383,10 +455,72 @@ function populateSites(municipality = municipalitySelect?.value || "") {
 }
 
 function replaceRecyclingSites(sites) {
+  const activeMunicipality = selectedSite
+    ? getMunicipalityName(selectedSite)
+    : municipalitySelect?.value || "";
   recyclingSites = sites;
+  applySiteLayoutsToSites();
   buildSiteIndex();
   populateMunicipalities();
-  populateSites();
+  if (activeMunicipality && Array.from(municipalitySelect.options).some((option) => option.value === activeMunicipality)) {
+    municipalitySelect.value = activeMunicipality;
+  }
+  populateSites(municipalitySelect.value);
+}
+
+function mergeRecyclingSitesForMunicipality(municipality, sites) {
+  const incomingIds = new Set(sites.map((site) => site.id));
+  recyclingSites = [
+    ...recyclingSites.filter((site) => {
+      const sameMunicipality = getMunicipalityName(site) === municipality;
+      return !sameMunicipality && !incomingIds.has(site.id);
+    }),
+    ...sites
+  ];
+  applySiteLayoutsToSites();
+  buildSiteIndex();
+  populateMunicipalities();
+  municipalitySelect.value = municipality;
+  populateSites(municipality);
+}
+
+function applySiteLayoutsToSites() {
+  if (siteLayoutsById.size === 0) return;
+  recyclingSites.forEach((site) => {
+    const layout = siteLayoutsById.get(site.id);
+    if (!layout) return;
+    site.map = {
+      ...(site.map || {}),
+      ...(layout.map || {})
+    };
+    site.layoutSource = layout.source || null;
+  });
+}
+
+async function loadSiteLayouts() {
+  try {
+    const layouts = Array.isArray(window.bundledSiteLayouts)
+      ? window.bundledSiteLayouts
+      : await fetchJson("data/site-layouts.json");
+    if (!Array.isArray(layouts)) return;
+
+    siteLayoutsById = new Map(
+      layouts
+        .filter((layout) => layout.siteId && layout.map)
+        .map((layout) => [layout.siteId, layout])
+    );
+    applySiteLayoutsToSites();
+    buildSiteIndex();
+    populateSites(municipalitySelect.value);
+    if (selectedSite) {
+      selectedSite = recyclingSites.find((site) => site.id === selectedSite.id) || selectedSite;
+    }
+    if (latestMatch) {
+      updateLocalFractionLocation(latestMatch);
+    }
+  } catch (error) {
+    // Site layouts are optional and can be added municipality by municipality.
+  }
 }
 
 function readCachedNationalSites() {
@@ -476,6 +610,12 @@ function getOsmCoordinates(element) {
   };
 }
 
+function isMunicipalRecyclingSiteName(name) {
+  const includePattern = /genbrugsplads|genbrugplads|genbrugsplad\b|genbrugsstation|genbrugstation|containerplads|affaldscenter|genbrugscenter|ressourcecenter|værdipark/i;
+  const excludePattern = /nærgenbrug|haveaffald|miljøstation|recycling room|recycling containers|flasker|metal- og glas|skrot|produktforretning|gen-tek|rgs\b|grenplads|storskrald|materialeplads|havn$|kvickly|modtageanlæg|\buglen\b|\bjatob\b|^revas$|^reno djurs(?: i\/s)?$|brumleby|christiania recycling|vognmandsparken|gejlhavegård|bronzevej|netto/i;
+  return includePattern.test(name) && !excludePattern.test(name);
+}
+
 function normalizeOsmRecyclingSites(payload) {
   const elements = Array.isArray(payload.elements) ? payload.elements : [];
   const seen = new Set();
@@ -492,7 +632,7 @@ function normalizeOsmRecyclingSites(payload) {
       getTag(tags, ["addr:city"])
     ].filter(Boolean).join(" ");
 
-    if (!Number.isFinite(coords.lat) || !Number.isFinite(coords.lon) || seen.has(id)) {
+    if (!Number.isFinite(coords.lat) || !Number.isFinite(coords.lon) || seen.has(id) || !isMunicipalRecyclingSiteName(name)) {
       return null;
     }
 
@@ -532,6 +672,10 @@ async function loadAllDanishRecyclingSites() {
   if (denmarkSitesLoadPromise) return denmarkSitesLoadPromise;
 
   denmarkSitesLoadPromise = (async () => {
+    if (Array.isArray(window.bundledNationalSites) && window.bundledNationalSites.length > 100) {
+      return;
+    }
+
     const cachedSites = readCachedNationalSites();
     if (cachedSites) {
       replaceRecyclingSites(cachedSites);
@@ -630,6 +774,44 @@ async function fetchUtilityCompanyRecyclingSites(municipalityCode) {
   throw latestError || new Error("Forsyningsselskabets datakilder kunne ikke læses.");
 }
 
+async function loadSitesForSelectedMunicipality(municipality) {
+  if (!municipality) return;
+
+  const requestId = ++municipalitySelectionRequest;
+  const municipalityCode = getMunicipalityCodeByName(municipality);
+  if (!municipalityCode) {
+    const siteCount = (sitesByMunicipality.get(municipality) || []).length;
+    siteStatus.textContent = siteCount > 0
+      ? `Kommune valgt: ${municipality}. Vælg genbrugsplads i feltet Vælg.`
+      : `Kommune valgt: ${municipality}. Ingen genbrugspladser er indlæst for kommunen endnu.`;
+    return;
+  }
+
+  try {
+    siteStatus.textContent = `Henter genbrugspladser for ${municipality}.`;
+    const municipalData = await fetchMunicipalRecyclingSites(municipalityCode);
+    if (requestId !== municipalitySelectionRequest || municipalitySelect.value !== municipality) return;
+
+    mergeRecyclingSitesForMunicipality(municipality, municipalData.sites);
+    siteStatus.textContent = `${municipalData.sites.length} genbrugspladser fundet for ${municipality}. Vælg genbrugsplads i feltet Vælg.`;
+  } catch (municipalError) {
+    try {
+      const utilityData = await fetchUtilityCompanyRecyclingSites(municipalityCode);
+      if (requestId !== municipalitySelectionRequest || municipalitySelect.value !== municipality) return;
+
+      mergeRecyclingSitesForMunicipality(municipality, utilityData.sites);
+      siteStatus.textContent = `${utilityData.sites.length} genbrugspladser fundet for ${municipality}. Vælg genbrugsplads i feltet Vælg.`;
+    } catch (utilityError) {
+      if (requestId !== municipalitySelectionRequest || municipalitySelect.value !== municipality) return;
+
+      const siteCount = (sitesByMunicipality.get(municipality) || []).length;
+      siteStatus.textContent = siteCount > 0
+        ? `Kommune valgt: ${municipality}. Vælg genbrugsplads i feltet Vælg.`
+        : `Kommune valgt: ${municipality}. Der er ikke fundet genbrugspladser for kommunen endnu.`;
+    }
+  }
+}
+
 async function fetchRecyclingSitesFromSource(source) {
   let latestError;
   for (const endpoint of source.endpoints) {
@@ -672,12 +854,17 @@ function updateLocalFractionLocation(match) {
   };
   if (!selectedSite || !local) {
     fractionLocation.textContent = "Ingen lokal placering fundet";
-    fractionNote.textContent = "Vælg en genbrugsplads, eller tilføj fraktionen i pladsens data.";
+    fractionNote.textContent = selectedSite?.layoutSource
+      ? "Fraktionen er ikke fundet på det officielle pladskort for denne plads."
+      : "Der mangler stadig officielle pladskort/fraktionsplaceringer for denne genbrugsstation.";
     return;
   }
 
   fractionLocation.textContent = local.location;
-  fractionNote.textContent = `${selectedSite.name}: ${local.note}`;
+  const sourceText = selectedSite.layoutSource?.provider
+    ? ` Kilde: ${selectedSite.layoutSource.provider}.`
+    : "";
+  fractionNote.textContent = `${selectedSite.name}: ${local.note}${sourceText}`;
 }
 
 function findNearestSite(position) {
@@ -756,14 +943,29 @@ function requestLocation() {
   );
 }
 
+function escapeSvgText(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function emojiPictogramDataUrl(icon) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><rect width="128" height="128" rx="16" fill="#edf3ef"/><text x="64" y="78" text-anchor="middle" font-size="58">${escapeSvgText(icon || "♻️")}</text></svg>`;
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+}
+
 function setResult(match, source = "AI-forslag") {
   latestMatch = match;
   resultTitle.textContent = `${source}: ${match.title}`;
-  resultPictogram.src = match.pictogram || "assets/pictograms/unknown.svg";
+  resultPictogram.src = match.icon ? emojiPictogramDataUrl(match.icon) : match.pictogram || "assets/pictograms/unknown.svg";
   resultPictogram.alt = `Piktogram for ${match.title}`;
   resultPictogram.onerror = () => {
     resultPictogram.src = "assets/pictograms/unknown.svg";
   };
+  resultPictogram.style.borderColor = match.color || "";
+  resultPictogram.style.backgroundColor = match.color ? `${match.color}18` : "";
+  resultFractionLabel.style.color = match.color || "";
   resultFractionLabel.textContent = `Fraktion: ${match.title}`;
   resultText.textContent = match.text;
   confidence.hidden = false;
@@ -781,6 +983,194 @@ function setFallbackResult() {
     text: "Billedet bør sendes videre til manuel kontrol. I app-forsøget kan brugeren stadig søge på affaldstypen nedenfor.",
     confidence: 54
   });
+}
+
+function setImageLoading(isLoading) {
+  imageLoading.hidden = !isLoading;
+  imageInput.disabled = isLoading;
+  captureButton.disabled = isLoading || !stream;
+}
+
+function readStoredApiKey() {
+  try {
+    return window.localStorage?.getItem(anthropicApiKeyStorageKey) || "";
+  } catch (error) {
+    return "";
+  }
+}
+
+function writeStoredApiKey(value) {
+  try {
+    if (value) {
+      window.localStorage?.setItem(anthropicApiKeyStorageKey, value);
+    } else {
+      window.localStorage?.removeItem(anthropicApiKeyStorageKey);
+    }
+  } catch (error) {
+    // The input still works for the current page load if localStorage is unavailable.
+  }
+}
+
+function updateApiKeyStatus() {
+  const hasKey = Boolean(anthropicApiKeyInput.value.trim());
+  apiKeyStatus.textContent = hasKey
+    ? "API-nøgle er klar. Vælg eller slip et billede for at starte AI-analysen."
+    : "Indsæt en Anthropic API-nøgle før billedgenkendelse. Nøglen gemmes kun lokalt i denne browser.";
+}
+
+function initializeApiKeyInput() {
+  anthropicApiKeyInput.value = readStoredApiKey();
+  updateApiKeyStatus();
+}
+
+function getAnthropicApiKey() {
+  return anthropicApiKeyInput.value.trim() || readStoredApiKey();
+}
+
+function dataUrlToBase64(dataUrl) {
+  return dataUrl.split(",")[1] || "";
+}
+
+function loadImage(src) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => resolve(image);
+    image.onerror = reject;
+    image.src = src;
+  });
+}
+
+function readFileAsDataUrl(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.addEventListener("load", () => resolve(reader.result));
+    reader.addEventListener("error", reject);
+    reader.readAsDataURL(file);
+  });
+}
+
+async function compressImageToJpegDataUrl(src, maxSize = 800, quality = 0.8) {
+  const image = await loadImage(src);
+  const scale = Math.min(1, maxSize / Math.max(image.naturalWidth, image.naturalHeight));
+  const width = Math.max(1, Math.round(image.naturalWidth * scale));
+  const height = Math.max(1, Math.round(image.naturalHeight * scale));
+  canvas.width = width;
+  canvas.height = height;
+  canvas.getContext("2d").drawImage(image, 0, 0, width, height);
+  return canvas.toDataURL("image/jpeg", quality);
+}
+
+function parseAnthropicJson(data) {
+  const text = data.content?.map((content) => content.text || "").join("") || "";
+  const clean = text.replace(/```json|```/g, "").trim();
+  return JSON.parse(clean);
+}
+
+function getFractionForContainer(category) {
+  const container = containerCatalog[category];
+  const fraction = wasteTypes.find((item) => item.id === container?.fractionId);
+  return { container, fraction };
+}
+
+function buildMatchFromClassification(result) {
+  const category = String(result.category || "").trim();
+  const { container, fraction } = getFractionForContainer(category);
+  if (!container) {
+    throw new Error(`Ukendt containerkategori: ${category || "tom"}`);
+  }
+
+  const confidenceValue = Math.round(Math.max(0, Math.min(1, Number(result.confidence) || 0)) * 100);
+  const name = String(result.name || container.label).trim();
+  const tip = String(result.tip || "").trim();
+  return {
+    id: fraction?.id || container.fractionId,
+    title: container.label,
+    text: `${container.icon} ${name}. ${container.desc}.${tip ? ` Tip: ${tip}` : ""}`,
+    pictogram: fraction?.pictogram || "assets/pictograms/unknown.svg",
+    icon: container.icon,
+    color: containerColors[category] || "#0b5f4a",
+    confidence: confidenceValue,
+    keywords: fraction?.keywords || [container.label],
+    webQueries: fraction?.webQueries || [`${container.label} waste recycling`]
+  };
+}
+
+async function classifyWasteImage(jpegDataUrl) {
+  const apiKey = getAnthropicApiKey();
+  if (!apiKey) {
+    throw new Error("MISSING_API_KEY");
+  }
+
+  const response = await fetch(anthropicMessagesEndpoint, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+      "anthropic-dangerous-direct-browser-access": "true"
+    },
+    body: JSON.stringify({
+      model: anthropicModel,
+      max_tokens: 400,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              source: {
+                type: "base64",
+                media_type: "image/jpeg",
+                data: dataUrlToBase64(jpegDataUrl)
+              }
+            },
+            {
+              type: "text",
+              text: imageClassificationPrompt
+            }
+          ]
+        }
+      ]
+    })
+  });
+
+  if (!response.ok) {
+    const detail = await response.text();
+    throw new Error(`Anthropic API svarede ${response.status}: ${detail.slice(0, 220)}`);
+  }
+
+  return parseAnthropicJson(await response.json());
+}
+
+async function analyzeSelectedImage(src, fileName = "billede") {
+  const requestId = ++imageAnalysisRequest;
+  latestImageName = fileName;
+  setImageLoading(true);
+  resultTitle.textContent = "Analyserer billede";
+  resultFractionLabel.textContent = "Sender komprimeret billede til AI";
+  resultText.textContent = "Billedet skaleres til maks 800 px og sendes som JPEG.";
+
+  try {
+    const jpegDataUrl = await compressImageToJpegDataUrl(src);
+    if (requestId !== imageAnalysisRequest) return;
+    showPreview(jpegDataUrl);
+    const classification = await classifyWasteImage(jpegDataUrl);
+    if (requestId !== imageAnalysisRequest) return;
+    const match = buildMatchFromClassification(classification);
+    setResult(match, "Billedgenkendelse");
+  } catch (error) {
+    if (requestId !== imageAnalysisRequest) return;
+    setFallbackResult();
+    resultTitle.textContent = "Billedgenkendelse fejlede";
+    resultFractionLabel.textContent = "Ingen container valgt";
+    resultText.textContent = error.message === "MISSING_API_KEY"
+      ? "Indsæt en Anthropic API-nøgle i feltet under billedet. Når nøglen er gemt, kan du vælge eller slippe billedet igen."
+      : `Kunne ikke analysere billedet lige nu. ${error.message}`;
+  } finally {
+    if (requestId === imageAnalysisRequest) {
+      setImageLoading(false);
+    }
+  }
 }
 
 function inferWasteTypeFromFilename(fileName) {
@@ -832,21 +1222,28 @@ function capturePhoto() {
   canvas.width = camera.videoWidth || 1280;
   canvas.height = camera.videoHeight || 720;
   canvas.getContext("2d").drawImage(camera, 0, 0, canvas.width, canvas.height);
-  showPreview(canvas.toDataURL("image/jpeg", 0.88));
-  latestImageName = "kamera";
-  simulateImageAnalysis();
+  const dataUrl = canvas.toDataURL("image/jpeg", 0.88);
+  showPreview(dataUrl);
+  analyzeSelectedImage(dataUrl, "kamera");
+}
+
+async function handleImageFile(file) {
+  if (!file) return;
+  if (!file.type.startsWith("image/")) {
+    resultTitle.textContent = "Filen er ikke et billede";
+    resultText.textContent = "Vælg eller slip en billedfil, så starter analysen automatisk.";
+    return;
+  }
+
+  const dataUrl = await readFileAsDataUrl(file);
+  showPreview(dataUrl);
+  analyzeSelectedImage(dataUrl, file.name || "billede");
 }
 
 function handleImageSelection(event) {
   const [file] = event.target.files;
-  if (!file) return;
-  const reader = new FileReader();
-  reader.addEventListener("load", () => {
-    showPreview(reader.result);
-    latestImageName = file.name;
-    simulateImageAnalysis(file.name);
-  });
-  reader.readAsDataURL(file);
+  handleImageFile(file);
+  event.target.value = "";
 }
 
 function buildCommonsUrl(query) {
@@ -1059,6 +1456,49 @@ function updateAndroidStatus() {
   androidStatus.textContent = "Android er klar. Brug Chrome-menuen eller knappen her, når installation tilbydes.";
 }
 
+function hasImageFile(dataTransfer) {
+  return [...(dataTransfer?.items || [])].some((item) => item.kind === "file" && item.type.startsWith("image/"));
+}
+
+function showDropOverlay() {
+  dropOverlay.hidden = false;
+}
+
+function hideDropOverlay() {
+  dragDepth = 0;
+  dropOverlay.hidden = true;
+}
+
+function handleDragEnter(event) {
+  if (!hasImageFile(event.dataTransfer)) return;
+  event.preventDefault();
+  dragDepth += 1;
+  showDropOverlay();
+}
+
+function handleDragOver(event) {
+  if (!hasImageFile(event.dataTransfer)) return;
+  event.preventDefault();
+  event.dataTransfer.dropEffect = "copy";
+}
+
+function handleDragLeave(event) {
+  if (!hasImageFile(event.dataTransfer)) return;
+  event.preventDefault();
+  dragDepth = Math.max(0, dragDepth - 1);
+  if (dragDepth === 0) {
+    dropOverlay.hidden = true;
+  }
+}
+
+function handleDrop(event) {
+  if (!hasImageFile(event.dataTransfer)) return;
+  event.preventDefault();
+  const file = [...event.dataTransfer.files].find((item) => item.type.startsWith("image/"));
+  hideDropOverlay();
+  handleImageFile(file);
+}
+
 function registerServiceWorker() {
   if (!("serviceWorker" in navigator) || location.protocol === "file:") {
     return;
@@ -1087,9 +1527,9 @@ installAndroidButton.addEventListener("click", async () => {
 
 findSiteButton.addEventListener("click", requestLocation);
 municipalitySelect.addEventListener("change", () => {
-  populateSites(municipalitySelect.value);
   selectedSite = null;
   selectedDistance = null;
+  populateSites(municipalitySelect.value);
   siteSelect.value = "";
   selectedSiteName.textContent = "Ikke valgt";
   selectedSiteDistance.textContent = "-";
@@ -1098,7 +1538,9 @@ municipalitySelect.addEventListener("change", () => {
     siteStatus.textContent = siteCount > 0
       ? `Kommune valgt: ${municipalitySelect.value}. Vælg genbrugsplads i feltet Vælg.`
       : `Kommune valgt: ${municipalitySelect.value}. Genbrugspladser hentes fra landsdata i baggrunden.`;
+    loadSitesForSelectedMunicipality(municipalitySelect.value);
   } else {
+    municipalitySelectionRequest += 1;
     siteStatus.textContent = "Vælg kommune og derefter genbrugsplads, eller brug Find min placering.";
   }
 });
@@ -1110,6 +1552,19 @@ siteSelect.addEventListener("change", () => {
 startButton.addEventListener("click", startCamera);
 captureButton.addEventListener("click", capturePhoto);
 imageInput.addEventListener("change", handleImageSelection);
+anthropicApiKeyInput.addEventListener("input", () => {
+  writeStoredApiKey(anthropicApiKeyInput.value.trim());
+  updateApiKeyStatus();
+});
+clearApiKeyButton.addEventListener("click", () => {
+  anthropicApiKeyInput.value = "";
+  writeStoredApiKey("");
+  updateApiKeyStatus();
+});
+window.addEventListener("dragenter", handleDragEnter);
+window.addEventListener("dragover", handleDragOver);
+window.addEventListener("dragleave", handleDragLeave);
+window.addEventListener("drop", handleDrop);
 searchForm.addEventListener("submit", searchWaste);
 wasteSearch.addEventListener("input", () => renderSearchDropdown(wasteSearch.value));
 wasteSearch.addEventListener("focus", () => renderSearchDropdown(wasteSearch.value));
@@ -1130,13 +1585,14 @@ refreshWebEvidence.addEventListener("click", () => {
 buildSiteIndex();
 populateMunicipalities();
 populateSites();
-selectedSite = null;
 selectedSiteName.textContent = "Ikke valgt";
 selectedSiteDistance.textContent = "-";
 siteStatus.textContent = "Vælg kommune og derefter genbrugsplads, eller brug Find min placering.";
+initializeApiKeyInput();
 renderRecentWasteSearches();
 loadWasteFractionCatalog();
 loadBundledNationalSites();
+loadSiteLayouts();
 loadAllDanishRecyclingSites();
 updateAndroidStatus();
 registerServiceWorker();

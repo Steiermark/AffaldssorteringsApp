@@ -1,83 +1,4351 @@
-﻿window.bundledNationalSites = [
-  {
-    "id": "sample-billund",
-    "name": "Billund Genbrugsplads",
-    "municipality": "Billund Kommune",
-    "address": "Billund",
-    "lat": 55.7337,
-    "lon": 9.1124,
-    "source": "Indbygget Danmark-cache",
-    "map": {}
-  },
-  {
-    "id": "sample-aarhus",
-    "name": "Aarhus Genbrugsstation",
-    "municipality": "Aarhus Kommune",
-    "address": "Aarhus",
-    "lat": 56.1629,
-    "lon": 10.2039,
-    "source": "Indbygget Danmark-cache",
-    "map": {}
-  },
-  {
-    "id": "sample-koebenhavn",
-    "name": "København Genbrugsstation",
-    "municipality": "Københavns Kommune",
-    "address": "København",
-    "lat": 55.6761,
-    "lon": 12.5683,
-    "source": "Indbygget Danmark-cache",
-    "map": {}
-  },
-  {
-    "id": "sample-odense",
-    "name": "Odense Genbrugsstation",
-    "municipality": "Odense Kommune",
-    "address": "Odense",
-    "lat": 55.4038,
-    "lon": 10.4024,
-    "source": "Indbygget Danmark-cache",
-    "map": {}
-  },
-  {
-    "id": "sample-aalborg",
-    "name": "Aalborg Genbrugsplads",
-    "municipality": "Aalborg Kommune",
-    "address": "Aalborg",
-    "lat": 57.0488,
-    "lon": 9.9217,
-    "source": "Indbygget Danmark-cache",
-    "map": {}
-  },
-  {
-    "id": "sample-esbjerg",
-    "name": "Esbjerg Genbrugsplads",
-    "municipality": "Esbjerg Kommune",
-    "address": "Esbjerg",
-    "lat": 55.4765,
-    "lon": 8.4594,
-    "source": "Indbygget Danmark-cache",
-    "map": {}
-  },
-  {
-    "id": "sample-vejle",
-    "name": "Vejle Genbrugsplads",
-    "municipality": "Vejle Kommune",
-    "address": "Vejle",
-    "lat": 55.7113,
-    "lon": 9.5364,
-    "source": "Indbygget Danmark-cache",
-    "map": {}
-  },
-  {
-    "id": "sample-randers",
-    "name": "Randers Genbrugsplads",
-    "municipality": "Randers Kommune",
-    "address": "Randers",
-    "lat": 56.4606,
-    "lon": 10.0364,
-    "source": "Indbygget Danmark-cache",
-    "map": {}
-  }
-]
-;
+window.bundledNationalSites = [
+    {
+        "id":  "mit-affald-albertslund-kommune-albertslund-genbrugsstation-holsbjergvej-44-2620-albertslund",
+        "name":  "Albertslund Genbrugsstation",
+        "municipality":  "Albertslund Kommune",
+        "address":  "Holsbjergvej 44, 2620 Albertslund",
+        "lat":  55.66267301,
+        "lon":  12.33883358,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-alleroed-kommune-genbrugsplads-alleroed-nordkranvej-10-3540-lynge",
+        "name":  "Genbrugsplads Allerød",
+        "municipality":  "Allerød Kommune",
+        "address":  "Nordkranvej 10, 3540 Lynge",
+        "lat":  55.83462766,
+        "lon":  12.3049141,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Allerød Genbrugsplads"
+    },
+    {
+        "id":  "mit-affald-assens-kommune-assens-genbrugsplads-toroe-huse-vej-15-5610-assens",
+        "name":  "Assens Genbrugsplads",
+        "municipality":  "Assens Kommune",
+        "address":  "Torø Huse Vej 15, 5610 Assens",
+        "lat":  55.25534784,
+        "lon":  9.90244295,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-assens-kommune-glamsbjerg-genbrugsplads-kastanievej-24-5620-glamsbjerg",
+        "name":  "Glamsbjerg Genbrugsplads",
+        "municipality":  "Assens Kommune",
+        "address":  "Kastanievej 24, 5620 Glamsbjerg",
+        "lat":  55.27467504,
+        "lon":  10.09862243,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-assens-kommune-haarby-genbrugsplads-trunderupvej-3-5683-haarby",
+        "name":  "Haarby Genbrugsplads",
+        "municipality":  "Assens Kommune",
+        "address":  "Trunderupvej 3, 5683 Haarby",
+        "lat":  55.22270242,
+        "lon":  10.13464722,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-assens-kommune-tommerup-genbrugsplads-ellehaven-52-5690-tommerup",
+        "name":  "Tommerup Genbrugsplads",
+        "municipality":  "Assens Kommune",
+        "address":  "Ellehaven 52, 5690 Tommerup",
+        "lat":  55.31126218,
+        "lon":  10.21521274,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-assens-kommune-vissenbjerg-genbrugsplads-hoejmarken-1-5492-vissenbjerg",
+        "name":  "Vissenbjerg Genbrugsplads",
+        "municipality":  "Assens Kommune",
+        "address":  "Højmarken 1, 5492 Vissenbjerg",
+        "lat":  55.39190141,
+        "lon":  10.14644758,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-assens-kommune-aarup-genbrugsplads-indre-ringvej-22-5560-aarup",
+        "name":  "Aarup Genbrugsplads",
+        "municipality":  "Assens Kommune",
+        "address":  "Indre Ringvej 22, 5560 Aarup",
+        "lat":  55.3788969,
+        "lon":  10.05842282,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ballerup-kommune-ballerup-kommunes-genbrugsstation-energivej-44-2750-ballerup",
+        "name":  "Ballerup Kommunes Genbrugsstation",
+        "municipality":  "Ballerup Kommune",
+        "address":  "Energivej 44, 2750 Ballerup",
+        "lat":  55.72545056,
+        "lon":  12.37238757,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-billund-kommune-billund-genbrugsplads-havremarken-8-7190-billund",
+        "name":  "Billund Genbrugsplads",
+        "municipality":  "Billund Kommune",
+        "address":  "Havremarken 8, 7190 Billund",
+        "lat":  55.7152771,
+        "lon":  9.13440809,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-billund-kommune-filskov-genbrugsplads-industrivangen-5-7200-grindsted",
+        "name":  "Filskov Genbrugsplads",
+        "municipality":  "Billund Kommune",
+        "address":  "Industrivangen 5, 7200 Grindsted",
+        "lat":  55.81438027,
+        "lon":  9.01933052,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-billund-kommune-grindsted-genbrugsplads-ribe-landevej-6-7200-grindsted",
+        "name":  "Grindsted Genbrugsplads",
+        "municipality":  "Billund Kommune",
+        "address":  "Ribe Landevej 6, 7200 Grindsted",
+        "lat":  55.729372,
+        "lon":  8.95651,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-billund-kommune-sdr-omme-genbrugsplads-nedergaardsvej-17-7260-sdr-omme",
+        "name":  "Sdr. Omme Genbrugsplads",
+        "municipality":  "Billund Kommune",
+        "address":  "Nedergårdsvej 17, 7260 Sdr. Omme",
+        "lat":  55.84479637,
+        "lon":  8.88395232,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-billund-kommune-vorbasse-genbrugsplads-boegelundvej-9-6623-vorbasse",
+        "name":  "Vorbasse Genbrugsplads",
+        "municipality":  "Billund Kommune",
+        "address":  "Bøgelundvej 9, 6623 Vorbasse",
+        "lat":  55.6218073,
+        "lon":  9.07355625,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-bornholms-regionskommune-hasle-containerplads-bykaervej-12-3790-hasle",
+        "name":  "Hasle Containerplads",
+        "municipality":  "Bornholms Regionskommune",
+        "address":  "Bykærvej 12, 3790 Hasle",
+        "lat":  55.18329629,
+        "lon":  14.71551097,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-bornholms-regionskommune-nexoe-genbrugsplads-soebaekken-3-3730-nexoe",
+        "name":  "Nexø Genbrugsplads",
+        "municipality":  "Bornholms Regionskommune",
+        "address":  "Søbækken 3, 3730 Nexø",
+        "lat":  55.0564511,
+        "lon":  15.13057204,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-bornholms-regionskommune-olsker-containerplads-roennevej-68-3770-allinge",
+        "name":  "Olsker Containerplads",
+        "municipality":  "Bornholms Regionskommune",
+        "address":  "Rønnevej 68, 3770 Allinge",
+        "lat":  55.23410629,
+        "lon":  14.79267594,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-bornholms-regionskommune-roenne-genbrugsplads-almegaardsvej-8-3700-roenne",
+        "name":  "Rønne Genbrugsplads",
+        "municipality":  "Bornholms Regionskommune",
+        "address":  "Almegårdsvej 8, 3700 Rønne",
+        "lat":  55.11785741,
+        "lon":  14.73295186,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-bornholms-regionskommune-oestermarie-containerplads-lyrsbyvej-6a-3751-oestermarie",
+        "name":  "Østermarie Containerplads",
+        "municipality":  "Bornholms Regionskommune",
+        "address":  "Lyrsbyvej 6A, 3751 Østermarie",
+        "lat":  55.13400161,
+        "lon":  15.03122336,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-bornholms-regionskommune-aakirkeby-containerplads-brovangen-13-3720-aakirkeby",
+        "name":  "Aakirkeby Containerplads",
+        "municipality":  "Bornholms Regionskommune",
+        "address":  "Brovangen 13, 3720 Aakirkeby",
+        "lat":  55.07441868,
+        "lon":  14.91218858,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-broendby-kommune-genbrugsstationen-i-broendby-sydgaardsvej-21-2605-broendby",
+        "name":  "Genbrugsstationen i Brøndby",
+        "municipality":  "Brøndby Kommune",
+        "address":  "Sydgårdsvej 21, 2605 Brøndby",
+        "lat":  55.64027161,
+        "lon":  12.41359763,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-broenderslev-kommune-asaa-genbrugsplads-skelgaardsvej-55-9340-asaa",
+        "name":  "Asaa Genbrugsplads",
+        "municipality":  "Brønderslev Kommune",
+        "address":  "Skelgårdsvej 55, 9340 Asaa",
+        "lat":  57.15248756,
+        "lon":  10.40013535,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-broenderslev-kommune-broenderslev-vest-genbrugsplads-enggaardsvej-21-9700-broenderslev",
+        "name":  "Brønderslev Vest Genbrugsplads",
+        "municipality":  "Brønderslev Kommune",
+        "address":  "Enggårdsvej 21, 9700 Brønderslev",
+        "lat":  57.27542645,
+        "lon":  9.9086004,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-broenderslev-kommune-broenderslev-oest-genbrugsplads-stadevej-140-9700-broenderslev",
+        "name":  "Brønderslev Øst Genbrugsplads",
+        "municipality":  "Brønderslev Kommune",
+        "address":  "Stadevej 140, 9700 Brønderslev",
+        "lat":  57.28361675,
+        "lon":  9.99404436,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-broenderslev-kommune-dronninglund-genbrugsplads-dregaardsvej-1b-9330-dronninglund",
+        "name":  "Dronninglund Genbrugsplads",
+        "municipality":  "Brønderslev Kommune",
+        "address":  "Dregårdsvej 1B, 9330 Dronninglund",
+        "lat":  57.16909958,
+        "lon":  10.29722936,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-broenderslev-kommune-hjallerup-genbrugsplads-haandvaerkervej-60-9320-hjallerup",
+        "name":  "Hjallerup Genbrugsplads",
+        "municipality":  "Brønderslev Kommune",
+        "address":  "Håndværkervej 60, 9320 Hjallerup",
+        "lat":  57.17477167,
+        "lon":  10.16499608,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-broenderslev-kommune-jerslev-genbrugsplads-sejeroegade-10-9740-jerslev",
+        "name":  "Jerslev Genbrugsplads",
+        "municipality":  "Brønderslev Kommune",
+        "address":  "Sejerøgade 10, 9740 Jerslev",
+        "lat":  57.2869566,
+        "lon":  10.10274166,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-dragoer-kommune-dragoer-genbrugsplads-bachersmindevej-15-2791-dragoer",
+        "name":  "Dragør Genbrugsplads",
+        "municipality":  "Dragør Kommune",
+        "address":  "Bachersmindevej 15, 2791 Dragør",
+        "lat":  55.58285237,
+        "lon":  12.62538307,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-egedal-kommune-smoerum-genbrugsstation-hassellunden-2b-2765-smoerum",
+        "name":  "Smørum Genbrugsstation",
+        "municipality":  "Egedal Kommune",
+        "address":  "Hassellunden 2B, 2765 Smørum",
+        "lat":  55.72994211,
+        "lon":  12.2988579,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-egedal-kommune-stenloese-genbrugsplads-toppevadvej-28-3660-stenloese",
+        "name":  "Stenløse Genbrugsplads",
+        "municipality":  "Egedal Kommune",
+        "address":  "Toppevadvej 28, 3660 Stenløse",
+        "lat":  55.7799907,
+        "lon":  12.26845109,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-egedal-kommune-oelstykke-genbrugsplads-tranekaervej-6-3650-oelstykke",
+        "name":  "Ølstykke Genbrugsplads",
+        "municipality":  "Egedal Kommune",
+        "address":  "Tranekærvej 6, 3650 Ølstykke",
+        "lat":  55.77779901,
+        "lon":  12.14087039,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-esbjerg-kommune-bramming-genbrugsplads-sdr-ilstedmarkvej-3-6740-bramming",
+        "name":  "Bramming Genbrugsplads",
+        "municipality":  "Esbjerg Kommune",
+        "address":  "Sdr. Ilstedmarkvej 3, 6740 Bramming",
+        "lat":  55.46367938,
+        "lon":  8.72129926,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-esbjerg-kommune-maade-genbrugsplads-maade-kirkevej-35-6700-esbjerg",
+        "name":  "Måde Genbrugsplads",
+        "municipality":  "Esbjerg Kommune",
+        "address":  "Måde Kirkevej 35, 6700 Esbjerg",
+        "lat":  55.45927281,
+        "lon":  8.50479496,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-esbjerg-kommune-ribe-genbrugsplads-oerstedsvej-69-6760-ribe",
+        "name":  "Ribe Genbrugsplads",
+        "municipality":  "Esbjerg Kommune",
+        "address":  "Ørstedsvej 69, 6760 Ribe",
+        "lat":  55.35625247,
+        "lon":  8.76760905,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-esbjerg-kommune-tarp-genbrugsplads-mukkerten-14-6715-esbjerg-n",
+        "name":  "Tarp Genbrugsplads",
+        "municipality":  "Esbjerg Kommune",
+        "address":  "Mukkerten 14, 6715 Esbjerg N",
+        "lat":  55.5256877,
+        "lon":  8.45131198,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-fanoe-kommune-fanoe-genbrugsplads-soender-nytoft-7-6720-fanoe",
+        "name":  "Fanø Genbrugsplads",
+        "municipality":  "Fanø Kommune",
+        "address":  "Sønder Nytoft 7, 6720 Fanø",
+        "lat":  55.44161668,
+        "lon":  8.38736364,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-favrskov-kommune-hadsten-genbrugsplads-brogaardsvej-11-8370-hadsten",
+        "name":  "Hadsten Genbrugsplads",
+        "municipality":  "Favrskov Kommune",
+        "address":  "Brogårdsvej 11, 8370 Hadsten",
+        "lat":  56.33269974,
+        "lon":  10.02539792,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-favrskov-kommune-hammel-genbrugsplads-italiensvej-1-8450-hammel",
+        "name":  "Hammel Genbrugsplads",
+        "municipality":  "Favrskov Kommune",
+        "address":  "Italiensvej 1, 8450 Hammel",
+        "lat":  56.23666113,
+        "lon":  9.86173009,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-favrskov-kommune-hinnerup-genbrugsplads-fanoevej-7-8382-hinnerup",
+        "name":  "Hinnerup Genbrugsplads",
+        "municipality":  "Favrskov Kommune",
+        "address":  "Fanøvej 7, 8382 Hinnerup",
+        "lat":  56.24993565,
+        "lon":  10.07569226,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-favrskov-kommune-hvorslev-genbrugsplads-hammervej-9-8860-ulstrup",
+        "name":  "Hvorslev Genbrugsplads",
+        "municipality":  "Favrskov Kommune",
+        "address":  "Hammervej 9, 8860 Ulstrup",
+        "lat":  56.37372053,
+        "lon":  9.77571196,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-faxe-kommune-haslev-genbrugsplads-norgesgade-2b-4690-haslev",
+        "name":  "Haslev Genbrugsplads",
+        "municipality":  "Faxe Kommune",
+        "address":  "Norgesgade 2B, 4690 Haslev",
+        "lat":  55.32730826,
+        "lon":  11.93439612,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-faxe-kommune-roennede-genbrugsplads-industrivej-22-4683-roennede",
+        "name":  "Rønnede Genbrugsplads",
+        "municipality":  "Faxe Kommune",
+        "address":  "Industrivej 22, 4683 Rønnede",
+        "lat":  55.26418884,
+        "lon":  12.02644444,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-fredensborg-kommune-genbrugsplads-bakkegaardsvej-bakkegaardsvej-404b-3050-humlebaek",
+        "name":  "Genbrugsplads Bakkegårdsvej",
+        "municipality":  "Fredensborg Kommune",
+        "address":  "Bakkegårdsvej 404b, 3050 Humlebæk",
+        "lat":  55.96312411,
+        "lon":  12.49632653,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Bakkegårdsvej Genbrugsplads"
+    },
+    {
+        "id":  "mit-affald-fredensborg-kommune-genbrugspladsen-vandtaarnsvej-vandtaarnsvej-2-2980-kokkedal",
+        "name":  "Genbrugspladsen Vandtårnsvej",
+        "municipality":  "Fredensborg Kommune",
+        "address":  "Vandtårnsvej 2, 2980 Kokkedal",
+        "lat":  55.922253,
+        "lon":  12.47727283,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-fredensborg-kommune-genbrugsplads-hoejvangen-hoejvangen-25a-3480-fredensborg",
+        "name":  "Genbrugsplads Højvangen",
+        "municipality":  "Fredensborg Kommune",
+        "address":  "Højvangen 25a, 3480 Fredensborg",
+        "lat":  55.9643787,
+        "lon":  12.4023291,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                },
+        "displayName":  "Højvangen Genbrugsplads"
+    },
+    {
+        "id":  "mit-affald-fredericia-kommune-fredericia-genbrugsplads-bundgaardsvej-bundgaardsvej-2-7000-fredericia",
+        "name":  "Fredericia Genbrugsplads Bundgårdsvej",
+        "municipality":  "Fredericia Kommune",
+        "address":  "Bundgårdsvej 2, 7000 Fredericia",
+        "lat":  55.53967532,
+        "lon":  9.69959968,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-fredericia-kommune-fredericia-genbrugsplads-nordre-kobbelvej-nordre-kobbelvej-9-7000-fredericia",
+        "name":  "Fredericia Genbrugsplads Nordre Kobbelvej",
+        "municipality":  "Fredericia Kommune",
+        "address":  "Nordre Kobbelvej 9, 7000 Fredericia",
+        "lat":  55.59404502,
+        "lon":  9.75882404,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-frederiksberg-kommune-bispeengen-genbrugsstation-bispeengen-35-2000-frederiksberg",
+        "name":  "Bispeengen Genbrugsstation",
+        "municipality":  "Frederiksberg Kommune",
+        "address":  "Bispeengen 35, 2000 Frederiksberg",
+        "lat":  55.69574093,
+        "lon":  12.5291475,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-frederikshavn-kommune-genbrugsplads-niels-juels-vej-niels-juels-vej-25-9900-frederikshavn",
+        "name":  "Genbrugsplads Niels Juels Vej",
+        "municipality":  "Frederikshavn Kommune",
+        "address":  "Niels Juels Vej 25, 9900 Frederikshavn",
+        "lat":  57.44916391,
+        "lon":  10.51700988,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Niels Juels Vej Genbrugsplads"
+    },
+    {
+        "id":  "mit-affald-frederikshavn-kommune-ravnshoej-genbrugsplads-stenvej-8-ravnshoej-9900-frederikshavn",
+        "name":  "Ravnshøj Genbrugsplads",
+        "municipality":  "Frederikshavn Kommune",
+        "address":  "Stenvej 8, Ravnshøj, 9900 Frederikshavn",
+        "lat":  57.45071755,
+        "lon":  10.4473597,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-frederikshavn-kommune-skagen-genbrugsplads-buttervej-64-9990-skagen",
+        "name":  "Skagen Genbrugsplads",
+        "municipality":  "Frederikshavn Kommune",
+        "address":  "Buttervej 64, 9990 Skagen",
+        "lat":  57.73682775,
+        "lon":  10.568554,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-frederikshavn-kommune-strandby-genbrugsplads-ravmarken-10-9970-strandby",
+        "name":  "Strandby Genbrugsplads",
+        "municipality":  "Frederikshavn Kommune",
+        "address":  "Ravmarken 10, 9970 Strandby",
+        "lat":  57.48791745,
+        "lon":  10.48805506,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-frederikshavn-kommune-saeby-genbrugsplads-ousenvej-16-9300-saeby",
+        "name":  "Sæby Genbrugsplads",
+        "municipality":  "Frederikshavn Kommune",
+        "address":  "Ousenvej 16, 9300 Sæby",
+        "lat":  57.33467127,
+        "lon":  10.45706518,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-frederikshavn-kommune-voersaa-genbrugsplads-kringelhedevej-17-voersaa-9300-saeby",
+        "name":  "Voerså Genbrugsplads",
+        "municipality":  "Frederikshavn Kommune",
+        "address":  "Kringelhedevej 17, Voerså, 9300 Sæby",
+        "lat":  57.20892883,
+        "lon":  10.48257426,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen nærmeste adresse",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-frederikshavn-kommune-oestervraa-genbrugsplads-bjeldalsvej-3-9750-oestervraa",
+        "name":  "Østervrå Genbrugsplads",
+        "municipality":  "Frederikshavn Kommune",
+        "address":  "Bjeldalsvej 3, 9750 Østervrå",
+        "lat":  57.34265702,
+        "lon":  10.25704216,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-frederikshavn-kommune-aalbaek-genbrugsplads-industrivej-21-9982-aalbaek",
+        "name":  "Ålbæk Genbrugsplads",
+        "municipality":  "Frederikshavn Kommune",
+        "address":  "Industrivej 21, 9982 Ålbæk",
+        "lat":  57.6001296,
+        "lon":  10.41517489,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-frederikssund-kommune-frederikssund-genbrugsstation-strandvangen-17-3600-frederikssund",
+        "name":  "Frederikssund Genbrugsstation",
+        "municipality":  "Frederikssund Kommune",
+        "address":  "Strandvangen 17, 3600 Frederikssund",
+        "lat":  55.82579088,
+        "lon":  12.10037899,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-frederikssund-kommune-jaegerspris-genbrugsplads-noerhaven-8-over-draaby-3630-jaegerspris",
+        "name":  "Jægerspris Genbrugsplads",
+        "municipality":  "Frederikssund Kommune",
+        "address":  "Nørhaven 8, Over Dråby, 3630 Jægerspris",
+        "lat":  55.83037169,
+        "lon":  11.99283037,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-frederikssund-kommune-skibby-genbrugsstation-bronzeager-5-4050-skibby",
+        "name":  "Skibby Genbrugsstation",
+        "municipality":  "Frederikssund Kommune",
+        "address":  "Bronzeager 5, 4050 Skibby",
+        "lat":  55.76286918,
+        "lon":  11.9624662,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-furesoe-kommune-farum-genbrugsstation-gammelgaardsvej-79-3520-farum",
+        "name":  "Farum Genbrugsstation",
+        "municipality":  "Furesø Kommune",
+        "address":  "Gammelgårdsvej 79, 3520 Farum",
+        "lat":  55.81928464,
+        "lon":  12.37167817,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-furesoe-kommune-vaerloese-genbrugsstation-ballerupvej-75-3500-vaerloese",
+        "name":  "Værløse Genbrugsstation",
+        "municipality":  "Furesø Kommune",
+        "address":  "Ballerupvej 75, 3500 Værløse",
+        "lat":  55.77162333,
+        "lon":  12.37074331,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-faaborg-midtfyn-kommune-brobyvaerk-genbrugsstation-roennevej-6-5672-broby",
+        "name":  "Brobyværk Genbrugsstation",
+        "municipality":  "Faaborg-Midtfyn Kommune",
+        "address":  "Rønnevej 6, 5672 Broby",
+        "lat":  55.23143067,
+        "lon":  10.24861979,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-faaborg-midtfyn-kommune-faaborg-genbrugsstation-moerkebjergvej-12-5600-faaborg",
+        "name":  "Faaborg Genbrugsstation",
+        "municipality":  "Faaborg-Midtfyn Kommune",
+        "address":  "Mørkebjergvej 12, 5600 Faaborg",
+        "lat":  55.11353336,
+        "lon":  10.21488261,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-faaborg-midtfyn-kommune-ringe-genbrugsstation-kielbergvej-25-5750-ringe",
+        "name":  "Ringe Genbrugsstation",
+        "municipality":  "Faaborg-Midtfyn Kommune",
+        "address":  "Kielbergvej 25, 5750 Ringe",
+        "lat":  55.2558009,
+        "lon":  10.47655183,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-faaborg-midtfyn-kommune-sandager-minigenbrugsstation-sandagervej-21-5854-gislev",
+        "name":  "Sandager Minigenbrugsstation",
+        "municipality":  "Faaborg-Midtfyn Kommune",
+        "address":  "Sandagervej 21, 5854 Gislev",
+        "lat":  55.214188,
+        "lon":  10.568822,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-faaborg-midtfyn-kommune-aarslev-genbrugsstation-lundsmarken-29-5792-aarslev",
+        "name":  "Årslev Genbrugsstation",
+        "municipality":  "Faaborg-Midtfyn Kommune",
+        "address":  "Lundsmarken 29, 5792 Årslev",
+        "lat":  55.30810495,
+        "lon":  10.46324231,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-gentofte-kommune-gentofte-genbrugsstation-oernegaardsvej-15-2820-gentofte",
+        "name":  "Gentofte Genbrugsstation",
+        "municipality":  "Gentofte Kommune",
+        "address":  "Ørnegårdsvej 15, 2820 Gentofte",
+        "lat":  55.76039481,
+        "lon":  12.51710269,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-gladsaxe-kommune-gladsaxe-genbrugsstation-turbinevej-10-2860-soeborg",
+        "name":  "Gladsaxe Genbrugsstation",
+        "municipality":  "Gladsaxe Kommune",
+        "address":  "Turbinevej 10, 2860 Søborg",
+        "lat":  55.73139338,
+        "lon":  12.456276129999999,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-glostrup-kommune-glostrup-genbrugsstation-paul-bergsoees-vej-39-2600-glostrup",
+        "name":  "Glostrup Genbrugsstation",
+        "municipality":  "Glostrup Kommune",
+        "address":  "Paul Bergsøes Vej 39, 2600 Glostrup",
+        "lat":  55.67163133,
+        "lon":  12.42001138,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-greve-kommune-miljoecenter-greve-ventrupparken-16-2670-greve",
+        "name":  "MiljøCenter Greve",
+        "municipality":  "Greve Kommune",
+        "address":  "Ventrupparken 16, 2670 Greve",
+        "lat":  55.5917855,
+        "lon":  12.27022949,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-gribskov-kommune-hoejelt-genbrugsstation-boegebjergvej-84-3230-graested",
+        "name":  "Højelt Genbrugsstation",
+        "municipality":  "Gribskov Kommune",
+        "address":  "Bøgebjergvej 84, 3230 Græsted",
+        "lat":  56.08484422,
+        "lon":  12.24590623,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-gribskov-kommune-skaeroed-genbrugsstation-industrivej-4-3200-helsinge",
+        "name":  "Skærød Genbrugsstation",
+        "municipality":  "Gribskov Kommune",
+        "address":  "Industrivej 4, 3200 Helsinge",
+        "lat":  56.01740542,
+        "lon":  12.16576024,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-guldborgsund-kommune-marielyst-genbrugsplads-godthaabs-alle-1a-4873-vaeggerloese",
+        "name":  "Marielyst Genbrugsplads",
+        "municipality":  "Guldborgsund Kommune",
+        "address":  "Godthåbs Alle 1A, 4873 Væggerløse",
+        "lat":  54.67303533,
+        "lon":  11.92957219,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-guldborgsund-kommune-nykoebing-f-genbrugsplads-energivej-4-4800-nykoebing-falster",
+        "name":  "Nykøbing F. Genbrugsplads",
+        "municipality":  "Guldborgsund Kommune",
+        "address":  "Energivej 4, 4800 Nykøbing Falster",
+        "lat":  54.780093,
+        "lon":  11.883929,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-guldborgsund-kommune-nysted-genbrugsplads-egevaenget-7-4880-nysted",
+        "name":  "Nysted Genbrugsplads",
+        "municipality":  "Guldborgsund Kommune",
+        "address":  "Egevænget 7, 4880 Nysted",
+        "lat":  54.67167024,
+        "lon":  11.73578323,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-guldborgsund-kommune-noerre-alslev-genbrugsplads-herthadalvej-11b-4840-noerre-alslev",
+        "name":  "Nørre Alslev Genbrugsplads",
+        "municipality":  "Guldborgsund Kommune",
+        "address":  "Herthadalvej 11B, 4840 Nørre Alslev",
+        "lat":  54.90580141,
+        "lon":  11.88702064,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-guldborgsund-kommune-sakskoebing-genbrugsplads-flintevej-2-4990-sakskoebing",
+        "name":  "Sakskøbing Genbrugsplads",
+        "municipality":  "Guldborgsund Kommune",
+        "address":  "Flintevej 2, 4990 Sakskøbing",
+        "lat":  54.79529449,
+        "lon":  11.61552361,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-guldborgsund-kommune-stubbekoebing-genbrugsplads-tuemosevej-9-4850-stubbekoebing",
+        "name":  "Stubbekøbing Genbrugsplads",
+        "municipality":  "Guldborgsund Kommune",
+        "address":  "Tuemosevej 9, 4850 Stubbekøbing",
+        "lat":  54.88539134,
+        "lon":  12.02768594,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-guldborgsund-kommune-oester-toreby-genbrugsplads-industriparken-23-4800-nykoebing-f",
+        "name":  "Øster Toreby Genbrugsplads",
+        "municipality":  "Guldborgsund Kommune",
+        "address":  "Industriparken 23, 4800 Nykøbing F.",
+        "lat":  54.76223726,
+        "lon":  11.83122584,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-haderslev-kommune-gram-genbrugsplads-industrivej-5-6510-gram",
+        "name":  "Gram Genbrugsplads",
+        "municipality":  "Haderslev Kommune",
+        "address":  "Industrivej 5, 6510 Gram",
+        "lat":  55.28096402,
+        "lon":  9.03997607,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-haderslev-kommune-haderslev-genbrugsplads-knavvej-6-6100-haderslev",
+        "name":  "Haderslev Genbrugsplads",
+        "municipality":  "Haderslev Kommune",
+        "address":  "Knavvej 6, 6100 Haderslev",
+        "lat":  55.22400334,
+        "lon":  9.48853234,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-haderslev-kommune-vojens-genbrugsplads-tingvejen-29-6500-vojens",
+        "name":  "Vojens Genbrugsplads",
+        "municipality":  "Haderslev Kommune",
+        "address":  "Tingvejen 29, 6500 Vojens",
+        "lat":  55.23856642,
+        "lon":  9.28219389,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-halsnaes-kommune-frederiksvaerk-genbrugsplads-havnesvinget-10-3300-frederiksvaerk",
+        "name":  "Frederiksværk Genbrugsplads",
+        "municipality":  "Halsnæs Kommune",
+        "address":  "Havnesvinget 10, 3300 Frederiksværk",
+        "lat":  55.96879565,
+        "lon":  12.00479519,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-halsnaes-kommune-hundested-genbrugsplads-haandvaerkervej-16-3390-hundested",
+        "name":  "Hundested Genbrugsplads",
+        "municipality":  "Halsnæs Kommune",
+        "address":  "Håndværkervej 16, 3390 Hundested",
+        "lat":  55.9648536,
+        "lon":  11.88321697,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hedensted-kommune-hedensted-genbrugsplads-remmerslundvej-35-8723-loesning",
+        "name":  "Hedensted Genbrugsplads",
+        "municipality":  "Hedensted Kommune",
+        "address":  "Remmerslundvej 35, 8723 Løsning",
+        "lat":  55.78690301,
+        "lon":  9.70862025,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hedensted-kommune-hornsyld-genbrugsstation-industrivaenget-9-8783-hornsyld",
+        "name":  "Hornsyld Genbrugsstation",
+        "municipality":  "Hedensted Kommune",
+        "address":  "Industrivænget 9, 8783 Hornsyld",
+        "lat":  55.76042362,
+        "lon":  9.8506365,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hedensted-kommune-kalhave-genbrugsstation-skraedderbakken-1g-7171-uldum",
+        "name":  "Kalhave Genbrugsstation",
+        "municipality":  "Hedensted Kommune",
+        "address":  "Skrædderbakken 1G, 7171 Uldum",
+        "lat":  55.85165017,
+        "lon":  9.61658408,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hedensted-kommune-klakring-genbrugsstation-klakring-stationsvej-5-7130-juelsminde",
+        "name":  "Klakring Genbrugsstation",
+        "municipality":  "Hedensted Kommune",
+        "address":  "Klakring Stationsvej 5, 7130 Juelsminde",
+        "lat":  55.70859256,
+        "lon":  9.96729678,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hedensted-kommune-remmerslund-genbrugsstation-remmerslundvej-35-8723-loesning",
+        "name":  "Remmerslund Genbrugsstation",
+        "municipality":  "Hedensted Kommune",
+        "address":  "Remmerslundvej 35, 8723 Løsning",
+        "lat":  55.78690301,
+        "lon":  9.70862025,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-helsingoer-kommune-helsingoer-genbrugsplads-cirklen-energivej-6-3000-helsingoer",
+        "name":  "Helsingør Genbrugsplads Cirklen",
+        "municipality":  "Helsingør Kommune",
+        "address":  "Energivej 6, 3000 Helsingør",
+        "lat":  56.02160662,
+        "lon":  12.55725092,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-helsingoer-kommune-skibstrup-affaldscenter-goerlundevej-4-3140-aalsgaarde",
+        "name":  "Skibstrup Affaldscenter",
+        "municipality":  "Helsingør Kommune",
+        "address":  "Gørlundevej 4, 3140 Ålsgårde",
+        "lat":  56.067194,
+        "lon":  12.52085,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-herlev-kommune-herlev-genbrugsstation-mileparken-23-2730-herlev",
+        "name":  "Herlev Genbrugsstation",
+        "municipality":  "Herlev Kommune",
+        "address":  "Mileparken 23, 2730 Herlev",
+        "lat":  55.71683698,
+        "lon":  12.42660653,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-herlev-kommune-genbrugsstation-marielundvej-marielundvej-49-2730-herlev",
+        "name":  "Genbrugsstation Marielundvej",
+        "municipality":  "Herlev Kommune",
+        "address":  "Marielundvej 49, 2730 Herlev",
+        "lat":  55.71355119,
+        "lon":  12.42966434,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Marielundvej Genbrugsstation"
+    },
+    {
+        "id":  "mit-affald-herning-kommune-aulum-genbrugsplads-kulvej-9-7490-aulum",
+        "name":  "Aulum Genbrugsplads",
+        "municipality":  "Herning Kommune",
+        "address":  "Kulvej 9, 7490 Aulum",
+        "lat":  56.27063504,
+        "lon":  8.80685334,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-herning-kommune-fasterholt-genbrugsplads-fasterholtgaardvej-10-7400-herning",
+        "name":  "Fasterholt Genbrugsplads",
+        "municipality":  "Herning Kommune",
+        "address":  "Fasterholtgårdvej 10, 7400 Herning",
+        "lat":  56.02842977,
+        "lon":  9.05606697,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-herning-kommune-herning-genbrugsplads-moerupvej-32-7400-herning",
+        "name":  "Herning Genbrugsplads",
+        "municipality":  "Herning Kommune",
+        "address":  "Mørupvej 32, 7400 Herning",
+        "lat":  56.12282615,
+        "lon":  8.93878565,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-herning-kommune-kibaek-genbrugsplads-lyager-7-6933-kibaek",
+        "name":  "Kibæk Genbrugsplads",
+        "municipality":  "Herning Kommune",
+        "address":  "Lyager 7, 6933 Kibæk",
+        "lat":  56.0374268,
+        "lon":  8.86665154,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-herning-kommune-sdr-felding-genbrugsplads-industrivej-12-7280-soender-felding",
+        "name":  "Sdr. Felding Genbrugsplads",
+        "municipality":  "Herning Kommune",
+        "address":  "Industrivej 12, 7280 Sønder Felding",
+        "lat":  55.93095656,
+        "lon":  8.78344966,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-herning-kommune-stakroge-genbrugsplads-hovenvej-6-7270-stakroge",
+        "name":  "Stakroge Genbrugsplads",
+        "municipality":  "Herning Kommune",
+        "address":  "Hovenvej 6, 7270 Stakroge",
+        "lat":  55.88787774,
+        "lon":  8.84446226,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-herning-kommune-sunds-genbrugsplads-boedkervej-1c-7451-sunds",
+        "name":  "Sunds Genbrugsplads",
+        "municipality":  "Herning Kommune",
+        "address":  "Bødkervej 1c, 7451 Sunds",
+        "lat":  56.19372438,
+        "lon":  9.02284931,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-herning-kommune-soervad-genbrugsplads-tyregaardvej-7-7550-soervad",
+        "name":  "Sørvad Genbrugsplads",
+        "municipality":  "Herning Kommune",
+        "address":  "Tyregårdvej 7, 7550 Sørvad",
+        "lat":  56.26903211,
+        "lon":  8.64788228,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-herning-kommune-vildbjerg-genbrugsplads-islandsvej-4-7480-vildbjerg",
+        "name":  "Vildbjerg Genbrugsplads",
+        "municipality":  "Herning Kommune",
+        "address":  "Islandsvej 4, 7480 Vildbjerg",
+        "lat":  56.20397915,
+        "lon":  8.76287072,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-herning-kommune-oernhoej-genbrugsplads-nordtoften-16-6973-oernhoej",
+        "name":  "Ørnhøj Genbrugsplads",
+        "municipality":  "Herning Kommune",
+        "address":  "Nordtoften 16, 6973 Ørnhøj",
+        "lat":  56.20234052,
+        "lon":  8.57551572,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hilleroed-kommune-hilleroed-genbrugsstation-solroedgaards-alle-2-3400-hilleroed",
+        "name":  "Hillerød Genbrugsstation",
+        "municipality":  "Hillerød Kommune",
+        "address":  "Solrødgårds Allé 2, 3400 Hillerød",
+        "lat":  55.90379716,
+        "lon":  12.27914039,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-bindslev-genbrugsplads-barkholtvej-3b-9881-bindslev",
+        "name":  "Bindslev Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Barkholtvej 3B, 9881 Bindslev",
+        "lat":  57.55708118,
+        "lon":  10.20398842,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-genbrugsplads-bjergby-asdalvej-53-9800-hjoerring",
+        "name":  "Genbrugsplads Bjergby",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Asdalvej 53, 9800 Hjørring",
+        "lat":  57.5145578,
+        "lon":  10.0232209,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                },
+        "displayName":  "Bjergby Genbrugsplads"
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-bjergby-genbrugsplads-asdalvej-53-9800-hjoerring",
+        "name":  "Bjergby Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Asdalvej 53, 9800 Hjørring",
+        "lat":  57.5145578,
+        "lon":  10.0232209,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-boerglum-genbrugsplads-boerglumvej-427-9760-vraa",
+        "name":  "Børglum Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Børglumvej 427, 9760 Vrå",
+        "lat":  57.35971497,
+        "lon":  9.8390979,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-hirtshals-genbrugsplads-graevlingevej-13-9850-hirtshals",
+        "name":  "Hirtshals Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Grævlingevej 13, 9850 Hirtshals",
+        "lat":  57.57154317,
+        "lon":  9.98766641,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-hjoerring-vest-genbrugsplads-krustrupvej-56-9800-hjoerring",
+        "name":  "Hjørring Vest Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Krustrupvej 56, 9800 Hjørring",
+        "lat":  57.46626124,
+        "lon":  9.94798935,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-hjoerring-oest-genbrugsplads-miljoevej-4-9800-hjoerring",
+        "name":  "Hjørring Øst Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Miljøvej 4, 9800 Hjørring",
+        "lat":  57.45070034,
+        "lon":  10.03115676,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-lendum-genbrugsplads-industrivej-3-9870-sindal",
+        "name":  "Lendum Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Industrivej 3, 9870 Sindal",
+        "lat":  57.4116762,
+        "lon":  10.29115442,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-loekken-genbrugsplads-egevej-49a-9480-loekken",
+        "name":  "Løkken Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Egevej 49A, 9480 Løkken",
+        "lat":  57.37115072,
+        "lon":  9.73329049,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-poulstrup-genbrugsplads-saksagervej-121-9760-vraa",
+        "name":  "Poulstrup Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Saksagervej 121, 9760 Vrå",
+        "lat":  57.33617453,
+        "lon":  9.99572542,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-sindal-genbrugsplads-ledetvej-6-9870-sindal",
+        "name":  "Sindal Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Ledetvej 6, 9870 Sindal",
+        "lat":  57.48729215,
+        "lon":  10.20421808,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-taars-genbrugsplads-postholdervej-34-9830-taars",
+        "name":  "Tårs Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Postholdervej 34, 9830 Tårs",
+        "lat":  57.3843779,
+        "lon":  10.10614205,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hjoerring-kommune-vennebjerg-genbrugsplads-groenne-klitvej-25-9800-hjoerring",
+        "name":  "Vennebjerg Genbrugsplads",
+        "municipality":  "Hjørring Kommune",
+        "address":  "Grønne Klitvej 25, 9800 Hjørring",
+        "lat":  57.45365127,
+        "lon":  9.8496387,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-holbaek-kommune-holbaek-genbrugsplads-spaannebaek-34-4300-holbaek",
+        "name":  "Holbæk Genbrugsplads",
+        "municipality":  "Holbæk Kommune",
+        "address":  "Spånnebæk 34, 4300 Holbæk",
+        "lat":  55.70138641,
+        "lon":  11.71026123,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-holbaek-kommune-jernloese-selvbetjeningsplads-virkelyst-19-4420-regstrup",
+        "name":  "Jernløse Selvbetjeningsplads",
+        "municipality":  "Holbæk Kommune",
+        "address":  "Virkelyst 19, 4420 Regstrup",
+        "lat":  55.66132829,
+        "lon":  11.6387058,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-holbaek-kommune-oroe-genbrugsplads-bygaden-27-4300-holbaek",
+        "name":  "Orø Genbrugsplads",
+        "municipality":  "Holbæk Kommune",
+        "address":  "Bygaden 27, 4300 Holbæk",
+        "lat":  55.76836,
+        "lon":  11.803548,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-holbaek-kommune-tornved-genbrugsplads-holbaekvej-167-4440-moerkoev",
+        "name":  "Tornved Genbrugsplads",
+        "municipality":  "Holbæk Kommune",
+        "address":  "Holbækvej 167, 4440 Mørkøv",
+        "lat":  55.6475187,
+        "lon":  11.45677215,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-holbaek-kommune-toelloese-genbrugsplads-digemosevej-3-4340-toelloese",
+        "name":  "Tølløse Genbrugsplads",
+        "municipality":  "Holbæk Kommune",
+        "address":  "Digemosevej 3, 4340 Tølløse",
+        "lat":  55.6307676,
+        "lon":  11.75095204,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-holstebro-kommune-sdr-nissum-genbrugsplads-noerhedevej-26d-6990-ulfborg",
+        "name":  "Sdr. Nissum Genbrugsplads",
+        "municipality":  "Holstebro Kommune",
+        "address":  "Nørhedevej 26D, 6990 Ulfborg",
+        "lat":  56.3097381,
+        "lon":  8.19097504,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-holstebro-kommune-ulfborg-genbrugsplads-torstedvej-8b-6990-ulfborg",
+        "name":  "Ulfborg Genbrugsplads",
+        "municipality":  "Holstebro Kommune",
+        "address":  "Torstedvej 8B, 6990 Ulfborg",
+        "lat":  56.26773241,
+        "lon":  8.32347433,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-holstebro-kommune-vinderup-genbrugsplads-tvaermosevej-11-7830-vinderup",
+        "name":  "Vinderup Genbrugsplads",
+        "municipality":  "Holstebro Kommune",
+        "address":  "Tværmosevej 11, 7830 Vinderup",
+        "lat":  56.51688735,
+        "lon":  8.80829627,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-horsens-kommune-braedstrup-genbrugsplads-energivej-19-8740-braedstrup",
+        "name":  "Brædstrup Genbrugsplads",
+        "municipality":  "Horsens Kommune",
+        "address":  "Energivej 19, 8740 Brædstrup",
+        "lat":  55.98201771,
+        "lon":  9.62412534,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-horsens-kommune-horsens-genbrugsplads-endelavevej-24-8700-horsens",
+        "name":  "Horsens Genbrugsplads",
+        "municipality":  "Horsens Kommune",
+        "address":  "Endelavevej 24, 8700 Horsens",
+        "lat":  55.8513672,
+        "lon":  9.85779136,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-horsens-kommune-vedslet-genbrugsplads-gl-aarhusvej-50-grumstrup-8732-hovedgaard",
+        "name":  "Vedslet Genbrugsplads",
+        "municipality":  "Horsens Kommune",
+        "address":  "Gl. Århusvej 50, Grumstrup, 8732 Hovedgård",
+        "lat":  55.96334557,
+        "lon":  10.00221698,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hvidovre-kommune-hvidovre-genbrugsplads-avedoereholmen-97-2650-hvidovre",
+        "name":  "Hvidovre Genbrugsplads",
+        "municipality":  "Hvidovre Kommune",
+        "address":  "Avedøreholmen 97, 2650 Hvidovre",
+        "lat":  55.60450123,
+        "lon":  12.46771707,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hoeje-taastrup-kommune-hoeje-taastrup-genbrugsstation-lervangen-1-2630-taastrup",
+        "name":  "Høje Taastrup Genbrugsstation",
+        "municipality":  "Høje-Taastrup Kommune",
+        "address":  "Lervangen 1, 2630 Taastrup",
+        "lat":  55.66009913,
+        "lon":  12.25612324,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-hoersholm-kommune-genbrugsplads-containerhaven-rundforbivej-174-2850-naerum",
+        "name":  "Genbrugsplads Containerhaven",
+        "municipality":  "Hørsholm Kommune",
+        "address":  "Rundforbivej 174, 2850 Nærum",
+        "lat":  55.81976798,
+        "lon":  12.52826861,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Containerhaven Genbrugsplads"
+    },
+    {
+        "id":  "mit-affald-ikast-brande-kommune-bording-genbrugsplads-firhuse-13-7441-bording",
+        "name":  "Bording Genbrugsplads",
+        "municipality":  "Ikast-Brande Kommune",
+        "address":  "Firhuse 13, 7441 Bording",
+        "lat":  56.1628612,
+        "lon":  9.30508826,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ikast-brande-kommune-brande-genbrugsplads-sjaellandsvej-26-7330-brande",
+        "name":  "Brande Genbrugsplads",
+        "municipality":  "Ikast-Brande Kommune",
+        "address":  "Sjællandsvej 26, 7330 Brande",
+        "lat":  55.93563494,
+        "lon":  9.15429973,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ikast-brande-kommune-ikast-genbrugsplads-femhoeje-3-7430-ikast",
+        "name":  "Ikast Genbrugsplads",
+        "municipality":  "Ikast-Brande Kommune",
+        "address":  "Femhøje 3, 7430 Ikast",
+        "lat":  56.11063601,
+        "lon":  9.1291422,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ikast-brande-kommune-noerre-snede-genbrugsplads-horsensvej-33-8766-noerre-snede",
+        "name":  "Nørre Snede Genbrugsplads",
+        "municipality":  "Ikast-Brande Kommune",
+        "address":  "Horsensvej 33, 8766 Nørre Snede",
+        "lat":  55.95913734,
+        "lon":  9.4111565,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-jammerbugt-kommune-brovst-genbrugsplads-terndrupvej-77-9460-brovst",
+        "name":  "Brovst Genbrugsplads",
+        "municipality":  "Jammerbugt Kommune",
+        "address":  "Terndrupvej 77, 9460 Brovst",
+        "lat":  57.10172494,
+        "lon":  9.53323181,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-jammerbugt-kommune-fjerritslev-genbrugsplads-industrivej-8-9690-fjerritslev",
+        "name":  "Fjerritslev Genbrugsplads",
+        "municipality":  "Jammerbugt Kommune",
+        "address":  "Industrivej 8, 9690 Fjerritslev",
+        "lat":  57.08571461,
+        "lon":  9.24929305,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-jammerbugt-kommune-pandrup-genbrugsplads-sigsgaardsvej-12-9490-pandrup",
+        "name":  "Pandrup Genbrugsplads",
+        "municipality":  "Jammerbugt Kommune",
+        "address":  "Sigsgaardsvej 12, 9490 Pandrup",
+        "lat":  57.20386992,
+        "lon":  9.6824334,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-jammerbugt-kommune-aabybro-genbrugsplads-moellebaekken-2-9440-aabybro",
+        "name":  "Aabybro Genbrugsplads",
+        "municipality":  "Jammerbugt Kommune",
+        "address":  "Møllebækken 2, 9440 Aabybro",
+        "lat":  57.1502145,
+        "lon":  9.75736687,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kalundborg-kommune-bregninge-genbrugsplads-vilhelmshoejvej-11a-4593-eskebjerg",
+        "name":  "Bregninge Genbrugsplads",
+        "municipality":  "Kalundborg Kommune",
+        "address":  "Vilhelmshøjvej 11A, 4593 Eskebjerg",
+        "lat":  55.68719612,
+        "lon":  11.30836671,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kalundborg-kommune-goerlev-genbrugsplads-agertoften-8-4281-goerlev",
+        "name":  "Gørlev Genbrugsplads",
+        "municipality":  "Kalundborg Kommune",
+        "address":  "Agertoften 8, 4281 Gørlev",
+        "lat":  55.54751939,
+        "lon":  11.21979593,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kalundborg-kommune-hoeng-genbrugsplads-karinavej-22-4270-hoeng",
+        "name":  "Høng Genbrugsplads",
+        "municipality":  "Kalundborg Kommune",
+        "address":  "Karinavej 22, 4270 Høng",
+        "lat":  55.49492186,
+        "lon":  11.28854083,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kalundborg-kommune-kalundborg-genbrugsplads-genvejen-5-4400-kalundborg",
+        "name":  "Kalundborg Genbrugsplads",
+        "municipality":  "Kalundborg Kommune",
+        "address":  "Genvejen 5, 4400 Kalundborg",
+        "lat":  55.66320216,
+        "lon":  11.11507819,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kalundborg-kommune-sejeroe-genbrugsplads-sejeroevej-7b-4592-sejeroe",
+        "name":  "Sejerø Genbrugsplads",
+        "municipality":  "Kalundborg Kommune",
+        "address":  "Sejerøvej 7B, 4592 Sejerø",
+        "lat":  55.89198381,
+        "lon":  11.14082315,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kalundborg-kommune-ubby-genbrugsplads-rugvaenget-1-ubby-4490-jerslev-sjaelland",
+        "name":  "Ubby Genbrugsplads",
+        "municipality":  "Kalundborg Kommune",
+        "address":  "Rugvænget 1, Ubby, 4490 Jerslev Sjælland",
+        "lat":  55.61231755,
+        "lon":  11.21981951,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kerteminde-kommune-kerteminde-genbrugsplads-hindsholmvej-279-5300-kerteminde",
+        "name":  "Kerteminde Genbrugsplads",
+        "municipality":  "Kerteminde Kommune",
+        "address":  "Hindsholmvej 279, 5300 Kerteminde",
+        "lat":  55.47382564,
+        "lon":  10.66663139,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kerteminde-kommune-langeskov-genbrugsplads-mariesmindevej-2-5550-langeskov",
+        "name":  "Langeskov Genbrugsplads",
+        "municipality":  "Kerteminde Kommune",
+        "address":  "Mariesmindevej 2, 5550 Langeskov",
+        "lat":  55.3474396,
+        "lon":  10.58033184,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kolding-kommune-christiansfeld-genbrugsplads-arlavej-9-6070-christiansfeld",
+        "name":  "Christiansfeld Genbrugsplads",
+        "municipality":  "Kolding Kommune",
+        "address":  "Arlavej 9, 6070 Christiansfeld",
+        "lat":  55.3533649,
+        "lon":  9.4954068,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kolding-kommune-kolding-nord-genbrugsplads-bronzevej-3-6000-kolding",
+        "name":  "Kolding Nord Genbrugsplads",
+        "municipality":  "Kolding Kommune",
+        "address":  "Bronzevej 3, 6000 Kolding",
+        "lat":  55.51070622,
+        "lon":  9.44631599,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kolding-kommune-kolding-syd-genbrugsplads-gejlhavegaard-12-6000-kolding",
+        "name":  "Kolding Syd Genbrugsplads",
+        "municipality":  "Kolding Kommune",
+        "address":  "Gejlhavegård 12, 6000 Kolding",
+        "lat":  55.46746761,
+        "lon":  9.46473004,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kolding-kommune-lunderskov-genbrugsplads-slugten-6-6640-lunderskov",
+        "name":  "Lunderskov Genbrugsplads",
+        "municipality":  "Kolding Kommune",
+        "address":  "Slugten 6, 6640 Lunderskov",
+        "lat":  55.47369731,
+        "lon":  9.30281543,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-kolding-kommune-vamdrup-genbrugsplads-oestermarksvej-2-6580-vamdrup",
+        "name":  "Vamdrup Genbrugsplads",
+        "municipality":  "Kolding Kommune",
+        "address":  "Østermarksvej 2, 6580 Vamdrup",
+        "lat":  55.42832141,
+        "lon":  9.29589448,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-koebenhavns-kommune-borgervaenget-genbrugsstation-sibeliusgade-80-2100-koebenhavn-oe",
+        "name":  "Borgervænget Genbrugsstation",
+        "municipality":  "Københavns Kommune",
+        "address":  "Sibeliusgade 80, 2100 København Ø",
+        "lat":  55.71675767,
+        "lon":  12.57013182,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-koebenhavns-kommune-kulbanevej-genbrugsstation-retortvej-2-2500-valby",
+        "name":  "Kulbanevej Genbrugsstation",
+        "municipality":  "Københavns Kommune",
+        "address":  "Retortvej 2, 2500 Valby",
+        "lat":  55.65192864,
+        "lon":  12.50254489,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-koebenhavns-kommune-sydhavn-genbrugscenter-baadehavnsgade-50-2450-koebenhavn-sv",
+        "name":  "Sydhavn Genbrugscenter",
+        "municipality":  "Københavns Kommune",
+        "address":  "Bådehavnsgade 50, 2450 København SV",
+        "lat":  55.63830948,
+        "lon":  12.54047592,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-koebenhavns-kommune-vermlandsgade-genbrugsstation-herjedalsgade-2-2300-koebenhavn-s",
+        "name":  "Vermlandsgade Genbrugsstation",
+        "municipality":  "Københavns Kommune",
+        "address":  "Herjedalsgade 2, 2300 København S",
+        "lat":  55.6694111,
+        "lon":  12.6016727,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-koege-kommune-bjaeverskov-genbrugsplads-pilebaekvej-23-4632-bjaeverskov",
+        "name":  "Bjæverskov Genbrugsplads",
+        "municipality":  "Køge Kommune",
+        "address":  "Pilebækvej 23, 4632 Bjæverskov",
+        "lat":  55.45258892,
+        "lon":  12.01182923,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-koege-kommune-koege-genbrugsplads-tangmosevej-104b-4600-koege",
+        "name":  "Køge Genbrugsplads",
+        "municipality":  "Køge Kommune",
+        "address":  "Tangmosevej 104B, 4600 Køge",
+        "lat":  55.47323723,
+        "lon":  12.19016606,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-langeland-kommune-bagenkop-containerplads-vostervej-5-5935-bagenkop",
+        "name":  "Bagenkop Containerplads",
+        "municipality":  "Langeland Kommune",
+        "address":  "Vostervej 5, 5935 Bagenkop",
+        "lat":  54.74548369,
+        "lon":  10.68753084,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-langeland-kommune-helsned-genbrugsplads-helsnedvej-25-5932-humble",
+        "name":  "Helsned Genbrugsplads",
+        "municipality":  "Langeland Kommune",
+        "address":  "Helsnedvej 25, 5932 Humble",
+        "lat":  54.84120741,
+        "lon":  10.67483768,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-langeland-kommune-lejboelle-genbrugsplads-lejboellevej-9a-5953-tranekaer",
+        "name":  "Lejbølle Genbrugsplads",
+        "municipality":  "Langeland Kommune",
+        "address":  "Lejbøllevej 9A, 5953 Tranekær",
+        "lat":  55.01810141,
+        "lon":  10.86910876,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-langeland-kommune-lohals-containerplads-braemlevaenget-1-5953-tranekaer",
+        "name":  "Lohals Containerplads",
+        "municipality":  "Langeland Kommune",
+        "address":  "Bræmlevænget 1, 5953 Tranekær",
+        "lat":  55.1273942,
+        "lon":  10.90730791,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-langeland-kommune-rudkoebing-genbrugsplads-dunsbjergvej-10-5900-rudkoebing",
+        "name":  "Rudkøbing Genbrugsplads",
+        "municipality":  "Langeland Kommune",
+        "address":  "Dunsbjergvej 10, 5900 Rudkøbing",
+        "lat":  54.93796242,
+        "lon":  10.73742872,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-langeland-kommune-strynoe-containerplads-strynoe-brovej-14-5943-strynoe",
+        "name":  "Strynø Containerplads",
+        "municipality":  "Langeland Kommune",
+        "address":  "Strynø Brovej 14, 5943 Strynø",
+        "lat":  54.9034269,
+        "lon":  10.62450824,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lejre-kommune-torkilstrup-genbrugsplads-landevejen-75-4060-kirke-saaby",
+        "name":  "Torkilstrup Genbrugsplads",
+        "municipality":  "Lejre Kommune",
+        "address":  "Landevejen 75, 4060 Kirke Såby",
+        "lat":  55.64122919,
+        "lon":  11.84727352,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lemvig-kommune-baekmarksbro-genbrugsplads-soehusvaenget-5-7660-baekmarksbro",
+        "name":  "Bækmarksbro Genbrugsplads",
+        "municipality":  "Lemvig Kommune",
+        "address":  "Søhusvænget 5, 7660 Bækmarksbro",
+        "lat":  56.40267657,
+        "lon":  8.31165743,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lemvig-kommune-harbooere-genbrugsplads-thyboroenvej-62-7673-harbooere",
+        "name":  "Harboøre Genbrugsplads",
+        "municipality":  "Lemvig Kommune",
+        "address":  "Thyborønvej 62, 7673 Harboøre",
+        "lat":  56.612174,
+        "lon":  8.193696,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lemvig-kommune-lemvig-genbrugsplads-merkurvej-17-7620-lemvig",
+        "name":  "Lemvig Genbrugsplads",
+        "municipality":  "Lemvig Kommune",
+        "address":  "Merkurvej 17, 7620 Lemvig",
+        "lat":  56.53789884,
+        "lon":  8.30152985,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lolland-kommune-askoe-containerplads-sundsoerevej-1-4942-askoe",
+        "name":  "Askø Containerplads",
+        "municipality":  "Lolland Kommune",
+        "address":  "Sundsørevej 1, 4942 Askø",
+        "lat":  54.8967282,
+        "lon":  11.47710733,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lolland-kommune-dannemare-genbrugsplads-rudbjergvej-21-4983-dannemare",
+        "name":  "Dannemare Genbrugsplads",
+        "municipality":  "Lolland Kommune",
+        "address":  "Rudbjergvej 21, 4983 Dannemare",
+        "lat":  54.75968219,
+        "lon":  11.13688324,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lolland-kommune-fejoe-containerplads-dybvigvej-1-4944-fejoe",
+        "name":  "Fejø Containerplads",
+        "municipality":  "Lolland Kommune",
+        "address":  "Dybvigvej 1, 4944 Fejø",
+        "lat":  54.95085335,
+        "lon":  11.43408993,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lolland-kommune-femoe-containerplads-femoe-havn-1-4945-femoe",
+        "name":  "Femø Containerplads",
+        "municipality":  "Lolland Kommune",
+        "address":  "Femø Havn 1, 4945 Femø",
+        "lat":  54.97277152,
+        "lon":  11.51337722,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lolland-kommune-holeby-genbrugsplads-erhard-frederiksensvej-4a-4960-holeby",
+        "name":  "Holeby Genbrugsplads",
+        "municipality":  "Lolland Kommune",
+        "address":  "Erhard Frederiksensvej 4A, 4960 Holeby",
+        "lat":  54.70694799,
+        "lon":  11.4778734,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lolland-kommune-horslunde-genbrugsplads-tingmarken-5-4913-horslunde",
+        "name":  "Horslunde Genbrugsplads",
+        "municipality":  "Lolland Kommune",
+        "address":  "Tingmarken 5, 4913 Horslunde",
+        "lat":  54.90516394,
+        "lon":  11.21183531,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lolland-kommune-maribo-genbrugsplads-skibevej-4-4930-maribo",
+        "name":  "Maribo Genbrugsplads",
+        "municipality":  "Lolland Kommune",
+        "address":  "Skibevej 4, 4930 Maribo",
+        "lat":  54.79214525,
+        "lon":  11.46996053,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lolland-kommune-nakskov-genbrugsplads-miljoevej-14-4900-nakskov",
+        "name":  "Nakskov Genbrugsplads",
+        "municipality":  "Lolland Kommune",
+        "address":  "Miljøvej 14, 4900 Nakskov",
+        "lat":  54.82730791,
+        "lon":  11.1145855,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lolland-kommune-roedby-genbrugsplads-kirkenoret-4-4970-roedby",
+        "name":  "Rødby Genbrugsplads",
+        "municipality":  "Lolland Kommune",
+        "address":  "Kirkenoret 4, 4970 Rødby",
+        "lat":  54.69866645,
+        "lon":  11.38584436,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lolland-kommune-soellested-genbrugsplads-jernbanegade-19-4920-soellested",
+        "name":  "Søllested Genbrugsplads",
+        "municipality":  "Lolland Kommune",
+        "address":  "Jernbanegade 19, 4920 Søllested",
+        "lat":  54.81037771,
+        "lon":  11.26726606,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-lyngby-taarbaek-kommune-lyngby-taarbaek-genbrugsstation-firskovvej-7-9-2800-kongens-lyngby",
+        "name":  "Lyngby-Taarbæk Genbrugsstation",
+        "municipality":  "Lyngby-Taarbæk Kommune",
+        "address":  "Firskovvej 7, 9, 2800 Kongens Lyngby",
+        "lat":  55.77155936,
+        "lon":  12.5138312,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-laesoe-kommune-laesoe-genbrugsplads-kokvadgaardsvej-3-9940-laesoe",
+        "name":  "Læsø Genbrugsplads",
+        "municipality":  "Læsø Kommune",
+        "address":  "Kokvadgårdsvej 3, 9940 Læsø",
+        "lat":  57.24498917,
+        "lon":  10.9953535,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-mariagerfjord-kommune-als-genbrugsplads-vestvejen-6-9560-hadsund",
+        "name":  "Als Genbrugsplads",
+        "municipality":  "Mariagerfjord Kommune",
+        "address":  "Vestvejen 6, 9560 Hadsund",
+        "lat":  56.7515462,
+        "lon":  10.28130411,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-mariagerfjord-kommune-arden-genbrugsplads-myhlenbergvej-70-9510-arden",
+        "name":  "Arden Genbrugsplads",
+        "municipality":  "Mariagerfjord Kommune",
+        "address":  "Myhlenbergvej 70, 9510 Arden",
+        "lat":  56.7589216,
+        "lon":  9.84362799,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-mariagerfjord-kommune-hadsund-genbrugsplads-finlandsvej-17-9560-hadsund",
+        "name":  "Hadsund Genbrugsplads",
+        "municipality":  "Mariagerfjord Kommune",
+        "address":  "Finlandsvej 17, 9560 Hadsund",
+        "lat":  56.73790514,
+        "lon":  10.09678275,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-mariagerfjord-kommune-hobro-genbrugsplads-humlemarken-5-9500-hobro",
+        "name":  "Hobro Genbrugsplads",
+        "municipality":  "Mariagerfjord Kommune",
+        "address":  "Humlemarken 5, 9500 Hobro",
+        "lat":  56.66007775,
+        "lon":  9.80701995,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-mariagerfjord-kommune-mariager-genbrugsplads-havndalvej-50-b-edderup-9550-mariager",
+        "name":  "Mariager Genbrugsplads",
+        "municipality":  "Mariagerfjord Kommune",
+        "address":  "Havndalvej 50 B, Edderup, 9550 Mariager",
+        "lat":  56.647797,
+        "lon":  10.090101,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-middelfart-kommune-gelsted-genbrugsplads-soendergade-78-5591-gelsted",
+        "name":  "Gelsted Genbrugsplads",
+        "municipality":  "Middelfart Kommune",
+        "address":  "Søndergade 78, 5591 Gelsted",
+        "lat":  55.39169225,
+        "lon":  9.96761672,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-middelfart-kommune-koestrup-genbrugsplads-juelsmindevej-53-5464-brenderup",
+        "name":  "Køstrup Genbrugsplads",
+        "municipality":  "Middelfart Kommune",
+        "address":  "Juelsmindevej 53, 5464 Brenderup",
+        "lat":  55.45925534,
+        "lon":  9.97999576,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-middelfart-kommune-middelfart-genbrugsplads-fynsvej-100-5500-middelfart",
+        "name":  "Middelfart Genbrugsplads",
+        "municipality":  "Middelfart Kommune",
+        "address":  "Fynsvej 100, 5500 Middelfart",
+        "lat":  55.4959882,
+        "lon":  9.78425678,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-middelfart-kommune-nr-aaby-genbrugsplads-margaardvej-47-5580-noerre-aaby",
+        "name":  "Nr. Aaby Genbrugsplads",
+        "municipality":  "Middelfart Kommune",
+        "address":  "Margaardvej 47, 5580 Nørre Aaby",
+        "lat":  55.46572506,
+        "lon":  9.87478425,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-morsoe-kommune-morsoe-kommune-genbrugplads-noerrebro-196-7900-nykoebing-mors",
+        "name":  "Morsø Kommune Genbrugplads",
+        "municipality":  "Morsø Kommune",
+        "address":  "Nørrebro 196, 7900 Nykøbing Mors",
+        "lat":  56.811318,
+        "lon":  8.840208,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-norddjurs-kommune-anholt-genbrugsstation-gennem-landet-78-8592-anholt",
+        "name":  "Anholt Genbrugsstation",
+        "municipality":  "Norddjurs Kommune",
+        "address":  "Gennem Landet 78, 8592 Anholt",
+        "lat":  56.7136477,
+        "lon":  11.5272651,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-norddjurs-kommune-drammelstrup-genbrugsstation-jordrampen-3-8961-allingaabro",
+        "name":  "Drammelstrup Genbrugsstation",
+        "municipality":  "Norddjurs Kommune",
+        "address":  "Jordrampen 3, 8961 Allingåbro",
+        "lat":  56.46031547,
+        "lon":  10.30132763,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-norddjurs-kommune-glesborg-genbrugsstation-haandvaerkervej-2-8585-glesborg",
+        "name":  "Glesborg Genbrugsstation",
+        "municipality":  "Norddjurs Kommune",
+        "address":  "Håndværkervej 2, 8585 Glesborg",
+        "lat":  56.47200609,
+        "lon":  10.73983152,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-norddjurs-kommune-grenaa-genbrugsplads-kalorievej-2-8500-grenaa",
+        "name":  "Grenaa Genbrugsplads",
+        "municipality":  "Norddjurs Kommune",
+        "address":  "Kalorievej 2, 8500 Grenaa",
+        "lat":  56.4237088,
+        "lon":  10.90911942,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-nordfyns-kommune-bogense-genbrugsplads-industrivej-2-5400-bogense",
+        "name":  "Bogense Genbrugsplads",
+        "municipality":  "Nordfyns Kommune",
+        "address":  "Industrivej 2, 5400 Bogense",
+        "lat":  55.55067235,
+        "lon":  10.08618074,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-nordfyns-kommune-otterup-genbrugsplads-oerkebyvej-15-5450-otterup",
+        "name":  "Otterup Genbrugsplads",
+        "municipality":  "Nordfyns Kommune",
+        "address":  "Ørkebyvej 15, 5450 Otterup",
+        "lat":  55.50042817,
+        "lon":  10.39231931,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-nordfyns-kommune-soendersoe-genbrugsplads-snavevej-25-5471-soendersoe",
+        "name":  "Søndersø Genbrugsplads",
+        "municipality":  "Nordfyns Kommune",
+        "address":  "Snavevej 25, 5471 Søndersø",
+        "lat":  55.47747564,
+        "lon":  10.25936047,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-nyborg-kommune-nyborg-genbrugsstation-lollandsvej-6-5800-nyborg",
+        "name":  "Nyborg Genbrugsstation",
+        "municipality":  "Nyborg Kommune",
+        "address":  "Lollandsvej 6, 5800 Nyborg",
+        "lat":  55.31357832,
+        "lon":  10.74914145,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-nyborg-kommune-ullerslev-genbrugsstation-solholm-8a-5540-ullerslev",
+        "name":  "Ullerslev Genbrugsstation",
+        "municipality":  "Nyborg Kommune",
+        "address":  "Solholm 8A, 5540 Ullerslev",
+        "lat":  55.35447343,
+        "lon":  10.67134712,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-nyborg-kommune-oerbaek-genbrugsstation-langemosevaenget-11-5853-oerbaek",
+        "name":  "Ørbæk Genbrugsstation",
+        "municipality":  "Nyborg Kommune",
+        "address":  "Langemosevænget 11, 5853 Ørbæk",
+        "lat":  55.25168256,
+        "lon":  10.6782078,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-naestved-kommune-fuglebjerg-genbrugsplads-miljoevej-2-4262-sandved",
+        "name":  "Fuglebjerg Genbrugsplads",
+        "municipality":  "Næstved Kommune",
+        "address":  "Miljøvej 2, 4262 Sandved",
+        "lat":  55.28033708,
+        "lon":  11.55711957,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-naestved-kommune-herlufmagle-genbrugsplads-haandvaerkervej-24-4160-herlufmagle",
+        "name":  "Herlufmagle Genbrugsplads",
+        "municipality":  "Næstved Kommune",
+        "address":  "Håndværkervej 24, 4160 Herlufmagle",
+        "lat":  55.3166871,
+        "lon":  11.74146793,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-naestved-kommune-holme-olstrup-genbrugsplads-gartnervej-7-4684-holmegaard",
+        "name":  "Holme-Olstrup Genbrugsplads",
+        "municipality":  "Næstved Kommune",
+        "address":  "Gartnervej 7, 4684 Holmegaard",
+        "lat":  55.26071522,
+        "lon":  11.8571492,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-naestved-kommune-mogenstrup-genbrugsplads-boegesoevej-29-4700-naestved",
+        "name":  "Mogenstrup Genbrugsplads",
+        "municipality":  "Næstved Kommune",
+        "address":  "Bøgesøvej 29, 4700 Næstved",
+        "lat":  55.18721204,
+        "lon":  11.87019004,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-naestved-kommune-naestved-genbrugsplads-fiskerhusvej-22-4700-naestved",
+        "name":  "Næstved Genbrugsplads",
+        "municipality":  "Næstved Kommune",
+        "address":  "Fiskerhusvej 22, 4700 Næstved",
+        "lat":  55.20544644,
+        "lon":  11.73486207,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-odder-kommune-odder-genbrugsplads-skovdalsvej-26a-8300-odder",
+        "name":  "Odder Genbrugsplads",
+        "municipality":  "Odder Kommune",
+        "address":  "Skovdalsvej 26A, 8300 Odder",
+        "lat":  55.98838031,
+        "lon":  10.14489924,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-odense-kommune-bullerup-genbrugsstation-bullerupvej-84-b-5240-odense-noe",
+        "name":  "Bullerup Genbrugsstation",
+        "municipality":  "Odense Kommune",
+        "address":  "Bullerupvej 84 B, 5240 Odense NØ",
+        "lat":  55.431098,
+        "lon":  10.461074,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-odense-kommune-genbrugsstation-havnegade-havnegade-102-5000-odense-c",
+        "name":  "Genbrugsstation Havnegade",
+        "municipality":  "Odense Kommune",
+        "address":  "Havnegade 102, 5000 Odense C",
+        "lat":  55.42568646,
+        "lon":  10.3920247,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Havnegade Genbrugsstation"
+    },
+    {
+        "id":  "mit-affald-odense-kommune-genbrugsstation-holkebjergvej-holkebjergvej-132-5250-odense",
+        "name":  "Genbrugsstation Holkebjergvej",
+        "municipality":  "Odense Kommune",
+        "address":  "Holkebjergvej 132, 5250 Odense",
+        "lat":  55.35867803,
+        "lon":  10.33378361,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Holkebjergvej Genbrugsstation"
+    },
+    {
+        "id":  "mit-affald-odense-kommune-hoejme-genbrugsstation-holkebjergvej-132-5250-odense-sv",
+        "name":  "Højme Genbrugsstation",
+        "municipality":  "Odense Kommune",
+        "address":  "Holkebjergvej 132, 5250 Odense SV",
+        "lat":  55.35867803,
+        "lon":  10.33378361,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-odense-kommune-genbrugsstation-lindved-energivej-10-5260-odense-s",
+        "name":  "Genbrugsstation Lindved",
+        "municipality":  "Odense Kommune",
+        "address":  "Energivej 10, 5260 Odense S",
+        "lat":  55.34637996,
+        "lon":  10.41121254,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Lindved Genbrugsstation"
+    },
+    {
+        "id":  "mit-affald-odense-kommune-naesby-genbrugsstation-egestubben-2-f-5270-odense-n",
+        "name":  "Næsby Genbrugsstation",
+        "municipality":  "Odense Kommune",
+        "address":  "Egestubben 2 F, 5270 Odense N",
+        "lat":  55.425432,
+        "lon":  10.358124,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-odense-kommune-genbrugsstation-snapindvej-snapindvej-21-5200-odense-v",
+        "name":  "Genbrugsstation Snapindvej",
+        "municipality":  "Odense Kommune",
+        "address":  "Snapindvej 21, 5200 Odense V",
+        "lat":  55.39746594,
+        "lon":  10.35658896,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Snapindvej Genbrugsstation"
+    },
+    {
+        "id":  "mit-affald-odsherred-kommune-faarevejle-genbrugsstation-storoevej-2-4540-faarevejle",
+        "name":  "Fårevejle Genbrugsstation",
+        "municipality":  "Odsherred Kommune",
+        "address":  "Storøvej 2, 4540 Fårevejle",
+        "lat":  55.77922685,
+        "lon":  11.48471722,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-odsherred-kommune-hoensinge-genbrugsstation-nykoebing-slagelsevej-10a-4560-vig",
+        "name":  "Hønsinge Genbrugsstation",
+        "municipality":  "Odsherred Kommune",
+        "address":  "Nykøbing-Slagelsevej 10A, 4560 Vig",
+        "lat":  55.8553907,
+        "lon":  11.5429241,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-odsherred-kommune-nykoebing-sjaelland-genbrugsstation-vangen-3-4500-nykoebing-sjaelland",
+        "name":  "Nykøbing Sjælland Genbrugsstation",
+        "municipality":  "Odsherred Kommune",
+        "address":  "Vangen 3, 4500 Nykøbing Sjælland",
+        "lat":  55.932339,
+        "lon":  11.670967,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-odsherred-kommune-odden-genbrugsplads-oddenvej-241-4583-sjaellands-odde",
+        "name":  "Odden Genbrugsplads",
+        "municipality":  "Odsherred Kommune",
+        "address":  "Oddenvej 241, 4583 Sjællands Odde",
+        "lat":  55.970789,
+        "lon":  11.35840717,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-randers-kommune-asferg-genbrugsplads-hulvejen-3-8990-faarup",
+        "name":  "Asferg Genbrugsplads",
+        "municipality":  "Randers Kommune",
+        "address":  "Hulvejen 3, 8990 Fårup",
+        "lat":  56.54590582,
+        "lon":  9.90661638,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-randers-kommune-langaa-genbrugsplads-kaersangervej-12-8870-langaa",
+        "name":  "Langå Genbrugsplads",
+        "municipality":  "Randers Kommune",
+        "address":  "Kærsangervej 12, 8870 Langå",
+        "lat":  56.3954904,
+        "lon":  9.90191831,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-randers-kommune-randers-genbrugsplads-oerneborgvej-28-8960-randers",
+        "name":  "Randers Genbrugsplads",
+        "municipality":  "Randers Kommune",
+        "address":  "Ørneborgvej 28, 8960 Randers",
+        "lat":  56.44960612,
+        "lon":  10.06651044,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-randers-kommune-oester-toerslev-genbrugsplads-udbyhoejvej-506-8983-gjerlev-j",
+        "name":  "Øster Tørslev Genbrugsplads",
+        "municipality":  "Randers Kommune",
+        "address":  "Udbyhøjvej 506, 8983 Gjerlev J",
+        "lat":  56.56564643,
+        "lon":  10.1817263,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-rebild-kommune-krastrup-genbrugsplads-moelholmvej-20b-9520-skoerping",
+        "name":  "Krastrup Genbrugsplads",
+        "municipality":  "Rebild Kommune",
+        "address":  "Mølholmvej 20B, 9520 Skørping",
+        "lat":  56.86381098,
+        "lon":  10.03036883,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-rebild-kommune-mejlby-genbrugsplads-ladelundvej-2-mejlby-9610-noerager",
+        "name":  "Mejlby Genbrugsplads",
+        "municipality":  "Rebild Kommune",
+        "address":  "Ladelundvej 2, Mejlby, 9610 Nørager",
+        "lat":  56.7551663,
+        "lon":  9.673404,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim bycentrum",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-rebild-kommune-soerup-genbrugsplads-hjedsbaekvej-107-9530-stoevring",
+        "name":  "Sørup Genbrugsplads",
+        "municipality":  "Rebild Kommune",
+        "address":  "Hjedsbækvej 107, 9530 Støvring",
+        "lat":  56.87439768,
+        "lon":  9.75449584,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ringkoebing-skjern-kommune-bork-genbrugsplads-soenderbyvej-31-6893-hemmet",
+        "name":  "Bork Genbrugsplads",
+        "municipality":  "Ringkøbing-Skjern Kommune",
+        "address":  "Sønderbyvej 31, 6893 Hemmet",
+        "lat":  55.83710506,
+        "lon":  8.30079323,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ringkoebing-skjern-kommune-hvide-sande-genbrugsplads-noerregade-84-6960-hvide-sande",
+        "name":  "Hvide Sande Genbrugsplads",
+        "municipality":  "Ringkøbing-Skjern Kommune",
+        "address":  "Nørregade 84, 6960 Hvide Sande",
+        "lat":  56.01496926,
+        "lon":  8.12930597,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ringkoebing-skjern-kommune-kloster-genbrugsplads-klostervej-144-6950-ringkoebing",
+        "name":  "Kloster Genbrugsplads",
+        "municipality":  "Ringkøbing-Skjern Kommune",
+        "address":  "Klostervej 144, 6950 Ringkøbing",
+        "lat":  56.130102,
+        "lon":  8.1807925,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ringkoebing-skjern-kommune-lem-genbrugsplads-energivej-1-6940-lem",
+        "name":  "Lem Genbrugsplads",
+        "municipality":  "Ringkøbing-Skjern Kommune",
+        "address":  "Energivej 1, 6940 Lem",
+        "lat":  56.02562778,
+        "lon":  8.36966613,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ringkoebing-skjern-kommune-ringkoebing-genbrugsplads-baldersvej-4-6950-ringkoebing",
+        "name":  "Ringkøbing Genbrugsplads",
+        "municipality":  "Ringkøbing-Skjern Kommune",
+        "address":  "Baldersvej 4, 6950 Ringkøbing",
+        "lat":  56.09189029,
+        "lon":  8.28527818,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ringkoebing-skjern-kommune-spjald-genbrugsplads-mosevej-4-6971-spjald",
+        "name":  "Spjald Genbrugsplads",
+        "municipality":  "Ringkøbing-Skjern Kommune",
+        "address":  "Mosevej 4, 6971 Spjald",
+        "lat":  56.12873039,
+        "lon":  8.5137368,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ringkoebing-skjern-kommune-tarm-genbrugsplads-industriparken-7-6880-tarm",
+        "name":  "Tarm Genbrugsplads",
+        "municipality":  "Ringkøbing-Skjern Kommune",
+        "address":  "Industriparken 7, 6880 Tarm",
+        "lat":  55.91656832,
+        "lon":  8.5282682,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ringkoebing-skjern-kommune-tim-genbrugsplads-hoebrovej-9e-6980-tim",
+        "name":  "Tim Genbrugsplads",
+        "municipality":  "Ringkøbing-Skjern Kommune",
+        "address":  "Høbrovej 9E, 6980 Tim",
+        "lat":  56.193201,
+        "lon":  8.31413651,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ringkoebing-skjern-kommune-troldhede-genbrugsplads-industrivej-15-6920-videbaek",
+        "name":  "Troldhede Genbrugsplads",
+        "municipality":  "Ringkøbing-Skjern Kommune",
+        "address":  "Industrivej 15, 6920 Videbæk",
+        "lat":  55.99556277,
+        "lon":  8.74516505,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ringkoebing-skjern-kommune-videbaek-genbrugsplads-haandvaerkervej-18-6920-videbaek",
+        "name":  "Videbæk Genbrugsplads",
+        "municipality":  "Ringkøbing-Skjern Kommune",
+        "address":  "Håndværkervej 18, 6920 Videbæk",
+        "lat":  56.09595084,
+        "lon":  8.62688658,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-ringsted-kommune-ringsted-genbrugsplads-moellevej-14-4100-ringsted",
+        "name":  "Ringsted Genbrugsplads",
+        "municipality":  "Ringsted Kommune",
+        "address":  "Møllevej 14, 4100 Ringsted",
+        "lat":  55.421707,
+        "lon":  11.79433697,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-roskilde-kommune-jyllinge-genbrugsplads-brohaven-2-4040-jyllinge",
+        "name":  "Jyllinge Genbrugsplads",
+        "municipality":  "Roskilde Kommune",
+        "address":  "Brohaven 2, 4040 Jyllinge",
+        "lat":  55.75694851,
+        "lon":  12.12521428,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-roskilde-kommune-roskilde-genbrugsplads-vestre-hedevej-32-4000-roskilde",
+        "name":  "Roskilde Genbrugsplads",
+        "municipality":  "Roskilde Kommune",
+        "address":  "Vestre Hedevej 32, 4000 Roskilde",
+        "lat":  55.64133343,
+        "lon":  12.1315486,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-roskilde-kommune-viby-genbrugsplads-vestergade-25b-4130-viby-sjaelland",
+        "name":  "Viby Genbrugsplads",
+        "municipality":  "Roskilde Kommune",
+        "address":  "Vestergade 25B, 4130 Viby Sjælland",
+        "lat":  55.54681153,
+        "lon":  12.01776594,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-rudersdal-kommune-genbrugsplads-blokken-blokken-60-3460-birkeroed",
+        "name":  "Genbrugsplads Blokken",
+        "municipality":  "Rudersdal Kommune",
+        "address":  "Blokken 60, 3460 Birkerød",
+        "lat":  55.83607145,
+        "lon":  12.400962,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Blokken Genbrugsplads"
+    },
+    {
+        "id":  "mit-affald-roedovre-kommune-roedovre-genbrugsstation-sandbaekvej-7-2610-roedovre",
+        "name":  "Rødovre Genbrugsstation",
+        "municipality":  "Rødovre Kommune",
+        "address":  "Sandbækvej 7, 2610 Rødovre",
+        "lat":  55.69322091,
+        "lon":  12.42983021,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-samsoe-kommune-genbrugsplads-harpesdal-noerreskiftevej-41-8305-samsoe",
+        "name":  "Genbrugsplads Harpesdal",
+        "municipality":  "Samsø Kommune",
+        "address":  "Nørreskiftevej 41, 8305 Samsø",
+        "lat":  55.78977592,
+        "lon":  10.63247235,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Harpesdal Genbrugsplads"
+    },
+    {
+        "id":  "mit-affald-silkeborg-kommune-gjern-genbrugsplads-lille-amerika-48-8600-silkeborg",
+        "name":  "Gjern Genbrugsplads",
+        "municipality":  "Silkeborg Kommune",
+        "address":  "Lille Amerika 48, 8600 Silkeborg",
+        "lat":  56.19986098,
+        "lon":  9.70568131,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-silkeborg-kommune-tandskov-genbrugsplads-tandskovvej-17-8600-silkeborg",
+        "name":  "Tandskov Genbrugsplads",
+        "municipality":  "Silkeborg Kommune",
+        "address":  "Tandskovvej 17, 8600 Silkeborg",
+        "lat":  56.230582,
+        "lon":  9.465064,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-silkeborg-kommune-them-genbrugsplads-ansoevej-1a-8653-them",
+        "name":  "Them Genbrugsplads",
+        "municipality":  "Silkeborg Kommune",
+        "address":  "Ansøvej 1A, 8653 Them",
+        "lat":  56.07928551,
+        "lon":  9.53298187,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-silkeborg-kommune-tietgensvej-genbrugsplads-tietgensvej-7-8600-silkeborg",
+        "name":  "Tietgensvej Genbrugsplads",
+        "municipality":  "Silkeborg Kommune",
+        "address":  "Tietgensvej 7, 8600 Silkeborg",
+        "lat":  56.19731084,
+        "lon":  9.57765199,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-skanderborg-kommune-galten-skovby-genbrugsplads-hjaltevej-24-8464-galten",
+        "name":  "Galten-Skovby Genbrugsplads",
+        "municipality":  "Skanderborg Kommune",
+        "address":  "Hjaltevej 24, 8464 Galten",
+        "lat":  56.15274141,
+        "lon":  9.96199425,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-skanderborg-kommune-hoerning-genbrugsplads-nydamsvej-20-8362-hoerning",
+        "name":  "Hørning Genbrugsplads",
+        "municipality":  "Skanderborg Kommune",
+        "address":  "Nydamsvej 20, 8362 Hørning",
+        "lat":  56.08664844,
+        "lon":  10.0440463,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-skanderborg-kommune-vaerdipark-ry-bakkelyvej-5-8680-ry",
+        "name":  "Værdipark Ry",
+        "municipality":  "Skanderborg Kommune",
+        "address":  "Bakkelyvej 5, 8680 Ry",
+        "lat":  56.08296262,
+        "lon":  9.78918262,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Ry Værdipark"
+    },
+    {
+        "id":  "mit-affald-skanderborg-kommune-vaerdipark-skanderborg-sverigesvej-13-8660-skanderborg",
+        "name":  "Værdipark Skanderborg",
+        "municipality":  "Skanderborg Kommune",
+        "address":  "Sverigesvej 13, 8660 Skanderborg",
+        "lat":  56.05387102,
+        "lon":  9.95412134,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Skanderborg Værdipark"
+    },
+    {
+        "id":  "mit-affald-skive-kommune-fur-genbrugsplads-vilietoften-9-7884-fur",
+        "name":  "Fur Genbrugsplads",
+        "municipality":  "Skive Kommune",
+        "address":  "Vilietoften 9, 7884 Fur",
+        "lat":  56.8212943,
+        "lon":  9.00629044,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-skive-kommune-kaastrup-genbrugsplads-greenlab-1-7860-spoettrup",
+        "name":  "Kåstrup Genbrugsplads",
+        "municipality":  "Skive Kommune",
+        "address":  "GreenLab 1, 7860 Spøttrup",
+        "lat":  56.64731373,
+        "lon":  8.97638763,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-skive-kommune-skive-genbrugsplads-oddervej-9-7800-skive",
+        "name":  "Skive Genbrugsplads",
+        "municipality":  "Skive Kommune",
+        "address":  "Oddervej 9, 7800 Skive",
+        "lat":  56.53689224,
+        "lon":  9.02623201,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-slagelse-kommune-agersoe-genbrugsplads-agersoe-moellevej-15-4244-agersoe",
+        "name":  "Agersø Genbrugsplads",
+        "municipality":  "Slagelse Kommune",
+        "address":  "Agersø Møllevej 15, 4244 Agersø",
+        "lat":  55.21002781,
+        "lon":  11.19721734,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-slagelse-kommune-dalmose-genbrugsplads-lundsgaardsvej-11-4261-dalmose",
+        "name":  "Dalmose Genbrugsplads",
+        "municipality":  "Slagelse Kommune",
+        "address":  "Lundsgårdsvej 11, 4261 Dalmose",
+        "lat":  55.29066501,
+        "lon":  11.40855057,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-slagelse-kommune-korsoer-genbrugsplads-genbrugsvej-6-4220-korsoer",
+        "name":  "Korsør Genbrugsplads",
+        "municipality":  "Slagelse Kommune",
+        "address":  "Genbrugsvej 6, 4220 Korsør",
+        "lat":  55.32774061,
+        "lon":  11.20487014,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-slagelse-kommune-omoe-genbrugsplads-omoe-havnevej-105c-4245-omoe",
+        "name":  "Omø Genbrugsplads",
+        "municipality":  "Slagelse Kommune",
+        "address":  "Omø Havnevej 105C, 4245 Omø",
+        "lat":  55.17087897,
+        "lon":  11.15880749,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-slagelse-kommune-skaelskoer-genbrugsplads-industrivej-47-4230-skaelskoer",
+        "name":  "Skælskør Genbrugsplads",
+        "municipality":  "Slagelse Kommune",
+        "address":  "Industrivej 47, 4230 Skælskør",
+        "lat":  55.25307227,
+        "lon":  11.32373839,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-slagelse-kommune-slagelse-genbrugsplads-skovsoevej-8-4200-slagelse",
+        "name":  "Slagelse Genbrugsplads",
+        "municipality":  "Slagelse Kommune",
+        "address":  "Skovsøvej 8, 4200 Slagelse",
+        "lat":  55.41479829,
+        "lon":  11.40295968,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-soroe-kommune-dianalund-genbrugsplads-industri-vest-15-4293-dianalund",
+        "name":  "Dianalund Genbrugsplads",
+        "municipality":  "Sorø Kommune",
+        "address":  "Industri Vest 15, 4293 Dianalund",
+        "lat":  55.5315063,
+        "lon":  11.47906516,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-soroe-kommune-soroe-genbrugsplads-metalvej-15-4180-soroe",
+        "name":  "Sorø Genbrugsplads",
+        "municipality":  "Sorø Kommune",
+        "address":  "Metalvej 15, 4180 Sorø",
+        "lat":  55.46397802,
+        "lon":  11.55708464,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-stevns-kommune-haarlev-genbrugsplads-toftebovej-11-4652-haarlev",
+        "name":  "Hårlev Genbrugsplads",
+        "municipality":  "Stevns Kommune",
+        "address":  "Toftebovej 11, 4652 Hårlev",
+        "lat":  55.34113128,
+        "lon":  12.2315826,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-stevns-kommune-store-heddinge-genbrugsplads-froeslevvej-34-4660-store-heddinge",
+        "name":  "Store Heddinge Genbrugsplads",
+        "municipality":  "Stevns Kommune",
+        "address":  "Frøslevvej 34, 4660 Store Heddinge",
+        "lat":  55.30419416,
+        "lon":  12.3821764,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-struer-kommune-struer-genbrugsplads-damgaardsvej-3-7600-struer",
+        "name":  "Struer Genbrugsplads",
+        "municipality":  "Struer Kommune",
+        "address":  "Damgårdsvej 3, 7600 Struer",
+        "lat":  56.47517527,
+        "lon":  8.57589733,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-struer-kommune-thyholm-genbrugsplads-kalkvaerksvej-20-7790-thyholm",
+        "name":  "Thyholm Genbrugsplads",
+        "municipality":  "Struer Kommune",
+        "address":  "Kalkværksvej 20, 7790 Thyholm",
+        "lat":  56.62671582,
+        "lon":  8.53435072,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-svendborg-kommune-hesselager-genbrugsstation-industrivaenget-1-5874-hesselager",
+        "name":  "Hesselager Genbrugsstation",
+        "municipality":  "Svendborg Kommune",
+        "address":  "Industrivænget 1, 5874 Hesselager",
+        "lat":  55.16741518,
+        "lon":  10.73282735,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-svendborg-kommune-svendborg-genbrugsplads-miljoevej-10-5700-svendborg",
+        "name":  "Svendborg Genbrugsplads",
+        "municipality":  "Svendborg Kommune",
+        "address":  "Miljøvej 10, 5700 Svendborg",
+        "lat":  55.08700787,
+        "lon":  10.57909826,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-syddjurs-kommune-ebeltoft-genbrugsplads-hans-winthers-vej-19-8400-ebeltoft",
+        "name":  "Ebeltoft Genbrugsplads",
+        "municipality":  "Syddjurs Kommune",
+        "address":  "Hans Winthers Vej 19, 8400 Ebeltoft",
+        "lat":  56.18170975,
+        "lon":  10.68563243,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-syddjurs-kommune-ebeltoft-genbrugsstation-hans-winthers-vej-19-8400-ebeltoft",
+        "name":  "Ebeltoft Genbrugsstation",
+        "municipality":  "Syddjurs Kommune",
+        "address":  "Hans Winthers Vej 19, 8400 Ebeltoft",
+        "lat":  56.18170975,
+        "lon":  10.68563243,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-syddjurs-kommune-feldballe-genbrugsstation-lufthavnsvej-121-8410-roende",
+        "name":  "Feldballe Genbrugsstation",
+        "municipality":  "Syddjurs Kommune",
+        "address":  "Lufthavnsvej 121, 8410 Rønde",
+        "lat":  56.2969291,
+        "lon":  10.59095341,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-syddjurs-kommune-hornslet-genbrugsstation-holmagervej-7-8543-hornslet",
+        "name":  "Hornslet Genbrugsstation",
+        "municipality":  "Syddjurs Kommune",
+        "address":  "Holmagervej 7, 8543 Hornslet",
+        "lat":  56.30316166,
+        "lon":  10.30307736,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-syddjurs-kommune-knebel-genbrugsstation-moellevej-4b-8420-knebel",
+        "name":  "Knebel Genbrugsstation",
+        "municipality":  "Syddjurs Kommune",
+        "address":  "Møllevej 4B, 8420 Knebel",
+        "lat":  56.21974887,
+        "lon":  10.4841961,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-syddjurs-kommune-ryomgaard-genbrugsstation-industrivej-19-8550-ryomgaard",
+        "name":  "Ryomgård Genbrugsstation",
+        "municipality":  "Syddjurs Kommune",
+        "address":  "Industrivej 19, 8550 Ryomgård",
+        "lat":  56.37896819,
+        "lon":  10.49307342,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-soenderborg-kommune-glansager-genbrugsplads-foldager-1-6400-soenderborg",
+        "name":  "Glansager Genbrugsplads",
+        "municipality":  "Sønderborg Kommune",
+        "address":  "Foldager 1, 6400 Sønderborg",
+        "lat":  54.93231796,
+        "lon":  9.866051,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-soenderborg-kommune-graasten-genbrugsplads-ravnsbjergvej-4a-6300-graasten",
+        "name":  "Gråsten Genbrugsplads",
+        "municipality":  "Sønderborg Kommune",
+        "address":  "Ravnsbjergvej 4A, 6300 Gråsten",
+        "lat":  54.91549078,
+        "lon":  9.5534458,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-soenderborg-kommune-guderup-genbrugsplads-smedevaenget-3-6430-nordborg",
+        "name":  "Guderup Genbrugsplads",
+        "municipality":  "Sønderborg Kommune",
+        "address":  "Smedevænget 3, 6430 Nordborg",
+        "lat":  54.99369346,
+        "lon":  9.85985931,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-soenderborg-kommune-noerrekobbel-genbrugsplads-noerrekobbel-7-6400-soenderborg",
+        "name":  "Nørrekobbel Genbrugsplads",
+        "municipality":  "Sønderborg Kommune",
+        "address":  "Nørrekobbel 7, 6400 Sønderborg",
+        "lat":  54.9236731,
+        "lon":  9.79274978,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-soenderborg-kommune-skodsboel-genbrugsplads-nyboelnorvej-26-6310-broager",
+        "name":  "Skodsbøl Genbrugsplads",
+        "municipality":  "Sønderborg Kommune",
+        "address":  "Nybølnorvej 26, 6310 Broager",
+        "lat":  54.90437476,
+        "lon":  9.65238615,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-soenderborg-kommune-skovby-genbrugsplads-skovmosevej-2-6470-sydals",
+        "name":  "Skovby Genbrugsplads",
+        "municipality":  "Sønderborg Kommune",
+        "address":  "Skovmosevej 2, 6470 Sydals",
+        "lat":  54.87939618,
+        "lon":  9.9953021,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-soenderborg-kommune-sundeved-genbrugsplads-langbroparken-2-6400-soenderborg",
+        "name":  "Sundeved Genbrugsplads",
+        "municipality":  "Sønderborg Kommune",
+        "address":  "Langbroparken 2, 6400 Sønderborg",
+        "lat":  54.9699513,
+        "lon":  9.66459747,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-soenderborg-kommune-vesterlund-genbrugsplads-genvejen-3-6430-nordborg",
+        "name":  "Vesterlund Genbrugsplads",
+        "municipality":  "Sønderborg Kommune",
+        "address":  "Genvejen 3, 6430 Nordborg",
+        "lat":  55.04494944,
+        "lon":  9.74206183,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-thisted-kommune-froestrup-genbrugscenter-haandvaerkervej-13a-7741-froestrup",
+        "name":  "Frøstrup Genbrugscenter",
+        "municipality":  "Thisted Kommune",
+        "address":  "Håndværkervej 13A, 7741 Frøstrup",
+        "lat":  57.09094067,
+        "lon":  8.98074192,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-thisted-kommune-hanstholm-genbrugscenter-industrivangen-20-7730-hanstholm",
+        "name":  "Hanstholm Genbrugscenter",
+        "municipality":  "Thisted Kommune",
+        "address":  "Industrivangen 20, 7730 Hanstholm",
+        "lat":  57.10847046,
+        "lon":  8.64527145,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-thisted-kommune-hurup-genbrugscenter-slyngborgvej-9-7760-hurup",
+        "name":  "Hurup Genbrugscenter",
+        "municipality":  "Thisted Kommune",
+        "address":  "Slyngborgvej 9, 7760 Hurup",
+        "lat":  56.74006341,
+        "lon":  8.43181733,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-thisted-kommune-thisted-genbrugscenter-flintborgvej-5-7700-thisted",
+        "name":  "Thisted Genbrugscenter",
+        "municipality":  "Thisted Kommune",
+        "address":  "Flintborgvej 5, 7700 Thisted",
+        "lat":  56.96709446,
+        "lon":  8.71198235,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-toender-kommune-hoelleskov-genbrugsplads-hoelleskovvej-9a-6520-toftlund",
+        "name":  "Hølleskov Genbrugsplads",
+        "municipality":  "Tønder Kommune",
+        "address":  "Hølleskovvej 9A, 6520 Toftlund",
+        "lat":  55.1899399,
+        "lon":  9.0951979,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-toender-kommune-loegumkloster-genbrugsplads-industrivej-17a-6240-loegumkloster",
+        "name":  "Løgumkloster Genbrugsplads",
+        "municipality":  "Tønder Kommune",
+        "address":  "Industrivej 17A, 6240 Løgumkloster",
+        "lat":  55.04966096,
+        "lon":  8.95343459,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-toender-kommune-roemoe-genbrugsplads-havnebyvej-114-6792-roemoe",
+        "name":  "Rømø Genbrugsplads",
+        "municipality":  "Tønder Kommune",
+        "address":  "Havnebyvej 114, 6792 Rømø",
+        "lat":  55.12619418,
+        "lon":  8.54704112,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-toender-kommune-skaerbaek-genbrugsplads-biovej-2-6780-skaerbaek",
+        "name":  "Skærbæk Genbrugsplads",
+        "municipality":  "Tønder Kommune",
+        "address":  "Biovej 2, 6780 Skærbæk",
+        "lat":  55.15800127,
+        "lon":  8.78266491,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-toender-kommune-toender-genbrugsplads-skovaenget-14-6270-toender",
+        "name":  "Tønder Genbrugsplads",
+        "municipality":  "Tønder Kommune",
+        "address":  "Skovænget 14, 6270 Tønder",
+        "lat":  54.95206698,
+        "lon":  8.86174592,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-taarnby-kommune-kirstinehoej-genbrugsplads-kirstinehoej-25c-2770-kastrup",
+        "name":  "Kirstinehøj Genbrugsplads",
+        "municipality":  "Tårnby Kommune",
+        "address":  "Kirstinehøj 25C, 2770 Kastrup",
+        "lat":  55.61631135,
+        "lon":  12.61562313,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-varde-kommune-noerre-nebel-genbrugsplads-kastkaervej-130-6830-noerre-nebel",
+        "name":  "Nørre Nebel Genbrugsplads",
+        "municipality":  "Varde Kommune",
+        "address":  "Kastkærvej 130, 6830 Nørre Nebel",
+        "lat":  55.77165419,
+        "lon":  8.3172232,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-varde-kommune-oksboel-genbrugsplads-industrivej-13-6840-oksboel",
+        "name":  "Oksbøl Genbrugsplads",
+        "municipality":  "Varde Kommune",
+        "address":  "Industrivej 13, 6840 Oksbøl",
+        "lat":  55.62195149,
+        "lon":  8.29317424,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-varde-kommune-varde-genbrugsplads-ndr-boulevard-302-6800-varde",
+        "name":  "Varde Genbrugsplads",
+        "municipality":  "Varde Kommune",
+        "address":  "Ndr. Boulevard 302, 6800 Varde",
+        "lat":  55.61555229,
+        "lon":  8.45777313,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-varde-kommune-vrenderup-genbrugsplads-hellevej-48-6818-aarre",
+        "name":  "Vrenderup Genbrugsplads",
+        "municipality":  "Varde Kommune",
+        "address":  "Hellevej 48, 6818 Årre",
+        "lat":  55.61642506,
+        "lon":  8.72393134,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-varde-kommune-oelgod-genbrugsplads-energivej-11-6870-oelgod",
+        "name":  "Ølgod Genbrugsplads",
+        "municipality":  "Varde Kommune",
+        "address":  "Energivej 11, 6870 Ølgod",
+        "lat":  55.81490245,
+        "lon":  8.63606256,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vejen-kommune-broerup-genbrugsplads-stenbro-alle-14-6650-broerup",
+        "name":  "Brørup Genbrugsplads",
+        "municipality":  "Vejen Kommune",
+        "address":  "Stenbro Allé 14, 6650 Brørup",
+        "lat":  55.50066191,
+        "lon":  9.02699756,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vejen-kommune-roedding-genbrugsplads-nordre-industrivej-14-6630-roedding",
+        "name":  "Rødding Genbrugsplads",
+        "municipality":  "Vejen Kommune",
+        "address":  "Nordre Industrivej 14, 6630 Rødding",
+        "lat":  55.37602341,
+        "lon":  9.04689808,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vejen-kommune-vejen-genbrugsplads-koldingvej-30g-6600-vejen",
+        "name":  "Vejen Genbrugsplads",
+        "municipality":  "Vejen Kommune",
+        "address":  "Koldingvej 30G, 6600 Vejen",
+        "lat":  55.46824092,
+        "lon":  9.17534868,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vejle-kommune-boerkop-genbrugsplads-overmoellevej-121-7080-boerkop",
+        "name":  "Børkop Genbrugsplads",
+        "municipality":  "Vejle Kommune",
+        "address":  "Overmøllevej 121, 7080 Børkop",
+        "lat":  55.63438822,
+        "lon":  9.62317031,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vejle-kommune-egtved-genbrugsplads-nydamsvej-8-6040-egtved",
+        "name":  "Egtved Genbrugsplads",
+        "municipality":  "Vejle Kommune",
+        "address":  "Nydamsvej 8, 6040 Egtved",
+        "lat":  55.62145333,
+        "lon":  9.30511618,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vejle-kommune-give-genbrugsplads-dyrskuevej-2-7323-give",
+        "name":  "Give Genbrugsplads",
+        "municipality":  "Vejle Kommune",
+        "address":  "Dyrskuevej 2, 7323 Give",
+        "lat":  55.86030534,
+        "lon":  9.25231646,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vejle-kommune-ressourcecenter-vejle-voervej-12-7120-vejle-oest",
+        "name":  "RessourceCenter Vejle",
+        "municipality":  "Vejle Kommune",
+        "address":  "Voervej 12, 7120 Vejle Øst",
+        "lat":  55.74776719,
+        "lon":  9.60960599,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Vejle RessourceCenter"
+    },
+    {
+        "id":  "mit-affald-vesthimmerlands-kommune-farsoe-genbrugsplads-roejbaekvej-2a-9640-farsoe",
+        "name":  "Farsø Genbrugsplads",
+        "municipality":  "Vesthimmerlands Kommune",
+        "address":  "Røjbækvej 2A, 9640 Farsø",
+        "lat":  56.76442541,
+        "lon":  9.34404365,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vesthimmerlands-kommune-loegstoer-genbrugsplads-stengaardsvej-33-9670-loegstoer",
+        "name":  "Løgstør Genbrugsplads",
+        "municipality":  "Vesthimmerlands Kommune",
+        "address":  "Stengårdsvej 33, 9670 Løgstør",
+        "lat":  56.93243114,
+        "lon":  9.37607945,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vesthimmerlands-kommune-aalestrup-genbrugsplads-toftegaardsvej-3b-9620-aalestrup",
+        "name":  "Aalestrup Genbrugsplads",
+        "municipality":  "Vesthimmerlands Kommune",
+        "address":  "Toftegaardsvej 3B, 9620 Aalestrup",
+        "lat":  56.6963776,
+        "lon":  9.4857545,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vesthimmerlands-kommune-aars-genbrugsplads-skivumvej-154-9600-aars",
+        "name":  "Aars Genbrugsplads",
+        "municipality":  "Vesthimmerlands Kommune",
+        "address":  "Skivumvej 154, 9600 Aars",
+        "lat":  56.81044665,
+        "lon":  9.5476644,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-viborg-kommune-bjerringbro-genbrugsstation-engvejen-2a-8850-bjerringbro",
+        "name":  "Bjerringbro Genbrugsstation",
+        "municipality":  "Viborg Kommune",
+        "address":  "Engvejen 2A, 8850 Bjerringbro",
+        "lat":  56.37039236,
+        "lon":  9.62839068,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-viborg-kommune-karup-genbrugsstation-materielvej-3-7470-karup-j",
+        "name":  "Karup Genbrugsstation",
+        "municipality":  "Viborg Kommune",
+        "address":  "Materielvej 3, 7470 Karup J",
+        "lat":  56.31733804,
+        "lon":  9.17555116,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-viborg-kommune-moeldrup-genbrugsstation-erhvervsparken-6-9632-moeldrup",
+        "name":  "Møldrup Genbrugsstation",
+        "municipality":  "Viborg Kommune",
+        "address":  "Erhvervsparken 6, 9632 Møldrup",
+        "lat":  56.61789585,
+        "lon":  9.51389652,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-viborg-kommune-stoholm-genbrugsstation-tastumvej-18d-7850-stoholm-jylland",
+        "name":  "Stoholm Genbrugsstation",
+        "municipality":  "Viborg Kommune",
+        "address":  "Tastumvej 18D, 7850 Stoholm Jylland",
+        "lat":  56.493125,
+        "lon":  9.132576,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-viborg-kommune-viborg-genbrugsstation-kirkebaekvej-136-8800-viborg",
+        "name":  "Viborg Genbrugsstation",
+        "municipality":  "Viborg Kommune",
+        "address":  "Kirkebækvej 136, 8800 Viborg",
+        "lat":  56.47594948,
+        "lon":  9.3602267,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-viborg-kommune-oerum-genbrugsstation-industrivej-18-8830-tjele",
+        "name":  "Ørum Genbrugsstation",
+        "municipality":  "Viborg Kommune",
+        "address":  "Industrivej 18, 8830 Tjele",
+        "lat":  56.48335646,
+        "lon":  9.61656237,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vordingborg-kommune-moen-genbrugsplads-aebelnaesvej-54-4780-stege",
+        "name":  "Møn Genbrugsplads",
+        "municipality":  "Vordingborg Kommune",
+        "address":  "Æbelnæsvej 54, 4780 Stege",
+        "lat":  54.96594629,
+        "lon":  12.22105331,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vordingborg-kommune-praestoe-genbrugsplads-vaerkstedsvej-4-4720-praestoe",
+        "name":  "Præstø Genbrugsplads",
+        "municipality":  "Vordingborg Kommune",
+        "address":  "Værkstedsvej 4, 4720 Præstø",
+        "lat":  55.1148018,
+        "lon":  12.04043552,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-vordingborg-kommune-vordingborg-genbrugsplads-spirevej-4-oerslev-4760-vordingborg",
+        "name":  "Vordingborg Genbrugsplads",
+        "municipality":  "Vordingborg Kommune",
+        "address":  "Spirevej 4, Ørslev, 4760 Vordingborg",
+        "lat":  55.04576511,
+        "lon":  11.9532764,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aeroe-kommune-aeroe-genbrugsplads-husmarken-2a-5970-aeroeskoebing",
+        "name":  "Ærø Genbrugsplads",
+        "municipality":  "Ærø Kommune",
+        "address":  "Husmarken 2A, 5970 Ærøskøbing",
+        "lat":  54.85767145,
+        "lon":  10.36404159,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aabenraa-kommune-kliplev-genbrugsplads-potterhusvej-3-6200-aabenraa",
+        "name":  "Kliplev Genbrugsplads",
+        "municipality":  "Aabenraa Kommune",
+        "address":  "Potterhusvej 3, 6200 Aabenraa",
+        "lat":  54.9814507,
+        "lon":  9.4000986,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aabenraa-kommune-kobro-genbrugsplads-slogsaavej-20-6372-bylderup-bov",
+        "name":  "Kobro Genbrugsplads",
+        "municipality":  "Aabenraa Kommune",
+        "address":  "Slogsåvej 20, 6372 Bylderup-Bov",
+        "lat":  54.96947891,
+        "lon":  9.14790574,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aabenraa-kommune-padborg-genbrugsplads-visherredsvej-1-6330-padborg",
+        "name":  "Padborg Genbrugsplads",
+        "municipality":  "Aabenraa Kommune",
+        "address":  "Visherredsvej 1, 6330 Padborg",
+        "lat":  54.83228986,
+        "lon":  9.3576856,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aabenraa-kommune-tumboel-genbrugsplads-tumboel-moellegade-1-6200-aabenraa",
+        "name":  "Tumbøl Genbrugsplads",
+        "municipality":  "Aabenraa Kommune",
+        "address":  "Tumbøl Møllegade 1, 6200 Aabenraa",
+        "lat":  54.97785731,
+        "lon":  9.51862917,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aabenraa-kommune-aabenraa-genbrugsplads-forsyningsvejen-2-6200-aabenraa",
+        "name":  "Aabenraa Genbrugsplads",
+        "municipality":  "Aabenraa Kommune",
+        "address":  "Forsyningsvejen 2, 6200 Aabenraa",
+        "lat":  55.07257407,
+        "lon":  9.38381432,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aalborg-kommune-genbrugspladsen-gandrup-teglvaenget-13-9362-gandrup",
+        "name":  "Genbrugspladsen Gandrup",
+        "municipality":  "Aalborg Kommune",
+        "address":  "Teglvænget 13, 9362 Gandrup",
+        "lat":  57.05979693,
+        "lon":  10.16829313,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aalborg-kommune-genbrugspladsen-hou-skovsgaardsvej-145-9370-hals",
+        "name":  "Genbrugspladsen Hou",
+        "municipality":  "Aalborg Kommune",
+        "address":  "Skovsgårdsvej 145, 9370 Hals",
+        "lat":  57.05756674,
+        "lon":  10.33338158,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aalborg-kommune-genbrugspladsen-nibe-aalborgvej-55-9240-nibe",
+        "name":  "Genbrugspladsen Nibe",
+        "municipality":  "Aalborg Kommune",
+        "address":  "Aalborgvej 55, 9240 Nibe",
+        "lat":  56.99592715,
+        "lon":  9.66285339,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aalborg-kommune-genbrugspladsen-over-kaeret-over-baekken-2-9220-aalborg-oest",
+        "name":  "Genbrugspladsen Over Kæret",
+        "municipality":  "Aalborg Kommune",
+        "address":  "Over Bækken 2, 9220 Aalborg Øst",
+        "lat":  57.025898,
+        "lon":  9.921586,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aalborg-kommune-genbrugspladsen-storvorde-engvej-26-9280-storvorde",
+        "name":  "Genbrugspladsen Storvorde",
+        "municipality":  "Aalborg Kommune",
+        "address":  "Engvej 26, 9280 Storvorde",
+        "lat":  56.99384183,
+        "lon":  10.12732933,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aalborg-kommune-genbrugspladsen-sundsholmen-sundsholmen-20-9400-noerresundby",
+        "name":  "Genbrugspladsen Sundsholmen",
+        "municipality":  "Aalborg Kommune",
+        "address":  "Sundsholmen 20, 9400 Nørresundby",
+        "lat":  57.06391574,
+        "lon":  9.95162165,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aarhus-kommune-brabrand-genbrugsplads-sintrupvej-57-8220-brabrand",
+        "name":  "Brabrand Genbrugsplads",
+        "municipality":  "Aarhus Kommune",
+        "address":  "Sintrupvej 57, 8220 Brabrand",
+        "lat":  56.16666485,
+        "lon":  10.09860436,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    },
+    {
+        "id":  "mit-affald-aarhus-kommune-genbrugsstation-hasselager-birkegaardsvej-8-8361-hasselager",
+        "name":  "Genbrugsstation Hasselager",
+        "municipality":  "Aarhus Kommune",
+        "address":  "Birkegårdsvej 8, 8361 Hasselager",
+        "lat":  56.10298421,
+        "lon":  10.11628641,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Hasselager Genbrugsstation"
+    },
+    {
+        "id":  "mit-affald-aarhus-kommune-genbrugsstation-lisbjerg-oelstedvej-70-8200-aarhus-n",
+        "name":  "Genbrugsstation Lisbjerg",
+        "municipality":  "Aarhus Kommune",
+        "address":  "Ølstedvej 70, 8200 Aarhus N",
+        "lat":  56.2279813,
+        "lon":  10.1512934,
+        "source":  "Mit Affald",
+        "geocoder":  "Nominatim",
+        "map":  {
+
+                },
+        "displayName":  "Lisbjerg Genbrugsstation"
+    },
+    {
+        "id":  "mit-affald-aarhus-kommune-genbrugsstation-malling-holmskovvej-66-8340-malling",
+        "name":  "Genbrugsstation Malling",
+        "municipality":  "Aarhus Kommune",
+        "address":  "Holmskovvej 66, 8340 Malling",
+        "lat":  56.04025471,
+        "lon":  10.18632899,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Malling Genbrugsstation"
+    },
+    {
+        "id":  "mit-affald-aarhus-kommune-genbrugsstation-risskov-lystrupvej-190-8240-risskov",
+        "name":  "Genbrugsstation Risskov",
+        "municipality":  "Aarhus Kommune",
+        "address":  "Lystrupvej 190, 8240 Risskov",
+        "lat":  56.21602257,
+        "lon":  10.23558067,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                },
+        "displayName":  "Risskov Genbrugsstation"
+    },
+    {
+        "id":  "mit-affald-aarhus-kommune-viby-genbrugsstation-eskelundvej-13-8260-viby-j",
+        "name":  "Viby genbrugsstation",
+        "municipality":  "Aarhus Kommune",
+        "address":  "Eskelundvej 13, 8260 Viby J",
+        "lat":  56.14037937,
+        "lon":  10.16374928,
+        "source":  "Mit Affald",
+        "geocoder":  "Dataforsyningen",
+        "map":  {
+
+                }
+    }
+];
