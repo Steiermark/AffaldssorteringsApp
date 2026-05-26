@@ -89,6 +89,7 @@ h2 {
 
 .site-panel,
 .android-panel,
+.api-panel,
 .capture-panel,
 .result-panel,
 .guide-panel {
@@ -101,6 +102,7 @@ h2 {
 
 .site-panel,
 .android-panel,
+.api-panel,
 .result-panel,
 .guide-panel {
   padding: 16px;
@@ -111,6 +113,33 @@ h2 {
   grid-template-columns: 1fr auto;
   gap: 14px;
   align-items: center;
+}
+
+.api-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.api-key-row {
+  display: grid;
+  grid-template-columns: auto minmax(220px, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.api-key-row label {
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.api-key-row input {
+  min-width: 0;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 12px;
+  background: #ffffff;
+  color: var(--ink);
 }
 
 .android-panel p {
@@ -610,6 +639,7 @@ meter {
 
   .hero,
   .android-panel,
+  .api-key-row,
   .site-controls,
   .site-facts {
     grid-template-columns: 1fr;

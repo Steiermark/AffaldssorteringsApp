@@ -9,7 +9,7 @@
     <title>Sorteringshjælp</title>
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="assets/sorting-mark.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=35">
+    <link rel="stylesheet" href="styles.css?v=49">
   </head>
   <body>
     <main class="app-shell">
@@ -29,6 +29,19 @@
           <p id="android-status">Appen kan installeres fra Chrome på Android, når den køres via HTTPS.</p>
         </div>
         <button id="install-android" class="primary-button" type="button" hidden>Installer app</button>
+      </section>
+
+      <section class="api-panel" aria-labelledby="api-title">
+        <div>
+          <p class="eyebrow">AI-nøgle</p>
+          <h2 id="api-title">Billedgenkendelse</h2>
+          <p id="api-key-status">Indsæt Anthropic API-nøgle for at aktivere billedanalyse.</p>
+        </div>
+        <div class="api-key-row">
+          <label for="anthropic-api-key">Anthropic API-nøgle</label>
+          <input id="anthropic-api-key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-ant-api03-...">
+          <button id="clear-api-key" type="button">Ryd</button>
+        </div>
       </section>
 
       <section class="site-panel" aria-labelledby="site-title">
@@ -133,10 +146,9 @@
       </div>
     </div>
     <canvas id="snapshot" hidden></canvas>
-    <script src="data/national-sites.js?v=34"></script>
-    <script src="data/fractions.js?v=34"></script>
-    <script src="data/site-layouts.js?v=34"></script>
-    <script src="config.js"></script>
-    <script src="app.js?v=38"></script>
+    <script src="data/national-sites.js?v=49"></script>
+    <script src="data/fractions.js?v=49"></script>
+    <script src="data/site-layouts.js?v=49"></script>
+    <script src="app.js?v=49"></script>
   </body>
 </html>

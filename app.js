@@ -281,6 +281,9 @@ const webEvidenceGrid = document.querySelector("#web-evidence-grid");
 const refreshWebEvidence = document.querySelector("#refresh-web-evidence");
 const androidStatus = document.querySelector("#android-status");
 const installAndroidButton = document.querySelector("#install-android");
+const anthropicApiKeyInput = document.querySelector("#anthropic-api-key");
+const clearApiKeyButton = document.querySelector("#clear-api-key");
+const apiKeyStatus = document.querySelector("#api-key-status");
 
 let stream;
 let selectedSite = null;
@@ -299,6 +302,7 @@ let dragDepth = 0;
 const anthropicMessagesEndpoint = "https://api.anthropic.com/v1/messages";
 const anthropicModel = "claude-haiku-4-5-20251001";
 const appConfig = window.affaldssorteringConfig || {};
+const anthropicApiKeyStorageKey = "sortering:anthropic-api-key";
 const imageClassificationPrompt = `Klassificér det primære affaldsobjekt på billedet. Containere: trae, metal, murbrokker, stort_braendbart, farligt_affald, elektronik, pap, haveaffald, glas, haardt_plast, bloed_plast, tekstil, daek, gips, vinduer, pvc, deponi, sanitet, flamingo, smaat_braendbart
 Kun JSON:{"name":"kort navn","category":"key","confidence":0.9,"tip":"evt tip"}
 Kun ét objekt. Ingen array.`;
@@ -988,8 +992,43 @@ function setImageLoading(isLoading) {
   captureButton.disabled = isLoading || !stream;
 }
 
+function getStoredAnthropicApiKey() {
+  try {
+    return localStorage.getItem(anthropicApiKeyStorageKey) || "";
+  } catch {
+    return "";
+  }
+}
+
+function setStoredAnthropicApiKey(value) {
+  try {
+    if (value) {
+      localStorage.setItem(anthropicApiKeyStorageKey, value);
+    } else {
+      localStorage.removeItem(anthropicApiKeyStorageKey);
+    }
+  } catch {
+    apiKeyStatus.textContent = "Nøglen kunne ikke gemmes i browseren.";
+  }
+}
+
 function getAnthropicApiKey() {
-  return appConfig.anthropicApiKey || "";
+  return (anthropicApiKeyInput?.value || getStoredAnthropicApiKey() || appConfig.anthropicApiKey || "").trim();
+}
+
+function updateApiKeyStatus() {
+  const hasKey = Boolean(getAnthropicApiKey());
+  apiKeyStatus.textContent = hasKey
+    ? "Billedgenkendelse er konfigureret i denne browser."
+    : "Indsæt Anthropic API-nøgle for at aktivere billedanalyse.";
+}
+
+function initializeApiKeyInput() {
+  const configuredKey = getStoredAnthropicApiKey() || appConfig.anthropicApiKey || "";
+  if (configuredKey) {
+    anthropicApiKeyInput.value = configuredKey;
+  }
+  updateApiKeyStatus();
 }
 
 function dataUrlToBase64(dataUrl) {
@@ -1131,7 +1170,7 @@ async function analyzeSelectedImage(src, fileName = "billede") {
     resultTitle.textContent = "Billedgenkendelse fejlede";
     resultFractionLabel.textContent = "Ingen container valgt";
     resultText.textContent = error.message === "MISSING_API_KEY"
-      ? "Billedgenkendelse er ikke konfigureret endnu."
+      ? "Billedgenkendelse mangler Anthropic API-nøglen. Indsæt nøglen i feltet Billedgenkendelse."
       : `Kunne ikke analysere billedet lige nu. ${error.message}`;
   } finally {
     if (requestId === imageAnalysisRequest) {
@@ -1522,6 +1561,15 @@ siteSelect.addEventListener("change", () => {
 startButton.addEventListener("click", startCamera);
 captureButton.addEventListener("click", capturePhoto);
 imageInput.addEventListener("change", handleImageSelection);
+anthropicApiKeyInput.addEventListener("input", () => {
+  setStoredAnthropicApiKey(anthropicApiKeyInput.value.trim());
+  updateApiKeyStatus();
+});
+clearApiKeyButton.addEventListener("click", () => {
+  anthropicApiKeyInput.value = "";
+  setStoredAnthropicApiKey("");
+  updateApiKeyStatus();
+});
 window.addEventListener("dragenter", handleDragEnter);
 window.addEventListener("dragover", handleDragOver);
 window.addEventListener("dragleave", handleDragLeave);
@@ -1544,6 +1592,7 @@ refreshWebEvidence.addEventListener("click", () => {
 });
 
 buildSiteIndex();
+initializeApiKeyInput();
 populateMunicipalities();
 populateSites();
 selectedSiteName.textContent = "Ikke valgt";

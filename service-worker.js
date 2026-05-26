@@ -1,10 +1,9 @@
-const CACHE_NAME = "sorteringshjaelp-v37";
+const CACHE_NAME = "sorteringshjaelp-v49";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
-  "./config.js",
   "./manifest.json",
   "./assets/sorting-mark.svg",
   "./assets/pictograms/cardboard.png",
