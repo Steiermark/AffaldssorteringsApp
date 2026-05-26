@@ -303,37 +303,6 @@ select,
   padding: 12px;
 }
 
-.api-key-panel {
-  display: grid;
-  grid-template-columns: auto minmax(180px, 1fr) auto;
-  gap: 10px;
-  align-items: center;
-  padding: 0 12px 12px;
-}
-
-.api-key-panel label,
-.api-key-panel small {
-  color: var(--muted);
-  font-size: 0.88rem;
-}
-
-.api-key-panel input {
-  min-width: 0;
-  min-height: 42px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 0 12px;
-}
-
-.api-key-panel button {
-  min-height: 42px;
-  padding: 0 14px;
-}
-
-.api-key-panel small {
-  grid-column: 2 / -1;
-}
-
 button,
 .file-button {
   display: inline-grid;
@@ -651,14 +620,9 @@ meter {
   }
 
   .controls,
-  .api-key-panel,
   .search-row div,
   .web-evidence-grid {
     grid-template-columns: 1fr;
-  }
-
-  .api-key-panel small {
-    grid-column: auto;
   }
 
   .search-dropdown {

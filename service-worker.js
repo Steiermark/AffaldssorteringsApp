@@ -1,9 +1,10 @@
-const CACHE_NAME = "sorteringshjaelp-v34";
+const CACHE_NAME = "sorteringshjaelp-v37";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./config.js",
   "./manifest.json",
   "./assets/sorting-mark.svg",
   "./assets/pictograms/cardboard.png",
@@ -58,12 +59,10 @@ self.addEventListener("fetch", (event) => {
   if (requestUrl.origin !== self.location.origin) return;
 
   event.respondWith(
-    caches.match(event.request).then((cached) =>
-      cached || fetch(event.request).then((response) => {
+    fetch(event.request).then((response) => {
         const copy = response.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
         return response;
-      })
-    )
+      }).catch(() => caches.match(event.request))
   );
 });

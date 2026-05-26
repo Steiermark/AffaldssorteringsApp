@@ -253,9 +253,6 @@ const dropOverlay = document.querySelector("#drop-overlay");
 const startButton = document.querySelector("#start-camera");
 const captureButton = document.querySelector("#capture-photo");
 const imageInput = document.querySelector("#image-input");
-const anthropicApiKeyInput = document.querySelector("#anthropic-api-key");
-const clearApiKeyButton = document.querySelector("#clear-api-key");
-const apiKeyStatus = document.querySelector("#api-key-status");
 const canvas = document.querySelector("#snapshot");
 const resultTitle = document.querySelector("#result-title");
 const resultPictogram = document.querySelector("#result-pictogram");
@@ -299,9 +296,9 @@ let siteLayoutsById = new Map();
 let imageAnalysisRequest = 0;
 let dragDepth = 0;
 
-const anthropicApiKeyStorageKey = "sortering:anthropic-api-key";
 const anthropicMessagesEndpoint = "https://api.anthropic.com/v1/messages";
 const anthropicModel = "claude-haiku-4-5-20251001";
+const appConfig = window.affaldssorteringConfig || {};
 const imageClassificationPrompt = `Klassificér det primære affaldsobjekt på billedet. Containere: trae, metal, murbrokker, stort_braendbart, farligt_affald, elektronik, pap, haveaffald, glas, haardt_plast, bloed_plast, tekstil, daek, gips, vinduer, pvc, deponi, sanitet, flamingo, smaat_braendbart
 Kun JSON:{"name":"kort navn","category":"key","confidence":0.9,"tip":"evt tip"}
 Kun ét objekt. Ingen array.`;
@@ -991,40 +988,8 @@ function setImageLoading(isLoading) {
   captureButton.disabled = isLoading || !stream;
 }
 
-function readStoredApiKey() {
-  try {
-    return window.localStorage?.getItem(anthropicApiKeyStorageKey) || "";
-  } catch (error) {
-    return "";
-  }
-}
-
-function writeStoredApiKey(value) {
-  try {
-    if (value) {
-      window.localStorage?.setItem(anthropicApiKeyStorageKey, value);
-    } else {
-      window.localStorage?.removeItem(anthropicApiKeyStorageKey);
-    }
-  } catch (error) {
-    // The input still works for the current page load if localStorage is unavailable.
-  }
-}
-
-function updateApiKeyStatus() {
-  const hasKey = Boolean(anthropicApiKeyInput.value.trim());
-  apiKeyStatus.textContent = hasKey
-    ? "API-nøgle er klar. Vælg eller slip et billede for at starte AI-analysen."
-    : "Indsæt en Anthropic API-nøgle før billedgenkendelse. Nøglen gemmes kun lokalt i denne browser.";
-}
-
-function initializeApiKeyInput() {
-  anthropicApiKeyInput.value = readStoredApiKey();
-  updateApiKeyStatus();
-}
-
 function getAnthropicApiKey() {
-  return anthropicApiKeyInput.value.trim() || readStoredApiKey();
+  return appConfig.anthropicApiKey || "";
 }
 
 function dataUrlToBase64(dataUrl) {
@@ -1101,6 +1066,7 @@ async function classifyWasteImage(jpegDataUrl) {
     throw new Error("MISSING_API_KEY");
   }
 
+  resultFractionLabel.textContent = "Kalder Claude Haiku";
   const response = await fetch(anthropicMessagesEndpoint, {
     method: "POST",
     headers: {
@@ -1139,6 +1105,7 @@ async function classifyWasteImage(jpegDataUrl) {
     throw new Error(`Anthropic API svarede ${response.status}: ${detail.slice(0, 220)}`);
   }
 
+  resultFractionLabel.textContent = "Claude Haiku svarede";
   return parseAnthropicJson(await response.json());
 }
 
@@ -1164,7 +1131,7 @@ async function analyzeSelectedImage(src, fileName = "billede") {
     resultTitle.textContent = "Billedgenkendelse fejlede";
     resultFractionLabel.textContent = "Ingen container valgt";
     resultText.textContent = error.message === "MISSING_API_KEY"
-      ? "Indsæt en Anthropic API-nøgle i feltet under billedet. Når nøglen er gemt, kan du vælge eller slippe billedet igen."
+      ? "Billedgenkendelse er ikke konfigureret endnu."
       : `Kunne ikke analysere billedet lige nu. ${error.message}`;
   } finally {
     if (requestId === imageAnalysisRequest) {
@@ -1500,7 +1467,10 @@ function handleDrop(event) {
 }
 
 function registerServiceWorker() {
-  if (!("serviceWorker" in navigator) || location.protocol === "file:") {
+  if (!("serviceWorker" in navigator) || location.protocol === "file:" || location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+    navigator.serviceWorker?.getRegistrations?.().then((registrations) => {
+      registrations.forEach((registration) => registration.unregister());
+    });
     return;
   }
 
@@ -1552,15 +1522,6 @@ siteSelect.addEventListener("change", () => {
 startButton.addEventListener("click", startCamera);
 captureButton.addEventListener("click", capturePhoto);
 imageInput.addEventListener("change", handleImageSelection);
-anthropicApiKeyInput.addEventListener("input", () => {
-  writeStoredApiKey(anthropicApiKeyInput.value.trim());
-  updateApiKeyStatus();
-});
-clearApiKeyButton.addEventListener("click", () => {
-  anthropicApiKeyInput.value = "";
-  writeStoredApiKey("");
-  updateApiKeyStatus();
-});
 window.addEventListener("dragenter", handleDragEnter);
 window.addEventListener("dragover", handleDragOver);
 window.addEventListener("dragleave", handleDragLeave);
@@ -1588,7 +1549,6 @@ populateSites();
 selectedSiteName.textContent = "Ikke valgt";
 selectedSiteDistance.textContent = "-";
 siteStatus.textContent = "Vælg kommune og derefter genbrugsplads, eller brug Find min placering.";
-initializeApiKeyInput();
 renderRecentWasteSearches();
 loadWasteFractionCatalog();
 loadBundledNationalSites();

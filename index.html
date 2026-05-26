@@ -9,7 +9,7 @@
     <title>Sorteringshjælp</title>
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="assets/sorting-mark.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=34">
+    <link rel="stylesheet" href="styles.css?v=35">
   </head>
   <body>
     <main class="app-shell">
@@ -77,12 +77,6 @@
           <label class="file-button" for="image-input">Vælg billede</label>
           <input id="image-input" type="file" accept="image/*" capture="environment">
         </div>
-        <div class="api-key-panel">
-          <label for="anthropic-api-key">Anthropic API-nÃ¸gle</label>
-          <input id="anthropic-api-key" type="password" autocomplete="off" placeholder="IndsÃ¦t API-nÃ¸gle til billedgenkendelse">
-          <button id="clear-api-key" type="button">Ryd</button>
-          <small id="api-key-status">NÃ¸glen gemmes kun lokalt i denne browser.</small>
-        </div>
       </section>
 
       <section class="result-panel" aria-live="polite">
@@ -142,6 +136,7 @@
     <script src="data/national-sites.js?v=34"></script>
     <script src="data/fractions.js?v=34"></script>
     <script src="data/site-layouts.js?v=34"></script>
-    <script src="app.js?v=34"></script>
+    <script src="config.js"></script>
+    <script src="app.js?v=38"></script>
   </body>
 </html>
