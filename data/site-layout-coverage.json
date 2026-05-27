@@ -1,20 +1,18 @@
 {
-  "generated": "2026-05-26",
+  "generated": "2026-05-27",
   "totalSites": 333,
-  "mappedSites": 230,
-  "missingSites": 103,
+  "mappedSites": 234,
+  "missingSites": 99,
   "mappedMunicipalities": [
-    "Aabenraa Kommune",
-    "Aalborg Kommune",
-    "Aarhus Kommune",
     "Assens Kommune",
     "Billund Kommune",
     "Bornholms Regionskommune",
     "Brønderslev Kommune",
-    "Faaborg-Midtfyn Kommune",
+    "Esbjerg Kommune",
     "Favrskov Kommune",
     "Faxe Kommune",
     "Frederikshavn Kommune",
+    "Faaborg-Midtfyn Kommune",
     "Guldborgsund Kommune",
     "Hedensted Kommune",
     "Herning Kommune",
@@ -52,7 +50,10 @@
     "Varde Kommune",
     "Vejle Kommune",
     "Viborg Kommune",
-    "Vordingborg Kommune"
+    "Vordingborg Kommune",
+    "Aabenraa Kommune",
+    "Aalborg Kommune",
+    "Aarhus Kommune"
   ],
   "mappedSitesList": [
     {
@@ -160,6 +161,14 @@
       "sourceUrl": "https://bofa.dk/sorteringsvejledning/"
     },
     {
+      "id": "mit-affald-bornholms-regionskommune-oestermarie-containerplads-lyrsbyvej-6a-3751-oestermarie",
+      "name": "Østermarie Containerplads",
+      "municipality": "Bornholms Regionskommune",
+      "address": "Lyrsbyvej 6A, 3751 Østermarie",
+      "sourceProvider": "BOFA",
+      "sourceUrl": "https://bofa.dk/sorteringsvejledning/"
+    },
+    {
       "id": "mit-affald-bornholms-regionskommune-olsker-containerplads-roennevej-68-3770-allinge",
       "name": "Olsker Containerplads",
       "municipality": "Bornholms Regionskommune",
@@ -172,14 +181,6 @@
       "name": "Rønne Genbrugsplads",
       "municipality": "Bornholms Regionskommune",
       "address": "Almegårdsvej 8, 3700 Rønne",
-      "sourceProvider": "BOFA",
-      "sourceUrl": "https://bofa.dk/sorteringsvejledning/"
-    },
-    {
-      "id": "mit-affald-bornholms-regionskommune-oestermarie-containerplads-lyrsbyvej-6a-3751-oestermarie",
-      "name": "Østermarie Containerplads",
-      "municipality": "Bornholms Regionskommune",
-      "address": "Lyrsbyvej 6A, 3751 Østermarie",
       "sourceProvider": "BOFA",
       "sourceUrl": "https://bofa.dk/sorteringsvejledning/"
     },
@@ -200,18 +201,18 @@
       "sourceUrl": "https://nordvaerk.dk/borger/broenderslev-kommune-borger/genbrugspladser/"
     },
     {
-      "id": "mit-affald-broenderslev-kommune-broenderslev-vest-genbrugsplads-enggaardsvej-21-9700-broenderslev",
-      "name": "Brønderslev Vest Genbrugsplads",
-      "municipality": "Brønderslev Kommune",
-      "address": "Enggårdsvej 21, 9700 Brønderslev",
-      "sourceProvider": "Nordværk",
-      "sourceUrl": "https://nordvaerk.dk/borger/broenderslev-kommune-borger/genbrugspladser/"
-    },
-    {
       "id": "mit-affald-broenderslev-kommune-broenderslev-oest-genbrugsplads-stadevej-140-9700-broenderslev",
       "name": "Brønderslev Øst Genbrugsplads",
       "municipality": "Brønderslev Kommune",
       "address": "Stadevej 140, 9700 Brønderslev",
+      "sourceProvider": "Nordværk",
+      "sourceUrl": "https://nordvaerk.dk/borger/broenderslev-kommune-borger/genbrugspladser/"
+    },
+    {
+      "id": "mit-affald-broenderslev-kommune-broenderslev-vest-genbrugsplads-enggaardsvej-21-9700-broenderslev",
+      "name": "Brønderslev Vest Genbrugsplads",
+      "municipality": "Brønderslev Kommune",
+      "address": "Enggårdsvej 21, 9700 Brønderslev",
       "sourceProvider": "Nordværk",
       "sourceUrl": "https://nordvaerk.dk/borger/broenderslev-kommune-borger/genbrugspladser/"
     },
@@ -238,6 +239,38 @@
       "address": "Sejerøgade 10, 9740 Jerslev",
       "sourceProvider": "Nordværk",
       "sourceUrl": "https://nordvaerk.dk/borger/broenderslev-kommune-borger/genbrugspladser/"
+    },
+    {
+      "id": "mit-affald-esbjerg-kommune-bramming-genbrugsplads-sdr-ilstedmarkvej-3-6740-bramming",
+      "name": "Bramming Genbrugsplads",
+      "municipality": "Esbjerg Kommune",
+      "address": "Sdr. Ilstedmarkvej 3, 6740 Bramming",
+      "sourceProvider": "Esbjerg Kommune",
+      "sourceUrl": "https://www.esbjerg.dk/Files/Filer/Affald%20og%20genbrug/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort_Bramming.pdf"
+    },
+    {
+      "id": "mit-affald-esbjerg-kommune-maade-genbrugsplads-maade-kirkevej-35-6700-esbjerg",
+      "name": "Måde Genbrugsplads",
+      "municipality": "Esbjerg Kommune",
+      "address": "Måde Kirkevej 35, 6700 Esbjerg",
+      "sourceProvider": "Esbjerg Kommune",
+      "sourceUrl": "https://www.esbjerg.dk/Files/Filer/Affald%20og%20genbrug/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort_Maade.pdf"
+    },
+    {
+      "id": "mit-affald-esbjerg-kommune-ribe-genbrugsplads-oerstedsvej-69-6760-ribe",
+      "name": "Ribe Genbrugsplads",
+      "municipality": "Esbjerg Kommune",
+      "address": "Ørstedsvej 69, 6760 Ribe",
+      "sourceProvider": "Esbjerg Kommune",
+      "sourceUrl": "https://www.esbjerg.dk/Files/Filer/Affald%20og%20genbrug/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort_Ribe.pdf"
+    },
+    {
+      "id": "mit-affald-esbjerg-kommune-tarp-genbrugsplads-mukkerten-14-6715-esbjerg-n",
+      "name": "Tarp Genbrugsplads",
+      "municipality": "Esbjerg Kommune",
+      "address": "Mukkerten 14, 6715 Esbjerg N",
+      "sourceProvider": "Esbjerg Kommune",
+      "sourceUrl": "https://www.esbjerg.dk/Files/Filer/Affald%20og%20genbrug/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort_Tarp.pdf"
     },
     {
       "id": "mit-affald-favrskov-kommune-hammel-genbrugsplads-italiensvej-1-8450-hammel",
@@ -272,10 +305,26 @@
       "sourceUrl": "https://www.forsyningen.dk/media/ghdjcxkn/sorteringsvejledning-genbrugspladser-marts-2024.pdf"
     },
     {
+      "id": "mit-affald-frederikshavn-kommune-oestervraa-genbrugsplads-bjeldalsvej-3-9750-oestervraa",
+      "name": "Østervrå Genbrugsplads",
+      "municipality": "Frederikshavn Kommune",
+      "address": "Bjeldalsvej 3, 9750 Østervrå",
+      "sourceProvider": "Frederikshavn Forsyning",
+      "sourceUrl": "https://www.forsyningen.dk/media/ghdjcxkn/sorteringsvejledning-genbrugspladser-marts-2024.pdf"
+    },
+    {
       "id": "mit-affald-frederikshavn-kommune-ravnshoej-genbrugsplads-stenvej-8-ravnshoej-9900-frederikshavn",
       "name": "Ravnshøj Genbrugsplads",
       "municipality": "Frederikshavn Kommune",
       "address": "Stenvej 8, Ravnshøj, 9900 Frederikshavn",
+      "sourceProvider": "Frederikshavn Forsyning",
+      "sourceUrl": "https://www.forsyningen.dk/media/ghdjcxkn/sorteringsvejledning-genbrugspladser-marts-2024.pdf"
+    },
+    {
+      "id": "mit-affald-frederikshavn-kommune-saeby-genbrugsplads-ousenvej-16-9300-saeby",
+      "name": "Sæby Genbrugsplads",
+      "municipality": "Frederikshavn Kommune",
+      "address": "Ousenvej 16, 9300 Sæby",
       "sourceProvider": "Frederikshavn Forsyning",
       "sourceUrl": "https://www.forsyningen.dk/media/ghdjcxkn/sorteringsvejledning-genbrugspladser-marts-2024.pdf"
     },
@@ -296,26 +345,10 @@
       "sourceUrl": "https://www.forsyningen.dk/media/ghdjcxkn/sorteringsvejledning-genbrugspladser-marts-2024.pdf"
     },
     {
-      "id": "mit-affald-frederikshavn-kommune-saeby-genbrugsplads-ousenvej-16-9300-saeby",
-      "name": "Sæby Genbrugsplads",
-      "municipality": "Frederikshavn Kommune",
-      "address": "Ousenvej 16, 9300 Sæby",
-      "sourceProvider": "Frederikshavn Forsyning",
-      "sourceUrl": "https://www.forsyningen.dk/media/ghdjcxkn/sorteringsvejledning-genbrugspladser-marts-2024.pdf"
-    },
-    {
       "id": "mit-affald-frederikshavn-kommune-voersaa-genbrugsplads-kringelhedevej-17-voersaa-9300-saeby",
       "name": "Voerså Genbrugsplads",
       "municipality": "Frederikshavn Kommune",
       "address": "Kringelhedevej 17, Voerså, 9300 Sæby",
-      "sourceProvider": "Frederikshavn Forsyning",
-      "sourceUrl": "https://www.forsyningen.dk/media/ghdjcxkn/sorteringsvejledning-genbrugspladser-marts-2024.pdf"
-    },
-    {
-      "id": "mit-affald-frederikshavn-kommune-oestervraa-genbrugsplads-bjeldalsvej-3-9750-oestervraa",
-      "name": "Østervrå Genbrugsplads",
-      "municipality": "Frederikshavn Kommune",
-      "address": "Bjeldalsvej 3, 9750 Østervrå",
       "sourceProvider": "Frederikshavn Forsyning",
       "sourceUrl": "https://www.forsyningen.dk/media/ghdjcxkn/sorteringsvejledning-genbrugspladser-marts-2024.pdf"
     },
@@ -376,6 +409,14 @@
       "sourceUrl": "https://sortering.refa.dk/"
     },
     {
+      "id": "mit-affald-guldborgsund-kommune-noerre-alslev-genbrugsplads-herthadalvej-11b-4840-noerre-alslev",
+      "name": "Nørre Alslev Genbrugsplads",
+      "municipality": "Guldborgsund Kommune",
+      "address": "Herthadalvej 11B, 4840 Nørre Alslev",
+      "sourceProvider": "REFA",
+      "sourceUrl": "https://sortering.refa.dk/"
+    },
+    {
       "id": "mit-affald-guldborgsund-kommune-nykoebing-f-genbrugsplads-energivej-4-4800-nykoebing-falster",
       "name": "Nykøbing F. Genbrugsplads",
       "municipality": "Guldborgsund Kommune",
@@ -392,10 +433,10 @@
       "sourceUrl": "https://sortering.refa.dk/"
     },
     {
-      "id": "mit-affald-guldborgsund-kommune-noerre-alslev-genbrugsplads-herthadalvej-11b-4840-noerre-alslev",
-      "name": "Nørre Alslev Genbrugsplads",
+      "id": "mit-affald-guldborgsund-kommune-oester-toreby-genbrugsplads-industriparken-23-4800-nykoebing-f",
+      "name": "Øster Toreby Genbrugsplads",
       "municipality": "Guldborgsund Kommune",
-      "address": "Herthadalvej 11B, 4840 Nørre Alslev",
+      "address": "Industriparken 23, 4800 Nykøbing F.",
       "sourceProvider": "REFA",
       "sourceUrl": "https://sortering.refa.dk/"
     },
@@ -412,14 +453,6 @@
       "name": "Stubbekøbing Genbrugsplads",
       "municipality": "Guldborgsund Kommune",
       "address": "Tuemosevej 9, 4850 Stubbekøbing",
-      "sourceProvider": "REFA",
-      "sourceUrl": "https://sortering.refa.dk/"
-    },
-    {
-      "id": "mit-affald-guldborgsund-kommune-oester-toreby-genbrugsplads-industriparken-23-4800-nykoebing-f",
-      "name": "Øster Toreby Genbrugsplads",
-      "municipality": "Guldborgsund Kommune",
-      "address": "Industriparken 23, 4800 Nykøbing F.",
       "sourceProvider": "REFA",
       "sourceUrl": "https://sortering.refa.dk/"
     },
@@ -496,10 +529,26 @@
       "sourceUrl": "https://ressourceportal.dk/"
     },
     {
+      "id": "mit-affald-herning-kommune-oernhoej-genbrugsplads-nordtoften-16-6973-oernhoej",
+      "name": "Ørnhøj Genbrugsplads",
+      "municipality": "Herning Kommune",
+      "address": "Nordtoften 16, 6973 Ørnhøj",
+      "sourceProvider": "AFLD / Ressourceportal",
+      "sourceUrl": "https://ressourceportal.dk/"
+    },
+    {
       "id": "mit-affald-herning-kommune-sdr-felding-genbrugsplads-industrivej-12-7280-soender-felding",
       "name": "Sdr. Felding Genbrugsplads",
       "municipality": "Herning Kommune",
       "address": "Industrivej 12, 7280 Sønder Felding",
+      "sourceProvider": "AFLD / Ressourceportal",
+      "sourceUrl": "https://ressourceportal.dk/"
+    },
+    {
+      "id": "mit-affald-herning-kommune-soervad-genbrugsplads-tyregaardvej-7-7550-soervad",
+      "name": "Sørvad Genbrugsplads",
+      "municipality": "Herning Kommune",
+      "address": "Tyregårdvej 7, 7550 Sørvad",
       "sourceProvider": "AFLD / Ressourceportal",
       "sourceUrl": "https://ressourceportal.dk/"
     },
@@ -520,14 +569,6 @@
       "sourceUrl": "https://ressourceportal.dk/"
     },
     {
-      "id": "mit-affald-herning-kommune-soervad-genbrugsplads-tyregaardvej-7-7550-soervad",
-      "name": "Sørvad Genbrugsplads",
-      "municipality": "Herning Kommune",
-      "address": "Tyregårdvej 7, 7550 Sørvad",
-      "sourceProvider": "AFLD / Ressourceportal",
-      "sourceUrl": "https://ressourceportal.dk/"
-    },
-    {
       "id": "mit-affald-herning-kommune-vildbjerg-genbrugsplads-islandsvej-4-7480-vildbjerg",
       "name": "Vildbjerg Genbrugsplads",
       "municipality": "Herning Kommune",
@@ -536,26 +577,10 @@
       "sourceUrl": "https://ressourceportal.dk/"
     },
     {
-      "id": "mit-affald-herning-kommune-oernhoej-genbrugsplads-nordtoften-16-6973-oernhoej",
-      "name": "Ørnhøj Genbrugsplads",
-      "municipality": "Herning Kommune",
-      "address": "Nordtoften 16, 6973 Ørnhøj",
-      "sourceProvider": "AFLD / Ressourceportal",
-      "sourceUrl": "https://ressourceportal.dk/"
-    },
-    {
       "id": "mit-affald-hjoerring-kommune-bindslev-genbrugsplads-barkholtvej-3b-9881-bindslev",
       "name": "Bindslev Genbrugsplads",
       "municipality": "Hjørring Kommune",
       "address": "Barkholtvej 3B, 9881 Bindslev",
-      "sourceProvider": "Nordværk",
-      "sourceUrl": "https://nordvaerk.dk/borger/hjoerring-kommune-borger/genbrugspladser/"
-    },
-    {
-      "id": "mit-affald-hjoerring-kommune-genbrugsplads-bjergby-asdalvej-53-9800-hjoerring",
-      "name": "Genbrugsplads Bjergby",
-      "municipality": "Hjørring Kommune",
-      "address": "Asdalvej 53, 9800 Hjørring",
       "sourceProvider": "Nordværk",
       "sourceUrl": "https://nordvaerk.dk/borger/hjoerring-kommune-borger/genbrugspladser/"
     },
@@ -576,6 +601,14 @@
       "sourceUrl": "https://nordvaerk.dk/borger/hjoerring-kommune-borger/genbrugspladser/"
     },
     {
+      "id": "mit-affald-hjoerring-kommune-genbrugsplads-bjergby-asdalvej-53-9800-hjoerring",
+      "name": "Genbrugsplads Bjergby",
+      "municipality": "Hjørring Kommune",
+      "address": "Asdalvej 53, 9800 Hjørring",
+      "sourceProvider": "Nordværk",
+      "sourceUrl": "https://nordvaerk.dk/borger/hjoerring-kommune-borger/genbrugspladser/"
+    },
+    {
       "id": "mit-affald-hjoerring-kommune-hirtshals-genbrugsplads-graevlingevej-13-9850-hirtshals",
       "name": "Hirtshals Genbrugsplads",
       "municipality": "Hjørring Kommune",
@@ -584,18 +617,18 @@
       "sourceUrl": "https://nordvaerk.dk/borger/hjoerring-kommune-borger/genbrugspladser/"
     },
     {
-      "id": "mit-affald-hjoerring-kommune-hjoerring-vest-genbrugsplads-krustrupvej-56-9800-hjoerring",
-      "name": "Hjørring Vest Genbrugsplads",
-      "municipality": "Hjørring Kommune",
-      "address": "Krustrupvej 56, 9800 Hjørring",
-      "sourceProvider": "Nordværk",
-      "sourceUrl": "https://nordvaerk.dk/borger/hjoerring-kommune-borger/genbrugspladser/"
-    },
-    {
       "id": "mit-affald-hjoerring-kommune-hjoerring-oest-genbrugsplads-miljoevej-4-9800-hjoerring",
       "name": "Hjørring Øst Genbrugsplads",
       "municipality": "Hjørring Kommune",
       "address": "Miljøvej 4, 9800 Hjørring",
+      "sourceProvider": "Nordværk",
+      "sourceUrl": "https://nordvaerk.dk/borger/hjoerring-kommune-borger/genbrugspladser/"
+    },
+    {
+      "id": "mit-affald-hjoerring-kommune-hjoerring-vest-genbrugsplads-krustrupvej-56-9800-hjoerring",
+      "name": "Hjørring Vest Genbrugsplads",
+      "municipality": "Hjørring Kommune",
+      "address": "Krustrupvej 56, 9800 Hjørring",
       "sourceProvider": "Nordværk",
       "sourceUrl": "https://nordvaerk.dk/borger/hjoerring-kommune-borger/genbrugspladser/"
     },
@@ -672,20 +705,20 @@
       "sourceUrl": "https://www.fors.dk/media/cgilg4po/oroe-oversigt.pdf"
     },
     {
-      "id": "mit-affald-holbaek-kommune-tornved-genbrugsplads-holbaekvej-167-4440-moerkoev",
-      "name": "Tornved Genbrugsplads",
-      "municipality": "Holbæk Kommune",
-      "address": "Holbækvej 167, 4440 Mørkøv",
-      "sourceProvider": "Fors A/S",
-      "sourceUrl": "https://www.fors.dk/media/pbxjir21/tornved-oversigt.pdf"
-    },
-    {
       "id": "mit-affald-holbaek-kommune-toelloese-genbrugsplads-digemosevej-3-4340-toelloese",
       "name": "Tølløse Genbrugsplads",
       "municipality": "Holbæk Kommune",
       "address": "Digemosevej 3, 4340 Tølløse",
       "sourceProvider": "Fors A/S",
       "sourceUrl": "https://www.fors.dk/media/eo3gnzf5/toelloese-oversigt.pdf"
+    },
+    {
+      "id": "mit-affald-holbaek-kommune-tornved-genbrugsplads-holbaekvej-167-4440-moerkoev",
+      "name": "Tornved Genbrugsplads",
+      "municipality": "Holbæk Kommune",
+      "address": "Holbækvej 167, 4440 Mørkøv",
+      "sourceProvider": "Fors A/S",
+      "sourceUrl": "https://www.fors.dk/media/pbxjir21/tornved-oversigt.pdf"
     },
     {
       "id": "mit-affald-holstebro-kommune-sdr-nissum-genbrugsplads-noerhedevej-26d-6990-ulfborg",
@@ -824,46 +857,6 @@
       "sourceUrl": "https://argo.dk/sorteringsvejledning/"
     },
     {
-      "id": "mit-affald-kolding-kommune-christiansfeld-genbrugsplads-arlavej-9-6070-christiansfeld",
-      "name": "Christiansfeld Genbrugsplads",
-      "municipality": "Kolding Kommune",
-      "address": "Arlavej 9, 6070 Christiansfeld",
-      "sourceProvider": "Kolding Kommune / Redux",
-      "sourceUrl": "https://www.kolding.dk/p/Borger/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort--Christiansfeld-Genbrugsplads.pdf"
-    },
-    {
-      "id": "mit-affald-kolding-kommune-kolding-nord-genbrugsplads-bronzevej-3-6000-kolding",
-      "name": "Kolding Nord Genbrugsplads",
-      "municipality": "Kolding Kommune",
-      "address": "Bronzevej 3, 6000 Kolding",
-      "sourceProvider": "Kolding Kommune / Redux",
-      "sourceUrl": "https://www.kolding.dk/p/Borger/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort--Kolding-Nord-Genbrugsplads.pdf"
-    },
-    {
-      "id": "mit-affald-kolding-kommune-kolding-syd-genbrugsplads-gejlhavegaard-12-6000-kolding",
-      "name": "Kolding Syd Genbrugsplads",
-      "municipality": "Kolding Kommune",
-      "address": "Gejlhavegård 12, 6000 Kolding",
-      "sourceProvider": "Kolding Kommune / Redux",
-      "sourceUrl": "https://www.kolding.dk/p/Borger/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort--Kolding-Syd-Genbrugsplads.pdf"
-    },
-    {
-      "id": "mit-affald-kolding-kommune-lunderskov-genbrugsplads-slugten-6-6640-lunderskov",
-      "name": "Lunderskov Genbrugsplads",
-      "municipality": "Kolding Kommune",
-      "address": "Slugten 6, 6640 Lunderskov",
-      "sourceProvider": "Kolding Kommune / Redux",
-      "sourceUrl": "https://www.kolding.dk/p/Borger/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort--Lunderskov-Genbrugsplads.pdf"
-    },
-    {
-      "id": "mit-affald-kolding-kommune-vamdrup-genbrugsplads-oestermarksvej-2-6580-vamdrup",
-      "name": "Vamdrup Genbrugsplads",
-      "municipality": "Kolding Kommune",
-      "address": "Østermarksvej 2, 6580 Vamdrup",
-      "sourceProvider": "Kolding Kommune / Redux",
-      "sourceUrl": "https://www.kolding.dk/p/Borger/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort-Vamdrup-Genbrugsplads.pdf"
-    },
-    {
       "id": "mit-affald-koebenhavns-kommune-borgervaenget-genbrugsstation-sibeliusgade-80-2100-koebenhavn-oe",
       "name": "Borgervænget Genbrugsstation",
       "municipality": "Københavns Kommune",
@@ -910,6 +903,46 @@
       "address": "Tangmosevej 104B, 4600 Køge",
       "sourceProvider": "ARGO",
       "sourceUrl": "https://argo.dk/sorteringsvejledning/"
+    },
+    {
+      "id": "mit-affald-kolding-kommune-christiansfeld-genbrugsplads-arlavej-9-6070-christiansfeld",
+      "name": "Christiansfeld Genbrugsplads",
+      "municipality": "Kolding Kommune",
+      "address": "Arlavej 9, 6070 Christiansfeld",
+      "sourceProvider": "Kolding Kommune / Redux",
+      "sourceUrl": "https://www.kolding.dk/p/Borger/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort--Christiansfeld-Genbrugsplads.pdf"
+    },
+    {
+      "id": "mit-affald-kolding-kommune-kolding-nord-genbrugsplads-bronzevej-3-6000-kolding",
+      "name": "Kolding Nord Genbrugsplads",
+      "municipality": "Kolding Kommune",
+      "address": "Bronzevej 3, 6000 Kolding",
+      "sourceProvider": "Kolding Kommune / Redux",
+      "sourceUrl": "https://www.kolding.dk/p/Borger/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort--Kolding-Nord-Genbrugsplads.pdf"
+    },
+    {
+      "id": "mit-affald-kolding-kommune-kolding-syd-genbrugsplads-gejlhavegaard-12-6000-kolding",
+      "name": "Kolding Syd Genbrugsplads",
+      "municipality": "Kolding Kommune",
+      "address": "Gejlhavegård 12, 6000 Kolding",
+      "sourceProvider": "Kolding Kommune / Redux",
+      "sourceUrl": "https://www.kolding.dk/p/Borger/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort--Kolding-Syd-Genbrugsplads.pdf"
+    },
+    {
+      "id": "mit-affald-kolding-kommune-lunderskov-genbrugsplads-slugten-6-6640-lunderskov",
+      "name": "Lunderskov Genbrugsplads",
+      "municipality": "Kolding Kommune",
+      "address": "Slugten 6, 6640 Lunderskov",
+      "sourceProvider": "Kolding Kommune / Redux",
+      "sourceUrl": "https://www.kolding.dk/p/Borger/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort--Lunderskov-Genbrugsplads.pdf"
+    },
+    {
+      "id": "mit-affald-kolding-kommune-vamdrup-genbrugsplads-oestermarksvej-2-6580-vamdrup",
+      "name": "Vamdrup Genbrugsplads",
+      "municipality": "Kolding Kommune",
+      "address": "Østermarksvej 2, 6580 Vamdrup",
+      "sourceProvider": "Kolding Kommune / Redux",
+      "sourceUrl": "https://www.kolding.dk/p/Borger/Affald%20og%20genbrug/Genbrugspladser/Oversigtskort-Vamdrup-Genbrugsplads.pdf"
     },
     {
       "id": "mit-affald-langeland-kommune-bagenkop-containerplads-vostervej-5-5935-bagenkop",
@@ -1104,6 +1137,22 @@
       "sourceUrl": "https://www.mariagerfjord.dk/erhverv/erhvervsaffald/genbrugspladser"
     },
     {
+      "id": "mit-affald-naestved-kommune-mogenstrup-genbrugsplads-boegesoevej-29-4700-naestved",
+      "name": "Mogenstrup Genbrugsplads",
+      "municipality": "Næstved Kommune",
+      "address": "Bøgesøvej 29, 4700 Næstved",
+      "sourceProvider": "AffaldPlus",
+      "sourceUrl": "https://affaldplus.dk/media/2437"
+    },
+    {
+      "id": "mit-affald-naestved-kommune-naestved-genbrugsplads-fiskerhusvej-22-4700-naestved",
+      "name": "Næstved Genbrugsplads",
+      "municipality": "Næstved Kommune",
+      "address": "Fiskerhusvej 22, 4700 Næstved",
+      "sourceProvider": "AffaldPlus",
+      "sourceUrl": "https://affaldplus.dk/media/2438"
+    },
+    {
       "id": "mit-affald-norddjurs-kommune-anholt-genbrugsstation-gennem-landet-78-8592-anholt",
       "name": "Anholt Genbrugsstation",
       "municipality": "Norddjurs Kommune",
@@ -1144,14 +1193,6 @@
       "sourceUrl": "https://www.nfs.as/wp-content/uploads/2020/08/2019-Nyborg-oversigt-scaled.jpg"
     },
     {
-      "id": "mit-affald-nyborg-kommune-ullerslev-genbrugsstation-solholm-8a-5540-ullerslev",
-      "name": "Ullerslev Genbrugsstation",
-      "municipality": "Nyborg Kommune",
-      "address": "Solholm 8A, 5540 Ullerslev",
-      "sourceProvider": "Nyborg Forsyning og Service",
-      "sourceUrl": "https://www.nfs.as/wp-content/uploads/2020/08/01-09-16-Ullerslev-877x1240.jpg"
-    },
-    {
       "id": "mit-affald-nyborg-kommune-oerbaek-genbrugsstation-langemosevaenget-11-5853-oerbaek",
       "name": "Ørbæk Genbrugsstation",
       "municipality": "Nyborg Kommune",
@@ -1160,20 +1201,12 @@
       "sourceUrl": "https://www.nfs.as/wp-content/uploads/2020/08/Kort-%C3%98rb%C3%A6k-Genbrugsstation.jpg"
     },
     {
-      "id": "mit-affald-naestved-kommune-mogenstrup-genbrugsplads-boegesoevej-29-4700-naestved",
-      "name": "Mogenstrup Genbrugsplads",
-      "municipality": "Næstved Kommune",
-      "address": "Bøgesøvej 29, 4700 Næstved",
-      "sourceProvider": "AffaldPlus",
-      "sourceUrl": "https://affaldplus.dk/media/2437"
-    },
-    {
-      "id": "mit-affald-naestved-kommune-naestved-genbrugsplads-fiskerhusvej-22-4700-naestved",
-      "name": "Næstved Genbrugsplads",
-      "municipality": "Næstved Kommune",
-      "address": "Fiskerhusvej 22, 4700 Næstved",
-      "sourceProvider": "AffaldPlus",
-      "sourceUrl": "https://affaldplus.dk/media/2438"
+      "id": "mit-affald-nyborg-kommune-ullerslev-genbrugsstation-solholm-8a-5540-ullerslev",
+      "name": "Ullerslev Genbrugsstation",
+      "municipality": "Nyborg Kommune",
+      "address": "Solholm 8A, 5540 Ullerslev",
+      "sourceProvider": "Nyborg Forsyning og Service",
+      "sourceUrl": "https://www.nfs.as/wp-content/uploads/2020/08/01-09-16-Ullerslev-877x1240.jpg"
     },
     {
       "id": "mit-affald-odense-kommune-bullerup-genbrugsstation-bullerupvej-84-b-5240-odense-noe",
@@ -1200,14 +1233,6 @@
       "sourceUrl": "https://www.odenserenovation.dk/private/genbrugsstation/containeroversigt-paa-genbrugsstationen/"
     },
     {
-      "id": "mit-affald-odense-kommune-hoejme-genbrugsstation-holkebjergvej-132-5250-odense-sv",
-      "name": "Højme Genbrugsstation",
-      "municipality": "Odense Kommune",
-      "address": "Holkebjergvej 132, 5250 Odense SV",
-      "sourceProvider": "Odense Renovation",
-      "sourceUrl": "https://www.odenserenovation.dk/private/genbrugsstation/containeroversigt-paa-genbrugsstationen/"
-    },
-    {
       "id": "mit-affald-odense-kommune-genbrugsstation-lindved-energivej-10-5260-odense-s",
       "name": "Genbrugsstation Lindved",
       "municipality": "Odense Kommune",
@@ -1216,18 +1241,26 @@
       "sourceUrl": "https://www.odenserenovation.dk/private/genbrugsstation/containeroversigt-paa-genbrugsstationen/"
     },
     {
-      "id": "mit-affald-odense-kommune-naesby-genbrugsstation-egestubben-2-f-5270-odense-n",
-      "name": "Næsby Genbrugsstation",
-      "municipality": "Odense Kommune",
-      "address": "Egestubben 2 F, 5270 Odense N",
-      "sourceProvider": "Odense Renovation",
-      "sourceUrl": "https://www.odenserenovation.dk/private/genbrugsstation/containeroversigt-paa-genbrugsstationen/"
-    },
-    {
       "id": "mit-affald-odense-kommune-genbrugsstation-snapindvej-snapindvej-21-5200-odense-v",
       "name": "Genbrugsstation Snapindvej",
       "municipality": "Odense Kommune",
       "address": "Snapindvej 21, 5200 Odense V",
+      "sourceProvider": "Odense Renovation",
+      "sourceUrl": "https://www.odenserenovation.dk/private/genbrugsstation/containeroversigt-paa-genbrugsstationen/"
+    },
+    {
+      "id": "mit-affald-odense-kommune-hoejme-genbrugsstation-holkebjergvej-132-5250-odense-sv",
+      "name": "Højme Genbrugsstation",
+      "municipality": "Odense Kommune",
+      "address": "Holkebjergvej 132, 5250 Odense SV",
+      "sourceProvider": "Odense Renovation",
+      "sourceUrl": "https://www.odenserenovation.dk/private/genbrugsstation/containeroversigt-paa-genbrugsstationen/"
+    },
+    {
+      "id": "mit-affald-odense-kommune-naesby-genbrugsstation-egestubben-2-f-5270-odense-n",
+      "name": "Næsby Genbrugsstation",
+      "municipality": "Odense Kommune",
+      "address": "Egestubben 2 F, 5270 Odense N",
       "sourceProvider": "Odense Renovation",
       "sourceUrl": "https://www.odenserenovation.dk/private/genbrugsstation/containeroversigt-paa-genbrugsstationen/"
     },
@@ -1440,6 +1473,46 @@
       "sourceUrl": "https://affaldplus.dk/sites/default/files/2024-06/Slagelse.pdf"
     },
     {
+      "id": "mit-affald-soenderborg-kommune-glansager-genbrugsplads-foldager-1-6400-soenderborg",
+      "name": "Glansager Genbrugsplads",
+      "municipality": "Sønderborg Kommune",
+      "address": "Foldager 1, 6400 Sønderborg",
+      "sourceProvider": "SONFOR",
+      "sourceUrl": "https://sonfor.dk/wp-content/uploads/2020/06/piktogram-folder_glansager02.pdf"
+    },
+    {
+      "id": "mit-affald-soenderborg-kommune-graasten-genbrugsplads-ravnsbjergvej-4a-6300-graasten",
+      "name": "Gråsten Genbrugsplads",
+      "municipality": "Sønderborg Kommune",
+      "address": "Ravnsbjergvej 4A, 6300 Gråsten",
+      "sourceProvider": "SONFOR",
+      "sourceUrl": "https://sonfor.dk/wp-content/uploads/2020/06/piktogram-folder_graasten02.pdf"
+    },
+    {
+      "id": "mit-affald-soenderborg-kommune-guderup-genbrugsplads-smedevaenget-3-6430-nordborg",
+      "name": "Guderup Genbrugsplads",
+      "municipality": "Sønderborg Kommune",
+      "address": "Smedevænget 3, 6430 Nordborg",
+      "sourceProvider": "SONFOR",
+      "sourceUrl": "https://sonfor.dk/wp-content/uploads/2020/06/piktogram-folder_guderup02.pdf"
+    },
+    {
+      "id": "mit-affald-soenderborg-kommune-skodsboel-genbrugsplads-nyboelnorvej-26-6310-broager",
+      "name": "Skodsbøl Genbrugsplads",
+      "municipality": "Sønderborg Kommune",
+      "address": "Nybølnorvej 26, 6310 Broager",
+      "sourceProvider": "SONFOR",
+      "sourceUrl": "https://sonfor.dk/wp-content/uploads/2020/06/piktogram-folder_skodsboel02.pdf"
+    },
+    {
+      "id": "mit-affald-soenderborg-kommune-vesterlund-genbrugsplads-genvejen-3-6430-nordborg",
+      "name": "Vesterlund Genbrugsplads",
+      "municipality": "Sønderborg Kommune",
+      "address": "Genvejen 3, 6430 Nordborg",
+      "sourceProvider": "SONFOR",
+      "sourceUrl": "https://sonfor.dk/wp-content/uploads/2020/06/piktogram-folder_vesterlund02.pdf"
+    },
+    {
       "id": "mit-affald-soroe-kommune-dianalund-genbrugsplads-industri-vest-15-4293-dianalund",
       "name": "Dianalund Genbrugsplads",
       "municipality": "Sorø Kommune",
@@ -1536,46 +1609,6 @@
       "sourceUrl": "https://renodjurs.dk/sites/default/files/2025-04/Driftsrapport%20for%20genbrugsstationer%202024.pdf"
     },
     {
-      "id": "mit-affald-soenderborg-kommune-glansager-genbrugsplads-foldager-1-6400-soenderborg",
-      "name": "Glansager Genbrugsplads",
-      "municipality": "Sønderborg Kommune",
-      "address": "Foldager 1, 6400 Sønderborg",
-      "sourceProvider": "SONFOR",
-      "sourceUrl": "https://sonfor.dk/wp-content/uploads/2020/06/piktogram-folder_glansager02.pdf"
-    },
-    {
-      "id": "mit-affald-soenderborg-kommune-graasten-genbrugsplads-ravnsbjergvej-4a-6300-graasten",
-      "name": "Gråsten Genbrugsplads",
-      "municipality": "Sønderborg Kommune",
-      "address": "Ravnsbjergvej 4A, 6300 Gråsten",
-      "sourceProvider": "SONFOR",
-      "sourceUrl": "https://sonfor.dk/wp-content/uploads/2020/06/piktogram-folder_graasten02.pdf"
-    },
-    {
-      "id": "mit-affald-soenderborg-kommune-guderup-genbrugsplads-smedevaenget-3-6430-nordborg",
-      "name": "Guderup Genbrugsplads",
-      "municipality": "Sønderborg Kommune",
-      "address": "Smedevænget 3, 6430 Nordborg",
-      "sourceProvider": "SONFOR",
-      "sourceUrl": "https://sonfor.dk/wp-content/uploads/2020/06/piktogram-folder_guderup02.pdf"
-    },
-    {
-      "id": "mit-affald-soenderborg-kommune-skodsboel-genbrugsplads-nyboelnorvej-26-6310-broager",
-      "name": "Skodsbøl Genbrugsplads",
-      "municipality": "Sønderborg Kommune",
-      "address": "Nybølnorvej 26, 6310 Broager",
-      "sourceProvider": "SONFOR",
-      "sourceUrl": "https://sonfor.dk/wp-content/uploads/2020/06/piktogram-folder_skodsboel02.pdf"
-    },
-    {
-      "id": "mit-affald-soenderborg-kommune-vesterlund-genbrugsplads-genvejen-3-6430-nordborg",
-      "name": "Vesterlund Genbrugsplads",
-      "municipality": "Sønderborg Kommune",
-      "address": "Genvejen 3, 6430 Nordborg",
-      "sourceProvider": "SONFOR",
-      "sourceUrl": "https://sonfor.dk/wp-content/uploads/2020/06/piktogram-folder_vesterlund02.pdf"
-    },
-    {
       "id": "mit-affald-toender-kommune-hoelleskov-genbrugsplads-hoelleskovvej-9a-6520-toftlund",
       "name": "Hølleskov Genbrugsplads",
       "municipality": "Tønder Kommune",
@@ -1624,6 +1657,14 @@
       "sourceUrl": "https://ressourceportal.dk/"
     },
     {
+      "id": "mit-affald-varde-kommune-oelgod-genbrugsplads-energivej-11-6870-oelgod",
+      "name": "Ølgod Genbrugsplads",
+      "municipality": "Varde Kommune",
+      "address": "Energivej 11, 6870 Ølgod",
+      "sourceProvider": "AFLD / Ressourceportal",
+      "sourceUrl": "https://ressourceportal.dk/"
+    },
+    {
       "id": "mit-affald-varde-kommune-oksboel-genbrugsplads-industrivej-13-6840-oksboel",
       "name": "Oksbøl Genbrugsplads",
       "municipality": "Varde Kommune",
@@ -1644,14 +1685,6 @@
       "name": "Vrenderup Genbrugsplads",
       "municipality": "Varde Kommune",
       "address": "Hellevej 48, 6818 Årre",
-      "sourceProvider": "AFLD / Ressourceportal",
-      "sourceUrl": "https://ressourceportal.dk/"
-    },
-    {
-      "id": "mit-affald-varde-kommune-oelgod-genbrugsplads-energivej-11-6870-oelgod",
-      "name": "Ølgod Genbrugsplads",
-      "municipality": "Varde Kommune",
-      "address": "Energivej 11, 6870 Ølgod",
       "sourceProvider": "AFLD / Ressourceportal",
       "sourceUrl": "https://ressourceportal.dk/"
     },
@@ -1712,6 +1745,14 @@
       "sourceUrl": "https://www.revas.dk/virksomheder/genbrugsstationer"
     },
     {
+      "id": "mit-affald-viborg-kommune-oerum-genbrugsstation-industrivej-18-8830-tjele",
+      "name": "Ørum Genbrugsstation",
+      "municipality": "Viborg Kommune",
+      "address": "Industrivej 18, 8830 Tjele",
+      "sourceProvider": "Revas",
+      "sourceUrl": "https://www.revas.dk/virksomheder/genbrugsstationer"
+    },
+    {
       "id": "mit-affald-viborg-kommune-stoholm-genbrugsstation-tastumvej-18d-7850-stoholm-jylland",
       "name": "Stoholm Genbrugsstation",
       "municipality": "Viborg Kommune",
@@ -1724,14 +1765,6 @@
       "name": "Viborg Genbrugsstation",
       "municipality": "Viborg Kommune",
       "address": "Kirkebækvej 136, 8800 Viborg",
-      "sourceProvider": "Revas",
-      "sourceUrl": "https://www.revas.dk/virksomheder/genbrugsstationer"
-    },
-    {
-      "id": "mit-affald-viborg-kommune-oerum-genbrugsstation-industrivej-18-8830-tjele",
-      "name": "Ørum Genbrugsstation",
-      "municipality": "Viborg Kommune",
-      "address": "Industrivej 18, 8830 Tjele",
       "sourceProvider": "Revas",
       "sourceUrl": "https://www.revas.dk/virksomheder/genbrugsstationer"
     },
@@ -1951,34 +1984,6 @@
       "name": "Ølstykke Genbrugsplads",
       "municipality": "Egedal Kommune",
       "address": "Tranekærvej 6, 3650 Ølstykke",
-      "status": "missing-official-layout-map"
-    },
-    {
-      "id": "mit-affald-esbjerg-kommune-bramming-genbrugsplads-sdr-ilstedmarkvej-3-6740-bramming",
-      "name": "Bramming Genbrugsplads",
-      "municipality": "Esbjerg Kommune",
-      "address": "Sdr. Ilstedmarkvej 3, 6740 Bramming",
-      "status": "missing-official-layout-map"
-    },
-    {
-      "id": "mit-affald-esbjerg-kommune-maade-genbrugsplads-maade-kirkevej-35-6700-esbjerg",
-      "name": "Måde Genbrugsplads",
-      "municipality": "Esbjerg Kommune",
-      "address": "Måde Kirkevej 35, 6700 Esbjerg",
-      "status": "missing-official-layout-map"
-    },
-    {
-      "id": "mit-affald-esbjerg-kommune-ribe-genbrugsplads-oerstedsvej-69-6760-ribe",
-      "name": "Ribe Genbrugsplads",
-      "municipality": "Esbjerg Kommune",
-      "address": "Ørstedsvej 69, 6760 Ribe",
-      "status": "missing-official-layout-map"
-    },
-    {
-      "id": "mit-affald-esbjerg-kommune-tarp-genbrugsplads-mukkerten-14-6715-esbjerg-n",
-      "name": "Tarp Genbrugsplads",
-      "municipality": "Esbjerg Kommune",
-      "address": "Mukkerten 14, 6715 Esbjerg N",
       "status": "missing-official-layout-map"
     },
     {

@@ -9,7 +9,7 @@
     <title>Sorteringshjælp</title>
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="assets/sorting-mark.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=49">
+    <link rel="stylesheet" href="styles.css?v=65">
   </head>
   <body>
     <main class="app-shell">
@@ -31,7 +31,7 @@
         <button id="install-android" class="primary-button" type="button" hidden>Installer app</button>
       </section>
 
-      <section class="api-panel" aria-labelledby="api-title">
+      <section class="api-panel" aria-labelledby="api-title" hidden>
         <div>
           <p class="eyebrow">AI-nøgle</p>
           <h2 id="api-title">Billedgenkendelse</h2>
@@ -46,12 +46,11 @@
 
       <section class="site-panel" aria-labelledby="site-title">
         <div>
-          <p class="eyebrow">GPS</p>
-          <h2 id="site-title">Find nærmeste genbrugsplads</h2>
-          <p id="site-status">Brug GPS til automatisk at vælge lokale containerplaceringer.</p>
+          <h2 id="site-title">Find din genbrugsplads</h2>
+          <p id="site-status">Brug din placering til automatisk at vælge lokale containerplaceringer.</p>
         </div>
         <div class="site-controls">
-          <button id="find-site" class="primary-button" type="button">Find min placering</button>
+          <button id="find-site" class="primary-button" type="button">Find nærmeste</button>
           <label for="municipality-select">Søg genbrugsplads</label>
           <select id="municipality-select"></select>
           <label for="site-select">Vælg</label>
@@ -75,7 +74,7 @@
           <img id="preview" alt="Valgt affald til sortering" hidden>
           <div id="image-loading" class="image-loading" hidden>
             <span class="spinner" aria-hidden="true"></span>
-            <strong>Analyserer billede</strong>
+            <strong>Der ledes efter affald</strong>
           </div>
           <div id="empty-state" class="empty-state">
             <span aria-hidden="true">+</span>
@@ -110,18 +109,11 @@
           </div>
           <img id="location-pictogram" class="location-pictogram" src="assets/pictograms/unknown.svg" alt="" width="64" height="64">
         </div>
+        <button id="show-site-map" class="site-map-button" type="button" hidden>Vis oversigtskort</button>
         <div id="confidence" class="confidence" hidden>
           <span>Sikkerhed</span>
           <meter id="confidence-meter" min="0" max="100" value="0"></meter>
           <strong id="confidence-value">0%</strong>
-        </div>
-        <div id="web-evidence" class="web-evidence" hidden>
-          <div class="web-evidence-heading">
-            <span>Sekundært web-billedgrundlag</span>
-            <button id="refresh-web-evidence" type="button">Søg igen</button>
-          </div>
-          <p id="web-evidence-status">AI'en afsøger nettet efter lignende affaldsbilleder.</p>
-          <div id="web-evidence-grid" class="web-evidence-grid"></div>
         </div>
       </section>
 
@@ -145,10 +137,26 @@
         <strong>Slip billedet her</strong>
       </div>
     </div>
+    <div id="site-map-modal" class="site-map-modal" hidden role="dialog" aria-modal="true" aria-labelledby="site-map-title">
+      <div class="site-map-toolbar">
+        <h2 id="site-map-title">Oversigtskort</h2>
+        <button id="close-site-map" type="button">Luk</button>
+      </div>
+      <div class="site-map-content">
+        <div class="site-map-image-wrap">
+          <img id="site-map-image" class="site-map-image" alt="Oversigtskort for valgt genbrugsplads" hidden>
+          <iframe id="site-map-frame" title="Oversigtskort for valgt genbrugsplads" hidden></iframe>
+        </div>
+        <div id="site-map-fallback" class="site-map-fallback">
+          <p>Originalt PDF-kort kan stadig åbnes her.</p>
+          <a id="site-map-link" class="primary-button" href="#" target="_blank" rel="noopener">Åbn PDF-kort</a>
+        </div>
+      </div>
+    </div>
     <canvas id="snapshot" hidden></canvas>
     <script src="data/national-sites.js?v=49"></script>
-    <script src="data/fractions.js?v=49"></script>
-    <script src="data/site-layouts.js?v=49"></script>
-    <script src="app.js?v=49"></script>
+    <script src="data/fractions.js?v=65"></script>
+    <script src="data/site-layouts.js?v=65"></script>
+    <script src="app.js?v=65"></script>
   </body>
 </html>

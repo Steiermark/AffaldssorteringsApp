@@ -30,6 +30,33 @@ const nationalRecyclingDataSource = {
 
 const nationalSitesCacheKey = "sortering:national-sites:v6";
 const nationalSitesCacheMaxAge = 1000 * 60 * 60 * 24 * 7;
+const layoutFractionAliases = {
+  batteries: ["batterier"],
+  "bloed-plast-2": ["bloed-plast"],
+  cardboard: ["pap", "pap-og-karton"],
+  flamingo: ["eps"],
+  genbrug: ["direkte-genbrug"],
+  glass: ["glas", "flasker-og-glas"],
+  hazardous: ["farligt-affald", "spraydaaser"],
+  "haard-plast": ["haardt-plast", "haard-plast"],
+  "haard-pvc": ["pvc", "haardt-pvc"],
+  "indendoers-trae": ["rent-trae", "trae-til-genbrug"],
+  koeleudstyr: ["koel-og-frys"],
+  lysstofroer: ["lyskilder"],
+  "mad-og-drikkekartoner": ["kartoner"],
+  metal: ["jern-og-metal"],
+  "mursten-og-tegl": ["murbrokker"],
+  "klar-bloed-plast": ["plastfolie"],
+  plastic: ["plast", "plastemballage", "pmdk"],
+  plasthavemoebler: ["havemoebler", "plastmoebler"],
+  "polstrede-moebler": ["stort-braendbart", "smaat-braendbart"],
+  "porcelaen-2": ["porcelaen"],
+  storskrald: ["stort-braendbart", "smaat-braendbart", "rest-efter-sortering"],
+  "stort-elektronik": ["haarde-hvidevarer"],
+  tekstilaffald: ["tekstil"],
+  "udendoers-trae": ["impraegneret-trae"],
+  vinduer: ["glasdoere", "vinduer-og-glasdoere"]
+};
 const danishMunicipalities = [
   "Albertslund Kommune",
   "Allerød Kommune",
@@ -275,10 +302,13 @@ const locationCard = document.querySelector("#location-card");
 const fractionLocation = document.querySelector("#fraction-location");
 const fractionNote = document.querySelector("#fraction-note");
 const locationPictogram = document.querySelector("#location-pictogram");
-const webEvidence = document.querySelector("#web-evidence");
-const webEvidenceStatus = document.querySelector("#web-evidence-status");
-const webEvidenceGrid = document.querySelector("#web-evidence-grid");
-const refreshWebEvidence = document.querySelector("#refresh-web-evidence");
+const showSiteMapButton = document.querySelector("#show-site-map");
+const siteMapModal = document.querySelector("#site-map-modal");
+const siteMapTitle = document.querySelector("#site-map-title");
+const siteMapImage = document.querySelector("#site-map-image");
+const siteMapFrame = document.querySelector("#site-map-frame");
+const siteMapLink = document.querySelector("#site-map-link");
+const closeSiteMapButton = document.querySelector("#close-site-map");
 const androidStatus = document.querySelector("#android-status");
 const installAndroidButton = document.querySelector("#install-android");
 const anthropicApiKeyInput = document.querySelector("#anthropic-api-key");
@@ -297,15 +327,16 @@ let sitesByMunicipality = new Map();
 let municipalitySelectionRequest = 0;
 let siteLayoutsById = new Map();
 let imageAnalysisRequest = 0;
+let wasteFractionCatalogPromise = null;
 let dragDepth = 0;
 
 const anthropicMessagesEndpoint = "https://api.anthropic.com/v1/messages";
 const anthropicModel = "claude-haiku-4-5-20251001";
 const appConfig = window.affaldssorteringConfig || {};
 const anthropicApiKeyStorageKey = "sortering:anthropic-api-key";
-const imageClassificationPrompt = `Klassificér det primære affaldsobjekt på billedet. Containere: trae, metal, murbrokker, stort_braendbart, farligt_affald, elektronik, pap, haveaffald, glas, haardt_plast, bloed_plast, tekstil, daek, gips, vinduer, pvc, deponi, sanitet, flamingo, smaat_braendbart
-Kun JSON:{"name":"kort navn","category":"key","confidence":0.9,"tip":"evt tip"}
-Kun ét objekt. Ingen array.`;
+const maxFractionsInImagePrompt = 120;
+const findSiteHelpText = "Brug knappen Find nærmeste til at finde den genbrugsplads, der er nærmest, eller vælg kommune og genbrugsplads fra listen.";
+const lowConfidenceHelpText = "Kontakt en medarbejder for hjælp.";
 
 const containerCatalog = {
   trae: { label: "Træ", icon: "🪵", desc: "Rent træ, møbler, spånplader", fractionId: "trae" },
@@ -515,6 +546,7 @@ async function loadSiteLayouts() {
     populateSites(municipalitySelect.value);
     if (selectedSite) {
       selectedSite = recyclingSites.find((site) => site.id === selectedSite.id) || selectedSite;
+      updateSiteMapButton();
     }
     if (latestMatch) {
       updateLocalFractionLocation(latestMatch);
@@ -559,7 +591,7 @@ async function loadBundledNationalSites() {
       replaceRecyclingSites(sites);
       selectedSiteName.textContent = "Ikke valgt";
       selectedSiteDistance.textContent = "-";
-      siteStatus.textContent = `${sites.length} indbyggede genbrugspladser er klar. Vælg kommune først.`;
+      siteStatus.textContent = findSiteHelpText;
     }
   } catch (error) {
     // Bundled national data is a fallback only.
@@ -579,12 +611,34 @@ function normalizeWasteFraction(item) {
   };
 }
 
+function applyWasteFractionCorrections(fractions) {
+  const hazardous = fractions.find((item) => item.id === "hazardous");
+  if (hazardous) {
+    hazardous.keywords = Array.from(new Set([
+      ...hazardous.keywords,
+      "spray",
+      "spraydåse",
+      "spraydåser",
+      "spraydaase",
+      "spraydaaser",
+      "aerosol"
+    ]));
+    hazardous.text = "Spraydåser afleveres som farligt affald. Aflever beholderen lukket ved miljøstationen, og spørg personalet hvis etiketten mangler.";
+  }
+
+  return fractions.filter((item) => item.id !== "spraydaaser");
+}
+
 async function loadWasteFractionCatalog() {
+  if (wasteFractionCatalogPromise) return wasteFractionCatalogPromise;
+  wasteFractionCatalogPromise = (async () => {
   try {
     const payload = Array.isArray(window.generatedWasteFractions)
       ? window.generatedWasteFractions
       : await fetchJson("data/fractions.json");
-    const fractions = Array.isArray(payload) ? payload.map(normalizeWasteFraction) : [];
+    const fractions = Array.isArray(payload)
+      ? applyWasteFractionCorrections(payload.map(normalizeWasteFraction))
+      : [];
     if (fractions.length === 0) {
       throw new Error("Fraktionskataloget er tomt.");
     }
@@ -595,6 +649,8 @@ async function loadWasteFractionCatalog() {
   } catch (error) {
     renderRecentWasteSearches();
   }
+  })();
+  return wasteFractionCatalogPromise;
 }
 
 function getTag(tags, keys, fallback = "") {
@@ -680,7 +736,7 @@ async function loadAllDanishRecyclingSites() {
     const cachedSites = readCachedNationalSites();
     if (cachedSites) {
       replaceRecyclingSites(cachedSites);
-      siteStatus.textContent = `${cachedSites.length} genbrugspladser indlæst fra lokal cache. Vælg kommune først.`;
+      siteStatus.textContent = findSiteHelpText;
     } else {
       siteStatus.textContent = "Henter landsdækkende genbrugspladser i baggrunden.";
     }
@@ -694,7 +750,7 @@ async function loadAllDanishRecyclingSites() {
 
       replaceRecyclingSites(sites);
       writeCachedNationalSites(sites);
-      siteStatus.textContent = `${sites.length} genbrugspladser indlæst fra ${nationalRecyclingDataSource.provider}. Vælg kommune først.`;
+      siteStatus.textContent = findSiteHelpText;
     } catch (error) {
       if (!cachedSites) {
         siteStatus.textContent = "Kunne ikke indlæse landsdækkende data. Appen bruger lokale/kommunale fallback-data.";
@@ -843,11 +899,79 @@ function setSelectedSite(site, distance = null, status = "Manuelt valgt genbrugs
   if (latestMatch) {
     updateLocalFractionLocation(latestMatch);
   }
+  updateSiteMapButton();
+}
+
+function getSiteMapUrl(site = selectedSite) {
+  return site?.layoutSource?.localFile || site?.layoutSource?.localMap || site?.layoutSource?.url || site?.layoutSource?.pageUrl || "";
+}
+
+function getSiteMapImageUrl(site = selectedSite) {
+  const source = site?.layoutSource;
+  const imageUrl = source?.imageFile || source?.imageUrl || source?.localImage || "";
+  if (imageUrl) return imageUrl;
+  const localMap = source?.localMap || "";
+  return /\.(png|jpe?g|webp|gif|avif)$/i.test(localMap) ? localMap : "";
+}
+
+function toAbsoluteUrl(url) {
+  if (!url) return "";
+  return new URL(url, window.location.href).href;
+}
+
+function updateSiteMapButton() {
+  const hasMap = Boolean(getSiteMapImageUrl() || getSiteMapUrl());
+  showSiteMapButton.hidden = !hasMap;
+  showSiteMapButton.disabled = !hasMap;
+}
+
+function openSelectedSiteMap() {
+  const imageUrl = toAbsoluteUrl(getSiteMapImageUrl());
+  const mapUrl = toAbsoluteUrl(getSiteMapUrl());
+  if (!imageUrl && !mapUrl) return;
+  siteMapTitle.textContent = selectedSite?.name
+    ? `Oversigtskort: ${selectedSite.name}`
+    : "Oversigtskort";
+  siteMapImage.hidden = !imageUrl;
+  siteMapFrame.hidden = Boolean(imageUrl) || !mapUrl;
+  if (imageUrl) {
+    siteMapImage.src = imageUrl;
+    siteMapImage.alt = selectedSite?.name
+      ? `Oversigtskort for ${selectedSite.name}`
+      : "Oversigtskort for valgt genbrugsplads";
+    siteMapFrame.removeAttribute("src");
+  } else {
+    siteMapImage.removeAttribute("src");
+    siteMapFrame.src = mapUrl;
+  }
+  siteMapLink.href = mapUrl || imageUrl;
+  siteMapModal.hidden = false;
+  document.body.classList.add("modal-open");
+  closeSiteMapButton.focus();
+}
+
+function closeSelectedSiteMap() {
+  siteMapModal.hidden = true;
+  siteMapImage.removeAttribute("src");
+  siteMapImage.hidden = true;
+  siteMapFrame.removeAttribute("src");
+  siteMapFrame.hidden = true;
+  siteMapLink.href = "#";
+  document.body.classList.remove("modal-open");
+  showSiteMapButton.focus();
+}
+
+function getLocalFractionLocation(site, fractionId) {
+  if (!site?.map || !fractionId) return null;
+  if (site.map[fractionId]) return site.map[fractionId];
+  const aliases = layoutFractionAliases[fractionId] || [];
+  return aliases.map((alias) => site.map[alias]).find(Boolean) || null;
 }
 
 function updateLocalFractionLocation(match) {
-  const local = selectedSite?.map?.[match.id];
+  const local = getLocalFractionLocation(selectedSite, match.id);
   locationCard.hidden = false;
+  updateSiteMapButton();
   locationPictogram.src = match.pictogram || "assets/pictograms/unknown.svg";
   locationPictogram.alt = `Piktogram for ${match.title}`;
   locationPictogram.onerror = () => {
@@ -904,7 +1028,7 @@ async function loadBestRecyclingDataForPosition(position) {
 
 function requestLocation() {
   if (!navigator.geolocation) {
-    siteStatus.textContent = "GPS understøttes ikke i denne browser. Vælg genbrugsplads manuelt.";
+    siteStatus.textContent = "Placering understøttes ikke i denne browser. Vælg genbrugsplads manuelt.";
     return;
   }
 
@@ -928,13 +1052,13 @@ function requestLocation() {
       municipalitySelect.value = getMunicipalityName(nearest.site);
       populateSites(municipalitySelect.value);
       findSiteButton.disabled = false;
-      findSiteButton.textContent = "Find min placering";
+      findSiteButton.textContent = "Find nærmeste";
       loadAllDanishRecyclingSites();
     },
     () => {
-      siteStatus.textContent = "GPS blev ikke godkendt eller kunne ikke læses. Vælg genbrugsplads manuelt.";
+      siteStatus.textContent = "Placering blev ikke godkendt eller kunne ikke læses. Vælg genbrugsplads manuelt.";
       findSiteButton.disabled = false;
-      findSiteButton.textContent = "Find min placering";
+      findSiteButton.textContent = "Find nærmeste";
     },
     {
       enableHighAccuracy: false,
@@ -968,12 +1092,11 @@ function setResult(match, source = "AI-forslag") {
   resultPictogram.style.backgroundColor = match.color ? `${match.color}18` : "";
   resultFractionLabel.style.color = match.color || "";
   resultFractionLabel.textContent = `Fraktion: ${match.title}`;
-  resultText.textContent = match.text;
+  resultText.textContent = match.confidence < 90 ? lowConfidenceHelpText : match.text;
   confidence.hidden = false;
   confidenceMeter.value = match.confidence;
   confidenceValue.textContent = `${match.confidence}%`;
   updateLocalFractionLocation(match);
-  updateWebEvidence(match);
 }
 
 function setFallbackResult() {
@@ -1070,32 +1193,106 @@ function parseAnthropicJson(data) {
   return JSON.parse(clean);
 }
 
+function normalizeClassificationToken(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/æ/g, "ae")
+    .replace(/ø/g, "oe")
+    .replace(/å/g, "aa")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function buildImageFractionCatalog() {
+  return wasteTypes
+    .slice(0, maxFractionsInImagePrompt)
+    .map((item) => {
+      const keywords = (item.keywords || [])
+        .filter(Boolean)
+        .slice(0, 4)
+        .join(", ");
+      return keywords
+        ? `${item.id}: ${item.title} (${keywords})`
+        : `${item.id}: ${item.title}`;
+    })
+    .join("\n");
+}
+
+function buildImageClassificationPrompt() {
+  const fractionCatalog = buildImageFractionCatalog();
+  return `Klassificer det primaere affaldsobjekt paa billedet ved at vaelge den bedste fraktion fra dette piktogramkatalog.
+
+Piktogram-fraktioner:
+${fractionCatalog}
+
+Svar kun med JSON:
+{"name":"kort navn paa objektet","fractionId":"eksakt id fra kataloget","confidence":0.9,"tip":"kort praktisk tip"}
+
+Regler:
+- fractionId skal vaere et eksakt id fra kataloget.
+- Vaelg den naermeste piktogram-fraktion, ogsa hvis objektet ikke er perfekt.
+- Brug kun "unknown", hvis billedet ikke viser et affaldsobjekt.
+- Kun et objekt. Ingen array. Ingen markdown.`;
+}
+
 function getFractionForContainer(category) {
   const container = containerCatalog[category];
   const fraction = wasteTypes.find((item) => item.id === container?.fractionId);
   return { container, fraction };
 }
 
-function buildMatchFromClassification(result) {
-  const category = String(result.category || "").trim();
-  const { container, fraction } = getFractionForContainer(category);
-  if (!container) {
-    throw new Error(`Ukendt containerkategori: ${category || "tom"}`);
+function findFractionByClassification(result) {
+  const requestedId = String(result.fractionId || result.fraction_id || result.id || "").trim();
+  if (requestedId) {
+    const normalizedId = normalizeClassificationToken(requestedId);
+    const directMatch = wasteTypes.find((item) => item.id === requestedId || normalizeClassificationToken(item.id) === normalizedId);
+    if (directMatch) return directMatch;
   }
 
-  const confidenceValue = Math.round(Math.max(0, Math.min(1, Number(result.confidence) || 0)) * 100);
-  const name = String(result.name || container.label).trim();
+  const category = String(result.category || "").trim();
+  if (category) {
+    const { fraction } = getFractionForContainer(category);
+    if (fraction) return fraction;
+  }
+
+  const name = normalizeClassificationToken(result.name);
+  if (!name) return null;
+  return wasteTypes.find((item) => {
+    const title = normalizeClassificationToken(item.title);
+    const keywords = (item.keywords || []).map(normalizeClassificationToken);
+    return title === name || item.id === name || keywords.includes(name);
+  }) || null;
+}
+
+function normalizeConfidencePercent(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number) || number <= 0) return 0;
+  const ratio = number > 1 ? number / 100 : number;
+  return Math.round(Math.max(0, Math.min(1, ratio)) * 100);
+}
+
+function buildMatchFromClassification(result) {
+  const fraction = findFractionByClassification(result);
+  if (!fraction) {
+    const candidate = result.fractionId || result.fraction_id || result.category || result.name || "tom";
+    throw new Error(`Ukendt piktogramfraktion: ${candidate}`);
+  }
+
+  const confidenceValue = normalizeConfidencePercent(result.confidence);
+  const name = String(result.name || fraction.title).trim();
   const tip = String(result.tip || "").trim();
   return {
-    id: fraction?.id || container.fractionId,
-    title: container.label,
-    text: `${container.icon} ${name}. ${container.desc}.${tip ? ` Tip: ${tip}` : ""}`,
-    pictogram: fraction?.pictogram || "assets/pictograms/unknown.svg",
-    icon: container.icon,
-    color: containerColors[category] || "#0b5f4a",
+    id: fraction.id,
+    title: fraction.title,
+    text: `${name}. ${fraction.text}${tip ? ` Tip: ${tip}` : ""}`,
+    pictogram: fraction.pictogram || "assets/pictograms/unknown.svg",
+    color: "#0b5f4a",
     confidence: confidenceValue,
-    keywords: fraction?.keywords || [container.label],
-    webQueries: fraction?.webQueries || [`${container.label} waste recycling`]
+    keywords: fraction.keywords || [fraction.title],
+    webQueries: fraction.webQueries || [`${fraction.title} waste recycling`]
   };
 }
 
@@ -1104,8 +1301,14 @@ async function classifyWasteImage(jpegDataUrl) {
   if (!apiKey) {
     throw new Error("MISSING_API_KEY");
   }
+  if (wasteTypes.length === 0) {
+    await loadWasteFractionCatalog();
+  }
+  if (wasteTypes.length === 0) {
+    throw new Error("Fraktionskataloget med piktogrammer kunne ikke indlaeses.");
+  }
 
-  resultFractionLabel.textContent = "Kalder Claude Haiku";
+  resultFractionLabel.textContent = "Der ledes efter affald";
   const response = await fetch(anthropicMessagesEndpoint, {
     method: "POST",
     headers: {
@@ -1131,7 +1334,7 @@ async function classifyWasteImage(jpegDataUrl) {
             },
             {
               type: "text",
-              text: imageClassificationPrompt
+              text: buildImageClassificationPrompt()
             }
           ]
         }
@@ -1144,7 +1347,7 @@ async function classifyWasteImage(jpegDataUrl) {
     throw new Error(`Anthropic API svarede ${response.status}: ${detail.slice(0, 220)}`);
   }
 
-  resultFractionLabel.textContent = "Claude Haiku svarede";
+  resultFractionLabel.textContent = "Affald fundet";
   return parseAnthropicJson(await response.json());
 }
 
@@ -1152,9 +1355,9 @@ async function analyzeSelectedImage(src, fileName = "billede") {
   const requestId = ++imageAnalysisRequest;
   latestImageName = fileName;
   setImageLoading(true);
-  resultTitle.textContent = "Analyserer billede";
-  resultFractionLabel.textContent = "Sender komprimeret billede til AI";
-  resultText.textContent = "Billedet skaleres til maks 800 px og sendes som JPEG.";
+  resultTitle.textContent = "Der ledes efter affald";
+  resultFractionLabel.textContent = "Der ledes efter affald";
+  resultText.textContent = "Billedet undersøges for at finde den bedste piktogramfraktion.";
 
   try {
     const jpegDataUrl = await compressImageToJpegDataUrl(src);
@@ -1170,7 +1373,7 @@ async function analyzeSelectedImage(src, fileName = "billede") {
     resultTitle.textContent = "Billedgenkendelse fejlede";
     resultFractionLabel.textContent = "Ingen container valgt";
     resultText.textContent = error.message === "MISSING_API_KEY"
-      ? "Billedgenkendelse mangler Anthropic API-nøglen. Indsæt nøglen i feltet Billedgenkendelse."
+      ? "Billedgenkendelse er ikke konfigureret på denne enhed."
       : `Kunne ikke analysere billedet lige nu. ${error.message}`;
   } finally {
     if (requestId === imageAnalysisRequest) {
@@ -1250,94 +1453,6 @@ function handleImageSelection(event) {
   const [file] = event.target.files;
   handleImageFile(file);
   event.target.value = "";
-}
-
-function buildCommonsUrl(query) {
-  const params = new URLSearchParams({
-    action: "query",
-    format: "json",
-    origin: "*",
-    generator: "search",
-    gsrnamespace: "6",
-    gsrlimit: "1",
-    gsrsearch: query,
-    prop: "imageinfo",
-    iiprop: "url|extmetadata",
-    iiurlwidth: "360"
-  });
-  return `https://commons.wikimedia.org/w/api.php?${params.toString()}`;
-}
-
-function getImageTitle(page) {
-  const title = page.title || "Webbillede";
-  return title.replace(/^File:/, "").replace(/\.[a-z0-9]+$/i, "");
-}
-
-function renderWebEvidence(images, sourceLabel) {
-  webEvidenceGrid.innerHTML = "";
-  if (!latestMatch) return;
-
-  const pictogramCard = document.createElement("div");
-  pictogramCard.className = "web-image-card pictogram-first-card";
-  const pictogram = document.createElement("img");
-  pictogram.src = latestMatch.pictogram || "assets/pictograms/unknown.svg";
-  pictogram.alt = `Piktogram for ${latestMatch.title}`;
-  pictogram.onerror = () => {
-    pictogram.src = "assets/pictograms/unknown.svg";
-  };
-  const pictogramTitle = document.createElement("span");
-  pictogramTitle.textContent = `Piktogram: ${latestMatch.title}`;
-  pictogramCard.append(pictogram, pictogramTitle);
-  webEvidenceGrid.append(pictogramCard);
-
-  webEvidenceStatus.textContent = images.length > 0
-    ? `Kun piktogrammet vises som forslag. Webreference fundet via ${sourceLabel}.`
-    : "Kun piktogrammet vises som forslag. Der blev ikke fundet en webreference.";
-}
-
-async function searchCommonsImages(match) {
-  const queries = match.webQueries || match.keywords || [];
-  if (queries.length === 0) {
-    return { images: [], sourceLabel: "Wikimedia Commons" };
-  }
-
-  for (const query of queries) {
-    try {
-      const payload = await fetchJson(buildCommonsUrl(query));
-      const pages = Object.values(payload.query?.pages || {});
-      const images = pages
-        .map((page) => {
-          const info = page.imageinfo?.[0];
-          if (!info?.url) return null;
-          return {
-            title: getImageTitle(page),
-            url: info.url,
-            thumbnailUrl: info.thumburl,
-            descriptionUrl: info.descriptionurl || info.url
-          };
-        })
-        .filter(Boolean);
-
-      if (images.length > 0) {
-        return { images, sourceLabel: `Wikimedia Commons: "${query}"` };
-      }
-    } catch (error) {
-      // Try the next query before showing an error to the user.
-    }
-  }
-
-  return { images: [], sourceLabel: "Wikimedia Commons" };
-}
-
-async function updateWebEvidence(match) {
-  webEvidence.hidden = false;
-  webEvidenceGrid.innerHTML = "";
-  webEvidenceStatus.textContent = latestImageName
-    ? `AI'en afsøger nettet efter billeder, der kan sammenlignes med "${latestImageName}".`
-    : "AI'en afsøger nettet efter billeder, der matcher fraktionsforslaget.";
-
-  const { images, sourceLabel } = await searchCommonsImages(match);
-  renderWebEvidence(images, sourceLabel);
 }
 
 function renderSuggestions(items) {
@@ -1455,7 +1570,7 @@ function updateAndroidStatus() {
   }
 
   if (!isSecure) {
-    androidStatus.textContent = "Åbn appen via HTTPS for at bruge kamera, GPS og Android-installation.";
+    androidStatus.textContent = "Åbn appen via HTTPS for at bruge kamera, placering og Android-installation.";
     return;
   }
 
@@ -1550,7 +1665,7 @@ municipalitySelect.addEventListener("change", () => {
     loadSitesForSelectedMunicipality(municipalitySelect.value);
   } else {
     municipalitySelectionRequest += 1;
-    siteStatus.textContent = "Vælg kommune og derefter genbrugsplads, eller brug Find min placering.";
+    siteStatus.textContent = findSiteHelpText;
   }
 });
 siteSelect.addEventListener("change", () => {
@@ -1558,6 +1673,8 @@ siteSelect.addEventListener("change", () => {
   const site = recyclingSites.find((item) => item.id === siteSelect.value);
   setSelectedSite(site, null, "Manuelt valgt genbrugsplads.");
 });
+showSiteMapButton.addEventListener("click", openSelectedSiteMap);
+closeSiteMapButton.addEventListener("click", closeSelectedSiteMap);
 startButton.addEventListener("click", startCamera);
 captureButton.addEventListener("click", capturePhoto);
 imageInput.addEventListener("change", handleImageSelection);
@@ -1587,17 +1704,18 @@ document.addEventListener("click", (event) => {
     searchDropdown.hidden = true;
   }
 });
-refreshWebEvidence.addEventListener("click", () => {
-  if (latestMatch) updateWebEvidence(latestMatch);
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !siteMapModal.hidden) {
+    closeSelectedSiteMap();
+  }
 });
-
 buildSiteIndex();
 initializeApiKeyInput();
 populateMunicipalities();
 populateSites();
 selectedSiteName.textContent = "Ikke valgt";
 selectedSiteDistance.textContent = "-";
-siteStatus.textContent = "Vælg kommune og derefter genbrugsplads, eller brug Find min placering.";
+siteStatus.textContent = findSiteHelpText;
 renderRecentWasteSearches();
 loadWasteFractionCatalog();
 loadBundledNationalSites();

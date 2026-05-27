@@ -1,4 +1,4 @@
-const CACHE_NAME = "sorteringshjaelp-v49";
+const CACHE_NAME = "sorteringshjaelp-v65";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -20,6 +20,10 @@ const APP_SHELL = [
   "./data/site-layouts.js",
   "./data/site-layouts.json",
   "./data/site-layout-coverage.json",
+  "./data/site-maps/esbjerg/oversigtskort-bramming.png",
+  "./data/site-maps/esbjerg/oversigtskort-maade.png",
+  "./data/site-maps/esbjerg/oversigtskort-ribe.png",
+  "./data/site-maps/esbjerg/oversigtskort-tarp.png",
   "./data/municipal/0530.json",
   "./data/utility/0530-affaldspartner.json"
 ];

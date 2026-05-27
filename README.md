@@ -11,14 +11,14 @@ Appen skal hjælpe almindelige mennesker med hurtigt at finde den rigtige sorter
 Den første version er en statisk, kørbar prototype med:
 
 - Kamera-start via browserens `getUserMedia`
-- GPS-valg af nærmeste genbrugsplads via browserens `geolocation`
+- Placeringsvalg af nærmeste genbrugsplads via browserens `geolocation`
 - Kommuneopslag via Dataforsyningens reverse-geocoding API
 - Hentning af genbrugspladsdata fra kommunespecifikke datakilder
 - Fallback til lokale forsynings-/affaldsselskaber, hvis kommunen ikke har data
 - Landsdækkende indlæsning af danske genbrugspladser fra OpenStreetMap/Overpass
 - Billedvalg fra telefon eller computer
 - Simuleret AI-forslag til affaldsfraktion
-- Web-billedsøgning via Wikimedia Commons som billedgrundlag for AI-forslaget
+- Billedgenkendelse der matcher affaldet direkte mod appens lokale piktogramfraktioner
 - Lokale placeringer for fraktioner på den valgte genbrugsplads
 - Manuel søgning på almindelige affaldstyper
 - PWA-manifest, så løsningen kan udvikles mod en rigtig app
@@ -49,8 +49,8 @@ Android-versionen er en PWA. Den kan installeres fra Chrome på Android, når de
 
 Vigtigt:
 
-- Kamera og GPS virker ikke stabilt fra `file://`.
-- Kamera og GPS kræver normalt HTTPS på Android.
+- Kamera og placering virker ikke stabilt fra `file://`.
+- Kamera og placering kræver normalt HTTPS på Android.
 - Service worker og offline-cache virker kun via `http://localhost` eller HTTPS.
 - Til reel mobiltest: deploy mappen til en HTTPS-host, eller brug en HTTPS-tunnel foran den lokale server.
 

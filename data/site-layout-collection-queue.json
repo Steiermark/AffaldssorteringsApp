@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-26",
-  "totalMissing": 103,
+  "generated": "2026-05-27",
+  "totalMissing": 99,
   "nextAction": "Find official municipality/forsyning layout maps. Add only official source-backed maps; do not infer coordinates or sign numbers.",
   "sites": [
     {
@@ -57,34 +57,6 @@
       "name": "Ølstykke Genbrugsplads",
       "municipality": "Egedal Kommune",
       "address": "Tranekærvej 6, 3650 Ølstykke",
-      "status": "missing-official-layout-map"
-    },
-    {
-      "id": "mit-affald-esbjerg-kommune-bramming-genbrugsplads-sdr-ilstedmarkvej-3-6740-bramming",
-      "name": "Bramming Genbrugsplads",
-      "municipality": "Esbjerg Kommune",
-      "address": "Sdr. Ilstedmarkvej 3, 6740 Bramming",
-      "status": "missing-official-layout-map"
-    },
-    {
-      "id": "mit-affald-esbjerg-kommune-maade-genbrugsplads-maade-kirkevej-35-6700-esbjerg",
-      "name": "Måde Genbrugsplads",
-      "municipality": "Esbjerg Kommune",
-      "address": "Måde Kirkevej 35, 6700 Esbjerg",
-      "status": "missing-official-layout-map"
-    },
-    {
-      "id": "mit-affald-esbjerg-kommune-ribe-genbrugsplads-oerstedsvej-69-6760-ribe",
-      "name": "Ribe Genbrugsplads",
-      "municipality": "Esbjerg Kommune",
-      "address": "Ørstedsvej 69, 6760 Ribe",
-      "status": "missing-official-layout-map"
-    },
-    {
-      "id": "mit-affald-esbjerg-kommune-tarp-genbrugsplads-mukkerten-14-6715-esbjerg-n",
-      "name": "Tarp Genbrugsplads",
-      "municipality": "Esbjerg Kommune",
-      "address": "Mukkerten 14, 6715 Esbjerg N",
       "status": "missing-official-layout-map"
     },
     {
