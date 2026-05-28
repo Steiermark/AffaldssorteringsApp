@@ -25888,32 +25888,32 @@ window.bundledSiteLayouts = [
         "note": "Genbrug / loppestation er markeret som fraktion 15 på Kolding Kommunes officielle oversigtskort."
       },
       "farligt-affald": {
-        "location": "Fraktion 1 - Farligt affald",
-        "note": "Farligt affald er markeret som fraktion 1 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 17 - Farligt affald",
+        "note": "Farligt affald er markeret som fraktion 17 på Kolding Kommunes officielle oversigtskort."
       },
       "hazardous": {
-        "location": "Fraktion 1 - Farligt affald",
-        "note": "Farligt affald er markeret som fraktion 1 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 17 - Farligt affald",
+        "note": "Farligt affald er markeret som fraktion 17 på Kolding Kommunes officielle oversigtskort."
       },
       "batterier": {
-        "location": "Fraktion 1 - Farligt affald",
-        "note": "Farligt affald er markeret som fraktion 1 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 17 - Farligt affald",
+        "note": "Farligt affald er markeret som fraktion 17 på Kolding Kommunes officielle oversigtskort."
       },
       "batteries": {
-        "location": "Fraktion 1 - Farligt affald",
-        "note": "Farligt affald er markeret som fraktion 1 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 17 - Farligt affald",
+        "note": "Farligt affald er markeret som fraktion 17 på Kolding Kommunes officielle oversigtskort."
       },
       "bilbatterier": {
-        "location": "Fraktion 1 - Farligt affald",
-        "note": "Farligt affald er markeret som fraktion 1 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 17 - Farligt affald",
+        "note": "Farligt affald er markeret som fraktion 17 på Kolding Kommunes officielle oversigtskort."
       },
       "elpaerer": {
-        "location": "Fraktion 1 - Farligt affald",
-        "note": "Farligt affald er markeret som fraktion 1 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 17 - Farligt affald",
+        "note": "Farligt affald er markeret som fraktion 17 på Kolding Kommunes officielle oversigtskort."
       },
       "lysstofroer": {
-        "location": "Fraktion 1 - Farligt affald",
-        "note": "Farligt affald er markeret som fraktion 1 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 17 - Farligt affald",
+        "note": "Farligt affald er markeret som fraktion 17 på Kolding Kommunes officielle oversigtskort."
       },
       "elektronik": {
         "location": "Fraktion 18 - Elektronik",
@@ -25952,188 +25952,188 @@ window.bundledSiteLayouts = [
         "note": "Store husholdningsapparater er markeret på Kolding Kommunes officielle oversigtskort, men uden sikkert fraktionsnummer i PDF-teksten."
       },
       "asbest": {
-        "location": "Fraktion 39 - Asbest og tagplader",
-        "note": "Asbest og tagplader er markeret som fraktion 39 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 17.2 - Asbest og tagplader",
+        "note": "Asbest og tagplader er markeret som fraktion 17.2 på Kolding Kommunes officielle oversigtskort."
       },
       "eternit-uden-asbest": {
-        "location": "Fraktion 39 - Asbest og tagplader",
-        "note": "Asbest og tagplader er markeret som fraktion 39 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 17.2 - Asbest og tagplader",
+        "note": "Asbest og tagplader er markeret som fraktion 17.2 på Kolding Kommunes officielle oversigtskort."
       },
       "gips": {
-        "location": "Fraktion 2 - Gips",
-        "note": "Gips er markeret som fraktion 2 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 20 - Gips",
+        "note": "Gips er markeret som fraktion 20 på Kolding Kommunes officielle oversigtskort."
       },
       "vinduer": {
-        "location": "Fraktion 3 - Vinduer og døre",
-        "note": "Vinduer og døre er markeret som fraktion 3 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 21 - Vinduer og døre",
+        "note": "Vinduer og døre er markeret som fraktion 21 på Kolding Kommunes officielle oversigtskort."
       },
       "sanitet": {
-        "location": "Fraktion 4 - Sanitet og porcelæn",
-        "note": "Sanitet og porcelæn er markeret som fraktion 4 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 22 - Sanitet og porcelæn",
+        "note": "Sanitet og porcelæn er markeret som fraktion 22 på Kolding Kommunes officielle oversigtskort."
       },
       "porcelaen": {
-        "location": "Fraktion 4 - Sanitet og porcelæn",
-        "note": "Sanitet og porcelæn er markeret som fraktion 4 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 22 - Sanitet og porcelæn",
+        "note": "Sanitet og porcelæn er markeret som fraktion 22 på Kolding Kommunes officielle oversigtskort."
       },
       "porcelaen-2": {
-        "location": "Fraktion 4 - Sanitet og porcelæn",
-        "note": "Sanitet og porcelæn er markeret som fraktion 4 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 22 - Sanitet og porcelæn",
+        "note": "Sanitet og porcelæn er markeret som fraktion 22 på Kolding Kommunes officielle oversigtskort."
       },
       "mineraluld": {
-        "location": "Fraktion 5 - Isolering",
-        "note": "Isolering er markeret som fraktion 5 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 23 - Isolering",
+        "note": "Isolering er markeret som fraktion 23 på Kolding Kommunes officielle oversigtskort."
       },
       "glasuld": {
-        "location": "Fraktion 5 - Isolering",
-        "note": "Isolering er markeret som fraktion 5 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 23 - Isolering",
+        "note": "Isolering er markeret som fraktion 23 på Kolding Kommunes officielle oversigtskort."
       },
       "stenuld": {
-        "location": "Fraktion 5 - Isolering",
-        "note": "Isolering er markeret som fraktion 5 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 23 - Isolering",
+        "note": "Isolering er markeret som fraktion 23 på Kolding Kommunes officielle oversigtskort."
       },
       "tagpap": {
-        "location": "Fraktion 7 - Tagpap",
-        "note": "Tagpap er markeret som fraktion 7 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 24 - Tagpap",
+        "note": "Tagpap er markeret som fraktion 24 på Kolding Kommunes officielle oversigtskort."
       },
       "pvc": {
-        "location": "Fraktion 20 - Hård PVC",
-        "note": "Hård PVC er markeret som fraktion 20 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 6 - Hård PVC",
+        "note": "Hård PVC er markeret som fraktion 6 på Kolding Kommunes officielle oversigtskort."
       },
       "haard-pvc": {
-        "location": "Fraktion 20 - Hård PVC",
-        "note": "Hård PVC er markeret som fraktion 20 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 6 - Hård PVC",
+        "note": "Hård PVC er markeret som fraktion 6 på Kolding Kommunes officielle oversigtskort."
       },
       "metal": {
-        "location": "Fraktion 21 - Metal",
-        "note": "Metal er markeret som fraktion 21 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 27 - Metal",
+        "note": "Metal er markeret som fraktion 27 på Kolding Kommunes officielle oversigtskort."
       },
       "paller": {
-        "location": "Fraktion 22 - Paller",
-        "note": "Paller er markeret som fraktion 22 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 31 - Paller",
+        "note": "Paller er markeret som fraktion 31 på Kolding Kommunes officielle oversigtskort."
       },
       "udendoers-trae": {
-        "location": "Fraktion 23 - Imprægneret træ",
-        "note": "Imprægneret træ er markeret som fraktion 23 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 28 - Imprægneret træ",
+        "note": "Imprægneret træ er markeret som fraktion 28 på Kolding Kommunes officielle oversigtskort."
       },
       "impraegneret-trae": {
-        "location": "Fraktion 23 - Imprægneret træ",
-        "note": "Imprægneret træ er markeret som fraktion 23 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 28 - Imprægneret træ",
+        "note": "Imprægneret træ er markeret som fraktion 28 på Kolding Kommunes officielle oversigtskort."
       },
       "trae": {
-        "location": "Fraktion 24 - Indendørs træ",
-        "note": "Indendørs træ er markeret som fraktion 24 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 32 - Indendørs træ",
+        "note": "Indendørs træ er markeret som fraktion 32 på Kolding Kommunes officielle oversigtskort."
       },
       "rent-trae": {
-        "location": "Fraktion 24 - Indendørs træ",
-        "note": "Indendørs træ er markeret som fraktion 24 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 32 - Indendørs træ",
+        "note": "Indendørs træ er markeret som fraktion 32 på Kolding Kommunes officielle oversigtskort."
       },
       "indendoers-trae": {
-        "location": "Fraktion 24 - Indendørs træ",
-        "note": "Indendørs træ er markeret som fraktion 24 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 32 - Indendørs træ",
+        "note": "Indendørs træ er markeret som fraktion 32 på Kolding Kommunes officielle oversigtskort."
       },
       "indendoers-malet-trae": {
-        "location": "Fraktion 24 - Indendørs træ",
-        "note": "Indendørs træ er markeret som fraktion 24 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 32 - Indendørs træ",
+        "note": "Indendørs træ er markeret som fraktion 32 på Kolding Kommunes officielle oversigtskort."
       },
       "indendoers-umalet-trae": {
-        "location": "Fraktion 24 - Indendørs træ",
-        "note": "Indendørs træ er markeret som fraktion 24 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 32 - Indendørs træ",
+        "note": "Indendørs træ er markeret som fraktion 32 på Kolding Kommunes officielle oversigtskort."
       },
       "jord": {
-        "location": "Fraktion 25 - Jord",
-        "note": "Jord er markeret som fraktion 25 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 37 - Jord",
+        "note": "Jord er markeret som fraktion 37 på Kolding Kommunes officielle oversigtskort."
       },
       "natursten": {
-        "location": "Fraktion 27 - Natursten / sten og grus",
-        "note": "Natursten / sten og grus er markeret som fraktion 27 på Kolding Kommunes officielle oversigtskort."
+        "location": "Ikke nummereret på kortet - Natursten",
+        "note": "Natursten er markeret på Kolding Kommunes officielle oversigtskort, men uden sikkert fraktionsnummer."
       },
       "sten-og-grus": {
-        "location": "Fraktion 27 - Natursten / sten og grus",
-        "note": "Natursten / sten og grus er markeret som fraktion 27 på Kolding Kommunes officielle oversigtskort."
+        "location": "Ikke nummereret på kortet - Natursten",
+        "note": "Natursten er markeret på Kolding Kommunes officielle oversigtskort, men uden sikkert fraktionsnummer."
       },
       "beton": {
-        "location": "Fraktion 28/38 - Beton, tegl og mursten",
-        "note": "Beton, tegl og mursten er markeret som fraktion 28/38 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 38 - Beton, tegl og mursten",
+        "note": "Beton, tegl og mursten er markeret som fraktion 38 på Kolding Kommunes officielle oversigtskort."
       },
       "murbrokker": {
-        "location": "Fraktion 28/38 - Beton, tegl og mursten",
-        "note": "Beton, tegl og mursten er markeret som fraktion 28/38 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 38 - Beton, tegl og mursten",
+        "note": "Beton, tegl og mursten er markeret som fraktion 38 på Kolding Kommunes officielle oversigtskort."
       },
       "mursten-og-tegl": {
-        "location": "Fraktion 28/38 - Beton, tegl og mursten",
-        "note": "Beton, tegl og mursten er markeret som fraktion 28/38 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 38 - Beton, tegl og mursten",
+        "note": "Beton, tegl og mursten er markeret som fraktion 38 på Kolding Kommunes officielle oversigtskort."
       },
       "tegl": {
-        "location": "Fraktion 28/38 - Beton, tegl og mursten",
-        "note": "Beton, tegl og mursten er markeret som fraktion 28/38 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 38 - Beton, tegl og mursten",
+        "note": "Beton, tegl og mursten er markeret som fraktion 38 på Kolding Kommunes officielle oversigtskort."
       },
       "hele-mursten": {
-        "location": "Fraktion 28/38 - Beton, tegl og mursten",
-        "note": "Beton, tegl og mursten er markeret som fraktion 28/38 på Kolding Kommunes officielle oversigtskort."
+        "location": "Ikke nummereret på kortet - Brugte mursten",
+        "note": "Brugte mursten er markeret på Kolding Kommunes officielle oversigtskort, men uden sikkert fraktionsnummer."
       },
       "haveaffald": {
-        "location": "Fraktion 37 - Haveaffald",
-        "note": "Haveaffald er markeret som fraktion 37 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 39 - Haveaffald",
+        "note": "Haveaffald er markeret som fraktion 39 på Kolding Kommunes officielle oversigtskort."
       },
       "daek": {
-        "location": "Fraktion 35 - Dæk",
-        "note": "Dæk er markeret som fraktion 35 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 33 - Dæk",
+        "note": "Dæk er markeret som fraktion 33 på Kolding Kommunes officielle oversigtskort."
       },
       "haard-plast": {
-        "location": "Fraktion 17/17.2 - Hård plast",
-        "note": "Hård plast er markeret som fraktion 17/17.2 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 7 - Hård plast småt",
+        "note": "Hård plast småt er markeret som fraktion 7 på Kolding Kommunes officielle oversigtskort."
       },
       "stor-haard-plast": {
-        "location": "Fraktion 17/17.2 - Hård plast",
-        "note": "Hård plast er markeret som fraktion 17/17.2 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 2 - Hård plast stort",
+        "note": "Hård plast stort er markeret som fraktion 2 på Kolding Kommunes officielle oversigtskort."
       },
       "plastic": {
-        "location": "Fraktion 32-33 - Blød plast / plast",
-        "note": "Blød plast / plast er markeret som fraktion 32-33 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 4/5 - Blød plast",
+        "note": "Farvet blød plast er markeret som fraktion 4, og klar blød plast er markeret som fraktion 5 på Kolding Kommunes officielle oversigtskort."
       },
       "plast": {
-        "location": "Fraktion 32-33 - Blød plast / plast",
-        "note": "Blød plast / plast er markeret som fraktion 32-33 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 4/5 - Blød plast",
+        "note": "Farvet blød plast er markeret som fraktion 4, og klar blød plast er markeret som fraktion 5 på Kolding Kommunes officielle oversigtskort."
       },
       "bloed-plast": {
-        "location": "Fraktion 32-33 - Blød plast / plast",
-        "note": "Blød plast / plast er markeret som fraktion 32-33 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 4/5 - Blød plast",
+        "note": "Farvet blød plast er markeret som fraktion 4, og klar blød plast er markeret som fraktion 5 på Kolding Kommunes officielle oversigtskort."
       },
       "bloed-plast-2": {
-        "location": "Fraktion 32-33 - Blød plast / plast",
-        "note": "Blød plast / plast er markeret som fraktion 32-33 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 4/5 - Blød plast",
+        "note": "Farvet blød plast er markeret som fraktion 4, og klar blød plast er markeret som fraktion 5 på Kolding Kommunes officielle oversigtskort."
       },
       "klar-bloed-plast": {
-        "location": "Fraktion 32-33 - Blød plast / plast",
-        "note": "Blød plast / plast er markeret som fraktion 32-33 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 5 - Klar blød plast",
+        "note": "Klar blød plast er markeret som fraktion 5 på Kolding Kommunes officielle oversigtskort."
       },
       "farvet-bloed-plast": {
-        "location": "Fraktion 32-33 - Blød plast / plast",
-        "note": "Blød plast / plast er markeret som fraktion 32-33 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 4 - Farvet blød plast",
+        "note": "Farvet blød plast er markeret som fraktion 4 på Kolding Kommunes officielle oversigtskort."
       },
       "flamingo": {
-        "location": "Fraktion 33 - Hvid flamingo",
-        "note": "Hvid flamingo er markeret som fraktion 33 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 9 - Hvid flamingo",
+        "note": "Hvid flamingo er markeret som fraktion 9 på Kolding Kommunes officielle oversigtskort."
       },
       "storskrald": {
-        "location": "Fraktion 29 - Til forbrænding / polstrede møbler",
-        "note": "Til forbrænding / polstrede møbler er markeret som fraktion 29 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 29 - Til forbrænding",
+        "note": "Til forbrænding er markeret som fraktion 29 på Kolding Kommunes officielle oversigtskort."
       },
       "smaat-braendbart": {
-        "location": "Fraktion 29 - Til forbrænding / polstrede møbler",
-        "note": "Til forbrænding / polstrede møbler er markeret som fraktion 29 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 29 - Til forbrænding",
+        "note": "Til forbrænding er markeret som fraktion 29 på Kolding Kommunes officielle oversigtskort."
       },
       "stort-braendbart": {
-        "location": "Fraktion 29 - Til forbrænding / polstrede møbler",
-        "note": "Til forbrænding / polstrede møbler er markeret som fraktion 29 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 29 - Til forbrænding",
+        "note": "Til forbrænding er markeret som fraktion 29 på Kolding Kommunes officielle oversigtskort."
       },
       "polstrede-moebler": {
-        "location": "Fraktion 29 - Til forbrænding / polstrede møbler",
-        "note": "Til forbrænding / polstrede møbler er markeret som fraktion 29 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 35 - Polstrede møbler",
+        "note": "Polstrede møbler er markeret som fraktion 35 på Kolding Kommunes officielle oversigtskort."
       },
       "madrasser": {
-        "location": "Fraktion 29 - Til forbrænding / polstrede møbler",
-        "note": "Til forbrænding / polstrede møbler er markeret som fraktion 29 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 35 - Polstrede møbler",
+        "note": "Polstrede møbler er markeret som fraktion 35 på Kolding Kommunes officielle oversigtskort."
       },
       "cardboard": {
         "location": "Fraktion 8 - Pap",
@@ -26148,16 +26148,16 @@ window.bundledSiteLayouts = [
         "note": "Pap er markeret som fraktion 8 på Kolding Kommunes officielle oversigtskort."
       },
       "glass": {
-        "location": "Fraktion 9 - Glas og flasker",
-        "note": "Glas og flasker er markeret som fraktion 9 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 10 - Glas og flasker",
+        "note": "Glas og flasker er markeret som fraktion 10 på Kolding Kommunes officielle oversigtskort."
       },
       "glas": {
-        "location": "Fraktion 9 - Glas og flasker",
-        "note": "Glas og flasker er markeret som fraktion 9 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 10 - Glas og flasker",
+        "note": "Glas og flasker er markeret som fraktion 10 på Kolding Kommunes officielle oversigtskort."
       },
       "fladt-glas": {
-        "location": "Fraktion 10 - Fladt glas",
-        "note": "Fladt glas er markeret som fraktion 10 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 11 - Fladt glas",
+        "note": "Fladt glas er markeret som fraktion 11 på Kolding Kommunes officielle oversigtskort."
       },
       "boeger": {
         "location": "Fraktion 12 - Bøger",
@@ -26172,8 +26172,8 @@ window.bundledSiteLayouts = [
         "note": "Papir er markeret som fraktion 14 på Kolding Kommunes officielle oversigtskort."
       },
       "havemoebler": {
-        "location": "Fraktion 32 - Plasthavemøbler",
-        "note": "Plasthavemøbler er markeret som fraktion 32 på Kolding Kommunes officielle oversigtskort."
+        "location": "Fraktion 3 - Plasthavemøbler",
+        "note": "Plasthavemøbler er markeret som fraktion 3 på Kolding Kommunes officielle oversigtskort."
       },
       "toej": {
         "location": "Fraktion 16.1/16.2 - Tøj, sko og tekstiler",

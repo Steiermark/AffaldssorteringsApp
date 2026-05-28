@@ -335,6 +335,7 @@ const anthropicModel = "claude-haiku-4-5-20251001";
 const appConfig = window.affaldssorteringConfig || {};
 const anthropicApiKeyStorageKey = "sortering:anthropic-api-key";
 const maxFractionsInImagePrompt = 120;
+const maxLocalFractionsInImagePrompt = 90;
 const findSiteHelpText = "Brug knappen Find nærmeste til at finde den genbrugsplads, der er nærmest, eller vælg kommune og genbrugsplads fra listen.";
 const lowConfidenceHelpText = "Kontakt en medarbejder for hjælp.";
 
@@ -1221,11 +1222,48 @@ function buildImageFractionCatalog() {
     .join("\n");
 }
 
-function buildImageClassificationPrompt() {
-  const fractionCatalog = buildImageFractionCatalog();
-  return `Klassificer det primaere affaldsobjekt paa billedet ved at vaelge den bedste fraktion fra dette piktogramkatalog.
+function buildLocalImageFractionCatalog(site = selectedSite) {
+  if (!site?.map || wasteTypes.length === 0) {
+    return "";
+  }
 
-Piktogram-fraktioner:
+  const localRows = wasteTypes
+    .map((item) => {
+      const local = getLocalFractionLocation(site, item.id);
+      if (!local) return null;
+      const keywords = (item.keywords || [])
+        .filter(Boolean)
+        .slice(0, 4)
+        .join(", ");
+      const context = [
+        `${item.id}: ${item.title}`,
+        keywords ? `soegeord: ${keywords}` : "",
+        local.location ? `lokal placering: ${local.location}` : ""
+      ].filter(Boolean);
+      return context.join(" | ");
+    })
+    .filter(Boolean)
+    .slice(0, maxLocalFractionsInImagePrompt);
+
+  if (wasteTypes.some((item) => item.id === "unknown")) {
+    localRows.push("unknown: Ukendt affald");
+  }
+
+  return localRows.join("\n");
+}
+
+function buildImageClassificationPrompt() {
+  const localFractionCatalog = buildLocalImageFractionCatalog();
+  const fractionCatalog = localFractionCatalog || buildImageFractionCatalog();
+  const siteContext = localFractionCatalog && selectedSite
+    ? `Den valgte genbrugsplads er ${selectedSite.name}. Vaelg kun blandt de fraktioner, containere og lokale placeringer, der findes paa denne plads.`
+    : "Der er ikke valgt en genbrugsplads med lokale containerdata, saa vaelg den bedste piktogram-fraktion fra standardkataloget.";
+
+  return `Klassificer det primaere affaldsobjekt paa billedet.
+
+${siteContext}
+
+Tilgaengelige fraktioner:
 ${fractionCatalog}
 
 Svar kun med JSON:
@@ -1233,7 +1271,8 @@ Svar kun med JSON:
 
 Regler:
 - fractionId skal vaere et eksakt id fra kataloget.
-- Vaelg den naermeste piktogram-fraktion, ogsa hvis objektet ikke er perfekt.
+- Hvis der er lokale containerdata, maa du kun bruge en fraktion fra listen for den valgte genbrugsplads.
+- Vaelg den naermeste lokale fraktion/container, ogsa hvis objektet ikke er perfekt.
 - Brug kun "unknown", hvis billedet ikke viser et affaldsobjekt.
 - Kun et objekt. Ingen array. Ingen markdown.`;
 }
