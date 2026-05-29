@@ -3,6 +3,9 @@ window.generatedWasteFractions = [
         "id": "asbest",
         "title": "Asbest",
         "keywords": [
+            "asbestplader",
+            "eternitplader",
+            "fibercement",
             "asbest"
         ],
         "webQueries": [
@@ -48,9 +51,21 @@ window.generatedWasteFractions = [
         "sourceName": "ASKE_rgb_ikon_600x600dpi.png"
     },
     {
-        "id": "batteries",
+        "id": "batterier",
         "title": "Batterier",
         "keywords": [
+            "aa batterier",
+            "aaa batterier",
+            "knapcellebatterier",
+            "litiumbatterier",
+            "alkalibatterier",
+            "genopladelige batterier",
+            "alkaliske batterier",
+            "brunstens batterier",
+            "knapcelle batterier",
+            "kviksølvs batterier",
+            "nikkelmetal batterier",
+            "lithium batterier under 500 g",
             "batterier"
         ],
         "webQueries": [
@@ -67,7 +82,12 @@ window.generatedWasteFractions = [
         "id": "beton",
         "title": "Beton",
         "keywords": [
-            "beton"
+            "beton",
+            "natursten",
+            "betontagsten",
+            "cement (uden emballage)",
+            "belægningssten",
+            "havefliser"
         ],
         "webQueries": [
             "Beton waste recycling",
@@ -101,7 +121,9 @@ window.generatedWasteFractions = [
         "id": "bilbatterier",
         "title": "Bilbatterier",
         "keywords": [
-            "bilbatterier"
+            "bilbatterier",
+            "knallertbatterier",
+            "motorcykelbatterier"
         ],
         "webQueries": [
             "Bilbatterier waste recycling",
@@ -114,9 +136,24 @@ window.generatedWasteFractions = [
         "sourceName": "BILBATTERIER_rgb_ikon_600x600dpi.png"
     },
     {
-        "id": "bloed-plast-2",
-        "title": "Blød Plast 2",
+        "id": "bloed-plast",
+        "title": "Blød Plast",
         "keywords": [
+            "plastposer",
+            "bobleplast",
+            "plastfolier",
+            "strækfilm",
+            "plastfilm",
+            "bæresække",
+            "indkøbsposer",
+            "fryseposer",
+            "plastikposer",
+            "sorte affaldssække",
+            "plast med symbolet 1 (som vist her under)",
+            "sodavandsflasker",
+            "juiceflasker",
+            "vindruebakker",
+            "æggebakker",
             "blød plast 2",
             "bloed plast 2",
             "blød",
@@ -158,6 +195,9 @@ window.generatedWasteFractions = [
         "title": "Bøger",
         "keywords": [
             "bøger",
+            "leksikon",
+            "paperback",
+            "hardback",
             "boeger"
         ],
         "webQueries": [
@@ -225,6 +265,13 @@ window.generatedWasteFractions = [
         "id": "daek",
         "title": "Dæk",
         "keywords": [
+            "bildæk",
+            "traktordæk",
+            "lastbildæk",
+            "knallertdæk",
+            "motorcykeldæk",
+            "trillebørdæk",
+            "dæk med og uden fælg",
             "dæk",
             "daek"
         ],
@@ -242,6 +289,8 @@ window.generatedWasteFractions = [
         "id": "drikkedaaser",
         "title": "Drikkedåser",
         "keywords": [
+            "øldåser",
+            "sodavandsdåser",
             "drikkedåser",
             "drikkedaaser"
         ],
@@ -275,6 +324,12 @@ window.generatedWasteFractions = [
         "id": "elpaerer",
         "title": "Elpærer",
         "keywords": [
+            "sparepærer",
+            "led-pærer",
+            "lavenergipærer",
+            "lysstofrør under 60 cm",
+            "udladningslamper",
+            "halogen",
             "elpærer",
             "elpaerer"
         ],
@@ -308,15 +363,38 @@ window.generatedWasteFractions = [
         "sourceName": "ETERNIT_UDEN_ASBEST_rgb_ikon_600x600dpi.png"
     },
     {
-        "id": "hazardous",
-        "title": "Farligt affald",
+        "id": "farligt-affald",
+        "title": "Farligt Affald",
         "keywords": [
+            "maling",
+            "spraydåser",
+            "kemikalier",
+            "lyskilder",
+            "elpærer",
+            "led pærer",
+            "olierester",
+            "plantegift",
+            "neglelak",
+            "neglelakfjerner",
+            "termometre",
+            "afkalkningsmidler",
+            "gødning",
+            "maling og lak",
+            "lim og fugemasse",
+            "olie og kemikalier",
+            "insekt- og plantegifte",
+            "plantegødning",
+            "cykelbatterier",
+            "fugeskum",
+            "hårspray",
+            "deodorantspray",
+            "spraymaling",
+            "wd-40",
             "farligt affald",
             "farligt",
             "affald",
             "spray",
             "spraydåse",
-            "spraydåser",
             "spraydaase",
             "spraydaaser",
             "aerosol"
@@ -356,6 +434,7 @@ window.generatedWasteFractions = [
         "id": "fibergips",
         "title": "Fibergips",
         "keywords": [
+            "farmacell",
             "fibergips"
         ],
         "webQueries": [
@@ -390,6 +469,12 @@ window.generatedWasteFractions = [
         "id": "flamingo",
         "title": "Flamingo",
         "keywords": [
+            "farvet flamingo",
+            "hvid flamingo med sorte/grå/farvede prikker",
+            "kapilærkasser",
+            "ren hvid flamingo",
+            "flamingokasser",
+            "flamingoemballage",
             "flamingo"
         ],
         "webQueries": [
@@ -471,6 +556,8 @@ window.generatedWasteFractions = [
         "id": "gips",
         "title": "Gips",
         "keywords": [
+            "gipsplader",
+            "vådrumsgips",
             "gips"
         ],
         "webQueries": [
@@ -484,9 +571,17 @@ window.generatedWasteFractions = [
         "sourceName": "GIPS_rgb_ikon_600x600dpi.png"
     },
     {
-        "id": "glass",
+        "id": "glas",
         "title": "Glas",
         "keywords": [
+            "glasflasker",
+            "konservesglas",
+            "drikkeglas",
+            "glasemballage",
+            "vitaminglas",
+            "glasskår",
+            "flasker",
+            "syltetøjsglas",
             "glas"
         ],
         "webQueries": [
@@ -503,7 +598,11 @@ window.generatedWasteFractions = [
         "id": "glasuld",
         "title": "Glasuld",
         "keywords": [
-            "glasuld"
+            "stenuld",
+            "glasuld",
+            "mineraluld",
+            "rockwool",
+            "vintermåtter"
         ],
         "webQueries": [
             "Glasuld waste recycling",
@@ -519,6 +618,15 @@ window.generatedWasteFractions = [
         "id": "haveaffald",
         "title": "Haveaffald",
         "keywords": [
+            "blade og blomster",
+            "grene og buske",
+            "hækafklip",
+            "nedfaldsfrugt",
+            "græstørv",
+            "brænde",
+            "træer og rødder",
+            "buske og grene",
+            "græstørv og rullegræs",
             "haveaffald"
         ],
         "webQueries": [
@@ -550,9 +658,30 @@ window.generatedWasteFractions = [
         "sourceName": "HELE_MURSTEN_rgb_ikon_600x600dpi.png"
     },
     {
-        "id": "haard-plast",
+        "id": "haardt-plast",
         "title": "Hård Plast",
         "keywords": [
+            "plastflasker",
+            "plastdunke",
+            "plastbakker",
+            "plastbøtter",
+            "plastlåg",
+            "plastlegetøj",
+            "plastservice",
+            "spande",
+            "baljer",
+            "plast med symbolet 2 (som vist her under)",
+            "farvede plastdunke",
+            "ølkasser",
+            "sodavandskasser",
+            "plastkælke",
+            "vandkander",
+            "plast med symbolet 5 (som vist her under)",
+            "plasturtepotter",
+            "hyndebokse",
+            "plast med symbolet 6 (som vist her under)",
+            "blomsterbakker",
+            "køleskabsskuffer",
             "hård plast",
             "haard plast",
             "hård",
@@ -570,9 +699,13 @@ window.generatedWasteFractions = [
         "sourceName": "HAARD_PLAST_rgb_ikon_600x600dpi.png"
     },
     {
-        "id": "haard-pvc",
-        "title": "Hård Pvc",
+        "id": "haardt-pvc",
+        "title": "Hård PVC",
         "keywords": [
+            "pvc-tagrender",
+            "pvc-afløbsrør",
+            "pvc-kloakrør",
+            "trapezplader",
             "hård pvc",
             "haard pvc",
             "hård",
@@ -615,6 +748,13 @@ window.generatedWasteFractions = [
         "id": "indendoers-trae",
         "title": "Indendørs Træ",
         "keywords": [
+            "malet træ",
+            "spånplader",
+            "lamineret træ",
+            "lakeret træ",
+            "køkkenskabe",
+            "træmøbler",
+            "mdf",
             "indendørs træ",
             "indendoers trae",
             "indendørs",
@@ -658,6 +798,10 @@ window.generatedWasteFractions = [
         "id": "jord",
         "title": "Jord",
         "keywords": [
+            "muldjord",
+            "sandjord",
+            "råjord",
+            "sand",
             "jord"
         ],
         "webQueries": [
@@ -747,6 +891,13 @@ window.generatedWasteFractions = [
         "id": "koeleudstyr",
         "title": "Køleudstyr",
         "keywords": [
+            "køleskabe",
+            "frysere",
+            "kummefrysere",
+            "køle-og fryseskabe",
+            "svaleskabe",
+            "klimaanlæg med køleanlæg",
+            "vandkølere",
             "køleudstyr",
             "koeleudstyr"
         ],
@@ -764,6 +915,13 @@ window.generatedWasteFractions = [
         "id": "kompost",
         "title": "Kompost",
         "keywords": [
+            "madrester",
+            "kaffefiltre",
+            "teposer",
+            "kaffegrums",
+            "frugt og grønt",
+            "planterester",
+            "blomsterbuketter",
             "kompost"
         ],
         "webQueries": [
@@ -780,10 +938,12 @@ window.generatedWasteFractions = [
         "id": "ledninger-og-kabler",
         "title": "Ledninger  og  Kabler",
         "keywords": [
-            "ledninger  og  kabler",
             "ledninger",
-            "og",
-            "kabler"
+            "kabler",
+            "kabeltromler",
+            "stikdåser",
+            "ledninger  og  kabler",
+            "og"
         ],
         "webQueries": [
             "Ledninger  og  Kabler waste recycling",
@@ -799,6 +959,7 @@ window.generatedWasteFractions = [
         "id": "lysstofroer",
         "title": "Lysstofrør",
         "keywords": [
+            "lysstofrør over 60 cm",
             "lysstofrør",
             "lysstofroer"
         ],
@@ -816,10 +977,16 @@ window.generatedWasteFractions = [
         "id": "mad-og-drikkekartoner",
         "title": "Mad-  og  Drikkekartoner",
         "keywords": [
+            "mælkekartoner",
+            "yoghurtkartoner",
+            "juicekartoner",
+            "drikkekartoner",
+            "tetra pak",
+            "kartoner til flåede tomater",
+            "kartoner til bønner",
             "mad-  og  drikkekartoner",
             "mad",
-            "og",
-            "drikkekartoner"
+            "og"
         ],
         "webQueries": [
             "Mad-  og  Drikkekartoner waste recycling",
@@ -835,6 +1002,17 @@ window.generatedWasteFractions = [
         "id": "madaffald",
         "title": "Madaffald",
         "keywords": [
+            "madrester",
+            "frugt og grønt",
+            "kaffefiltre",
+            "teposer",
+            "kød",
+            "fisk og skaldyr",
+            "brød og kager",
+            "æggeskaller",
+            "mælkeprodukter",
+            "blomsterbuketter",
+            "knogler",
             "madaffald"
         ],
         "webQueries": [
@@ -851,6 +1029,11 @@ window.generatedWasteFractions = [
         "id": "madrasser",
         "title": "Madrasser",
         "keywords": [
+            "boksmadrasser",
+            "sofaer",
+            "lænestole",
+            "store gulvtæpper",
+            "skummadrasser",
             "madrasser"
         ],
         "webQueries": [
@@ -867,6 +1050,8 @@ window.generatedWasteFractions = [
         "id": "maelke-og-broedkasser",
         "title": "Mælke  og  Brødkasser",
         "keywords": [
+            "mælkekasser fra arla",
+            "brødkasser fra schulstad og kohberg",
             "mælke  og  brødkasser",
             "maelke  og  broedkasser",
             "mælke",
@@ -921,6 +1106,16 @@ window.generatedWasteFractions = [
         "id": "mellemstort-elektronik",
         "title": "Mellemstort Elektronik",
         "keywords": [
+            "standerlamper",
+            "mikrobølgeovne",
+            "emhætter",
+            "miniovne",
+            "lysarmaturer",
+            "stationære pc’ere",
+            "højtryksrensere under 120 cm",
+            "printere (50-120 cm",
+            "uden toner/printerpatroner",
+            "som afleveres for sig som toner)",
             "mellemstort elektronik",
             "mellemstort",
             "elektronik"
@@ -956,6 +1151,24 @@ window.generatedWasteFractions = [
         "id": "metal",
         "title": "Metal",
         "keywords": [
+            "konservesdåser",
+            "dåser",
+            "foliebakker",
+            "stanniol",
+            "kaffekapsler",
+            "kapsler og låg",
+            "bestik",
+            "gryder og pander",
+            "søm og skruer",
+            "fyrfadslysholdere",
+            "øl og sodavandsdåser",
+            "saks",
+            "møbler af metal",
+            "barne- og klapvogne",
+            "haveredskaber",
+            "grill og gryder",
+            "radiatorer og rør",
+            "bil- og motordele (tømt for olie og benzin)",
             "metal"
         ],
         "webQueries": [
@@ -972,7 +1185,11 @@ window.generatedWasteFractions = [
         "id": "mineraluld",
         "title": "Mineraluld",
         "keywords": [
-            "mineraluld"
+            "stenuld",
+            "glasuld",
+            "mineraluld",
+            "rockwool",
+            "vintermåtter"
         ],
         "webQueries": [
             "Mineraluld waste recycling",
@@ -988,8 +1205,14 @@ window.generatedWasteFractions = [
         "id": "mursten-og-tegl",
         "title": "Mursten  og  Tegl",
         "keywords": [
-            "mursten  og  tegl",
+            "letbeton",
+            "leca",
+            "mørtel",
+            "gasbeton",
             "mursten",
+            "teglsten",
+            "teglsten med mørtel",
+            "mursten  og  tegl",
             "og",
             "tegl"
         ],
@@ -1057,6 +1280,9 @@ window.generatedWasteFractions = [
         "id": "paller",
         "title": "Paller",
         "keywords": [
+            "europaller",
+            "halvpaller",
+            "engangspaller",
             "paller"
         ],
         "webQueries": [
@@ -1070,13 +1296,21 @@ window.generatedWasteFractions = [
         "sourceName": "PALLER_rgb_ikon_600x600dpi.png"
     },
     {
-        "id": "cardboard",
-        "title": "Pap og karton",
+        "id": "pap",
+        "title": "Pap",
         "keywords": [
-            "pap og karton",
+            "papkasser",
+            "bølgepap",
+            "karton",
+            "papemballage",
+            "skotøjsæsker",
+            "paprør",
+            "æggebakker",
+            "æsker",
             "pap",
-            "og",
-            "karton"
+            "rent afdækningspap",
+            "pap og karton",
+            "og"
         ],
         "webQueries": [
             "Pap og karton waste recycling",
@@ -1092,6 +1326,17 @@ window.generatedWasteFractions = [
         "id": "papir",
         "title": "Papir",
         "keywords": [
+            "aviser",
+            "reklamer",
+            "magasiner",
+            "kontorpapir",
+            "tryksager",
+            "brochurer",
+            "kuverter",
+            "kvitteringer",
+            "papirposer",
+            "ugeblade",
+            "kopipapir",
             "papir"
         ],
         "webQueries": [
@@ -1108,8 +1353,9 @@ window.generatedWasteFractions = [
         "id": "papir-til-makulering",
         "title": "Papir Til Makulering",
         "keywords": [
-            "papir til makulering",
             "papir",
+            "der skal makuleres (f.eks. pga. persondata)",
+            "papir til makulering",
             "til",
             "makulering"
         ],
@@ -1124,9 +1370,14 @@ window.generatedWasteFractions = [
         "sourceName": "PAPIR_TIL_MAKULERING_rgb_ikon_600x600dpi.png"
     },
     {
-        "id": "plastic",
-        "title": "Plast",
+        "id": "plast",
+        "title": "Blandet Plast",
         "keywords": [
+            "plastemballage",
+            "plastflasker",
+            "plastposer",
+            "plastfolier",
+            "plastbakker",
             "plast"
         ],
         "webQueries": [
@@ -1143,6 +1394,8 @@ window.generatedWasteFractions = [
         "id": "plasthavemoebler",
         "title": "Plasthavemøbler",
         "keywords": [
+            "plastikstole",
+            "plastikborde",
             "plasthavemøbler",
             "plasthavemoebler"
         ],
@@ -1176,6 +1429,11 @@ window.generatedWasteFractions = [
         "id": "polstrede-moebler",
         "title": "Polstrede Møbler",
         "keywords": [
+            "boksmadrasser",
+            "sofaer",
+            "lænestole",
+            "store gulvtæpper",
+            "skummadrasser",
             "polstrede møbler",
             "polstrede moebler",
             "polstrede",
@@ -1193,12 +1451,13 @@ window.generatedWasteFractions = [
         "sourceName": "POLSTREDE_MOEBLER_rgb_ikon_600x600dpi.png"
     },
     {
-        "id": "porcelaen-2",
-        "title": "Porcelæn 2",
+        "id": "porcelaen",
+        "title": "Porcelæn",
         "keywords": [
+            "keramik",
+            "porcelæn",
             "porcelæn 2",
             "porcelaen 2",
-            "porcelæn",
             "porcelaen"
         ],
         "webQueries": [
@@ -1215,7 +1474,13 @@ window.generatedWasteFractions = [
         "id": "printerpatroner",
         "title": "Printerpatroner",
         "keywords": [
-            "printerpatroner"
+            "printerpatroner",
+            "lasertoner",
+            "kopimaskinetoner",
+            "blækpatroner",
+            "tromler",
+            "afleveres helst i lukkede",
+            "originale kasser"
         ],
         "webQueries": [
             "Printerpatroner waste recycling",
@@ -1264,6 +1529,15 @@ window.generatedWasteFractions = [
         "id": "sanitet",
         "title": "Sanitet",
         "keywords": [
+            "klinker",
+            "stentøj",
+            "glaserede tegl",
+            "glaserede krukker",
+            "porcelæn",
+            "væg- og gulvfliser",
+            "rørpuds",
+            "toiletter",
+            "håndvaske",
             "sanitet"
         ],
         "webQueries": [
@@ -1296,6 +1570,19 @@ window.generatedWasteFractions = [
         "id": "smaat-elektronik",
         "title": "Småt Elektronik",
         "keywords": [
+            "mobiltelefoner",
+            "telefoner",
+            "radio",
+            "kamera",
+            "elektrisk legetøj",
+            "opladere",
+            "elektrisk værktøj",
+            "hårtørrere",
+            "elkedel",
+            "brødrister",
+            "printere (under 50 cm",
+            "uden toner/printerpatroner",
+            "som afleveres for sig som toner)",
             "småt elektronik",
             "smaat elektronik",
             "småt",
@@ -1316,14 +1603,31 @@ window.generatedWasteFractions = [
         "id": "smaat-braendbart",
         "title": "Småt Brændbart",
         "keywords": [
+            "gavepapir",
+            "pizzabakker",
             "flamingo",
             "eps",
-            "pizzabakke",
-            "gavepapir",
-            "sutter",
             "tyggegummi",
-            "blisterpakke",
+            "sutter",
+            "blisterpakker",
             "skriveredskaber",
+            "bagepapir",
+            "muffinsforme",
+            "chipsposer",
+            "kaffeposer",
+            "servietter",
+            "to-go papkrus",
+            "cigaretskod",
+            "melamin",
+            "ringbind",
+            "ren hvid flamingo",
+            "flamingokasser",
+            "flamingoemballage",
+            "poser fra haveaffald",
+            "cykeldæk",
+            "troldtekt",
+            "pizzabakke",
+            "blisterpakke",
             "rest efter sortering",
             "småt brændbart",
             "smaat braendbart",
@@ -1393,7 +1697,11 @@ window.generatedWasteFractions = [
         "id": "stenuld",
         "title": "Stenuld",
         "keywords": [
-            "stenuld"
+            "stenuld",
+            "glasuld",
+            "mineraluld",
+            "rockwool",
+            "vintermåtter"
         ],
         "webQueries": [
             "Stenuld waste recycling",
@@ -1467,6 +1775,13 @@ window.generatedWasteFractions = [
         "id": "stort-elektronik",
         "title": "Stort Elektronik",
         "keywords": [
+            "komfurer",
+            "indbygningsovne",
+            "keramiske kogeplader",
+            "vaskemaskiner",
+            "tørretumblere",
+            "kopimaskiner",
+            "højtryksrensere over 120 cm",
             "stort elektronik",
             "stort",
             "elektronik"
@@ -1517,6 +1832,23 @@ window.generatedWasteFractions = [
         "id": "tekstilaffald",
         "title": "Tekstilaffald",
         "keywords": [
+            "tøj",
+            "bluser",
+            "bukser",
+            "kjoler",
+            "undertøj",
+            "sokker",
+            "håndklæder",
+            "klude",
+            "gardiner",
+            "tæpper",
+            "sengetøj",
+            "duge",
+            "viskestykker",
+            "ødelagt tøj",
+            "som du ikke vil sælge eller donere",
+            "hullede sokker",
+            "sengelinned",
             "tekstilaffald"
         ],
         "webQueries": [
@@ -1605,7 +1937,11 @@ window.generatedWasteFractions = [
         "id": "trykflasker",
         "title": "Trykflasker",
         "keywords": [
-            "trykflasker"
+            "gasflasker",
+            "pulverslukkere",
+            "skumslukkere",
+            "trykflasker",
+            "heliumflasker"
         ],
         "webQueries": [
             "Trykflasker waste recycling",
@@ -1621,6 +1957,12 @@ window.generatedWasteFractions = [
         "id": "tv-og-skaerme",
         "title": "Tv  og  Skærme",
         "keywords": [
+            "fladskærme",
+            "bærbare computere",
+            "tablets",
+            "tv med billedrør",
+            "skærme med billedrør",
+            "billedrør",
             "tv  og  skærme",
             "tv  og  skaerme",
             "tv",
@@ -1642,6 +1984,12 @@ window.generatedWasteFractions = [
         "id": "udendoers-trae",
         "title": "Udendørs Træ",
         "keywords": [
+            "imprægneret træ",
+            "imprægnerede stolper",
+            "imprægnerede pæle",
+            "jernbanesveller",
+            "flethegn",
+            "havehegn",
             "udendørs træ",
             "udendoers trae",
             "udendørs",
@@ -1717,7 +2065,13 @@ window.generatedWasteFractions = [
         "id": "vinduer",
         "title": "Vinduer",
         "keywords": [
-            "vinduer"
+            "vinduer",
+            "vinduesglas med og uden ramme",
+            "spejle",
+            "planglas",
+            "bilruder",
+            "glas i skifterammer",
+            "drivhusglas"
         ],
         "webQueries": [
             "Vinduer waste recycling",
@@ -1729,5 +2083,4 @@ window.generatedWasteFractions = [
         "text": "Sortér som Vinduer. Kontroller den lokale skiltning på genbrugspladsen.",
         "sourceName": "VINDUER_rgb_ikon_600x600dpi.png"
     }
-]
-;
+];

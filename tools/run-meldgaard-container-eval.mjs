@@ -52,16 +52,13 @@ function parseOpenAiJsonResponse(data) {
 }
 
 const layoutFractionAliases = {
-  batteries: ["batterier"],
-  "bloed-plast-2": ["bloed-plast"],
-  cardboard: ["pap", "pap-og-karton"],
   elpaerer: ["lyskilder", "lysstofroer"],
+  "farligt-affald": ["spraydaaser"],
   flamingo: ["eps"],
   genbrug: ["direkte-genbrug"],
-  glass: ["glas", "flasker-og-glas"],
-  hazardous: ["farligt-affald", "spraydaaser"],
-  "haard-plast": ["haardt-plast", "haard-plast"],
-  "haard-pvc": ["pvc", "haardt-pvc"],
+  glas: ["flasker-og-glas"],
+  "haardt-plast": ["haard-plast"],
+  "haardt-pvc": ["pvc"],
   "indendoers-trae": ["rent-trae", "trae-til-genbrug"],
   koeleudstyr: ["koel-og-frys"],
   lysstofroer: ["lyskilder"],
@@ -69,10 +66,10 @@ const layoutFractionAliases = {
   metal: ["jern-og-metal"],
   "mursten-og-tegl": ["murbrokker"],
   "klar-bloed-plast": ["plastfolie"],
-  plastic: ["plast", "plastemballage", "pmdk"],
+  pap: ["pap-og-karton"],
+  plast: ["plastemballage", "pmdk"],
   plasthavemoebler: ["havemoebler", "plastmoebler"],
   "polstrede-moebler": ["stort-braendbart", "smaat-braendbart"],
-  "porcelaen-2": ["porcelaen"],
   storskrald: ["stort-braendbart", "smaat-braendbart", "rest-efter-sortering"],
   "stort-elektronik": ["haarde-hvidevarer"],
   tekstilaffald: ["tekstil"],
@@ -80,12 +77,20 @@ const layoutFractionAliases = {
   vinduer: ["glasdoere", "vinduer-og-glasdoere"]
 };
 
+function normalizeId(id) {
+  return id.toLowerCase()
+    .replace(/æ/g, "ae").replace(/ø/g, "oe").replace(/å/g, "aa")
+    .replace(/\s+/g, "-");
+}
+
 function resolveToContainerId(fractionId, siteMap) {
+  const normalized = normalizeId(fractionId);
+  if (siteMap[normalized]) return normalized;
   if (siteMap[fractionId]) return fractionId;
-  for (const alias of (layoutFractionAliases[fractionId] || [])) {
+  for (const alias of (layoutFractionAliases[normalized] || layoutFractionAliases[fractionId] || [])) {
     if (siteMap[alias]) return alias;
   }
-  return fractionId;
+  return normalized;
 }
 
 function getLocalFractionLocation(site, fractionId) {
