@@ -1,0 +1,32 @@
+{
+  "siteId": "mit-affald-billund-kommune-billund-genbrugsplads-havremarken-8-7190-billund",
+  "siteName": "Billund Genbrugsplads",
+  "items": [
+    { "file": "assets/meldgaard-affaldsfraktioner/autoglas.jpg", "label": "Autoglas", "expectedContainerId": "fladt-glas" },
+    { "file": "assets/meldgaard-affaldsfraktioner/Batterier-4x3-1.jpg", "label": "Batterier", "expectedContainerId": "batterier" },
+    { "file": "assets/meldgaard-affaldsfraktioner/Beton.jpg", "label": "Beton", "expectedContainerId": "beton" },
+    { "file": "assets/meldgaard-affaldsfraktioner/big-balle-container-4x3-1.png", "label": "Big bags", "skipReason": "Billund-layoutet har ikke en særskilt big-bags container." },
+    { "file": "assets/meldgaard-affaldsfraktioner/Bildæk.jpg", "label": "Bildæk", "expectedContainerId": "daek" },
+    { "file": "assets/meldgaard-affaldsfraktioner/brugt-asfalt-scaled.jpg", "label": "Brugt asfalt", "expectedContainerId": "asfalt" },
+    { "file": "assets/meldgaard-affaldsfraktioner/brugte-spraydaaser.jpg", "label": "Brugte spraydåser", "expectedContainerId": "farligt-affald" },
+    { "file": "assets/meldgaard-affaldsfraktioner/brugte-toner2.jpg", "label": "Brugte tonerpatroner", "expectedContainerId": "printerpatroner" },
+    { "file": "assets/meldgaard-affaldsfraktioner/deponi-1-4-3.jpg", "label": "Deponi", "expectedContainerId": "deponi" },
+    { "file": "assets/meldgaard-affaldsfraktioner/Gips-600x800.jpg", "label": "Gips", "expectedContainerId": "gips" },
+    { "file": "assets/meldgaard-affaldsfraktioner/haandsprit-4x3-1.jpg", "label": "Håndsprit", "expectedContainerId": "farligt-affald" },
+    { "file": "assets/meldgaard-affaldsfraktioner/isolering-2.jpg", "label": "Isolering", "expectedContainerId": "mineraluld" },
+    { "file": "assets/meldgaard-affaldsfraktioner/Jord-4.jpg", "label": "Jord", "expectedContainerId": "jord" },
+    { "file": "assets/meldgaard-affaldsfraktioner/kattegrus-4x3-1.jpg", "label": "Kattegrus", "skipReason": "Kattegrus er ikke entydigt mappet i Billund-layoutet." },
+    { "file": "assets/meldgaard-affaldsfraktioner/kofanger-scaled.jpg", "label": "Kofanger", "expectedContainerId": "haardt-plast" },
+    { "file": "assets/meldgaard-affaldsfraktioner/lysstofroer-4x3-1.jpg", "label": "Lysstofrør", "expectedContainerId": "lysstofroer" },
+    { "file": "assets/meldgaard-affaldsfraktioner/maling-4x3-1.jpg", "label": "Maling", "expectedContainerId": "farligt-affald" },
+    { "file": "assets/meldgaard-affaldsfraktioner/Metal-600x800.jpg", "label": "Metal", "expectedContainerId": "metal" },
+    { "file": "assets/meldgaard-affaldsfraktioner/PE2.jpg", "label": "PE plast", "expectedContainerId": "haardt-plast" },
+    { "file": "assets/meldgaard-affaldsfraktioner/PVC.jpg", "label": "PVC", "expectedContainerId": "haardt-pvc" },
+    { "file": "assets/meldgaard-affaldsfraktioner/sanitet-4x3-1.png", "label": "Sanitet", "expectedContainerId": "sanitet" },
+    { "file": "assets/meldgaard-affaldsfraktioner/sorteret-vinduesglas-scaled.jpg", "label": "Sorteret vinduesglas", "expectedContainerId": "vinduer" },
+    { "file": "assets/meldgaard-affaldsfraktioner/sort-land-plast-4x3-1.jpg", "label": "Sort landbrugsplast", "expectedContainerId": "haardt-plast" },
+    { "file": "assets/meldgaard-affaldsfraktioner/sveller.jpg", "label": "Sveller", "expectedContainerId": "impraegneret-trae" },
+    { "file": "assets/meldgaard-affaldsfraktioner/taekke.jpg", "label": "Tække", "expectedContainerId": "haveaffald" },
+    { "file": "assets/meldgaard-affaldsfraktioner/Træ.jpg", "label": "Træ", "expectedContainerId": "trae" }
+  ]
+}

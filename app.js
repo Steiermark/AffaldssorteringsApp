@@ -158,56 +158,7 @@ const danishMunicipalities = [
   "Aarhus Kommune"
 ];
 
-let recyclingSites = [
-  {
-    id: "billund",
-    name: "Billund Genbrugsplads",
-    address: "Eksempeldata - udskift med kommunens rigtige koordinater",
-    municipality: "Billund Kommune",
-    lat: 55.7337,
-    lon: 9.1124,
-    map: {
-      cardboard: { location: "Container 12 ved pap- og papirzonen", note: "Kør til højre efter porten." },
-      batteries: { location: "Miljøskab A ved mandskabsbygningen", note: "Aflever altid løse batterier i den røde boks." },
-      hazardous: { location: "Miljøstationen ved bygning 1", note: "Kontakt personalet ved ukendt indhold." },
-      glass: { location: "Glascontainer 4 ved indkørslen", note: "Tøm posen før aflevering." },
-      metal: { location: "Metalpladsen, container 18", note: "Fjern batterier og elektronik først." },
-      plastic: { location: "Plastcontainer 9 ved emballageområdet", note: "Kun tømt og nogenlunde ren plast." }
-    }
-  },
-  {
-    id: "grindsted",
-    name: "Grindsted Genbrugsplads",
-    address: "Eksempeldata - udskift med kommunens rigtige koordinater",
-    municipality: "Billund Kommune",
-    lat: 55.7583,
-    lon: 8.9278,
-    map: {
-      cardboard: { location: "Papcontainer 6 langs østhegnet", note: "Fold store papkasser sammen." },
-      batteries: { location: "Farligt affald, skab 2", note: "Tape polerne på større batterier." },
-      hazardous: { location: "Farligt affald ved bemandet modtagelse", note: "Beholderen skal være lukket." },
-      glass: { location: "Glas og flasker ved container 3", note: "Keramik og porcelæn skal ikke her." },
-      metal: { location: "Jern og metal, bås 14", note: "Spørg personalet ved trykflasker." },
-      plastic: { location: "Plastemballage, container 8", note: "Hård og blød plast sorteres samlet i forsøget." }
-    }
-  },
-  {
-    id: "give",
-    name: "Give Genbrugsplads",
-    address: "Eksempeldata - udskift med kommunens rigtige koordinater",
-    municipality: "Billund Kommune",
-    lat: 55.8471,
-    lon: 9.2387,
-    map: {
-      cardboard: { location: "Pap og karton, container 10", note: "Brug papircontaineren til aviser og breve." },
-      batteries: { location: "Batteriboks ved servicehuset", note: "Powerbanks afleveres også her." },
-      hazardous: { location: "Kemirum ved personaleindgangen", note: "Stil ikke farligt affald uden opsyn." },
-      glass: { location: "Flaskecontainer 2", note: "Låg sorteres som metal eller plast." },
-      metal: { location: "Metalcontainer 15 efter haveaffald", note: "Cykler og gryder må komme her." },
-      plastic: { location: "Plast, container 7", note: "Flamingo sorteres separat." }
-    }
-  }
-];
+let recyclingSites = [];
 
 let wasteTypes = [
   {
@@ -404,7 +355,8 @@ function formatDistance(meters) {
 
 function getSiteLabel(site) {
   const name = site.displayName || site.name;
-  return site.operator ? `${name} (${site.operator})` : name;
+  const label = site.address ? `${name} - ${site.address}` : name;
+  return site.operator ? `${label} (${site.operator})` : label;
 }
 
 function getSortableSiteName(site) {
@@ -504,10 +456,7 @@ function replaceRecyclingSites(sites) {
 function mergeRecyclingSitesForMunicipality(municipality, sites) {
   const incomingIds = new Set(sites.map((site) => site.id));
   recyclingSites = [
-    ...recyclingSites.filter((site) => {
-      const sameMunicipality = getMunicipalityName(site) === municipality;
-      return !sameMunicipality && !incomingIds.has(site.id);
-    }),
+    ...recyclingSites.filter((site) => !incomingIds.has(site.id)),
     ...sites
   ];
   applySiteLayoutsToSites();
@@ -850,8 +799,13 @@ async function loadSitesForSelectedMunicipality(municipality) {
     const municipalData = await fetchMunicipalRecyclingSites(municipalityCode);
     if (requestId !== municipalitySelectionRequest || municipalitySelect.value !== municipality) return;
 
-    mergeRecyclingSitesForMunicipality(municipality, municipalData.sites);
-    siteStatus.textContent = `${municipalData.sites.length} genbrugspladser fundet for ${municipality}. Vælg genbrugsplads i feltet Vælg.`;
+    if (municipalData.sites.length > 0) {
+      mergeRecyclingSitesForMunicipality(municipality, municipalData.sites);
+    }
+    const siteCount = (sitesByMunicipality.get(municipality) || []).length;
+    siteStatus.textContent = siteCount > 0
+      ? `Kommune valgt: ${municipality}. Vælg genbrugsplads i feltet Vælg.`
+      : `Kommune valgt: ${municipality}. Der er ikke fundet genbrugspladser for kommunen endnu.`;
   } catch (municipalError) {
     try {
       const utilityData = await fetchUtilityCompanyRecyclingSites(municipalityCode);
@@ -1286,8 +1240,7 @@ function getFractionForContainer(category) {
 function findFractionByClassification(result) {
   const requestedId = String(result.fractionId || result.fraction_id || result.id || "").trim();
   if (requestedId) {
-    const normalizedId = normalizeClassificationToken(requestedId);
-    const directMatch = wasteTypes.find((item) => item.id === requestedId || normalizeClassificationToken(item.id) === normalizedId);
+    const directMatch = getFractionByIdOrAlias(requestedId);
     if (directMatch) return directMatch;
   }
 
@@ -1314,9 +1267,27 @@ function normalizeConfidencePercent(value) {
 }
 
 function buildMatchFromClassification(result) {
+  const requestedId = String(result.fractionId || result.fraction_id || result.id || "").trim();
+  const localContainer = selectedSite?.map?.[requestedId] || null;
+  const localContainerLabel = containerCatalog[requestedId]?.label || requestedId;
   const fraction = findFractionByClassification(result);
+  if (localContainer && !fraction) {
+    const confidenceValue = normalizeConfidencePercent(result.confidence);
+    const name = String(result.name || localContainerLabel).trim();
+    const tip = String(result.tip || "").trim();
+    return {
+      id: requestedId,
+      title: localContainerLabel,
+      text: `${name}. Afleveres som ${localContainerLabel}.${tip ? ` Tip: ${tip}` : ""}`,
+      pictogram: "assets/pictograms/unknown.svg",
+      color: "#0b5f4a",
+      confidence: confidenceValue,
+      keywords: [localContainerLabel],
+      webQueries: [`${localContainerLabel} affald`]
+    };
+  }
   if (!fraction) {
-    const candidate = result.fractionId || result.fraction_id || result.category || result.name || "tom";
+    const candidate = requestedId || result.category || result.name || "tom";
     throw new Error(`Ukendt piktogramfraktion: ${candidate}`);
   }
 

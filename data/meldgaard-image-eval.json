@@ -1,0 +1,162 @@
+[
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/autoglas.jpg",
+    "expectedFractionId": "fladt-glas",
+    "label": "Autoglas",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/Batterier-4x3-1.jpg",
+    "expectedFractionId": "batteries",
+    "label": "Batterier",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/Beton.jpg",
+    "expectedFractionId": "beton",
+    "label": "Beton",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/big-balle-container-4x3-1.png",
+    "expectedFractionId": "big-bags",
+    "label": "Big bags",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/Bildæk.jpg",
+    "expectedFractionId": "daek",
+    "label": "Bildæk",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/brugt-asfalt-scaled.jpg",
+    "expectedFractionId": "asfalt",
+    "label": "Brugt asfalt",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/brugte-spraydaaser.jpg",
+    "expectedFractionId": "hazardous",
+    "label": "Brugte spraydåser",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/",
+    "note": "Kan også mappes til spraydåser, men appen samler den under farligt affald."
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/brugte-toner2.jpg",
+    "expectedFractionId": "printerpatroner",
+    "label": "Brugte tonerpatroner",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/deponi-1-4-3.jpg",
+    "expectedContainerId": "deponi",
+    "label": "Deponi",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/",
+    "note": "Deponi er en lokal container/fraktion i site-layouts, men findes ikke som separat id i data/fractions.json."
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/Gips-600x800.jpg",
+    "expectedFractionId": "gips",
+    "label": "Gips",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/haandsprit-4x3-1.jpg",
+    "expectedFractionId": "hazardous",
+    "label": "Håndsprit",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/isolering-2.jpg",
+    "expectedFractionId": "mineraluld",
+    "label": "Isolering",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/Jord-4.jpg",
+    "expectedFractionId": "jord",
+    "label": "Jord",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/kattegrus-4x3-1.jpg",
+    "expectedFractionId": "storskrald",
+    "label": "Kattegrus",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/",
+    "note": "Kommunale regler varierer; denne er sat til storskrald som test-placeholder."
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/kofanger-scaled.jpg",
+    "expectedFractionId": "plastkofangere",
+    "label": "Kofanger",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/lysstofroer-4x3-1.jpg",
+    "expectedFractionId": "lysstofroer",
+    "label": "Lysstofrør",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/maling-4x3-1.jpg",
+    "expectedFractionId": "maling",
+    "label": "Maling",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/Metal-600x800.jpg",
+    "expectedFractionId": "metal",
+    "label": "Metal",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/PE2.jpg",
+    "expectedFractionId": "haard-plast",
+    "label": "PE plast",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/PVC.jpg",
+    "expectedFractionId": "haard-pvc",
+    "label": "PVC",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/sanitet-4x3-1.png",
+    "expectedFractionId": "sanitet",
+    "label": "Sanitet",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/sorteret-vinduesglas-scaled.jpg",
+    "expectedFractionId": "vinduer",
+    "label": "Sorteret vinduesglas",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/sort-land-plast-4x3-1.jpg",
+    "expectedFractionId": "haard-plast",
+    "label": "Sort landbrugsplast",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/sveller.jpg",
+    "expectedFractionId": "udendoers-trae",
+    "label": "Sveller",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/",
+    "note": "Trykimprægneret/behandlet træ kan være en lokal specialfraktion."
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/taekke.jpg",
+    "expectedFractionId": "haveaffald",
+    "label": "Tække",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  },
+  {
+    "file": "assets/meldgaard-affaldsfraktioner/Træ.jpg",
+    "expectedFractionId": "trae",
+    "label": "Træ",
+    "source": "https://miljoe.meldgaard.com/affaldsfraktioner/"
+  }
+]

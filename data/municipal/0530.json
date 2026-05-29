@@ -2,57 +2,8 @@
   "municipality": "Billund Kommune",
   "municipalityCode": "0530",
   "source": {
-    "type": "local-prototype-cache",
-    "note": "Erstat denne fil med data hentet fra kommunens officielle datakilde eller en backend-sync."
+    "type": "bundled-national-sites",
+    "note": "Billund-pladser indlæses fra data/national-sites.json og fraktionsplaceringer fra data/site-layouts.json."
   },
-  "sites": [
-    {
-      "id": "billund",
-      "name": "Billund Genbrugsplads",
-      "address": "Eksempeldata - udskift med kommunens rigtige koordinater",
-      "municipality": "Billund Kommune",
-      "lat": 55.7337,
-      "lon": 9.1124,
-      "map": {
-        "cardboard": { "location": "Container 12 ved pap- og papirzonen", "note": "Kør til højre efter porten." },
-        "batteries": { "location": "Miljøskab A ved mandskabsbygningen", "note": "Aflever altid løse batterier i den røde boks." },
-        "hazardous": { "location": "Miljøstationen ved bygning 1", "note": "Kontakt personalet ved ukendt indhold." },
-        "glass": { "location": "Glascontainer 4 ved indkørslen", "note": "Tøm posen før aflevering." },
-        "metal": { "location": "Metalpladsen, container 18", "note": "Fjern batterier og elektronik først." },
-        "plastic": { "location": "Plastcontainer 9 ved emballageområdet", "note": "Kun tømt og nogenlunde ren plast." }
-      }
-    },
-    {
-      "id": "grindsted",
-      "name": "Grindsted Genbrugsplads",
-      "address": "Eksempeldata - udskift med kommunens rigtige koordinater",
-      "municipality": "Billund Kommune",
-      "lat": 55.7583,
-      "lon": 8.9278,
-      "map": {
-        "cardboard": { "location": "Papcontainer 6 langs østhegnet", "note": "Fold store papkasser sammen." },
-        "batteries": { "location": "Farligt affald, skab 2", "note": "Tape polerne på større batterier." },
-        "hazardous": { "location": "Farligt affald ved bemandet modtagelse", "note": "Beholderen skal være lukket." },
-        "glass": { "location": "Glas og flasker ved container 3", "note": "Keramik og porcelæn skal ikke her." },
-        "metal": { "location": "Jern og metal, bås 14", "note": "Spørg personalet ved trykflasker." },
-        "plastic": { "location": "Plastemballage, container 8", "note": "Hård og blød plast sorteres samlet i forsøget." }
-      }
-    },
-    {
-      "id": "give",
-      "name": "Give Genbrugsplads",
-      "address": "Eksempeldata - udskift med kommunens rigtige koordinater",
-      "municipality": "Billund Kommune",
-      "lat": 55.8471,
-      "lon": 9.2387,
-      "map": {
-        "cardboard": { "location": "Pap og karton, container 10", "note": "Brug papircontaineren til aviser og breve." },
-        "batteries": { "location": "Batteriboks ved servicehuset", "note": "Powerbanks afleveres også her." },
-        "hazardous": { "location": "Kemirum ved personaleindgangen", "note": "Stil ikke farligt affald uden opsyn." },
-        "glass": { "location": "Flaskecontainer 2", "note": "Låg sorteres som metal eller plast." },
-        "metal": { "location": "Metalcontainer 15 efter haveaffald", "note": "Cykler og gryder må komme her." },
-        "plastic": { "location": "Plast, container 7", "note": "Flamingo sorteres separat." }
-      }
-    }
-  ]
+  "sites": []
 }

@@ -1,2 +1,5 @@
 assets/PIKTOGRAMMER-andre-fraktioner.zip
 server.*.log
+config.js
+.vs/
+reports/

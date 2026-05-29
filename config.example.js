@@ -1,0 +1,4 @@
+window.affaldssorteringConfig = {
+  anthropicApiKey: "",
+  openAiApiKey: ""
+};

@@ -3,41 +3,8 @@
   "municipalityCode": "0530",
   "provider": "Lokalt forsynings-/affaldsselskab",
   "source": {
-    "type": "local-utility-prototype-cache",
-    "note": "Bruges når kommunal data ikke er tilgængelig. Erstat med officielle data fra lokalt forsynings- eller affaldsselskab."
+    "type": "disabled-demo-fallback",
+    "note": "Demo-pladser er fjernet. Brug landsdata og site-layouts for Billund."
   },
-  "sites": [
-    {
-      "id": "billund-forsyning-billund",
-      "name": "Billund Genbrugsplads",
-      "address": "Eksempeldata fra forsyningsfallback",
-      "municipality": "Billund Kommune",
-      "lat": 55.7337,
-      "lon": 9.1124,
-      "map": {
-        "cardboard": { "location": "Forsyningsdata: Papcontainer ved sorteringszone B", "note": "Kontroller skiltning på pladsen." },
-        "batteries": { "location": "Forsyningsdata: Batteriboks ved farligt affald", "note": "Løse batterier afleveres separat." },
-        "hazardous": { "location": "Forsyningsdata: Miljøstation ved bemandet modtagelse", "note": "Kontakt personalet ved kemikalier uden mærkning." },
-        "glass": { "location": "Forsyningsdata: Glascontainer ved indkørsel", "note": "Kun tomme flasker og glas." },
-        "metal": { "location": "Forsyningsdata: Metalcontainer efter rampen", "note": "Elektronik sorteres separat." },
-        "plastic": { "location": "Forsyningsdata: Plastcontainer i emballagezonen", "note": "Tøm emballagen før aflevering." }
-      }
-    },
-    {
-      "id": "billund-forsyning-grindsted",
-      "name": "Grindsted Genbrugsplads",
-      "address": "Eksempeldata fra forsyningsfallback",
-      "municipality": "Billund Kommune",
-      "lat": 55.7583,
-      "lon": 8.9278,
-      "map": {
-        "cardboard": { "location": "Forsyningsdata: Pap og karton, container P6", "note": "Fold pap sammen." },
-        "batteries": { "location": "Forsyningsdata: Farligt affald, batteriskab", "note": "Tape poler på større batterier." },
-        "hazardous": { "location": "Forsyningsdata: Kemimodtagelse ved servicebygning", "note": "Afleveres lukket og stående." },
-        "glass": { "location": "Forsyningsdata: Glas og flasker, container G3", "note": "Porcelæn skal i separat fraktion." },
-        "metal": { "location": "Forsyningsdata: Jern og metal, bås M14", "note": "Trykflasker skal afleveres til personalet." },
-        "plastic": { "location": "Forsyningsdata: Plastemballage, container PL8", "note": "Beskidt plast kan høre til restaffald." }
-      }
-    }
-  ]
+  "sites": []
 }
