@@ -35,11 +35,11 @@
         <div>
           <p class="eyebrow">AI-nøgle</p>
           <h2 id="api-title">Billedgenkendelse</h2>
-          <p id="api-key-status">Indsæt Anthropic API-nøgle for at aktivere billedanalyse.</p>
+          <p id="api-key-status">Indsæt API-nøgle for at aktivere billedanalyse.</p>
         </div>
         <div class="api-key-row">
-          <label for="anthropic-api-key">Anthropic API-nøgle</label>
-          <input id="anthropic-api-key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-ant-api03-...">
+          <label for="anthropic-api-key">API-nøgle</label>
+          <input id="anthropic-api-key" type="password" autocomplete="off" spellcheck="false" placeholder="sk-...">
           <button id="clear-api-key" type="button">Ryd</button>
         </div>
       </section>
@@ -157,7 +157,8 @@
     <script src="data/national-sites.js?v=66"></script>
     <script src="data/fractions.js?v=66"></script>
     <script src="data/site-layouts.js?v=66"></script>
-    <script src="config.js?v=66"></script>
-    <script src="app.js?v=67"></script>
+    <script>window.affaldssorteringConfig=window.affaldssorteringConfig||{};</script>
+    <script src="config.js?v=67" onerror="void 0"></script>
+    <script src="app.js?v=68"></script>
   </body>
 </html>

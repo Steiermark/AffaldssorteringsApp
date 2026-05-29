@@ -282,9 +282,13 @@ let wasteFractionCatalogPromise = null;
 let dragDepth = 0;
 
 const anthropicMessagesEndpoint = "https://api.anthropic.com/v1/messages";
-const anthropicModel = "claude-haiku-4-5-20251001";
+const openAiResponsesEndpoint = "https://api.openai.com/v1/responses";
 const appConfig = window.affaldssorteringConfig || {};
+const imageRecognitionProvider = String(appConfig.imageRecognitionProvider || "").toLowerCase() === "openai" ? "openai" : "anthropic";
+const anthropicModel = appConfig.anthropicModel || "claude-haiku-4-5-20251001";
+const openAiModel = appConfig.openAiModel || "gpt-4.1-mini";
 const anthropicApiKeyStorageKey = "sortering:anthropic-api-key";
+const openAiApiKeyStorageKey = "sortering:openai-api-key";
 const maxFractionsInImagePrompt = 120;
 const maxLocalFractionsInImagePrompt = 90;
 const findSiteHelpText = "Brug knappen Find nærmeste til at finde den genbrugsplads, der er nærmest, eller vælg kommune og genbrugsplads fra listen.";
@@ -456,7 +460,7 @@ function replaceRecyclingSites(sites) {
 function mergeRecyclingSitesForMunicipality(municipality, sites) {
   const incomingIds = new Set(sites.map((site) => site.id));
   recyclingSites = [
-    ...recyclingSites.filter((site) => !incomingIds.has(site.id)),
+    ...recyclingSites.filter((site) => getMunicipalityName(site) !== municipality && !incomingIds.has(site.id)),
     ...sites
   ];
   applySiteLayoutsToSites();
@@ -1090,19 +1094,62 @@ function setStoredAnthropicApiKey(value) {
   }
 }
 
+function getStoredOpenAiApiKey() {
+  try {
+    return localStorage.getItem(openAiApiKeyStorageKey) || "";
+  } catch {
+    return "";
+  }
+}
+
+function setStoredOpenAiApiKey(value) {
+  try {
+    if (value) {
+      localStorage.setItem(openAiApiKeyStorageKey, value);
+    } else {
+      localStorage.removeItem(openAiApiKeyStorageKey);
+    }
+  } catch {
+    apiKeyStatus.textContent = "Nøglen kunne ikke gemmes i browseren.";
+  }
+}
+
 function getAnthropicApiKey() {
   return (anthropicApiKeyInput?.value || getStoredAnthropicApiKey() || appConfig.anthropicApiKey || "").trim();
 }
 
+function getOpenAiApiKey() {
+  return (anthropicApiKeyInput?.value || getStoredOpenAiApiKey() || appConfig.openAiApiKey || "").trim();
+}
+
+function getActiveApiKey() {
+  return imageRecognitionProvider === "openai" ? getOpenAiApiKey() : getAnthropicApiKey();
+}
+
+function setStoredActiveApiKey(value) {
+  if (imageRecognitionProvider === "openai") {
+    setStoredOpenAiApiKey(value);
+  } else {
+    setStoredAnthropicApiKey(value);
+  }
+}
+
+function getRecognitionProviderLabel() {
+  return imageRecognitionProvider === "openai" ? "OpenAI" : "Anthropic";
+}
+
 function updateApiKeyStatus() {
-  const hasKey = Boolean(getAnthropicApiKey());
+  const hasKey = Boolean(getActiveApiKey());
+  const provider = getRecognitionProviderLabel();
   apiKeyStatus.textContent = hasKey
-    ? "Billedgenkendelse er konfigureret i denne browser."
-    : "Indsæt Anthropic API-nøgle for at aktivere billedanalyse.";
+    ? `Billedgenkendelse bruger ${provider}.`
+    : `Indsæt ${provider} API-nøgle for at aktivere billedanalyse.`;
 }
 
 function initializeApiKeyInput() {
-  const configuredKey = getStoredAnthropicApiKey() || appConfig.anthropicApiKey || "";
+  const configuredKey = imageRecognitionProvider === "openai"
+    ? getStoredOpenAiApiKey() || appConfig.openAiApiKey || ""
+    : getStoredAnthropicApiKey() || appConfig.anthropicApiKey || "";
   if (configuredKey) {
     anthropicApiKeyInput.value = configuredKey;
   }
@@ -1144,6 +1191,14 @@ async function compressImageToJpegDataUrl(src, maxSize = 800, quality = 0.8) {
 
 function parseAnthropicJson(data) {
   const text = data.content?.map((content) => content.text || "").join("") || "";
+  const clean = text.replace(/```json|```/g, "").trim();
+  return JSON.parse(clean);
+}
+
+function parseOpenAiJson(data) {
+  const text = data.output_text
+    || data.output?.flatMap((item) => item.content || []).map((content) => content.text || "").join("")
+    || "";
   const clean = text.replace(/```json|```/g, "").trim();
   return JSON.parse(clean);
 }
@@ -1190,7 +1245,8 @@ function buildLocalImageFractionCatalog(site = selectedSite) {
         .slice(0, 4)
         .join(", ");
       const context = [
-        `${item.id}: ${item.title}`,
+        `ID=${item.id}`,
+        `titel=${item.title}`,
         keywords ? `soegeord: ${keywords}` : "",
         local.location ? `lokal placering: ${local.location}` : ""
       ].filter(Boolean);
@@ -1200,7 +1256,7 @@ function buildLocalImageFractionCatalog(site = selectedSite) {
     .slice(0, maxLocalFractionsInImagePrompt);
 
   if (wasteTypes.some((item) => item.id === "unknown")) {
-    localRows.push("unknown: Ukendt affald");
+    localRows.push("ID=unknown | titel=Ukendt affald");
   }
 
   return localRows.join("\n");
@@ -1224,7 +1280,10 @@ Svar kun med JSON:
 {"name":"kort navn paa objektet","fractionId":"eksakt id fra kataloget","confidence":0.9,"tip":"kort praktisk tip"}
 
 Regler:
-- fractionId skal vaere et eksakt id fra kataloget.
+- fractionId skal vaere den rae ID-vaerdi efter "ID=" i kataloget.
+- fractionId maa aldrig vaere placeringstekst, containernavn, "Container - ...", titel, label eller oversaettelse.
+- Eksempel: Hvis kataloget har "ID=batterier | titel=Batterier | lokal placering=Container - Batterier", skal svaret vaere "fractionId":"batterier".
+- Eksempel: Hvis kataloget har "ID=farligt-affald | titel=Farligt affald | lokal placering=Container - Farligt affald", skal svaret vaere "fractionId":"farligt-affald".
 - Hvis der er lokale containerdata, maa du kun bruge en fraktion fra listen for den valgte genbrugsplads.
 - Vaelg den naermeste lokale fraktion/container, ogsa hvis objektet ikke er perfekt.
 - Brug kun "unknown", hvis billedet ikke viser et affaldsobjekt.
@@ -1235,6 +1294,13 @@ function getFractionForContainer(category) {
   const container = containerCatalog[category];
   const fraction = wasteTypes.find((item) => item.id === container?.fractionId);
   return { container, fraction };
+}
+
+function getFractionByIdOrAlias(fractionId) {
+  const normalizedId = normalizeClassificationToken(fractionId);
+  return wasteTypes.find((item) => item.id === fractionId || normalizeClassificationToken(item.id) === normalizedId)
+    || wasteTypes.find((item) => (layoutFractionAliases[item.id] || []).some((alias) => normalizeClassificationToken(alias) === normalizedId))
+    || null;
 }
 
 function findFractionByClassification(result) {
@@ -1269,7 +1335,7 @@ function normalizeConfidencePercent(value) {
 function buildMatchFromClassification(result) {
   const requestedId = String(result.fractionId || result.fraction_id || result.id || "").trim();
   const localContainer = selectedSite?.map?.[requestedId] || null;
-  const localContainerLabel = containerCatalog[requestedId]?.label || requestedId;
+  const localContainerLabel = containerCatalog[requestedId]?.label || localContainer?.location || requestedId;
   const fraction = findFractionByClassification(result);
   if (localContainer && !fraction) {
     const confidenceValue = normalizeConfidencePercent(result.confidence);
@@ -1307,8 +1373,7 @@ function buildMatchFromClassification(result) {
 }
 
 async function classifyWasteImage(jpegDataUrl) {
-  const apiKey = getAnthropicApiKey();
-  if (!apiKey) {
+  if (!getActiveApiKey()) {
     throw new Error("MISSING_API_KEY");
   }
   if (wasteTypes.length === 0) {
@@ -1319,6 +1384,15 @@ async function classifyWasteImage(jpegDataUrl) {
   }
 
   resultFractionLabel.textContent = "Der ledes efter affald";
+  if (imageRecognitionProvider === "openai") {
+    return classifyWasteImageWithOpenAi(jpegDataUrl);
+  }
+
+  return classifyWasteImageWithAnthropic(jpegDataUrl);
+}
+
+async function classifyWasteImageWithAnthropic(jpegDataUrl) {
+  const apiKey = getAnthropicApiKey();
   const response = await fetch(anthropicMessagesEndpoint, {
     method: "POST",
     headers: {
@@ -1359,6 +1433,44 @@ async function classifyWasteImage(jpegDataUrl) {
 
   resultFractionLabel.textContent = "Affald fundet";
   return parseAnthropicJson(await response.json());
+}
+
+async function classifyWasteImageWithOpenAi(jpegDataUrl) {
+  const response = await fetch(openAiResponsesEndpoint, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "authorization": `Bearer ${getOpenAiApiKey()}`
+    },
+    body: JSON.stringify({
+      model: openAiModel,
+      max_output_tokens: 400,
+      input: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "input_text",
+              text: buildImageClassificationPrompt()
+            },
+            {
+              type: "input_image",
+              image_url: jpegDataUrl,
+              detail: "low"
+            }
+          ]
+        }
+      ]
+    })
+  });
+
+  if (!response.ok) {
+    const detail = await response.text();
+    throw new Error(`OpenAI API svarede ${response.status}: ${detail.slice(0, 220)}`);
+  }
+
+  resultFractionLabel.textContent = "Affald fundet";
+  return parseOpenAiJson(await response.json());
 }
 
 async function analyzeSelectedImage(src, fileName = "billede") {
@@ -1689,12 +1801,12 @@ startButton.addEventListener("click", startCamera);
 captureButton.addEventListener("click", capturePhoto);
 imageInput.addEventListener("change", handleImageSelection);
 anthropicApiKeyInput.addEventListener("input", () => {
-  setStoredAnthropicApiKey(anthropicApiKeyInput.value.trim());
+  setStoredActiveApiKey(anthropicApiKeyInput.value.trim());
   updateApiKeyStatus();
 });
 clearApiKeyButton.addEventListener("click", () => {
   anthropicApiKeyInput.value = "";
-  setStoredAnthropicApiKey("");
+  setStoredActiveApiKey("");
   updateApiKeyStatus();
 });
 window.addEventListener("dragenter", handleDragEnter);
