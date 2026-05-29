@@ -1313,6 +1313,32 @@ window.generatedWasteFractions = [
         "sourceName": "SMAAT_ELEKTRONIK_rgb_ikon_600x600dpi.png"
     },
     {
+        "id": "smaat-braendbart",
+        "title": "Småt Brændbart",
+        "keywords": [
+            "flamingo",
+            "eps",
+            "pizzabakke",
+            "gavepapir",
+            "sutter",
+            "tyggegummi",
+            "blisterpakke",
+            "skriveredskaber",
+            "rest efter sortering",
+            "småt brændbart",
+            "smaat braendbart",
+            "ikke genanvendeligt"
+        ],
+        "webQueries": [
+            "Småt brændbart affald",
+            "rest efter sortering affald"
+        ],
+        "pictogram": "assets/pictograms/fractions/smaat-braendbart.png",
+        "tone": "waste",
+        "confidence": 70,
+        "text": "Sortér som Småt Brændbart. Kontroller den lokale skiltning på genbrugspladsen."
+    },
+    {
         "id": "solpaneler",
         "title": "Solpaneler",
         "keywords": [

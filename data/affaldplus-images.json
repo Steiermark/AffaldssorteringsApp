@@ -1,0 +1,83 @@
+﻿{
+    "source":  "AffaldPlus",
+    "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet",
+    "createdAt":  "2026-05-29T09:24:13.066Z",
+    "items":  [
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-sortering-derhjemme-hero-816x632.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/8_cols/public/2020-05/sortering_derhjemme_hero_816x632.png?itok=DQjgZ-OD",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet"
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-madaffald-card-288x232.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/4_cols/public/2023-09/Madaffald_Card_288x232.png?itok=aOrud5dD",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet"
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-restaffald-card-288x232.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/4_cols/public/2023-09/Restaffald_Card_288x232.png?itok=oXv8x4BG",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet"
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-plast-mdk-card-288x232.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/4_cols/public/2023-09/Plast_mdk_Card_288x232.png?itok=Ha0sq1uE",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet",
+                      "expectedContainerId":  "mad-og-drikkekartoner",
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-papir-og-smaat-pap-card-288x232.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/4_cols/public/2023-09/Papir_og_smaat_pap_Card_288x232.png?itok=Tpz4ZPyJ",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet",
+                      "expectedContainerId":  "papir",
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-glas-card-288x232.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/4_cols/public/2023-09/Glas_Card_288x232.png?itok=7BOx9oyn",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet",
+                      "expectedContainerId":  "glas",
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-metal-card-288x232.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/4_cols/public/2023-09/Metal_Card_288x232.png?itok=IBDkfH1w",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet",
+                      "expectedContainerId":  "metal",
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-farligt-affald-card-288x232.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/4_cols/public/2023-10/Farligt_affald_Card_288x232.png?itok=jmfIBZzF",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet",
+                      "expectedContainerId":  "farligt-affald",
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-storskrald-tekstilaffald-card-288x232.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/4_cols/public/2023-10/Storskrald_tekstilaffald_Card_288x232.png?itok=VGhJPMyf",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet",
+                      "expectedContainerId":  "",
+                      "skipReason":  "Mangler kurateret forventet container-id."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-skyl-card-288x232.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/4_cols/public/2020-05/skyl_card_288x232.png?itok=ybTSBMZm",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet"
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-stort-pap-card-288x232.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/4_cols/public/2020-05/Stort_pap_Card_288x232.png?itok=slw_cVnY",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet",
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\affaldplus-ram-plet-standard-2021.png",
+                      "sourceUrl":  "https://affaldplus.dk/sites/default/files/styles/6_cols/public/2021-10/ram_plet_standard_2021.png?itok=4n4DrJTH",
+                      "pageUrl":  "https://affaldplus.dk/sortering-i-hjemmet",
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  }
+              ]
+}

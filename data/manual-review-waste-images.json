@@ -1,0 +1,168 @@
+{
+  "createdAt": "2026-05-29T10:19:12.336Z",
+  "instructions": "Udfyld expectedContainerId for billeder der skal med i evaluering, eller behold/ret skipReason for billeder der skal springes over.",
+  "items": [
+    {
+      "file": "assets\\wikimedia-waste-test\\affaldplus-madaffald-card-288x232.png",
+      "dataset": "AffaldPlus",
+      "currentReason": "Mangler forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "",
+      "expectedContainerId": "",
+      "skipReason": "Afvises af personale."
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\affaldplus-restaffald-card-288x232.png",
+      "dataset": "AffaldPlus",
+      "currentReason": "Mangler forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "Rest efter sortering.",
+      "expectedContainerId": "smaat-braendbart",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\affaldplus-skyl-card-288x232.png",
+      "dataset": "AffaldPlus",
+      "currentReason": "Mangler forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "Plast.",
+      "expectedContainerId": "haardt-plast",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\affaldplus-sortering-derhjemme-hero-816x632.png",
+      "dataset": "AffaldPlus",
+      "currentReason": "Mangler forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "",
+      "expectedContainerId": "",
+      "skipReason": "Slettet / ikke relevant for evaluering."
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\affaldplus-storskrald-tekstilaffald-card-288x232.png",
+      "dataset": "AffaldPlus",
+      "currentReason": "Mangler kurateret forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "Storskrald = stort brændbart.",
+      "expectedContainerId": "stort-braendbart",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\bottles.jpg",
+      "dataset": "",
+      "currentReason": "",
+      "suggestedContainerId": "glas",
+      "note": "Flasker = glas.",
+      "expectedContainerId": "glas",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\ds_30-aluminum-4868190_1920.jpg",
+      "dataset": "",
+      "currentReason": "",
+      "suggestedContainerId": "metal",
+      "note": "Aluminium = metal.",
+      "expectedContainerId": "metal",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\elsemargriet-old-bike-3752735_1920.jpg",
+      "dataset": "",
+      "currentReason": "",
+      "suggestedContainerId": "metal",
+      "note": "Cykel = metal.",
+      "expectedContainerId": "metal",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\kredslob-05-sorteringsguiden-pa-mobiltelefon.jpg",
+      "dataset": "Kredsløb",
+      "currentReason": "Mangler kurateret forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "Mobiltelefon = elektronik.",
+      "expectedContainerId": "elektronik",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\kredslob-16-to-unge-mennesker-saetter-storskrald-ud-foran-deres-opgang.jpg",
+      "dataset": "Kredsløb",
+      "currentReason": "Mangler kurateret forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "Storskrald = stort brændbart.",
+      "expectedContainerId": "stort-braendbart",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\kredslob-22-to-unge-mennesker-saetter-storskrald-ud-foran-deres-opgang.jpg",
+      "dataset": "Kredsløb",
+      "currentReason": "Mangler kurateret forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "",
+      "expectedContainerId": "",
+      "skipReason": "Duplikat slettet."
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\kredslob-24-urtebed-med-groensager.jpg",
+      "dataset": "Kredsløb",
+      "currentReason": "Mangler kurateret forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "Urtebed = haveaffald.",
+      "expectedContainerId": "haveaffald",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\kredslob-41-laer-at-sortere.png",
+      "dataset": "Kredsløb",
+      "currentReason": "Mangler kurateret forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "",
+      "expectedContainerId": "",
+      "skipReason": "Flamingo/EPS, men Billund-layoutet har ingen flamingo-container."
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\kredslob-42-laer-at-sortere.jpg",
+      "dataset": "Kredsløb",
+      "currentReason": "Mangler kurateret forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "Gipsplader = gips.",
+      "expectedContainerId": "gips",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\kredslob-65-laer-at-sortere.jpg",
+      "dataset": "Kredsløb",
+      "currentReason": "Mangler kurateret forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "",
+      "expectedContainerId": "",
+      "skipReason": "Slettet."
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\kredslob-73-laer-at-sortere.png",
+      "dataset": "Kredsløb",
+      "currentReason": "Mangler kurateret forventet container-id.",
+      "suggestedContainerId": "",
+      "note": "Tekstilaffald.",
+      "expectedContainerId": "tekstilaffald",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\webandi-tool-3500072_1920.jpg",
+      "dataset": "",
+      "currentReason": "",
+      "suggestedContainerId": "",
+      "note": "Værktøj = metal.",
+      "expectedContainerId": "metal",
+      "skipReason": ""
+    },
+    {
+      "file": "assets\\wikimedia-waste-test\\yakamoz20161122-chongqing-5063864_1920.jpg",
+      "dataset": "",
+      "currentReason": "",
+      "suggestedContainerId": "",
+      "note": "Haveaffald.",
+      "expectedContainerId": "haveaffald",
+      "skipReason": ""
+    }
+  ]
+}

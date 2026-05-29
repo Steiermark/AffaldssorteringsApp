@@ -1,0 +1,207 @@
+﻿{
+    "source":  "Bolius",
+    "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+    "createdAt":  "2026-05-29T09:25:37.000Z",
+    "items":  [
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-01-bobleplastkuverter.jpg",
+                      "label":  "Bobleplastkuverter",
+                      "expectedContainerId":  "bloed-plast",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/f/d/csm_affaldssortering-20220809-092602-6_71c131825c.jpg",
+                                     "title":  "Bobleplastkuverter"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-02-chipsposer.jpg",
+                      "label":  "Chipsposer",
+                      "expectedContainerId":  "bloed-plast",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/9/2/csm_affaldssortering-20220809-092456-3_409e0dffc1.jpg",
+                                     "title":  "Chipsposer"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-03-elpaerer.jpg",
+                      "label":  "Elpærer",
+                      "expectedContainerId":  "lyskilder",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/b/f/csm_affaldssortering-20220818-080848-5_87927ae478.jpg",
+                                     "title":  "Elpærer"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-04-flamingo.jpg",
+                      "label":  "Flamingo",
+                      "expectedContainerId":  "smaat-braendbart",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/8/b/csm_affaldssortering-20220809-092551-4_01bc59e612.jpg",
+                                     "title":  "Flamingo"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-05-foliebakker.jpg",
+                      "label":  "Foliebakker",
+                      "expectedContainerId":  "metal",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/8/a/csm_affaldssortering-20220809-092842-4_22e3ebc496.jpg",
+                                     "title":  "Foliebakker"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-06-kaffefilter.jpg",
+                      "label":  "Kaffefilter",
+                      "expectedContainerId":  "kompost",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/8/f/csm_affaldssortering-20220809-092451-4_469f0a2f74.jpg",
+                                     "title":  "Kaffefilter"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-07-gavepapir.jpg",
+                      "label":  "Gavepapir",
+                      "expectedContainerId":  "smaat-braendbart",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/4/6/csm_affaldssortering-20220809-092440-1_28c082b0dd.jpg",
+                                     "title":  "Gavepapir"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-08-kaffekapsler.jpg",
+                      "label":  "Kaffekapsler",
+                      "expectedContainerId":  "metal",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/a/1/csm_affaldssortering-20220809-092634-4_4b3580c3eb.jpg",
+                                     "title":  "Kaffekapsler"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-09-kosmetik.jpg",
+                      "label":  "Kosmetik",
+                      "expectedContainerId":  "farligt-affald",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/6/d/csm_affaldssortering-20220818-080935-7_fccd49dc1e.jpg",
+                                     "title":  "Kosmetik"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-10-mad-og-fritureolie.jpg",
+                      "label":  "Mad- og fritureolie",
+                      "expectedContainerId":  "farligt-affald",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/6/7/csm_affaldssortering-20220809-092435-1_ce09e3b876.jpg",
+                                     "title":  "Mad- og fritureolie"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-11-medicin.jpg",
+                      "label":  "Medicin",
+                      "expectedContainerId":  "farligt-affald",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/d/1/csm_affaldssortering-20220809-092650-2_0654766acf.jpg",
+                                     "title":  "Medicin"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-12-maelke-og-andre-drikkevarekartoner.jpg",
+                      "label":  "Mælke- og andre drikkevarekartoner",
+                      "expectedContainerId":  "mad-og-drikkekartoner",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/7/1/csm_affaldssortering-20220809-092506-6_46c0441da3.jpg",
+                                     "title":  "Mælke- og andre drikkevarekartoner"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-13-pizzabakken.jpg",
+                      "label":  "Pizzabakken",
+                      "expectedContainerId":  "smaat-braendbart",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/4/6/csm_affaldssortering-20220809-092445-6_8c16eea60c.jpg",
+                                     "title":  "Pizzabakken"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-14-porcelaen.jpg",
+                      "label":  "Porcelæn",
+                      "expectedContainerId":  "porcelaen",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/4/3/csm_affaldssortering-20220809-092607-3_ea95838e7e.jpg",
+                                     "title":  "Porcelæn"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-15-poser-fra-havregryn-mel-og-broedposer-fra-bageren.jpg",
+                      "label":  "Poser fra havregryn, mel og brødposer fra bageren",
+                      "expectedContainerId":  "papir",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/d/0/csm_affaldssortering-20220809-092709-7_53f9409871.jpg",
+                                     "title":  "Poser fra havregryn, mel og brødposer fra bageren"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-16-sutter.jpg",
+                      "label":  "Sutter",
+                      "expectedContainerId":  "smaat-braendbart",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/f/7/csm_affaldssortering-20220809-092826-1_b8eb05402f.jpg",
+                                     "title":  "Sutter"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-17-tegne-og-skriveredskaber.jpg",
+                      "label":  "Tegne- og skriveredskaber",
+                      "expectedContainerId":  "smaat-braendbart",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/7/0/csm_affaldssortering-20220809-092709-3_705a875371.jpg",
+                                     "title":  "Tegne- og skriveredskaber"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-18-tomme-blisterpakker-fra-piller.jpg",
+                      "label":  "Tomme blisterpakker fra piller",
+                      "expectedContainerId":  "smaat-braendbart",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/f/c/csm_affaldssortering-20220809-092841-7_a626d64f1b.jpg",
+                                     "title":  "Tomme blisterpakker fra piller"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-19-tyggegummi.jpg",
+                      "label":  "Tyggegummi",
+                      "expectedContainerId":  "smaat-braendbart",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/a/1/csm_affaldssortering-20220809-092628-5_9bf70869c9.jpg",
+                                     "title":  "Tyggegummi"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\bolius-20-aeggebakker.jpg",
+                      "label":  "Æggebakker",
+                      "expectedContainerId":  "pap",
+                      "source":  {
+                                     "pageUrl":  "https://www.bolius.dk/20-stykker-affald-du-er-i-tvivl-om-hvor-skal-det-hen-98217",
+                                     "imageUrl":  "https://bolius-scanpix-prod.s3.amazonaws.com/_processed_/0/a/csm_affaldssortering-20220809-092556-4_847ef29ff7.jpg",
+                                     "title":  "Æggebakker"
+                                 }
+                  }
+              ]
+}

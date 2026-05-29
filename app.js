@@ -34,6 +34,7 @@ const layoutFractionAliases = {
   batteries: ["batterier"],
   "bloed-plast-2": ["bloed-plast"],
   cardboard: ["pap", "pap-og-karton"],
+  elpaerer: ["lyskilder", "lysstofroer"],
   flamingo: ["eps"],
   genbrug: ["direkte-genbrug"],
   glass: ["glas", "flasker-og-glas"],
@@ -1242,7 +1243,7 @@ function buildLocalImageFractionCatalog(site = selectedSite) {
       if (!local) return null;
       const keywords = (item.keywords || [])
         .filter(Boolean)
-        .slice(0, 4)
+        .slice(0, 6)
         .join(", ");
       const context = [
         `ID=${item.id}`,

@@ -7,6 +7,7 @@ const model = process.argv[3] || (provider === "openai" ? "gpt-4.1-mini" : "clau
 const mode = process.argv[4] || "direct";
 const evalPath = process.argv[5] || "data/billund-meldgaard-container-eval.json";
 const layoutsPath = "data/site-layouts.json";
+const fractionsPath = "data/fractions.js";
 const sortingRulesPath = "data/kredslob-sorting-rules.json";
 const configPath = "config.js";
 const anthropicEndpoint = "https://api.anthropic.com/v1/messages";
@@ -50,31 +51,93 @@ function parseOpenAiJsonResponse(data) {
   return JSON.parse(text.replace(/```json|```/g, "").trim());
 }
 
-function buildContainerCatalog(map) {
-  return Object.entries(map)
-    .map(([id, value]) => `ID=${id} | placering=${value.location}`)
-    .join("\n");
+const layoutFractionAliases = {
+  batteries: ["batterier"],
+  "bloed-plast-2": ["bloed-plast"],
+  cardboard: ["pap", "pap-og-karton"],
+  elpaerer: ["lyskilder", "lysstofroer"],
+  flamingo: ["eps"],
+  genbrug: ["direkte-genbrug"],
+  glass: ["glas", "flasker-og-glas"],
+  hazardous: ["farligt-affald", "spraydaaser"],
+  "haard-plast": ["haardt-plast", "haard-plast"],
+  "haard-pvc": ["pvc", "haardt-pvc"],
+  "indendoers-trae": ["rent-trae", "trae-til-genbrug"],
+  koeleudstyr: ["koel-og-frys"],
+  lysstofroer: ["lyskilder"],
+  "mad-og-drikkekartoner": ["kartoner"],
+  metal: ["jern-og-metal"],
+  "mursten-og-tegl": ["murbrokker"],
+  "klar-bloed-plast": ["plastfolie"],
+  plastic: ["plast", "plastemballage", "pmdk"],
+  plasthavemoebler: ["havemoebler", "plastmoebler"],
+  "polstrede-moebler": ["stort-braendbart", "smaat-braendbart"],
+  "porcelaen-2": ["porcelaen"],
+  storskrald: ["stort-braendbart", "smaat-braendbart", "rest-efter-sortering"],
+  "stort-elektronik": ["haarde-hvidevarer"],
+  tekstilaffald: ["tekstil"],
+  "udendoers-trae": ["impraegneret-trae"],
+  vinduer: ["glasdoere", "vinduer-og-glasdoere"]
+};
+
+function resolveToContainerId(fractionId, siteMap) {
+  if (siteMap[fractionId]) return fractionId;
+  for (const alias of (layoutFractionAliases[fractionId] || [])) {
+    if (siteMap[alias]) return alias;
+  }
+  return fractionId;
 }
 
-function buildPrompt(siteName, containerCatalog) {
-  return `Klassificer det primaere affaldsobjekt paa billedet og vaelg den bedste container paa ${siteName}.
+function getLocalFractionLocation(site, fractionId) {
+  if (!site?.map) return null;
+  if (site.map[fractionId]) return site.map[fractionId];
+  for (const alias of (layoutFractionAliases[fractionId] || [])) {
+    if (site.map[alias]) return site.map[alias];
+  }
+  return null;
+}
 
-Aktuelle containere:
-${containerCatalog}
+function buildLocalFractionCatalog(site, wasteTypes) {
+  const rows = wasteTypes
+    .map((item) => {
+      const local = getLocalFractionLocation(site, item.id);
+      if (!local) return null;
+      const keywords = (item.keywords || []).filter(Boolean).slice(0, 6).join(", ");
+      return [
+        `ID=${item.id}`,
+        `titel=${item.title}`,
+        keywords ? `soegeord: ${keywords}` : "",
+        local.location ? `lokal placering: ${local.location}` : ""
+      ].filter(Boolean).join(" | ");
+    })
+    .filter(Boolean)
+    .slice(0, 90);
+  if (wasteTypes.some((item) => item.id === "unknown")) {
+    rows.push("ID=unknown | titel=Ukendt affald");
+  }
+  return rows.join("\n");
+}
+
+function buildPrompt(siteName, fractionCatalog) {
+  return `Klassificer det primaere affaldsobjekt paa billedet.
+
+Den valgte genbrugsplads er ${siteName}. Vaelg kun blandt de fraktioner, containere og lokale placeringer, der findes paa denne plads.
+
+Tilgaengelige fraktioner:
+${fractionCatalog}
 
 Svar kun med JSON:
-{"name":"kort navn paa objektet","containerId":"eksakt id fra listen","confidence":0.9,"tip":"kort praktisk tip"}
+{"name":"kort navn paa objektet","fractionId":"eksakt id fra kataloget","confidence":0.9,"tip":"kort praktisk tip"}
 
 Regler:
-- containerId skal vaere den rae ID-vaerdi efter "ID=" i listen.
-- containerId maa aldrig vaere placeringstekst, containernavn, "Container - ...", titel, label eller oversaettelse.
-- Eksempel: Hvis listen har "ID=batterier | placering=Container - Batterier", skal svaret vaere "containerId":"batterier".
-- Eksempel: Hvis listen har "ID=farligt-affald | placering=Container - Farligt affald", skal svaret vaere "containerId":"farligt-affald".
-- Vaelg kun blandt de aktuelle containere.
-- Klassificer materialet og affaldsobjektet, ikke baggrund eller tidligere indhold.
-- Tom emballage sorteres normalt efter materialet; madrester er madaffald.
-- Hvis der er flere materialer, vaelg den mest relevante afleveringscontainer paa genbrugspladsen.
-- Brug ikke "unknown", medmindre billedet ikke viser affald.`;
+- fractionId skal vaere den rae ID-vaerdi efter "ID=" i kataloget.
+- fractionId maa aldrig vaere placeringstekst, containernavn, "Container - ...", titel, label eller oversaettelse.
+- Eksempel: Hvis kataloget har "ID=batterier | titel=Batterier | lokal placering=Container - Batterier", skal svaret vaere "fractionId":"batterier".
+- Eksempel: Hvis kataloget har "ID=farligt-affald | titel=Farligt affald | lokal placering=Container - Farligt affald", skal svaret vaere "fractionId":"farligt-affald".
+- Hvis der er lokale containerdata, maa du kun bruge en fraktion fra listen for den valgte genbrugsplads.
+- Vaelg den naermeste lokale fraktion/container, ogsa hvis objektet ikke er perfekt.
+- Brug kun "unknown", hvis billedet ikke viser et affaldsobjekt.
+- Kun et objekt. Ingen array. Ingen markdown.`;
 }
 
 function buildVisionPrompt() {
@@ -272,6 +335,11 @@ async function classifyOpenAiText({ apiKey, prompt }) {
 const apiKey = readApiKey();
 if (!apiKey) throw new Error(`Missing ${provider} API key in config.js`);
 
+const fractionsGlobal = {};
+eval(fs.readFileSync(fractionsPath, "utf8").replace(/window\./g, "fractionsGlobal."));
+const wasteTypes = fractionsGlobal.generatedWasteFractions || [];
+if (wasteTypes.length === 0) throw new Error(`No waste types loaded from ${fractionsPath}`);
+
 const rawEvalData = JSON.parse(fs.readFileSync(evalPath, "utf8"));
 const evalData = Array.isArray(rawEvalData)
   ? { siteId: "mit-affald-billund-kommune-billund-genbrugsplads-havremarken-8-7190-billund", siteName: "Billund Genbrugsplads", items: rawEvalData }
@@ -284,8 +352,8 @@ const layouts = JSON.parse(fs.readFileSync(layoutsPath, "utf8"));
 const site = layouts.find((layout) => layout.siteId === evalData.siteId);
 if (!site) throw new Error(`Missing site layout: ${evalData.siteId}`);
 
-const containerCatalog = buildContainerCatalog(site.map);
-const prompt = buildPrompt(evalData.siteName, containerCatalog);
+const fractionCatalog = buildLocalFractionCatalog(site, wasteTypes);
+const prompt = buildPrompt(evalData.siteName, fractionCatalog);
 const runnable = evalData.items.filter((item) => item.expectedContainerId);
 const skipped = evalData.items.filter((item) => item.skipReason);
 const results = [];
@@ -294,9 +362,10 @@ for (const [index, item] of runnable.entries()) {
   process.stdout.write(`[${index + 1}/${runnable.length}] ${item.label} ... `);
   try {
     const { imageFile, latencyMs, result } = mode.startsWith("resolved")
-      ? await classifyResolved({ apiKey, directPrompt: prompt, containerCatalog, item })
+      ? await classifyResolved({ apiKey, directPrompt: prompt, containerCatalog: fractionCatalog, item })
       : await classify({ apiKey, prompt, item });
-    const predicted = String(result.containerId || result.fractionId || result.id || "").trim();
+    const rawId = String(result.fractionId || result.containerId || result.id || "").trim();
+    const predicted = resolveToContainerId(rawId, site.map);
     const confidence = Number(result.confidence);
     const confidencePercent = Number.isFinite(confidence)
       ? Math.round((confidence > 1 ? confidence / 100 : confidence) * 100)

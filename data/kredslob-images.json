@@ -1,0 +1,991 @@
+﻿{
+    "source":  "Kredsløb",
+    "startUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne",
+    "createdAt":  "2026-05-29T09:30:09.340Z",
+    "items":  [
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-01-medarbejder-pa-genbrugsstation-gar-dig-i-moede.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/tkubpepi/genbrugsstation_medarbejder-1.jpg?width=768\u0026v=1dca58c51b0fbb0",
+                                     "pageTitle":  "Din genbrugsstation",
+                                     "alt":  "Medarbejder på genbrugsstation går dig i møde",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-02-billede-fra-genbrusstationen-i-lisbjerg.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/0qjg1qif/lisbjerg-genbrug-47.jpg?width=500\u0026v=1dca58cf2f43f50",
+                                     "pageTitle":  "Din genbrugsstation",
+                                     "alt":  "Billede fra genbrusstationen i Lisbjerg",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-03-kvinde-afleverer-pap-i-container-pa-genbrugsstationen..jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/zpxkmrry/genbrugsstation_pap_2_2.jpg?width=768\u0026v=1dca58d038baf10",
+                                     "pageTitle":  "Din genbrugsstation",
+                                     "alt":  "Kvinde afleverer pap i container på genbrugsstationen.",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-04-mor-og-soen-sorterer-affald-i-bryggers.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/sorteringstips/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/lhmfvboe/sortering-bryggers_3380.jpg?rxy=0.3694696382605039,0.5431389469554575\u0026width=768\u0026v=1dca658f96c4ef0",
+                                     "pageTitle":  "Sortering",
+                                     "alt":  "Mor og søn sorterer affald i bryggers",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-05-sorteringsguiden-pa-mobiltelefon.jpg",
+                      "expectedContainerId":  "",
+                      "skipReason":  "Mangler kurateret forventet container-id.",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/sorteringstips/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/s1ylgk4x/sorteringsguide-2023.jpg?width=500\u0026v=1dca659920f03f0",
+                                     "pageTitle":  "Sortering",
+                                     "alt":  "Sorteringsguiden på mobiltelefon",
+                                     "title":  ""
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-06-lille-dreng-sorterer-plastik-pa-koekkengulv.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/sorteringstips/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/kcqlodit/sortering_plast_viby_0287.jpg?width=500\u0026v=1dca659e3e8feb0",
+                                     "pageTitle":  "Sortering",
+                                     "alt":  "Lille dreng sorterer plastik på køkkengulv",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-07-sortering.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/sorteringstips/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/pnsn5eaz/restaffald-3.jpg?width=500\u0026v=1d9fcd50632dad0",
+                                     "pageTitle":  "Sortering",
+                                     "alt":  "",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-08-mand-toemmer-haveaffald-pa-genbrugsstation.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/sorteringstips/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/0khmoan2/genbrugsstation_-risskov_haveaffald-4.jpg?width=500\u0026v=1dca65a504c08e0",
+                                     "pageTitle":  "Sortering",
+                                     "alt":  "Mand tømmer haveaffald på genbrugsstation",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-09-genbrug.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/om-genbrug/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/oztf2hif/genbrugsbutik-61.jpg?width=768\u0026v=1d9e7de4ef97eb0",
+                                     "pageTitle":  "Genbrug",
+                                     "alt":  "",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-10-waste-and-recycling.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/waste-and-recycling/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/gqobasxz/genbrugsbutik-82.jpg?rxy=0.3673943998450833,0.49050667870264\u0026width=500\u0026v=1da4acb45a3cc30",
+                                     "pageTitle":  "Waste and recycling",
+                                     "alt":  "",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-11-bedstemor-og-barnebarn-sorterer-affald-i-affaldsbeholdere.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/beholdere/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/hlxj2n0v/sorteringsbeholdere_10b_72dpi.jpg?width=768\u0026v=1dca58f1cf002b0",
+                                     "pageTitle":  "Beholdere",
+                                     "alt":  "Bedstemor og barnebarn sorterer affald i affaldsbeholdere",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-12-beholdere.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/beholdere/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/44jf5oo4/660-liters-paa-hjul_lowress-12.jpg?width=500\u0026v=1d9fcd52c4abf30",
+                                     "pageTitle":  "Beholdere",
+                                     "alt":  "",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-13-kvinde-i-bryggers-sorterer-farligt-affald.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/beholdere/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/q4qd4kud/sortering_farligt-affald_viby_0010.jpg?width=500\u0026v=1dca591881523c0",
+                                     "pageTitle":  "Beholdere",
+                                     "alt":  "Kvinde i bryggers sorterer farligt affald",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-14-sommerhusomrade.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/beholdere/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/slodgtnr/sommerhus-omraade.jpg?width=500\u0026v=1dca5925f302030",
+                                     "pageTitle":  "Beholdere",
+                                     "alt":  "Sommerhusområde",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-15-pige-putter-pap-i-beholderen-til-genanvendeligt-affald..jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/toemmekalender/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/wqabnxbd/sortering-ude_m-pige.jpg?width=500\u0026v=1d9cc4e33b5ad00",
+                                     "pageTitle":  "Tømmekalender",
+                                     "alt":  "Pige putter pap i beholderen til genanvendeligt affald.",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-16-to-unge-mennesker-saetter-storskrald-ud-foran-deres-opgang.jpg",
+                      "expectedContainerId":  "",
+                      "skipReason":  "Mangler kurateret forventet container-id.",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/storskrald/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/3mzdmym1/storskrald_0.jpg?width=768\u0026v=1dca65a362d2cf0",
+                                     "pageTitle":  "Bestil storskraldsbilen",
+                                     "alt":  "To unge mennesker sætter storskrald ud foran deres opgang",
+                                     "title":  ""
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-17-to-ser-pa-genbrugsting-i-naergenbrugsstationen.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/storskrald/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/gukdi2mh/genbrugsbutik-69.jpg?width=500\u0026v=1dca6622ef4c030",
+                                     "pageTitle":  "Bestil storskraldsbilen",
+                                     "alt":  "To ser på genbrugsting i nærgenbrugsstationen",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-18-et-billede-af-storsskraldsplakaten.png",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/storskrald/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/3tobznw2/faa-hentet-dit-storskrald-424x424-px_blaa.png?width=500\u0026v=1dca584072e1940",
+                                     "pageTitle":  "Bestil storskraldsbilen",
+                                     "alt":  "Et billede af storsskraldsplakaten",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-19-kundeservicemedarbejder.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/priser/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/zqrndzp5/praktikant-2lille.jpg?rxy=0.5642259080440211,0.27590299967041015\u0026width=768\u0026v=1dcbdd0d270d750",
+                                     "pageTitle":  "Priser",
+                                     "alt":  "Kundeservicemedarbejder",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-20-waste-and-recycling.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/waste-and-recycling/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/mewfxlfn/sortering_mad_5043.jpg?width=768\u0026v=1d98ca726b39270",
+                                     "pageTitle":  "Waste and recycling",
+                                     "alt":  "",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-21-medarbejdere-pa-genbrugsstationen-star-ved-plast-sorteringen.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/waste-and-recycling/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/bb2pzs5f/genbrugsstation_plast-sortering-5.jpg?rxy=0.62254156943077443,0.41226353555120676\u0026width=500\u0026v=1d9eae85364d690",
+                                     "pageTitle":  "Waste and recycling",
+                                     "alt":  "Medarbejdere på genbrugsstationen står ved plast sorteringen",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-22-to-unge-mennesker-saetter-storskrald-ud-foran-deres-opgang.jpg",
+                      "expectedContainerId":  "",
+                      "skipReason":  "Mangler kurateret forventet container-id.",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/waste-and-recycling/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/jlega2lx/storskrald-2.jpg?rxy=0.37762755846269597,0.5169695979219343\u0026width=500\u0026v=1db31e47f3efae0",
+                                     "pageTitle":  "Waste and recycling",
+                                     "alt":  "To unge mennesker sætter storskrald ud foran deres opgang",
+                                     "title":  ""
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-23-waste-and-recycling.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/waste-and-recycling/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/uyvpc4jz/sortering_farligt-affald_3490.jpg?rxy=0.49993894867537075,0.7454256044082823\u0026width=500\u0026v=1dadc3122faf030",
+                                     "pageTitle":  "Waste and recycling",
+                                     "alt":  "",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-24-urtebed-med-groensager.jpg",
+                      "expectedContainerId":  "",
+                      "skipReason":  "Mangler kurateret forventet container-id.",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/kompost/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/nolb3dii/kompost-groensager.jpg?width=768\u0026v=1d9eae853b2a870",
+                                     "pageTitle":  "Se priser",
+                                     "alt":  "Urtebed med grønsager",
+                                     "title":  ""
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-25-kvinde-afleverer-pap-i-container-pa-genbrugsstationen..jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/at0d5a2g/genbrugsstation_pap_1.jpg?width=768\u0026v=1dca65a2afc7d90",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Kvinde afleverer pap i container på genbrugsstationen.",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-26-ikon-og-foto-asbest.png",
+                      "expectedContainerId":  "asbest",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/aoybiduz/asbest_modul.png?width=896\u0026v=1d71be75be63d90",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - asbest",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-27-ikon-og-foto-asfalt.png",
+                      "expectedContainerId":  "asfalt",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/b13igloz/asfalt_modul.png?width=896\u0026v=1d71be699229f10",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - asfalt",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-28-ikon-og-foto-batterier.png",
+                      "expectedContainerId":  "batterier",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/dyqecpfb/batterier_modul.png?width=896\u0026v=1d71be75fa82790",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - batterier",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-29-ikon-og-foto-beton.png",
+                      "expectedContainerId":  "beton",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/3gfha3nk/beton_modul.png?width=896\u0026v=1d71be6a4d99570",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - beton",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-30-ikon-og-foto-bilbatterier.png",
+                      "expectedContainerId":  "bilbatterier",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/aavhemmw/bilbatterier_modul.png?width=896\u0026v=1d71be764165720",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - bilbatterier",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-31-ikon-og-foto-bloed-plast.png",
+                      "expectedContainerId":  "bloed-plast",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/hmhdnjas/bloed_plast_modul.png?width=896\u0026v=1d71be7d532f1c0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - blød plast",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-32-ikon-og-foto-brokker.png",
+                      "expectedContainerId":  "murbrokker",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/dopnicxx/brokker_modul.png?width=896\u0026v=1d71be6ab8a13e0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - brokker",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-33-ikon-og-foto-boeger.png",
+                      "expectedContainerId":  "boeger",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/3yzi0jmj/genbrugssorteringslister__modul__boeger.png?width=896\u0026v=1d73ffaf431d780",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - bøger",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-34-ikon-og-foto-deponi.png",
+                      "expectedContainerId":  "deponi",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/q0ofohuh/deponi_modul.png?width=896\u0026v=1d71be80fd68a80",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - deponi",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-35-ikon-og-foto-drikkedaser.png",
+                      "expectedContainerId":  "metal",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/jqlnr0ty/drikkedaaser-uden-pant.png?width=896\u0026v=1dcab15e1513210",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - drikkedåser",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-36-ikon-og-foto-daek.png",
+                      "expectedContainerId":  "daek",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/ncieayro/daek_modul.png?width=896\u0026v=1d71be7da7efe30",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - dæk",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-37-ikon-og-foto-mellemstort-elektronik.png",
+                      "expectedContainerId":  "mellemstort-elektronik",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/rcxnu34j/mellemstort_elektronik_modul.png?width=896\u0026v=1d71be6e8bbd190",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - mellemstort elektronik",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-38-ikon-og-foto-smat-elektronik.png",
+                      "expectedContainerId":  "smaat-elektronik",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/hydevpps/smaat_elektronik_modul.png?width=896\u0026v=1d71be6c9a1c850",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - småt elektronik",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-39-ikon-og-foto-elpaerer.png",
+                      "expectedContainerId":  "lyskilder",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/0z0hlqrr/elpaerer_modul.png?width=896\u0026v=1d71be7680b8620",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - elpærer",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-40-ikon-og-foto-farligt-affald.png",
+                      "expectedContainerId":  "farligt-affald",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/r2ubkz2f/farligt_affald_modul.png?width=896\u0026v=1d71be76cb53810",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - farligt affald",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-41-laer-at-sortere.png",
+                      "expectedContainerId":  "",
+                      "skipReason":  "Mangler kurateret forventet container-id.",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/ajeklxqn/farvet-flamingo_modul.png?width=896\u0026v=1d99e8889b4ab00",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "",
+                                     "title":  ""
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-42-laer-at-sortere.jpg",
+                      "expectedContainerId":  "",
+                      "skipReason":  "Mangler kurateret forventet container-id.",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/hqoa4zbx/fibergips__modul.jpg?width=896\u0026v=1d99dd8082d65f0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "",
+                                     "title":  ""
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-43-ikon-og-foto-fladskaerme-og-baerbare.png",
+                      "expectedContainerId":  "tv-og-skaerme",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/hsslp020/fladskaerme-_og_baerbare_modul.png?width=896\u0026v=1d71be6cf781360",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - fladskærme og bærbare",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-44-ikon-og-foto-flamingo.png",
+                      "expectedContainerId":  "haardt-plast",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/2p2jrsmv/flamingo_modul.png?width=896\u0026v=1d71be7defdf6a0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - flamingo",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-45-ikon-og-foto-gips.png",
+                      "expectedContainerId":  "gips",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/tl0fbc3m/gips_modul.png?width=896\u0026v=1d71be6af799d90",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - gips",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-46-ikon-og-foto-glasuld-og-stenuld.png",
+                      "expectedContainerId":  "mineraluld",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/302hvkoc/glasuld_og_stenuld_modul.png?width=896\u0026v=1d71be6b654fc90",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - glasuld og stenuld",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-47-ikon-og-foto-haveaffald.png",
+                      "expectedContainerId":  "haveaffald",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/cqvjhtmf/haveaffald_modul.png?width=896\u0026v=1d71be7bd8bcc90",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - haveaffald",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-48-ikon-og-foto-jern-og-metal.png",
+                      "expectedContainerId":  "metal",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/voikxbwi/jern_og_metal_modul.png?width=896\u0026v=1d71be7ada9ca20",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - jern og metal",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-49-ikon-og-foto-jord.png",
+                      "expectedContainerId":  "jord",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/fqzlvwyo/jord_modul.png?width=896\u0026v=1d71be7b8425830",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - jord",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-50-ikon-og-foto-keramik.png",
+                      "expectedContainerId":  "porcelaen",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/odaijua4/keramik_modul.png?width=896\u0026v=1d71be79c423920",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - keramik",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-51-ikon-og-foto-koeleskabe-og-frysere.png",
+                      "expectedContainerId":  "koeleudstyr",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/e5liwqql/koeleskabe_og_frysere_modul.png?rxy=0.47254881559324385,0.41304977087120981\u0026width=896\u0026v=1d71be6d83578d0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - køleskabe og frysere",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-52-ikon-og-foto-ledninger-og-kabler.png",
+                      "expectedContainerId":  "ledninger-og-kabler",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/mctdlcmc/ledninger_og_kabler_modul.png?width=896\u0026v=1d71be6e37877b0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - ledninger og kabler",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-53-ikon-og-foto-lysstofroer.png",
+                      "expectedContainerId":  "lysstofroer",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/3erhfem2/lysstofroer_modul.png?rxy=0.48555474629764511,0.44882573527737757\u0026width=896\u0026v=1d71be778a518c0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - lysstofrør",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-54-ikon-og-foto-madrasser-og-sofaer.png",
+                      "expectedContainerId":  "polstrede-moebler",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/emzjo1y4/madrasser_og_sofaer_modul.png?width=896\u0026v=1d71be819fc0b70",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - madrasser og sofaer",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-55-ikon-og-foto-mursten-og-tegl.png",
+                      "expectedContainerId":  "mursten-og-tegl",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/4fpfi522/mursten_og_tegl_modul.png?width=896\u0026v=1d71be6bb3db350",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - mursten og tegl",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-56-ikon-og-foto-maelke-og-broedkasser.png",
+                      "expectedContainerId":  "haardt-plast",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/wbhnd3rq/maelke_og_broedkasser_modul.png?width=896\u0026v=1d71be7eacba950",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - mælke- og brødkasser",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-57-ikon-og-foto-paller.png",
+                      "expectedContainerId":  "paller",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/guihjbyw/paller_modul.png?width=896\u0026v=1d71be82a5ab7f0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - paller",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-58-ikon-og-foto-pap.png",
+                      "expectedContainerId":  "pap",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/il4bxkif/pap_modul.png?width=896\u0026v=1d71be7c1eb2f10",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - pap",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-59-ikon-og-foto-papir-og-aviser.png",
+                      "expectedContainerId":  "papir",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/2rocb5zb/genbrugssorteringslister__modul__papir_og_aviser.png?width=896\u0026v=1d73ffb1760a5b0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - papir og aviser",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-60-laer-at-sortere.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/xk2bufhx/papir-til-makulering.jpg?width=896\u0026v=1d72d38d4b37c30",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-61-ikon-og-foto-pehd-plast.png",
+                      "expectedContainerId":  "haardt-plast",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/nuvmogkz/pehd_plast_modul__02.png?width=896\u0026v=1d71be7f128d7a0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - PEHD-plast",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-62-ikon-og-foto-pet-plast.png",
+                      "expectedContainerId":  "haardt-plast",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/xz5i4nzc/pet_plast_modul__01.png?width=896\u0026v=1d71be7f7655e90",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - PET-plast",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-63-ikon-og-foto-plasthavemoebler.png",
+                      "expectedContainerId":  "haardt-plast",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/02sbmkd1/plasthavemoebler_modul.png?width=896\u0026v=1d71be7fd3e41b0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - plasthavemøbler",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-64-ikon-og-foto-pp-plast.png",
+                      "expectedContainerId":  "haardt-plast",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/00vgpefa/pp_plast_modul__05.png?width=896\u0026v=1d71be802a6d6d0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - PP-plast",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-65-laer-at-sortere.jpg",
+                      "expectedContainerId":  "",
+                      "skipReason":  "Mangler kurateret forventet container-id.",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/gi4hzry5/printerpatroner.jpg?width=896\u0026v=1d72d0e940cae10",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "",
+                                     "title":  ""
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-66-ikon-og-foto-ps-plast.png",
+                      "expectedContainerId":  "haardt-plast",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/lw3p04fu/ps_plast_modul__06.png?width=896\u0026v=1d71be7d0488d50",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - PS-plast",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-67-ikon-og-foto-puds-og-stentoej.png",
+                      "expectedContainerId":  "murbrokker",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/m4rhtt0r/puds_og_stentoej_modul.png?width=896\u0026v=1d71be6c0aed3f0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - puds og stentøj",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-68-ikon-og-foto-hard-pvc.png",
+                      "expectedContainerId":  "haardt-pvc",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/zp2lynk4/haard_pvc_modul.png?width=896\u0026v=1d71be7e42e8bd0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - hård PVC",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-69-ikon-og-foto-skaerme-med-billedroer.png",
+                      "expectedContainerId":  "tv-og-skaerme",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/vipcjog2/skaerme_med_billedroer_modul.png?width=896\u0026v=1d71be6ef1ef350",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - skærme med billedrør",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-70-ikon-og-foto-smat-braendbart.png",
+                      "expectedContainerId":  "smaat-braendbart",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/vm3onmrf/smaat_braendbart_modul.png?width=896\u0026v=1d9cf92fc53de70",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - småt brændbart",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-71-ikon-og-foto-spraydaser.png",
+                      "expectedContainerId":  "farligt-affald",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/tkoacozl/spraydaaser_modul.png?width=896\u0026v=1d71be77e1e4fb0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - spraydåser",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-72-ikon-og-foto-tagpap.png",
+                      "expectedContainerId":  "tagpap",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/z4odgn5f/tagpap_modul.png?width=896\u0026v=1d71be6c495d220",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - tagpap",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-73-laer-at-sortere.png",
+                      "expectedContainerId":  "",
+                      "skipReason":  "Mangler kurateret forventet container-id.",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/up5hatsi/tekstilaffald-_modul.png?width=896\u0026v=1d8ae2814cd8dd0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "",
+                                     "title":  ""
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-74-ikon-og-foto-toiletter-og-handvaske.png",
+                      "expectedContainerId":  "sanitet",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/vr1euzrs/toiletter_og_haandvaske_modul.png?width=896\u0026v=1d71be8304af3a0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - toiletter og håndvaske",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-75-ikon-og-foto-trykflasker.png",
+                      "expectedContainerId":  "farligt-affald",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/kyrntbzx/trykflasker_modul.png?width=896\u0026v=1d71be71afe0790",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - trykflasker",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-76-ikon-og-foto-vinduer.png",
+                      "expectedContainerId":  "vinduer",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/kzrifxah/vinduer_modul.png?width=896\u0026v=1d71be6929bc8b0",
+                                     "pageTitle":  "Lær at sortere",
+                                     "alt":  "Ikon og foto - vinduer",
+                                     "title":  ""
+                                 },
+                      "autoCurated":  true
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-77-genbrug-pa-genbrugsstationer.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/om-genbrug/mere-genbrug/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/z1mjszat/malling-genbrugshal-3.jpg?cc=0.13999272060313855,0,0.27238711706978963,0\u0026width=700\u0026height=844\u0026v=1dca58d39c7a7f0",
+                                     "pageTitle":  "Giv og tag genbrug",
+                                     "alt":  "Genbrug på genbrugsstationer",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-78-naergenbrugsstation-pa-dirch-passer-gade.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/naergenbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/dkpmiw11/genbrugsbutik-112.jpg?width=768\u0026v=1dca661fe274fe0",
+                                     "pageTitle":  "Besøg nærgenbrugsstation",
+                                     "alt":  "Nærgenbrugsstation på Dirch Passer Gade",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-79-kvinde-sorterer-sine-ting-pa-naergenbrugsstation.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/naergenbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/l13ee4zx/genbrugsbutik-24.jpg?width=500\u0026height=768\u0026v=1dca6629119df70",
+                                     "pageTitle":  "Besøg nærgenbrugsstation",
+                                     "alt":  "Kvinde sorterer sine ting på nærgenbrugsstation",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-80-billede-fra-loppemarked.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/brugsting-foreninger-med-loppemarkeder/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/kxyhyrjt/colourbox17051834.jpg?width=700\u0026height=844\u0026v=1dca58e2040d0d0",
+                                     "pageTitle":  "For frivillige foreninger",
+                                     "alt":  "Billede fra loppemarked",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-81-genbrugsstation-med-sorteringscontainere.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-goer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/oevg4n5a/genbrugsstationspladsen_1.jpg?width=768\u0026v=1d9eae8536a54d0",
+                                     "pageTitle":  "Sådan gør du på genbrugsstationen",
+                                     "alt":  "Genbrugsstation med sorteringscontainere",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\kredslob-82-genbrugsstation-med-sorteringscontainere-og-pladsmedarbejdere.jpg",
+                      "source":  {
+                                     "pageUrl":  "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-goer-du-paa-genbrugsstationen/",
+                                     "imageUrl":  "https://www.kredslob.dk/media/ugfne354/genbrugsstation_medarbejder-2.jpg?width=500\u0026height=768\u0026v=1dca65a069b9800",
+                                     "pageTitle":  "Sådan gør du på genbrugsstationen",
+                                     "alt":  "Genbrugsstation med sorteringscontainere og pladsmedarbejdere",
+                                     "title":  ""
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  }
+              ]
+}

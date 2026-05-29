@@ -1,0 +1,237 @@
+﻿{
+    "source":  "Wikimedia Commons",
+    "createdAt":  "2026-05-29T09:15:59.047Z",
+    "items":  [
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\car-battery.jpg",
+                      "label":  "car-battery",
+                      "expectedContainerId":  "bilbatterier",
+                      "expectedTerms":  [
+                                            "bilbatteri",
+                                            "akkumulator"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Starterbatterie Blei-Calcium.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Starterbatterie_Blei-Calcium.jpg",
+                                     "license":  "CC BY-SA 4.0",
+                                     "artist":  "Rainer Kamenz"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\small-batteries.jpg",
+                      "label":  "small-batteries",
+                      "expectedContainerId":  "batterier",
+                      "expectedTerms":  [
+                                            "batterier"
+                                        ],
+                      "source":  {
+                                     "title":  "File:02 - Single Energizer Battery.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:02_-_Single_Energizer_Battery.jpg",
+                                     "license":  "CC BY 3.0",
+                                     "artist":  "Asim18"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\spray-can.png",
+                      "label":  "spray-can",
+                      "expectedContainerId":  "farligt-affald",
+                      "expectedTerms":  [
+                                            "spraydåse"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Aerosol.png",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Aerosol.png",
+                                     "license":  "CC BY-SA 3.0",
+                                     "artist":  "PiccoloNamek"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\paint-can.jpg",
+                      "label":  "paint-can",
+                      "expectedTerms":  [
+                                            "maling"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Baby playing with yellow paint. Work by Dutch artist Peter Klashorst entitled \"Experimental\".jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Baby_playing_with_yellow_paint._Work_by_Dutch_artist_Peter_Klashorst_entitled_%22Experimental%22.jpg",
+                                     "license":  "CC BY 2.0",
+                                     "artist":  "Peter Klashorst"
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\toner-cartridge.jpg",
+                      "label":  "toner-cartridge",
+                      "expectedContainerId":  "printerpatroner",
+                      "expectedTerms":  [
+                                            "tonerpatron"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Tonerkassette Laserdrucker HP.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Tonerkassette_Laserdrucker_HP.jpg",
+                                     "license":  "Public domain",
+                                     "artist":  "Sir James at de.wikipedia"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\concrete-rubble.jpg",
+                      "label":  "concrete-rubble",
+                      "expectedContainerId":  "beton",
+                      "expectedTerms":  [
+                                            "beton"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Heaps of rubble and large concrete segments - geograph.org.uk - 4051361.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Heaps_of_rubble_and_large_concrete_segments_-_geograph.org.uk_-_4051361.jpg",
+                                     "license":  "CC BY-SA 2.0",
+                                     "artist":  "Evelyn Simak "
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\asphalt.jpg",
+                      "label":  "asphalt",
+                      "expectedContainerId":  "asfalt",
+                      "expectedTerms":  [
+                                            "asfalt"
+                                        ],
+                      "source":  {
+                                     "title":  "File:The Rubblized Pavement MI (8426502871).jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:The_Rubblized_Pavement_MI_(8426502871).jpg",
+                                     "license":  "CC BY 2.0",
+                                     "artist":  "Federal Highway Administration"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\mineral-wool.jpg",
+                      "label":  "mineral-wool",
+                      "expectedTerms":  [
+                                            "mineraluld",
+                                            "isolering"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Glaswolle Zerfaserungsmaschine.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Glaswolle_Zerfaserungsmaschine.jpg",
+                                     "license":  "CC BY-SA 3.0 de",
+                                     "artist":  "FMI/ Marc Wiegelmann"
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\window-glass.jpg",
+                      "label":  "window-glass",
+                      "expectedContainerId":  "vinduer",
+                      "expectedTerms":  [
+                                            "vinduesglas"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Broken-plate-glass-window-fisher-body-21-detroit.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Broken-plate-glass-window-fisher-body-21-detroit.jpg",
+                                     "license":  "CC BY-SA 4.0",
+                                     "artist":  "Dylan L. Tanner"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\plastic-bumper.jpg",
+                      "label":  "plastic-bumper",
+                      "expectedContainerId":  "haardt-plast",
+                      "expectedTerms":  [
+                                            "kofanger"
+                                        ],
+                      "source":  {
+                                     "title":  "File:2000 Chrysler Cirrus with missing bumper.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:2000_Chrysler_Cirrus_with_missing_bumper.jpg",
+                                     "license":  "Public domain",
+                                     "artist":  "Nyttend"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\pvc-pipe.jpg",
+                      "label":  "pvc-pipe",
+                      "expectedTerms":  [
+                                            "pvc"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Ratcheting Plastic Pipe Cutters.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Ratcheting_Plastic_Pipe_Cutters.jpg",
+                                     "license":  "Public domain",
+                                     "artist":  "M338"
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\plastic-bottle.jpg",
+                      "label":  "plastic-bottle",
+                      "expectedTerms":  [
+                                            "plastflaske"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Petrol station in Bénin.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Petrol_station_in_B%C3%A9nin.jpg",
+                                     "license":  "CC BY-SA 2.0",
+                                     "artist":  "Ferdinand Reus"
+                                 },
+                      "expectedContainerId":  "",
+                      "skipReason":  "Billedfilen er slettet/ikke relevant."
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\soil.jpg",
+                      "label":  "soil",
+                      "expectedContainerId":  "jord",
+                      "expectedTerms":  [
+                                            "jord"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Pile of manure on a field.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Pile_of_manure_on_a_field.jpg",
+                                     "license":  "CC BY 2.0",
+                                     "artist":  "Paul Clarke"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\railway-sleeper.jpg",
+                      "label":  "railway-sleeper",
+                      "expectedContainerId":  "impraegneret-trae",
+                      "expectedTerms":  [
+                                            "jernbanesvelle"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Sleeper damaged by termites.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Sleeper_damaged_by_termites.jpg",
+                                     "license":  "Public domain",
+                                     "artist":  "Reinhard Dietrich"
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\wood.jpg",
+                      "label":  "wood",
+                      "expectedContainerId":  "trae",
+                      "expectedTerms":  [
+                                            "træ"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Reclaimed Wood Floor.jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Reclaimed_Wood_Floor.jpg",
+                                     "license":  "CC BY-SA 2.0",
+                                     "artist":  "John M."
+                                 }
+                  },
+                  {
+                      "file":  "assets\\wikimedia-waste-test\\sanitary-ceramic.jpg",
+                      "label":  "sanitary-ceramic",
+                      "expectedContainerId":  "sanitet",
+                      "expectedTerms":  [
+                                            "toilet",
+                                            "sanitet"
+                                        ],
+                      "source":  {
+                                     "title":  "File:Ceramic toilet bowl (5876760472).jpg",
+                                     "url":  "https://commons.wikimedia.org/wiki/File:Ceramic_toilet_bowl_(5876760472).jpg",
+                                     "license":  "CC BY 2.0",
+                                     "artist":  "SuSanA Secretariat"
+                                 }
+                  }
+              ]
+}

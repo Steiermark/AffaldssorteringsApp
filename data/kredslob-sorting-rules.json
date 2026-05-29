@@ -1,0 +1,938 @@
+{
+  "source": "Kredsløb",
+  "pageUrl": "https://www.kredslob.dk/privat/genbrug-og-affald/genbrugsstationerne/saadan-sorterer-du-paa-genbrugsstationen/",
+  "createdAt": "2026-05-29T09:33:07.077Z",
+  "rules": [
+    {
+      "id": "asbest",
+      "title": "Asbest",
+      "yes": [
+        "Asbestplader",
+        "Eternitplader",
+        "Fibercement"
+      ],
+      "no": [
+        "Gips",
+        "Isolering"
+      ]
+    },
+    {
+      "id": "asfalt",
+      "title": "Asfalt",
+      "yes": [
+        "Asfalt"
+      ],
+      "no": [
+        "Beton",
+        "Jord",
+        "Klinker",
+        "Sanitet",
+        "Stentøj",
+        "Asfaltpap",
+        "Tagpap"
+      ]
+    },
+    {
+      "id": "batterier",
+      "title": "Batterier",
+      "yes": [
+        "Alkaliske batterier",
+        "Brunstens batterier",
+        "Knapcelle batterier",
+        "Kviksølvs batterier",
+        "Nikkelmetal batterier",
+        "Lithium batterier under 500 g"
+      ],
+      "no": [
+        "Bilbatterier",
+        "Cykelbatterier",
+        "Lithium batterier over 500 g",
+        "Pap",
+        "Plastikposer"
+      ]
+    },
+    {
+      "id": "beton",
+      "title": "Beton",
+      "yes": [
+        "Beton",
+        "Natursten",
+        "Betontagsten",
+        "Cement (uden emballage)",
+        "Belægningssten",
+        "Havefliser"
+      ],
+      "no": [
+        "Tegl",
+        "Jord",
+        "Eternit",
+        "Fugematerialer",
+        "Isolering",
+        "Klinker",
+        "Spande"
+      ]
+    },
+    {
+      "id": "bilbatterier",
+      "title": "Bilbatterier",
+      "yes": [
+        "Bilbatterier",
+        "Knallertbatterier",
+        "Motorcykelbatterier"
+      ],
+      "no": [
+        "Små husholdningsbatterier",
+        "Lithium batterier over 500 g",
+        "Opladere",
+        "Cykelbatterier"
+      ]
+    },
+    {
+      "id": "bloed-plast",
+      "title": "Blød plast",
+      "yes": [
+        "Plastikposer",
+        "Bæresække",
+        "Sorte affaldssække",
+        "Bobleplast",
+        "Strækfilm"
+      ],
+      "no": [
+        "Presenninger",
+        "Badebassiner",
+        "Armeret folie",
+        "Hård plast",
+        "Poser fra haveaffald",
+        "Landbrugsplast"
+      ]
+    },
+    {
+      "id": "brokker",
+      "title": "Brokker",
+      "yes": [
+        "Letbeton",
+        "Leca",
+        "Mørtel",
+        "Gasbeton"
+      ],
+      "no": [
+        "Glaserede tagsten",
+        "Klinker",
+        "Glaserede fliser",
+        "Eternit",
+        "Fibercement",
+        "Skorstene",
+        "Spande og sække"
+      ]
+    },
+    {
+      "id": "boeger",
+      "title": "Bøger",
+      "yes": [
+        "Bøger",
+        "Leksikon",
+        "Paperback",
+        "Hardback"
+      ],
+      "no": [
+        "Ringbind",
+        "Magasiner",
+        "Aviser",
+        "Papir",
+        "Gavepapir",
+        "Pap"
+      ]
+    },
+    {
+      "id": "deponi",
+      "title": "Deponi",
+      "yes": [
+        "Haveslanger",
+        "Badebassiner",
+        "Forurenet byggeaffald f.eks. fra skorstene",
+        "Vinylgulve",
+        "Ildfaste glasfade",
+        "Kakkelborde",
+        "Gummistøvler"
+      ],
+      "no": [
+        "Asbest",
+        "Maling",
+        "Mursten",
+        "Isolering"
+      ]
+    },
+    {
+      "id": "drikkedaser",
+      "title": "Drikkedåser",
+      "yes": [
+        "Øldåser",
+        "Sodavandsdåser"
+      ],
+      "no": [
+        "Plastik",
+        "Pap",
+        "Konservesdåser"
+      ]
+    },
+    {
+      "id": "daek",
+      "title": "Dæk",
+      "yes": [
+        "Bildæk",
+        "Traktordæk",
+        "Lastbildæk",
+        "Knallertdæk",
+        "Motorcykeldæk",
+        "Trillebørdæk",
+        "Dæk med og uden fælg"
+      ],
+      "no": [
+        "Cykeldæk",
+        "Cykelslange",
+        "Larvebånd"
+      ]
+    },
+    {
+      "id": "elektronik-mellemstort-50-120-cm",
+      "title": "Elektronik - mellemstort (50-120 cm)",
+      "yes": [
+        "Standerlamper",
+        "Mikrobølgeovne",
+        "Emhætter",
+        "Miniovne",
+        "Lysarmaturer",
+        "Stationære PC’ere",
+        "Højtryksrensere under 120 cm",
+        "Printere (50-120 cm",
+        "uden toner/printerpatroner",
+        "som afleveres for sig som Toner)"
+      ],
+      "no": [
+        "Elektronik under 50 cm",
+        "Fladskærme",
+        "Bærbare computere",
+        "Tablets"
+      ]
+    },
+    {
+      "id": "elektronik-smat-under-50-cm",
+      "title": "Elektronik - småt (under 50 cm)",
+      "yes": [
+        "Telefoner",
+        "Radio",
+        "Kamera",
+        "Elektrisk værktøj",
+        "Opladere",
+        "Elektrisk legetøj",
+        "Printere (under 50 cm",
+        "uden toner/printerpatroner",
+        "som afleveres for sig som Toner)"
+      ],
+      "no": [
+        "Elektronik over 50 cm",
+        "Batterier",
+        "Elpærer",
+        "Tablets"
+      ]
+    },
+    {
+      "id": "elpaerer",
+      "title": "Elpærer",
+      "yes": [
+        "Sparepærer",
+        "LED-pærer",
+        "Lavenergipærer",
+        "Lysstofrør under 60 cm",
+        "Udladningslamper",
+        "Halogen"
+      ],
+      "no": [
+        "Lysstofrør over 60 cm",
+        "Pap",
+        "Plastikposer"
+      ]
+    },
+    {
+      "id": "farligt-affald",
+      "title": "Farligt affald",
+      "yes": [
+        "Maling og lak",
+        "Lim og fugemasse",
+        "Spraydåser",
+        "Olie og kemikalier",
+        "Insekt- og plantegifte",
+        "Plantegødning",
+        "Cykelbatterier"
+      ],
+      "no": [
+        "Elektronik",
+        "Malerudstyr",
+        "Asbest",
+        "Kanyler",
+        "Medicin",
+        "Ammunition",
+        "Trykflasker"
+      ]
+    },
+    {
+      "id": "farvet-flamingo",
+      "title": "Farvet flamingo",
+      "yes": [
+        "Farvet flamingo",
+        "Hvid flamingo med sorte/grå/farvede prikker",
+        "Kapilærkasser"
+      ],
+      "no": [
+        "Ren hvid flamingo (se under Flamingo)",
+        "Beskidt flamingo",
+        "Flamingochips"
+      ]
+    },
+    {
+      "id": "fibergips",
+      "title": "Fibergips",
+      "yes": [
+        "Farmacell"
+      ],
+      "no": [
+        "Gipsplader"
+      ]
+    },
+    {
+      "id": "fladskaerme-baerbare-computere",
+      "title": "Fladskærme & bærbare computere",
+      "yes": [
+        "Fladskærme",
+        "Bærbare computere",
+        "Tablets"
+      ],
+      "no": [
+        "Stationære PC’ere",
+        "PC-tilbehør",
+        "Telefoner",
+        "Printere"
+      ]
+    },
+    {
+      "id": "flamingo",
+      "title": "Flamingo",
+      "yes": [
+        "Ren hvid flamingo",
+        "Flamingokasser",
+        "Flamingoemballage"
+      ],
+      "no": [
+        "Farvet flamingo",
+        "Beskidt flamingo",
+        "Kapilærkasser",
+        "Flamingochips"
+      ]
+    },
+    {
+      "id": "gips",
+      "title": "Gips",
+      "yes": [
+        "Gipsplader",
+        "Vådrumsgips"
+      ],
+      "no": [
+        "Farmacell (se under Fibergips)",
+        "Ledninger",
+        "Kabler",
+        "Stik",
+        "Stikkontakter",
+        "Gips med lægter eller metalskinner",
+        "Gipsfigurer"
+      ]
+    },
+    {
+      "id": "glas",
+      "title": "Glas",
+      "yes": [
+        "Flasker",
+        "Syltetøjsglas",
+        "Drikkeglas",
+        "Glasskår",
+        "Konservesglas"
+      ],
+      "no": [
+        "Porcelæn",
+        "Keramik",
+        "Krystalglas",
+        "Vinduesglas",
+        "Spejle",
+        "Glaslåg",
+        "Ildfaste fade"
+      ]
+    },
+    {
+      "id": "glasuld-stenuld",
+      "title": "Glasuld & stenuld",
+      "yes": [
+        "Stenuld",
+        "Glasuld",
+        "Mineraluld",
+        "Rockwool",
+        "Vintermåtter"
+      ],
+      "no": [
+        "Pap",
+        "Gips"
+      ]
+    },
+    {
+      "id": "haveaffald",
+      "title": "Haveaffald",
+      "yes": [
+        "Blade og blomster",
+        "Buske og grene",
+        "Græstørv og rullegræs",
+        "Hækafklip",
+        "Nedfaldsfrugt",
+        "Træer og rødder",
+        "Brænde"
+      ],
+      "no": [
+        "Plastikposer",
+        "Jord og opfej",
+        "Urtepotter",
+        "Snore",
+        "Natursten",
+        "Havehegn",
+        "Flethegn",
+        "Invasive planter"
+      ]
+    },
+    {
+      "id": "jern-metal",
+      "title": "Jern & metal",
+      "yes": [
+        "Møbler af metal",
+        "Barne- og klapvogne",
+        "Haveredskaber",
+        "Konservesdåser",
+        "Grill og gryder",
+        "Radiatorer og rør",
+        "Bil- og motordele (tømt for olie og benzin)"
+      ],
+      "no": [
+        "Kabler",
+        "Ledninger",
+        "Øldåser",
+        "Sodavandsdåser",
+        "Trykflasker",
+        "Spraydåser",
+        "Gasdåser"
+      ]
+    },
+    {
+      "id": "jord",
+      "title": "Jord",
+      "yes": [
+        "Muldjord",
+        "Sandjord",
+        "Råjord",
+        "Sand"
+      ],
+      "no": [
+        "Brokker",
+        "Beton",
+        "Forurenet jord",
+        "Græstørv",
+        "Haveaffald",
+        "Slagger"
+      ]
+    },
+    {
+      "id": "keramik",
+      "title": "Keramik",
+      "yes": [
+        "Keramik",
+        "Porcelæn"
+      ],
+      "no": [
+        "Plastsække",
+        "Pottejord",
+        "Toiletter",
+        "Håndvaske"
+      ]
+    },
+    {
+      "id": "komfurer-vaskemaskiner",
+      "title": "Komfurer & vaskemaskiner",
+      "yes": [
+        "Komfurer",
+        "Indbygningsovne",
+        "Keramiske kogeplader",
+        "Vaskemaskiner",
+        "Tørretumblere",
+        "Kopimaskiner",
+        "Højtryksrensere over 120 cm"
+      ],
+      "no": [
+        "Microovne",
+        "Højtryksrensere under 120 cm",
+        "Køleskabe",
+        "Frysere"
+      ]
+    },
+    {
+      "id": "koeleskabe-frysere",
+      "title": "Køleskabe & frysere",
+      "yes": [
+        "Køleskabe",
+        "Frysere",
+        "Kummefrysere",
+        "Køle-og fryseskabe",
+        "Svaleskabe",
+        "Klimaanlæg med køleanlæg",
+        "Vandkølere"
+      ],
+      "no": [
+        "Komfurer",
+        "Vaskemaskiner"
+      ]
+    },
+    {
+      "id": "ledninger-og-kabler",
+      "title": "Ledninger og kabler",
+      "yes": [
+        "Ledninger",
+        "Kabler",
+        "Kabeltromler",
+        "Stikdåser"
+      ],
+      "no": [
+        "Elektronik",
+        "Opladere",
+        "Fatninger",
+        "Elpærer",
+        "Fjernbetjeninger",
+        "Lyskæder"
+      ]
+    },
+    {
+      "id": "lysstofroer",
+      "title": "Lysstofrør",
+      "yes": [
+        "Lysstofrør over 60 cm"
+      ],
+      "no": [
+        "Lysarmaturer",
+        "Elpærer",
+        "Lamper",
+        "Pap",
+        "Plast",
+        "Emballage"
+      ]
+    },
+    {
+      "id": "madrasser-sofaer",
+      "title": "Madrasser & sofaer",
+      "yes": [
+        "Boksmadrasser",
+        "Sofaer",
+        "Lænestole",
+        "Store gulvtæpper",
+        "Skummadrasser"
+      ],
+      "no": [
+        "Pap",
+        "Papir",
+        "Træ",
+        "Hynder",
+        "Puder",
+        "Topmadrasser",
+        "Metal"
+      ]
+    },
+    {
+      "id": "mursten-tegl",
+      "title": "Mursten & tegl",
+      "yes": [
+        "Mursten",
+        "Teglsten",
+        "Teglsten med mørtel"
+      ],
+      "no": [
+        "Beton",
+        "Stentøj og klinker",
+        "Sanitet",
+        "Jord",
+        "Fugematerialer",
+        "Isolering",
+        "Glaserede tegl og betontagsten"
+      ]
+    },
+    {
+      "id": "maelke-og-broedkasser",
+      "title": "Mælke- og brødkasser",
+      "yes": [
+        "Mælkekasser fra Arla",
+        "Brødkasser fra Schulstad og Kohberg"
+      ],
+      "no": [
+        "Andre plastkasser"
+      ]
+    },
+    {
+      "id": "paller",
+      "title": "Paller",
+      "yes": [
+        "Europaller",
+        "Halvpaller",
+        "Engangspaller"
+      ],
+      "no": [
+        "Rådne paller"
+      ]
+    },
+    {
+      "id": "pap",
+      "title": "Pap",
+      "yes": [
+        "Pap",
+        "Bølgepap",
+        "Karton",
+        "Papkasser",
+        "Æsker",
+        "Rent afdækningspap"
+      ],
+      "no": [
+        "Flamingo",
+        "Gavepapir",
+        "Mælkekartoner",
+        "Pizzabakker",
+        "Plastbånd",
+        "Plast"
+      ]
+    },
+    {
+      "id": "papir-aviser",
+      "title": "Papir & aviser",
+      "yes": [
+        "Aviser",
+        "Ugeblade",
+        "Reklamer",
+        "Kopipapir"
+      ],
+      "no": [
+        "Bøger",
+        "Pap",
+        "Plastikposer",
+        "Gavebånd",
+        "Gavepapir",
+        "Ringbind"
+      ]
+    },
+    {
+      "id": "papir-til-makulering",
+      "title": "Papir til makulering",
+      "yes": [
+        "Papir",
+        "der skal makuleres (f.eks. pga. persondata)"
+      ],
+      "no": [
+        "Andet papir",
+        "Avispapir",
+        "Gavepapir",
+        "Pap",
+        "Plastikposer"
+      ]
+    },
+    {
+      "id": "pehd-plast",
+      "title": "PEHD-plast",
+      "yes": [
+        "Plast med symbolet 2 (som vist her under)",
+        "Farvede plastdunke",
+        "Ølkasser",
+        "Sodavandskasser",
+        "Plastkælke",
+        "Vandkander"
+      ],
+      "no": [
+        "Dunke fra motorolie og kemikalier"
+      ]
+    },
+    {
+      "id": "pet-plast",
+      "title": "PET-plast",
+      "yes": [
+        "Plast med symbolet 1 (som vist her under)",
+        "Sodavandsflasker",
+        "Juiceflasker",
+        "Vindruebakker",
+        "Æggebakker"
+      ],
+      "no": [
+        "Dunke fra motorolie og kemikalier",
+        "Plast med madrester"
+      ]
+    },
+    {
+      "id": "plast-havemoebler",
+      "title": "Plast-havemøbler",
+      "yes": [
+        "Plastikstole",
+        "Plastikborde"
+      ],
+      "no": [
+        "Hyndebokse",
+        "Parasolfødder",
+        "Plasthavemøbler",
+        "hvor træ og/eller metal indgår"
+      ]
+    },
+    {
+      "id": "pp-plast",
+      "title": "PP-plast",
+      "yes": [
+        "Plast med symbolet 5 (som vist her under)",
+        "Baljer",
+        "Plasturtepotter",
+        "Spande",
+        "Hyndebokse"
+      ],
+      "no": [
+        "Dunke fra motorolie og kemikalier",
+        "Beskidte murerbaljer",
+        "Malerspande"
+      ]
+    },
+    {
+      "id": "printerpatroner",
+      "title": "Printerpatroner",
+      "yes": [
+        "Printerpatroner",
+        "Lasertoner",
+        "Kopimaskinetoner",
+        "Blækpatroner",
+        "Tromler",
+        "Afleveres helst i lukkede",
+        "originale kasser"
+      ],
+      "no": [
+        "Printere"
+      ]
+    },
+    {
+      "id": "ps-plast",
+      "title": "PS-plast",
+      "yes": [
+        "Plast med symbolet 6 (som vist her under)",
+        "Blomsterbakker",
+        "Køleskabsskuffer"
+      ],
+      "no": [
+        "Emballage fra motorolie og kemikalier"
+      ]
+    },
+    {
+      "id": "puds-stentoej",
+      "title": "Puds & stentøj",
+      "yes": [
+        "Klinker",
+        "Stentøj",
+        "Glaserede tegl",
+        "Glaserede krukker",
+        "Porcelæn",
+        "Væg- og gulvfliser",
+        "Rørpuds"
+      ],
+      "no": [
+        "Tegl",
+        "Fugematerialer",
+        "Sække",
+        "Fibercement",
+        "Slagger",
+        "Plast",
+        "Toiletter og håndvaske"
+      ]
+    },
+    {
+      "id": "pvc-hard",
+      "title": "PVC - hård",
+      "yes": [
+        "PVC-tagrender",
+        "PVC-afløbsrør",
+        "PVC-kloakrør",
+        "Trapezplader"
+      ],
+      "no": [
+        "Gummistøvler",
+        "Kunstlæder",
+        "Vinylgulve",
+        "Termotag",
+        "Plastikposer"
+      ]
+    },
+    {
+      "id": "skaerme-med-billedroer",
+      "title": "Skærme med billedrør",
+      "yes": [
+        "TV med billedrør",
+        "Skærme med billedrør",
+        "Billedrør"
+      ],
+      "no": [
+        "Fladskærme",
+        "Bærbare computere",
+        "Tablets"
+      ]
+    },
+    {
+      "id": "smat-braendbart",
+      "title": "Småt brændbart",
+      "yes": [
+        "Gavepapir",
+        "Poser fra haveaffald",
+        "Ringbind",
+        "Cykeldæk",
+        "Troldtekt"
+      ],
+      "no": [
+        "Dyremøg",
+        "Madaffald",
+        "Pap og papir",
+        "Plast"
+      ]
+    },
+    {
+      "id": "spraydaser",
+      "title": "Spraydåser",
+      "yes": [
+        "Fugeskum",
+        "Hårspray",
+        "Deodorantspray",
+        "Spraymaling",
+        "WD-40"
+      ],
+      "no": [
+        "Gasdåser"
+      ]
+    },
+    {
+      "id": "tagpap",
+      "title": "Tagpap",
+      "yes": [
+        "Tagpap"
+      ],
+      "no": [
+        "Tagpap med træ",
+        "Vindpap",
+        "Ondoline"
+      ]
+    },
+    {
+      "id": "tekstilaffald",
+      "title": "Tekstilaffald",
+      "yes": [
+        "Ødelagt tøj",
+        "Tøj",
+        "som du ikke vil sælge eller donere",
+        "Hullede sokker",
+        "Sengelinned",
+        "Håndklæder",
+        "Gardiner",
+        "Duge"
+      ],
+      "no": [
+        "Voksduge",
+        "Kunstlæder",
+        "Våde tekstiler",
+        "Mugne tekstiler",
+        "Gulvtæpper",
+        "Tekstil med elektronik",
+        "Dyner og puder"
+      ]
+    },
+    {
+      "id": "toiletter-handvaske",
+      "title": "Toiletter & håndvaske",
+      "yes": [
+        "Toiletter",
+        "Håndvaske"
+      ],
+      "no": [
+        "Porcelæn",
+        "Badekar",
+        "Klinker",
+        "Stålvaske",
+        "Keramik"
+      ]
+    },
+    {
+      "id": "trykflasker",
+      "title": "Trykflasker",
+      "yes": [
+        "Gasflasker",
+        "Pulverslukkere",
+        "Skumslukkere",
+        "Trykflasker",
+        "Heliumflasker"
+      ],
+      "no": [
+        "Spraydåser",
+        "Campinggas",
+        "Gasdåser",
+        "Kulsyreflasker",
+        "Lattergaspatroner"
+      ]
+    },
+    {
+      "id": "udendoers-trae-trykimpraeneret",
+      "title": "Udendørs træ (trykimpræneret)",
+      "yes": [
+        "Imprægneret træ",
+        "Imprægnerede stolper",
+        "Imprægnerede pæle",
+        "Jernbanesveller",
+        "Flethegn",
+        "Havehegn"
+      ],
+      "no": [
+        "Brænde",
+        "Indendørs træ",
+        "Tagpap"
+      ]
+    },
+    {
+      "id": "indendoers-trae",
+      "title": "Indendørs træ",
+      "yes": [
+        "Malet træ",
+        "Spånplader",
+        "Lamineret træ",
+        "Lakeret træ",
+        "Køkkenskabe",
+        "Træmøbler",
+        "MDF"
+      ],
+      "no": [
+        "Trykimprægneret træ",
+        "Træ med stof og glas",
+        "Bambusmøbler",
+        "Udendørs træ"
+      ]
+    },
+    {
+      "id": "vinduer",
+      "title": "Vinduer",
+      "yes": [
+        "Vinduer",
+        "Vinduesglas med og uden ramme",
+        "Spejle",
+        "Planglas",
+        "Bilruder",
+        "Glas i skifterammer",
+        "Drivhusglas"
+      ],
+      "no": [
+        "Blyindfattede ruder",
+        "Termoruder med PCB-risiko"
+      ]
+    }
+  ]
+}
