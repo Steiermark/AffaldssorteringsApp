@@ -73,6 +73,7 @@ const layoutFractionAliases = {
   storskrald: ["stort-braendbart", "smaat-braendbart", "rest-efter-sortering"],
   "stort-elektronik": ["haarde-hvidevarer"],
   tekstilaffald: ["tekstil"],
+  toej: ["tekstilaffald"],
   "udendoers-trae": ["impraegneret-trae"],
   vinduer: ["glasdoere", "vinduer-og-glasdoere"]
 };
